@@ -54,13 +54,23 @@
             "hologram": {
                 "protect": {
                     "bed": "<teamcolor><bold>Ochráňte svoju posteľ!",
-                    "anchor": "<teamcolor><bold>Ochráňte svoju kotvu!"
+                    "anchor": "<teamcolor><bold>Ochráňte svoju kotvu!",
+                    "cake": "<teamcolor><bold>Chráňte svoj koláč!"
+                },
+                "destroyed": {
+                    "bed": "<gray><bold>Posteľ je zničená.",
+                    "cake": "<gray><bold>Koláč bol zjedený."
+                },
+                "destroy": {
+                    "bed": "<teamcolor><bold>Znič túto posteľ!",
+                    "cake": "<teamcolor><bold>Zjedz tento koláč!"
                 }
             }
         },
         "spawner": {
             "every_second": "<bold>každú sekundu",
-            "full": "<red><bold>Spawner je vyčerpaný"
+            "full": "<red><bold>Spawner je vyčerpaný",
+            "countdown": "<yellow><seconds> <bold>sekúnd"
         },
         "resources": {
             "bronze": "Bronz",
@@ -93,19 +103,30 @@
         },
         "end": {
             "you_won": "<green>Váš tím vyhral!",
-            "game_end": "<red>Hra skončila! Ďakujeme za hranie!"
+            "game_end": "<red>Hra skončila! Ďakujeme za hranie!",
+            "you_lost": "<red>Váš team prehral!"
         },
         "leave": "<name> <red>opustil hru!",
         "player_killed": "<red>Hráč <killer> <red>zabil <victim><red>!",
         "game_start_title": "<green>Hra začala!",
         "respawn_cooldown": {
-            "title_cancel": "<red>Tím je zničený :("
+            "title_cancel": "<red>Tím je zničený :(",
+            "title": "<green>Respawn za: <red><time>"
         },
         "player_self_killed": "<red>Hráč <victim> <red>zomrel!"
     },
     "specials": {
         "team_chest": {
             "name": "<green><bold>Tímová truhla"
+        },
+        "warp_powder": {
+            "canceled": "<red>Teleportácia na základňu bola ukončená!"
+        },
+        "tracker": {
+            "no_target_found": "<red>Nebol nájdený žiadny cieľ!"
+        },
+        "tntsheep": {
+            "no_target_found": "<red>Nebol nájdený žiadny cieľ!"
         }
     },
     "admin": {
@@ -133,9 +154,26 @@
             "teams": "<gray>Tímy:",
             "spawners": "<gray>Spawnery:",
             "villagers": "<gray>Obchody:",
-            "constant_true": "<green>True",
-            "constant_false": "<red>False",
-            "status_disabled": "<red>VYPNUTÁ"
+            "constant_true": "<green>Pravda",
+            "constant_false": "<red>Nepravda",
+            "status_disabled": "<red>VYPNUTÁ",
+            "name": "<gray>Meno: <reset><name>",
+            "status": "<gray>Status: <reset><status>",
+            "status_running": "<green>HRA PREBIEHA",
+            "world": "<gray>Svet: <reset><world>",
+            "villager_entity_type": "  Typ: <green><type>",
+            "status_waiting": "<yellow>ČAKANIE NA HRÁČOV",
+            "team_target": "  <gray>Posteľ: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "villager_pos": "- XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "spawner_no_team": "<red>Žiadny tím",
+            "file": "<gray><i>Súbor: <file>",
+            "constant": "- <gray><constant><reset>: <gray><value>"
+        },
+        "holo": {
+            "removed": "<green>Hologram bol úspešne zmazaný!"
+        },
+        "info_select": {
+            "config": "<green>Konfigurácia<white> - <gray><command>"
         }
     },
     "update": {
@@ -149,5 +187,8 @@
         "bw_join": "/bw join <pre><arena></pre> - <green>Pripojíš sa do hry",
         "bw_leave": "/bw leave - <green>Opustíš hru",
         "title_console": "Screaming BedWars <version> - Pomocná strana pre Konzolu"
+    },
+    "dump": {
+        "failed": "<red>Výpis zlyhal!"
     }
 }
