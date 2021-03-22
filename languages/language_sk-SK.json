@@ -1,1 +1,20 @@
-{}
+{
+    "sign": {
+        "admin": {
+            "created": "<green>Ceduľka bola úspešne vytvorená!",
+            "cannot_create": "<red>Ceduľku sa nepodarilo vytvoriť! Prosím skontrolujte názov arény!"
+        },
+        "status": {
+            "disabled": {
+                "status": "<red>Hra"
+            }
+        }
+    },
+    "statistics": {
+        "player_does_not_exist": "<red>Hráč sa nenašiel!"
+    },
+    "unknown_command": "<red>Nesprávny príkaz! Zadaj <dark_red>/bw help <red>pre zobrazenie nápovedy!",
+    "no_permissions": "<red>Na toto nemáš povolenie!",
+    "list_header": "<green>Dostupné arény:",
+    "success": "<green>Príkaz bol úspešný!"
+}
