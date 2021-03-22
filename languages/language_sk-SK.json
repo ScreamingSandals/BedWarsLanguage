@@ -33,7 +33,8 @@
     "success": "<green>Príkaz bol úspešný!",
     "in_game": {
         "errors": {
-            "game_not_found": "<red>Hra nebola nájdená!"
+            "game_not_found": "<red>Hra nebola nájdená!",
+            "you_are_not_in_game": "<red>Nie si v hre!"
         }
     }
 }
