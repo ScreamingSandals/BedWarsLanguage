@@ -147,7 +147,7 @@
             "created": "<green>Cedule byla úspěšně vytvořena!",
             "cannot_create": "<red>Cedule nemohla být vytvořena! Prosím zkontroluj jméno arény!",
             "unknown_game": "<red>Hra, která je napsaná na ceduli neexistuje! Prosím kontaktuj administrátory!",
-            "cannot_destroy": "<red>Nemáš práva na zničení této cedule!"
+            "cannot_destroy": "<red>Nemáš oprávnění na zničení této cedule!"
         },
         "status": {
             "disabled": {
@@ -294,7 +294,7 @@
         "game_start_subtitle": "<green>Hra <gray><arena><green> začala! Užijte si hru!",
         "vault_deposite": "<gray><coins> <currency><green> přidáno do tvého Vault účtu!"
     },
-    "no_permissions": "<red>Nemáš práva toto udělat!",
+    "no_permissions": "<red>Nemáš oprávnění toto udělat!",
     "safe_reload_failed_to_stop_game": "<red>Nějaké hry neskončily v časovém limitu, takže jejich aréna mohla být poškozena!",
     "list_header": "<green>Dostupné arény:",
     "help": {
