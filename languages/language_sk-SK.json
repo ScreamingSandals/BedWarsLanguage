@@ -49,8 +49,57 @@
         "target_block": {
             "destroyed": {
                 "bed": "Posteľ tímu <team><reset> bola zničená!"
+            },
+            "hologram": {
+                "protect": {
+                    "bed": "<teamcolor><bold>Ochráňte svoju posteľ!",
+                    "anchor": "<teamcolor><bold>Ochráňte svoju kotvu!"
+                }
             }
-        }
+        },
+        "spawner": {
+            "every_second": "<bold>každú sekundu",
+            "full": "<red><bold>Spawner je vyčerpaný"
+        },
+        "resources": {
+            "bronze": "Bronz",
+            "iron": "Železo",
+            "gold": "Zlato",
+            "netherite": "Netherit",
+            "diamond": "Diamant",
+            "emerald": "Emerald"
+        },
+        "shop": {
+            "name": "Obchod",
+            "page_forward": "Nasledujúca strana",
+            "shop_back": "<red>Späť na zoznam kategórii",
+            "price": "Cena:",
+            "amount": "Množstvo:",
+            "page_back": "Predchádzajúca strana"
+        },
+        "team_selection": {
+            "select_item_lore_full": "<white>Tím je plný!",
+            "select_item_lore_join": "Kliknutím sa pripojíš k tímu!"
+        },
+        "lobby_items": {
+            "compass_selector_team": "<green>Vybrať tím",
+            "leave_from_game_item": "<red>Opustiť hru",
+            "start_game_item": "<dark_green>Spustiť hru"
+        },
+        "bossbar": {
+            "running": "<green>Hra začala! Veľa šťastia!"
+        },
+        "end": {
+            "you_won": "<green>Váš tím vyhral!",
+            "game_end": "<red>Hra skončila! Ďakujeme za hranie!"
+        },
+        "leave": "<name> <red>opustil hru!",
+        "player_killed": "<red>Hráč <killer> <red>zabil <victim><red>!",
+        "game_start_title": "<green>Hra začala!",
+        "respawn_cooldown": {
+            "title_cancel": "<red>Tím je zničený :("
+        },
+        "player_self_killed": "<red>Hráč <victim> <red>zomrel!"
     },
     "specials": {
         "team_chest": {
@@ -84,5 +133,11 @@
             "<green>K dispozícii je nová RELEASE verzia <version> BedWars!",
             "Stiahnete si ju z <url>"
         ]
+    },
+    "help": {
+        "title": "Screaming BedWars <version> - Pomocná strana",
+        "bw_join": "/bw join <pre><arena></pre> - <green>Pripojíš sa do hry",
+        "bw_leave": "/bw leave - <green>Opustíš hru",
+        "title_console": "Screaming BedWars <version> - Pomocná strana pre Konzolu"
     }
 }
