@@ -1,1 +1,33 @@
-{}
+{
+    "safe_reload": "<green>Przed załadowaniem czekam aż wszystkie gry zostaną zakończone (maksymalny czas: 60 sekund)!",
+    "list_header": "<green>Dostępne areny:",
+    "sign": {
+        "admin": {
+            "created": "<green>Tabliczka została pomyślnie utworzona!",
+            "cannot_create": "<red>Tabliczka nie może zostać stworzona! Proszę sprawdzić nazwę areny!"
+        },
+        "status": {
+            "waiting": {
+                "status": "<gold>Oczekiwanie"
+            },
+            "disabled": {
+                "status": "<red>Gra",
+                "players": "<red>Wyłączone"
+            },
+            "running": {
+                "status": "<green>W trakcie"
+            },
+            "rebuilding": {
+                "players": "<gold>mapa"
+            }
+        }
+    },
+    "statistics": {
+        "player_does_not_exist": "<red>Nie znaleziono gracza!",
+        "wins": "<gray>Wygrane: <green><wins>",
+        "loses": "<gray>Przegrane: <red><loses>"
+    },
+    "unknown_command": "<red>Nieznana komenda! Wpisz <dark_red>/bw help <red>aby uzyskać pomoc!",
+    "no_permissions": "<red>Nie posiadasz uprawnień do tego!",
+    "unknown_usage": "<red>Błędne argumenty! Wpisz<dark_red>/bw help <red>aby uzyskać pomoc!"
+}
