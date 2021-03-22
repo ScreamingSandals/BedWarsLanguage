@@ -1,1 +1,49 @@
-{}
+{
+    "in_game": {
+        "errors": {
+            "vip_not_enough_players": "<red>Недостаточно игроков в арене!",
+            "not_in_any_game_yet": "<red>Вы ещё не были в какой-либо игре.",
+            "command_is_not_allowed": "<red>Данной командой запрещено пользоваться во время игры!",
+            "already_in_game": "<red>Вы уже играете.",
+            "you_are_not_in_game": "<red>Вы не в игре!",
+            "game_is_rebuilding": "<red>Арена <gray><arena><red> восстанавливается! Подождите..."
+        }
+    },
+    "no_permissions": "<red>У вас на это недостаточно прав!",
+    "safe_reload": "<green>Перед перезагрузкой все арены должны быть остановлены в течение 60 секунд!",
+    "list_header": "<green>Доступные арены:",
+    "success": "<green>Команда выполнена успешно!",
+    "sign": {
+        "admin": {
+            "created": "<green>Табличка успешно создана!",
+            "cannot_create": "<red>Табличка не создана, перепроверьте название арены!",
+            "cannot_destroy": "<red>У вас нет прав на удаление этой таблички!",
+            "unknown_game": "<red>Арена, указанная на табличке, не существует! Свяжитесь с администратором!"
+        },
+        "status": {
+            "disabled": {
+                "status": "<red>Арена",
+                "players": "<red>выключена"
+            },
+            "rebuilding": {
+                "status": "<gold>Восстановление",
+                "players": "<gold>арена"
+            },
+            "running": {
+                "status": "<green>Запущена",
+                "players": "<red><players><dark_gray>/<red><maxplayers>"
+            },
+            "waiting": {
+                "status": "<gold>Ожидание",
+                "players": "<green><players><dark_gray>/<green><maxplayers>"
+            }
+        }
+    },
+    "statistics": {
+        "player_does_not_exist": "<red>Игрок не найден!",
+        "disabled": "<red>Статистика на этом сервере отключена!"
+    },
+    "unknown_command": "<red>Неизвестная команда! Напишите <dark_red>/bw help <red>для помощи!",
+    "unknown_usage": "<red>Неверное количество аргументов! Напишите <dark_red>/bw help <red>для помощи!",
+    "safe_reload_failed_to_stop_game": "<red>Некоторые арены не успели закончиться, они возможно будут повреждены!"
+}
