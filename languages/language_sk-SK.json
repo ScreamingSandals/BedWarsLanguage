@@ -3,14 +3,24 @@
         "admin": {
             "created": "<green>Ceduľka bola úspešne vytvorená!",
             "cannot_create": "<red>Ceduľku sa nepodarilo vytvoriť! Prosím skontrolujte názov arény!",
-            "cannot_destroy": "<red>Nemáš práva na zničenie tejto ceduľky!"
+            "cannot_destroy": "<red>Nemáš práva na zničenie tejto ceduľky!",
+            "unknown_game": "<red>Hra, ktorá je na ceduľke neexistuje! Prosím kontaktujte administrátorov!"
         },
         "status": {
             "disabled": {
                 "status": "<red>Hra"
             },
             "waiting": {
-                "status": "<gold>Čakanie"
+                "status": "<gold>Čakanie",
+                "players": "<green><players><dark_gray>/<green><maxplayers>"
+            },
+            "rebuilding": {
+                "status": "<gold>Prestavba",
+                "players": "<gold>aréna"
+            },
+            "running": {
+                "status": "<green>Beží",
+                "players": "<red><players><dark_gray>/<red><maxplayers>"
             }
         }
     },
@@ -46,5 +56,33 @@
         "team_chest": {
             "name": "<green><bold>Tímová truhla"
         }
+    },
+    "admin": {
+        "arena": {
+            "error": {
+                "already_working_on_it": "<red>Aréna už existuje, ale nie je dokončená!",
+                "arena_must_be_in_edit_mode": "<red>Áréna musí byť v editovacom mode!",
+                "already_exists": "<red>Aréna už existuje!"
+            },
+            "success": {
+                "removed": "<red><b>Aréna bola odstránená!",
+                "added": "<green>Aréna pridaná!"
+            },
+            "edit": {
+                "errors": {
+                    "team_already_exists": "<red>Tento tím už existuje!",
+                    "team_does_not_exist": "<red>Tento tím neexistuje!",
+                    "store_does_not_exist": "<red>Obchod neexistuje!",
+                    "store_already_exist": "<red>Obchod už existuje!",
+                    "invalid_color": "<red>Farba je neplatná!"
+                }
+            }
+        }
+    },
+    "update": {
+        "new_release": [
+            "<green>K dispozícii je nová RELEASE verzia <version> BedWars!",
+            "Stiahnete si ju z <url>"
+        ]
     }
 }
