@@ -2,19 +2,38 @@
     "sign": {
         "admin": {
             "created": "<green>Ceduľka bola úspešne vytvorená!",
-            "cannot_create": "<red>Ceduľku sa nepodarilo vytvoriť! Prosím skontrolujte názov arény!"
+            "cannot_create": "<red>Ceduľku sa nepodarilo vytvoriť! Prosím skontrolujte názov arény!",
+            "cannot_destroy": "<red>Nemáš práva na zničenie tejto ceduľky!"
         },
         "status": {
             "disabled": {
                 "status": "<red>Hra"
+            },
+            "waiting": {
+                "status": "<gold>Čakanie"
             }
         }
     },
     "statistics": {
-        "player_does_not_exist": "<red>Hráč sa nenašiel!"
+        "player_does_not_exist": "<red>Hráč sa nenašiel!",
+        "header": "<green>Štatistiky hráča <red><player><green>:",
+        "disabled": "<red>Štatistiky hráčov sú na tomto serveri zakázané!",
+        "kills": "<gray>Zabití: <green><kills>",
+        "deaths": "<gray>Úmrtí: <yellow><deaths>",
+        "wins": "<gray>Výhier: <green><wins>",
+        "loses": "<gray>Prehier: <red><loses>",
+        "games": "<gray>Odohraných hier: <aqua><games>",
+        "score": "<gray>Celkové skóre: <green><score>",
+        "not_found": "<red>Štatistiky pre tohto hráča neboli nájdené!",
+        "beds": "<gray>Zničených postelí: <green><beds>"
     },
     "unknown_command": "<red>Nesprávny príkaz! Zadaj <dark_red>/bw help <red>pre zobrazenie nápovedy!",
     "no_permissions": "<red>Na toto nemáš povolenie!",
     "list_header": "<green>Dostupné arény:",
-    "success": "<green>Príkaz bol úspešný!"
+    "success": "<green>Príkaz bol úspešný!",
+    "in_game": {
+        "errors": {
+            "game_not_found": "<red>Hra nebola nájdená!"
+        }
+    }
 }
