@@ -35,7 +35,8 @@
         "games": "<gray>Odohraných hier: <aqua><games>",
         "score": "<gray>Celkové skóre: <green><score>",
         "not_found": "<red>Štatistiky pre tohto hráča neboli nájdené!",
-        "beds": "<gray>Zničených postelí: <green><beds>"
+        "beds": "<gray>Zničených postelí: <green><beds>",
+        "kd": "<gray>K/D: <green><kd>"
     },
     "unknown_command": "<red>Nesprávny príkaz! Zadaj <dark_red>/bw help <red>pre zobrazenie nápovedy!",
     "no_permissions": "<red>Na toto nemáš povolenie!",
@@ -79,7 +80,8 @@
         },
         "team_selection": {
             "select_item_lore_full": "<white>Tím je plný!",
-            "select_item_lore_join": "Kliknutím sa pripojíš k tímu!"
+            "select_item_lore_join": "Kliknutím sa pripojíš k tímu!",
+            "select_item_lore": "<white>---------------------"
         },
         "lobby_items": {
             "compass_selector_team": "<green>Vybrať tím",
@@ -126,6 +128,14 @@
                     "invalid_color": "<red>Farba je neplatná!"
                 }
             }
+        },
+        "info": {
+            "teams": "<gray>Tímy:",
+            "spawners": "<gray>Spawnery:",
+            "villagers": "<gray>Obchody:",
+            "constant_true": "<green>True",
+            "constant_false": "<red>False",
+            "status_disabled": "<red>VYPNUTÁ"
         }
     },
     "update": {
