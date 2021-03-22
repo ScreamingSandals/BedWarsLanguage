@@ -35,6 +35,16 @@
         "errors": {
             "game_not_found": "<red>Hra nebola nájdená!",
             "you_are_not_in_game": "<red>Nie si v hre!"
+        },
+        "target_block": {
+            "destroyed": {
+                "bed": "Posteľ tímu <team><reset> bola zničená!"
+            }
+        }
+    },
+    "specials": {
+        "team_chest": {
+            "name": "<green><bold>Tímová truhla"
         }
     }
 }
