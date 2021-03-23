@@ -4,7 +4,7 @@
     "no_permissions": "<red>You don't have enough permission to do that!",
     "safe_reload": "<green>Waiting untill all games are stopped or 60 seconds before reloading the plugin.",
     "safe_reload_failed_to_stop_game": "<red>Some games were not stopped in time, the arena may have been damaged!",
-    "list_header": "<green>Availible arenas:",
+    "list_header": "<green>Available arenas:",
     "success": "<green>Command was successful!",
     "sign": {
         "admin": {
