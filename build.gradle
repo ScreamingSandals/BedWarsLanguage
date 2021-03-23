@@ -10,11 +10,11 @@ buildscript {
         maven { url 'https://repo.screamingsandals.org/public/' }
     }
     dependencies {
-		classpath 'org.screamingsandals.gradle.builder:screaming-plugin-builder:1.0.40'
+		classpath 'org.screamingsandals.gradle.builder:screaming-plugin-builder:1.0.41'
     }
 }
 
-apply plugin: 'org.screamingsandals.gradle.builder'
+apply plugin: 'org.screamingsandals.gradle.builder.lite'
 
 sourceSets {
     main {
