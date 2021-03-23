@@ -152,7 +152,7 @@
         "status": {
             "disabled": {
                 "status": "<red>Hra",
-                "players": "<red>vypnuto"
+                "players": "<red>vypnuta"
             },
             "rebuilding": {
                 "players": "<gold>aréna",
