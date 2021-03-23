@@ -4,7 +4,8 @@
     "sign": {
         "admin": {
             "created": "<green>Tabliczka została pomyślnie utworzona!",
-            "cannot_create": "<red>Tabliczka nie może zostać stworzona! Proszę sprawdzić nazwę areny!"
+            "cannot_create": "<red>Tabliczka nie może zostać stworzona! Proszę sprawdzić nazwę areny!",
+            "cannot_destroy": "<red>Nie masz uprawnień do zniszczenia tej tabliczki!"
         },
         "status": {
             "waiting": {
