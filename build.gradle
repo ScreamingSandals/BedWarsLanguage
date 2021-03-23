@@ -1,0 +1,63 @@
+defaultTasks 'clean', 'screamCompile'
+
+allprojects {
+    group = 'org.screamingsandals.language.bedwars'
+    version = TRANSLATION_BRANCH + '-SNAPSHOT'
+}
+
+buildscript {
+    repositories {
+        maven { url 'https://repo.screamingsandals.org/public/' }
+    }
+    dependencies {
+		classpath 'org.screamingsandals.gradle.builder:screaming-plugin-builder:1.0.40'
+    }
+}
+
+apply plugin: 'org.screamingsandals.gradle.builder'
+
+sourceSets {
+    main {
+        resources {
+            srcDirs "."
+            include '/languages/**'
+        }
+    }
+}
+
+task generateBuildInfoFile {
+    def outputDir = new File(projectDir, "build/generated/buildinfo")
+    doFirst {
+        mkdir outputDir
+
+
+        new File(outputDir, "language_definition.json").withWriter { writer ->
+            def build
+            if (System.getenv('BUILD_NUMBER') != null) {
+                build = System.getenv('BUILD_NUMBER')
+            } else {
+                build = "custom"
+            }
+            def contents = "{\"branch\": \"${TRANSLATION_BRANCH}\", \"version\": \"${build}\", \"languages\":{"
+
+            def first = true
+            new File(projectDir, "languages").listFiles().each {
+                if (!first) {
+                    contents += ","
+                } else {
+                    first = false
+                }
+                def locale = (it.name =~ /[a-z]{2}-[A-Z]{2}/).findAll()?.first()
+                contents += "\"${locale}\": \"languages/${it.name}\""
+            }
+            contents += "}}"
+            writer.write(contents)
+        }
+    }
+}
+
+sourceSets {
+    main {
+        output.dir(new File(projectDir, "build/generated/buildinfo"), builtBy: 'generateBuildInfoFile')
+    }
+}
