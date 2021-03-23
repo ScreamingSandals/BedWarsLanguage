@@ -1,5 +1,5 @@
 {
-    "safe_reload": "<green>Przed załadowaniem czekam aż wszystkie gry zostaną zakończone (maksymalny czas: 60 sekund)!",
+    "safe_reload": "<green>Przed załadowaniem czekam aż wszystkie gry zostaną zakończone (maksymalny czas: 60 sekund).",
     "list_header": "<green>Dostępne areny:",
     "sign": {
         "admin": {
@@ -9,17 +9,20 @@
         },
         "status": {
             "waiting": {
-                "status": "<gold>Oczekiwanie"
+                "status": "<gold>Oczekiwanie",
+                "players": "<green><players><dark_gray>/<green><maxplayers>"
             },
             "disabled": {
                 "status": "<red>Gra",
                 "players": "<red>Wyłączone"
             },
             "running": {
-                "status": "<green>W trakcie"
+                "status": "<green>W trakcie",
+                "players": "<red><players><dark_gray>/<red><maxplayers>"
             },
             "rebuilding": {
-                "players": "<gold>mapa"
+                "players": "<gold>mapa",
+                "status": "<gold>Restartowanie"
             }
         }
     },
@@ -32,7 +35,10 @@
         "kills": "<gray>Zabójstwa: <green><kills>",
         "deaths": "<gray>Śmierci: <yellow><deaths>",
         "kd": "<gray>K/D: <green><kd>",
-        "games": "<gray>Zagrane gry: <aqua><games>"
+        "games": "<gray>Zagrane gry: <aqua><games>",
+        "disabled": "<red>Statystyki graczy są wyłączone na tym serwerze!",
+        "not_found": "<red>Statystyki dla tego gracza nie zostały znalezione!",
+        "header": "<green>Statystyki dla <red><player><green>:"
     },
     "unknown_command": "<red>Nieznana komenda! Wpisz <dark_red>/bw help <red>aby uzyskać pomoc!",
     "no_permissions": "<red>Nie posiadasz uprawnień do tego!",
@@ -48,7 +54,8 @@
             "command_is_not_allowed": "<red>Ta komenda jest zablokowana podczas trwania areny!",
             "vip_not_enough_players": "<red>Nie ma wystarczającej ilości graczy na arenie!",
             "game_kicked_by_vip": "<red>Zostałeś wyrzucony przez VIPa!",
-            "game_is_rebuilding": "<red>Arena <gray><arena><red> jest restartowana! Proszę czekać..."
+            "game_is_rebuilding": "<red>Arena <gray><arena><red> jest restartowana! Proszę czekać...",
+            "vip_game_is_full": "<red>Arena <gray><arena> <red>jest pełna graczy VIP . Poczekaj na zakończenie gry!"
         },
         "target_block": {
             "hologram": {
@@ -81,7 +88,7 @@
             "iron": "Żelazo",
             "gold": "Złoto",
             "diamond": "Diament",
-            "emerald": "Emerald"
+            "emerald": "Szmaragd"
         },
         "shop": {
             "name": "Sklep",
@@ -117,5 +124,6 @@
         "game_start_title": "<green>Gra wystartowała!",
         "game_start_subtitle": "<green>Arena <gray><arena><green> wystartowała! Miłej gry!",
         "player_self_killed": "<red>Gracz <victim> <red>zginął!"
-    }
+    },
+    "success": "<green>Komenda wykonana pomyślnie!"
 }
