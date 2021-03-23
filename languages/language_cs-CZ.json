@@ -145,7 +145,7 @@
     "sign": {
         "admin": {
             "created": "<green>Cedule byla úspěšně vytvořena!",
-            "cannot_create": "<red>Cedule nemohla být vytvořena! Prosím zkontroluj jméno arény!",
+            "cannot_create": "<red>Cedule nemohla být vytvořena! Prosím, zkontroluj jméno arény!",
             "unknown_game": "<red>Hra, která je napsaná na ceduli neexistuje! Prosím kontaktuj administrátory!",
             "cannot_destroy": "<red>Nemáš oprávnění na zničení této cedule!"
         },
@@ -169,34 +169,34 @@
         }
     },
     "statistics": {
-        "disabled": "<red>Statistiky hráčů jsou vypnuté na tomto serveru!",
+        "disabled": "<red>Na tomto serveru jsou statistiky hráčů vypnuty!",
         "player_does_not_exist": "<red>Hráč nenalezen!",
-        "not_found": "<red>Statistiky pro tohoto hráče nebyly nalezeny!",
+        "not_found": "<red>Statistiky nebyly pro tohoto hráče nalezeny!",
         "header": "<green>Statistiky <red><player><green>:",
         "deaths": "<gray>Smrti: <yellow><deaths>",
         "kd": "<gray>K/D: <green><kd>",
         "wins": "<gray>Výhry: <green><wins>",
         "loses": "<gray>Prohry: <red><loses>",
-        "games": "<gray>Zahrané hry: <aqua><games>",
+        "games": "<gray>Hrané hry: <aqua><games>",
         "score": "<gray>Celkové skóre: <green><score>",
         "beds": "<gray>Zničené postele: <green><beds>",
         "kills": "<gray>Zabití: <green><kills>"
     },
     "in_game": {
         "errors": {
-            "game_is_full": "<red>Hra <gray><arena> <red>je plná! Prosím počkej až skončí!",
+            "game_is_full": "<red>Hra <gray><arena> <red>je plná! Prosím, počkej až skončí!",
             "game_not_found": "<red>Hra nenalezena!",
             "you_are_not_in_game": "<red>Nejsi ve hře!",
             "game_is_rebuilding": "<red>Hra <gray><arena><red> se obnovuje! Prosím počkej...",
             "already_in_game": "<red>Už jsi v nějaké hře.",
             "not_in_any_game_yet": "<red>Ještě jsi nebyl v žádné hře.",
             "vip_not_enough_players": "<red>Není dostatek hráčů v aréně!",
-            "vip_game_is_full": "<red>Hra <gray><arena> <red>je plná VIP hráčů. Prosím počkej na konec hry!",
+            "vip_game_is_full": "<red>Hra <gray><arena> <red>je plná VIP hráčů. Prosím, počkej na konec hry!",
             "game_is_gone": "<red>Vypadá to, že hra ve které jsi byl, už není v tomto světě.",
             "game_kicked_by_vip": "<red>Byl jsi vyhozen VIP hráčem!",
-            "game_already_running": "<red>Hra <gray><arena> <red>už běží! Nemůžeš se připojit do běžící hry!",
-            "there_is_no_empty_game": "<red>Není žádná hra v čekající fázi. Všechny hry už běží!",
-            "command_is_not_allowed": "<red>Tento příkaz je zablokován, když běží hra!"
+            "game_already_running": "<red>Hra <gray><arena> <red>již běží! Do běžící hry se nemůžeš připojit!",
+            "there_is_no_empty_game": "<red>Bohužel, žádná hra není v čekající fázi. Všechny hry už běží!",
+            "command_is_not_allowed": "<red>Tento příkaz je zablokován když hra běží!"
         },
         "target_block": {
             "destroyed": {
@@ -204,7 +204,7 @@
                 "bed": "Postel týmu <team><reset> je zničena!",
                 "anchor": "Respawn Anchor týmu <team><reset> je zničen!",
                 "subtitle": "Teď můžeš zabít členy týmu!",
-                "subtitle_victim": "Odteď se už ne respawneš!",
+                "subtitle_victim": "Odteď se už nemůžeš znovu respawnout!",
                 "cake": "Koláč týmu <team><reset> byl sněden!"
             },
             "hologram": {
@@ -212,7 +212,7 @@
                     "bed": "<teamcolor><bold>Chraň svou postel!",
                     "anchor": "<teamcolor><bold>Chraň svůj anchor!",
                     "cake": "<teamcolor><bold>Chraň svůj koláč!",
-                    "any": "<teamcolor><bold>Chraňte svůj cílový blok!"
+                    "any": "<teamcolor><bold>Chraň svůj cílový blok!"
                 },
                 "destroyed": {
                     "any": "<gray><bold>Cílový blok byl zničen.",
@@ -229,7 +229,7 @@
             }
         },
         "respawn_cooldown": {
-            "title": "<green>Respawn v: <red><time>",
+            "title": "<green>Respawn za: <red><time>",
             "title_cancel": "<red>Tým je mrtev :("
         },
         "spawner": {
@@ -253,7 +253,7 @@
             "shop_back": "<red>Zpět na seznam kategorií",
             "price": "Cena:",
             "amount": "Množství:",
-            "buy_failed": "<red>Nedostatek materiálu na zakoupení <gray><item><red>! Potřeba <gray><material><red>!",
+            "buy_failed": "<red>Nedostatek materiálu na zakoupení <gray><item><red>! Je potřeba <gray><material><red>!",
             "buy_success": "<green>Úspěšně koupeno <gray><item><green> za <gray><material><green>!"
         },
         "team_selection": {
@@ -294,8 +294,8 @@
         "game_start_subtitle": "<green>Hra <gray><arena><green> začala! Užijte si hru!",
         "vault_deposite": "<gray><coins> <currency><green> přidáno do tvého Vault účtu!"
     },
-    "no_permissions": "<red>Nemáš oprávnění toto udělat!",
-    "safe_reload_failed_to_stop_game": "<red>Nějaké hry neskončily v časovém limitu, takže jejich aréna mohla být poškozena!",
+    "no_permissions": "<red>Nemáš dostatečné oprávnění pro tuto akci!",
+    "safe_reload_failed_to_stop_game": "<red>Některé hry neskončily v časovém limitu, takže jejich aréna mohla být poškozena!",
     "list_header": "<green>Dostupné arény:",
     "help": {
         "title": "Screaming BedWars <version> - Nápověda",
@@ -431,8 +431,8 @@
         "success": "<green>Jazyk byl úspěšně nastaven na <white>[<lang>]",
         "usage_bw_lang": "Použití: /bw lang <pre><locale></pre> - <yellow>Nastaví jazyk, který má být použit v <red>Bed<white>Wars"
     },
-    "unknown_command": "<red>Neznámý příkaz! Napiš <dark_red>/bw help <red>pro nápovědu!",
+    "unknown_command": "<red>Neznámý příkaz! Zkus zadat <dark_red>/bw help <red>pro nápovědu!",
     "success": "<green>Příkaz byl úspěšně proveden!",
-    "safe_reload": "<green>Čekám 60 sekund na bezpečné zastavení všech her před reloadem!",
-    "unknown_usage": "<red>Počet argumentů neodpovídá správnému množství nebo neznámým argumentům! Napište <dark_red>/bw help <red>pro nápovědu!"
+    "safe_reload": "<green>Čekám než budou všechny arény vypnuty nebo 60 sekund před reloadem pluginu.",
+    "unknown_usage": "<red>Nesprávné argumenty! Zkus zadat <dark_red>/bw help <red>pro nápovědu!"
 }
