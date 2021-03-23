@@ -6,7 +6,52 @@
             "command_is_not_allowed": "<red>Данной командой запрещено пользоваться во время игры!",
             "already_in_game": "<red>Вы уже играете.",
             "you_are_not_in_game": "<red>Вы не в игре!",
-            "game_is_rebuilding": "<red>Арена <gray><arena><red> восстанавливается! Подождите..."
+            "game_is_rebuilding": "<red>Арена <gray><arena><red> восстанавливается! Подождите...",
+            "vip_game_is_full": "<red>Арена <gray><arena> <red>заполнена VIP игроками. Подождите, когда появится свободное место!",
+            "game_is_gone": "<red>Похоже, что вашей арены больше нет в этом мире.",
+            "game_kicked_by_vip": "<red>Вы были кикнуты VIP игроком!",
+            "game_is_full": "<red>Арена <gray><arena> <red>заполнена! Подождите, когда появится свободное место!",
+            "game_not_found": "<red>Арена не найдена!",
+            "there_is_no_empty_game": "<red>Нет свободных арен. Все запущены!",
+            "game_already_running": "<red>Арена <gray><arena> <red>уже запущена! Вы не можете подключиться к запущенной арене!"
+        },
+        "target_block": {
+            "destroyed": {
+                "anchor": "Якорь возрождения команды <team><reset> разрушен!",
+                "any": "Блок команды <team><reset> разрушен!",
+                "bed": "Кровать команды <team><reset> разрушена!",
+                "cake": "Торт команды <team><reset> был съеден!",
+                "subtitle": "Теперь вы можете убить их членов!",
+                "subtitle_victim": "Вы больше не возродитесь!"
+            },
+            "hologram": {
+                "protect": {
+                    "any": "<teamcolor><bold>Защитите ваш блок!",
+                    "bed": "<teamcolor><bold>Защитите кровать!",
+                    "anchor": "<teamcolor><bold>Защитите якорь!",
+                    "cake": "<teamcolor><bold>Защитите торт!"
+                },
+                "destroyed": {
+                    "any": "<gray><bold>Блок разрушен.",
+                    "bed": "<gray><bold>Кровать разрушена.",
+                    "anchor": "<gray><bold>Якорь разрушен.",
+                    "cake": "<gray><bold>Торт съеден."
+                },
+                "destroy": {
+                    "bed": "<teamcolor><bold>Сломайте эту кровать!",
+                    "any": "<teamcolor><bold>Сломайте этот блок!",
+                    "anchor": "<teamcolor><bold>Разрушьте этот якорь!",
+                    "cake": "<teamcolor><bold>Съешьте этот торт!"
+                }
+            }
+        },
+        "spawner": {
+            "countdown": "<yellow><seconds> <bold>с",
+            "every_second": "<bold>ежесекундно"
+        },
+        "respawn_cooldown": {
+            "title": "<green>Появление через: <red><time>",
+            "title_cancel": "<red>Команда мертва :("
         }
     },
     "no_permissions": "<red>У вас на это недостаточно прав!",
@@ -41,7 +86,17 @@
     },
     "statistics": {
         "player_does_not_exist": "<red>Игрок не найден!",
-        "disabled": "<red>Статистика на этом сервере отключена!"
+        "disabled": "<red>Статистика на этом сервере отключена!",
+        "not_found": "<red>Статистика этого игрока не найдена!",
+        "header": "<green>Статистика <red><player><green>:",
+        "kills": "<gray>Убийств: <green><kills>",
+        "deaths": "<gray>Смертей: <yellow><deaths>",
+        "kd": "<gray>K/D: <green><kd>",
+        "wins": "<gray>Побед: <green><wins>",
+        "games": "<gray>Всего игр: <aqua><games>",
+        "beds": "<gray>Сломано кроватей: <green><beds>",
+        "score": "<gray>Всего очков: <green><score>",
+        "loses": "<gray>Поражений: <red><loses>"
     },
     "unknown_command": "<red>Неизвестная команда! Напишите <dark_red>/bw help <red>для помощи!",
     "unknown_usage": "<red>Неверное количество аргументов! Напишите <dark_red>/bw help <red>для помощи!",
