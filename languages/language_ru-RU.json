@@ -47,11 +47,40 @@
         },
         "spawner": {
             "countdown": "<yellow><seconds> <bold>с",
-            "every_second": "<bold>ежесекундно"
+            "every_second": "<bold>ежесекундно",
+            "full": "<red><bold>Генератор истощён"
         },
         "respawn_cooldown": {
             "title": "<green>Появление через: <red><time>",
             "title_cancel": "<red>Команда мертва :("
+        },
+        "team_selection": {
+            "select_item_lore": "<white>---------------------",
+            "inventory_name": "Выбрать команду - <arena>",
+            "selected": "<green>Выбрана команда: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "already_selected": "<green>Вы уже в команде: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "full": "<red>Команда <team><red> заполнена!",
+            "full_no_change": "<red>Команда <team><red> заполнена, вы остались в команде <oldteam><red>!",
+            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)",
+            "select_item_lore_full": "<white>Команда заполнена!"
+        },
+        "resources": {
+            "bronze": "Бронза",
+            "iron": "Железо",
+            "gold": "Золото",
+            "netherite": "Незерит",
+            "diamond": "Алмаз",
+            "emerald": "Изумруд"
+        },
+        "shop": {
+            "name": "Магазин",
+            "page_back": "Прошлая страница",
+            "page_forward": "Следующая страница",
+            "shop_back": "<red>Назад в список категорий",
+            "price": "Цена:",
+            "amount": "Количество:",
+            "buy_success": "<green>Успешно куплен предмет <gray><item><green> за <gray><material><green>!",
+            "buy_failed": "<red>Недостаточно ресурсов для покупки предмета <gray><item><red>! Необходимо <gray><material><red>!"
         }
     },
     "no_permissions": "<red>У вас на это недостаточно прав!",
