@@ -62,7 +62,8 @@
             "full": "<red>Команда <team><red> заполнена!",
             "full_no_change": "<red>Команда <team><red> заполнена, вы остались в команде <oldteam><red>!",
             "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)",
-            "select_item_lore_full": "<white>Команда заполнена!"
+            "select_item_lore_full": "<white>Команда заполнена!",
+            "select_item_lore_join": "Нажмите для присоединения!"
         },
         "resources": {
             "bronze": "Бронза",
@@ -81,7 +82,33 @@
             "amount": "Количество:",
             "buy_success": "<green>Успешно куплен предмет <gray><item><green> за <gray><material><green>!",
             "buy_failed": "<red>Недостаточно ресурсов для покупки предмета <gray><item><red>! Необходимо <gray><material><red>!"
-        }
+        },
+        "lobby_items": {
+            "compass_selector_team": "<green>Выбрать команду",
+            "leave_from_game_item": "<red>Покинуть игру",
+            "start_game_item": "<dark_green>Начать игру"
+        },
+        "end": {
+            "you_lost": "<red>Вы проиграли!",
+            "game_end": "<red>Игра окончена! Спасибо за участие!",
+            "you_won": "<green>Вы победили!",
+            "team_win": "<green>Команда <reset><team><green> победила за <gray><time>"
+        },
+        "join": "<name> <green>подключился к игре!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+        "vault_deposite": "<green>Добавлено <gray><coins> <currency><green> монет на ваш аккаунт Vault!",
+        "bossbar": {
+            "waiting": "<red>Игра скоро начнётся!",
+            "running": "<green>Игра началась! Удачи!"
+        },
+        "respawn_protection": {
+            "remaining": "<red>Защита кончится через <white><time> <green>с.",
+            "end": "<red>Теперь вы уязвимы!"
+        },
+        "leave": "<name> <red>покинул игру!",
+        "player_self_killed": "<red>Игрок <victim> <red>умер!",
+        "player_killed": "<red>Игрок <killer> <red>убил <victim><red>!",
+        "game_start_title": "<green>Игра началась!",
+        "game_start_subtitle": "<green>Игра <gray><arena><green> началась! Удачи!"
     },
     "no_permissions": "<red>У вас на это недостаточно прав!",
     "safe_reload": "<green>Перед перезагрузкой все арены должны быть остановлены в течение 60 секунд!",
@@ -120,7 +147,7 @@
         "header": "<green>Статистика <red><player><green>:",
         "kills": "<gray>Убийств: <green><kills>",
         "deaths": "<gray>Смертей: <yellow><deaths>",
-        "kd": "<gray>K/D: <green><kd>",
+        "kd": "<gray>Коэффициент убийств: <green><kd>",
         "wins": "<gray>Побед: <green><wins>",
         "games": "<gray>Всего игр: <aqua><games>",
         "beds": "<gray>Сломано кроватей: <green><beds>",
@@ -129,5 +156,12 @@
     },
     "unknown_command": "<red>Неизвестная команда! Напишите <dark_red>/bw help <red>для помощи!",
     "unknown_usage": "<red>Неверное количество аргументов! Напишите <dark_red>/bw help <red>для помощи!",
-    "safe_reload_failed_to_stop_game": "<red>Некоторые арены не успели закончиться, они возможно будут повреждены!"
+    "safe_reload_failed_to_stop_game": "<red>Некоторые арены не успели остановиться, они возможно будут повреждены!",
+    "help": {
+        "bw_rejoin": "/bw rejoin - <green>Переподключиться в последнюю игру",
+        "title": "Screaming BedWars <version> - Помощь",
+        "title_console": "Screaming BedWars <version> - Помощь для консоли",
+        "bw_join": "/bw join <pre><arena></pre> - <green>Зайти в игру",
+        "bw_leave": "/bw leave - <green>Покинуть игру"
+    }
 }
