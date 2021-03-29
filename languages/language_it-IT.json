@@ -1,1 +1,127 @@
-{}
+{
+    "safe_reload_failed_to_stop_game": "<red>Alcune partite non sono state fermate in tempo, le arene potrebbero essere danneggiate!",
+    "list_header": "<green>Arene disponibili:",
+    "success": "<green>Comando eseguito con successo!",
+    "sign": {
+        "admin": {
+            "created": "<green>Cartello creato!",
+            "cannot_destroy": "<red>Non puoi distruggere questo cartello!",
+            "unknown_game": "<red>La partita scritta su questo cartello non esiste! Perfavore, contatta un amministratore!",
+            "cannot_create": "<red>Non è stato possibile creare il cartello! Per favore controlla il nome dell'arena!"
+        },
+        "status": {
+            "disabled": {
+                "status": "<red>Partita",
+                "players": "<red>disabilitato"
+            },
+            "rebuilding": {
+                "status": "<gold>Ricostruendo",
+                "players": "<gold>arena"
+            },
+            "running": {
+                "status": "<green>Andando",
+                "players": "<red><players><dark_gray>/<red><maxplayers>"
+            },
+            "waiting": {
+                "status": "<gold>Aspettando",
+                "players": "<green><players><dark_gray>/<green><maxplayers>"
+            }
+        }
+    },
+    "statistics": {
+        "disabled": "<red>Le statistiche dei giocatori sono disabilitate su questo server!",
+        "player_does_not_exist": "<red>Player non trovato!",
+        "header": "<green>Statistiche di <red><player><green>:",
+        "kills": "<gray>Uccisioni: <green><kills>",
+        "deaths": "<gray>Morti: <yellow><deaths>",
+        "kd": "<gray>U/M: <green><kd>",
+        "wins": "<gray>Vittorie: <green><wins>",
+        "loses": "<gray>Perdite: <red><loses>",
+        "beds": "<gray>Letti distrutti: <green><beds>",
+        "score": "<gray>Score totale: <green><score>",
+        "not_found": "<red>Le statistiche per questo player non sono state trovate!",
+        "games": "<gray>Partite giocate: <aqua><games>"
+    },
+    "in_game": {
+        "errors": {
+            "game_is_full": "<red>La partita <gray><arena> <red>è piena! Per favore aspetta che la partita finisca!",
+            "game_not_found": "<red>Partita non trovata!",
+            "you_are_not_in_game": "<red>Non sei in una partita!",
+            "game_is_rebuilding": "<red>La partita <gray><arena><red> si sta ricostruendo! Perfavore aspetta...",
+            "already_in_game": "<red>Sei già in una partita.",
+            "command_is_not_allowed": "<red>Questo comando è bloccato durante la partita!",
+            "vip_not_enough_players": "<red>Non ci sono abbastanza giocatori nell'arena!",
+            "game_is_gone": "<red>Sembra che la partita in cui tu eri non sia più in questo mondo.",
+            "game_kicked_by_vip": "<red>Sei stato kickato da un giocatore VIP!",
+            "there_is_no_empty_game": "<red>Non ci sono partite in attesa. Tutte le partite sono in corso!",
+            "game_already_running": "<red>La partita <gray><arena> <red>è già iniziata! Non puoi unirti ad una partita già cominciata!",
+            "not_in_any_game_yet": "<red>Non sei stato in nessuna partita per ora.",
+            "vip_game_is_full": "<red>La partita <gray><arena> <red>è piena di giocatori VIP. Per favore aspetta che la partita finisca!"
+        },
+        "target_block": {
+            "destroyed": {
+                "any": "Il blocco target di <team><reset> è distrutto!",
+                "anchor": "L'ancora della rinascita del <team><reset> è stata distrutta!",
+                "cake": "La torta del team <team><reset> è stata mangiata!",
+                "subtitle": "Ora puoi uccidere i membri del team!",
+                "bed": "Il letto del team <team><reset> è distrutto!",
+                "subtitle_victim": "Da ora in poi non rinascerai più!"
+            },
+            "hologram": {
+                "protect": {
+                    "bed": "<teamcolor><bold>Proteggi il tuo letto!",
+                    "anchor": "<teamcolor><bold>Proteggi la tua ancora!",
+                    "cake": "<teamcolor><bold>Proteggi la tua torta!",
+                    "any": "<teamcolor><bold>Proteggi il tuo blocco target!"
+                },
+                "destroyed": {
+                    "any": "<gray><bold>Blocco target distrutto.",
+                    "anchor": "<gray><bold>Ancora distrutta.",
+                    "cake": "<gray><bold>La torta è stata mangiata.",
+                    "bed": "<gray><bold>Letto distrutto."
+                },
+                "destroy": {
+                    "any": "<teamcolor><bold>Distruggi questo blocco target!",
+                    "bed": "<teamcolor><bold>Distruggi questo letto!",
+                    "cake": "<teamcolor><bold>Mangia questa torta!",
+                    "anchor": "<teamcolor><bold>Distruggi questa ancora!"
+                }
+            }
+        },
+        "respawn_cooldown": {
+            "title": "<green>Rinascita in: <red><time>",
+            "title_cancel": "<red>La squadra è morta :("
+        },
+        "spawner": {
+            "countdown": "<yellow><seconds> <bold>secondi",
+            "every_second": "<bold>ogni secondo",
+            "full": "<red><bold>Lo spawner è esaurito",
+            "not_enough_level": "<red>Lo spawner non può funzionare! Devi aggiornarlo di <levels> livelli."
+        },
+        "resources": {
+            "bronze": "Bronzo",
+            "iron": "Ferro",
+            "gold": "Oro",
+            "netherite": "Netherite",
+            "diamond": "Diamante",
+            "emerald": "Smeraldo"
+        },
+        "shop": {
+            "name": "Negozio",
+            "page_back": "Pagina precedente",
+            "page_forward": "Pagina sucessiva",
+            "shop_back": "<red>Torna indietro alla lista categorie",
+            "price": "Prezzo:",
+            "amount": "Quantità:",
+            "buy_failed": "<red>Mancano dei materiali per comprare <gray><item><red>! Mancano <gray><material><red>!",
+            "buy_success": "<green>Hai comprato <gray><item><green> per <gray><material><green>!"
+        },
+        "team_selection": {
+            "inventory_name": "Seleziona squadra - <arena>"
+        }
+    },
+    "unknown_command": "<red>Comando sconosciuto! Prova ad usare<dark_red>/bw help <red>per ricevere aiuto!",
+    "unknown_usage": "<red>Argomenti non validi! Prova ad usare <dark_red>/bw help <red>per ricevere aiuto!",
+    "no_permissions": "<red>Non hai abbastanza permessi per eseguire questo comando!",
+    "safe_reload": "<green>Aspettando finche tutte le partite sono ferme o 60 secondi dopo la ricarica del plugin."
+}
