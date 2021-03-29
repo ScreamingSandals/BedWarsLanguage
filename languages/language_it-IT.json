@@ -117,11 +117,63 @@
             "buy_success": "<green>Hai comprato <gray><item><green> per <gray><material><green>!"
         },
         "team_selection": {
-            "inventory_name": "Seleziona squadra - <arena>"
-        }
+            "inventory_name": "Seleziona squadra - <arena>",
+            "selected": "<green>Squadra selezionata: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "already_selected": "<green>Sei gia nel team: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "full": "<red>Il team<team><red> è pieno!",
+            "full_no_change": "<red>Il team <team><red> è pieno, Resti nel team <oldteam><red>!",
+            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)",
+            "select_item_lore": "<white>---------------------",
+            "select_item_lore_full": "<white>La squadra è al completo!",
+            "select_item_lore_join": "Premi per unirti alla squadra!"
+        },
+        "lobby_items": {
+            "compass_selector_team": "<green>Seleziona squadra",
+            "leave_from_game_item": "<red>Lascia la partita",
+            "start_game_item": "<dark_green>Inizia partita"
+        },
+        "bossbar": {
+            "waiting": "<red>La partita inizierà a breve!",
+            "running": "<green>Partita iniziata! Buona Fortuna!"
+        },
+        "end": {
+            "you_won": "<green>La tua squadra ha vinto!",
+            "game_end": "<red>Partita terminata! Grazie per aver giocato!",
+            "you_lost": "<red>La tua squadra ha perso!",
+            "team_win": "<green>La squadra <reset><team><green> ha vinto la partita in <gray><time>"
+        },
+        "respawn_protection": {
+            "end": "<red>Protezione del respawn terminata!",
+            "remaining": "<red>La protezione del respawn sarà disattivata in <white><time> <green>secondi!"
+        },
+        "join": "<name> <green>si è unito alla partita!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+        "leave": "<name> <red>ha lasciato la partita!",
+        "player_self_killed": "<red>Il giocatore <victim> <red>è morto!",
+        "game_start_title": "<green>Partita iniziata!",
+        "game_start_subtitle": "<green>La partita <gray><arena><green> è iniziata! Divertitevi!",
+        "player_killed": "<red>Il giocatore <killer> <red>ha ucciso <victim><red>!",
+        "vault_deposite": "<green>Aggiunti <gray><coins> <currency><green> al tuo account Vault!"
     },
     "unknown_command": "<red>Comando sconosciuto! Prova ad usare<dark_red>/bw help <red>per ricevere aiuto!",
     "unknown_usage": "<red>Argomenti non validi! Prova ad usare <dark_red>/bw help <red>per ricevere aiuto!",
     "no_permissions": "<red>Non hai abbastanza permessi per eseguire questo comando!",
-    "safe_reload": "<green>Aspettando finche tutte le partite sono ferme o 60 secondi dopo la ricarica del plugin."
+    "safe_reload": "<green>Aspettando finche tutte le partite sono ferme o 60 secondi dopo la ricarica del plugin.",
+    "help": {
+        "title": "Screaming BedWars <version> - Aiuto",
+        "title_console": "Screaming BedWars <version> - Aiuto per Console",
+        "bw_join": "/bw join <pre><arena></pre> - <green> Unisciti alla partita",
+        "bw_leave": "/bw leave - <green>Lascia la partita",
+        "bw_autojoin": "/bw autojoin - <green> Unisciti alla prima partita disponibile",
+        "bw_list": "/bw list - <green>Lista di partite attive",
+        "bw_leaderboard": "/bw leaderboard - <green>Mostra i migliori giocatori di questo server",
+        "bw_stats": "/bw stats - <green>Mostra le tue statistiche",
+        "bw_reload": "/bw reload - <red>Ricarica plugin",
+        "bw_removeholo": "/bw removeholo - <yellow>Dopo aver eseguito questo comando, il giocatore può fare click-destro sull'ologramma statistic per rimuoverlo.",
+        "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Abilita, od imposta, la posizione della lobby principale",
+        "bw_admin_add": "/bw admin <pre><arena></pre> add - <yellow>Crea una nuova arena",
+        "bw_rejoin": "/bw rejoin - <green>Unisciti di nuovo alla partita precedente",
+        "bw_stats_other": "/bw stats [player] - <green>Mostra le statistiche degli altri giocatori",
+        "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>Aggiunge un ologramma alla posizione del giocatore",
+        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Mostra tutte le informazioni riguardo l'arena"
+    }
 }
