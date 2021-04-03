@@ -1,1 +1,14 @@
-{}
+{
+    "no_permissions": "<red>Nincs jogosultságod erre!",
+    "safe_reload": "<green>Várakozás a játékok befejézésére, vagy 60 másodpercig, majd a plugin újraindítása.",
+    "safe_reload_failed_to_stop_game": "<red>Néhány játék nem lett időben léállítva, az arénák sérülhettek!",
+    "list_header": "<green>Elérhető arénák:",
+    "success": "<green>Sikeres parancs!",
+    "unknown_command": "<red>Ismeretlen parancs! Használd a <dark_red>/bw help <red>-et segítségért!",
+    "unknown_usage": "<red> Érvénytelen mutató! Használd a <dark_red>/bw help <red>-et segítségért!",
+    "sign": {
+        "admin": {
+            "created": "<green>Tábla sikeresen létrehozva!"
+        }
+    }
+}
