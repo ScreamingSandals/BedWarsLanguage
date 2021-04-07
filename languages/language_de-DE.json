@@ -1,3 +1,65 @@
 {
-    "unknown_command": "<red>Befehl unbekannt! Type <dark_red>/bw help <red>für Hilfe!"
+    "unknown_command": "<red>Unbekannter Command! <dark_red>/bw help <red>für Hilfe!",
+    "sign": {
+        "status": {
+            "waiting": {
+                "status": "<gold>Warten",
+                "players": "<green><players><dark_gray>/<green><maxplayers>"
+            },
+            "disabled": {
+                "status": "<red>Spiel",
+                "players": "<red>deaktiviert"
+            },
+            "rebuilding": {
+                "status": "<gold>Erbaue",
+                "players": "<gold>Arena"
+            },
+            "running": {
+                "status": "<green>Läuft",
+                "players": "<red><players><dark_gray>/<red><maxplayers>"
+            }
+        },
+        "admin": {
+            "created": "<green>Schild wurde erfolgreich erstellt!",
+            "cannot_create": "<red>Schild konnte nicht erstellt werden! Überprüfe den Namen der Arena!",
+            "cannot_destroy": "<red>Du hast keine Berechtigungen das Schild zu zerstören!",
+            "unknown_game": "<red>Das Spiel, das auf dem Schild steht, existiert nicht! Bitte kontaktiere einen Administrator!"
+        }
+    },
+    "statistics": {
+        "kills": "<gray>Kills: <green><kills>",
+        "beds": "<gray>Zerstörte Betten: <green><beds>",
+        "disabled": "<red>Spieler Statistiken sind auf diesem Server deaktiviert!",
+        "player_does_not_exist": "<red>Spieler nicht gefunden!",
+        "not_found": "<red>Statistik für den Spieler nicht gefunden!",
+        "header": "<green>Statistik von <red><player><green>:",
+        "deaths": "<gray>Tode: <yellow><deaths>",
+        "kd": "<gray>K/D: <green><kd>",
+        "wins": "<gray>Siege: <green><wins>",
+        "loses": "<gray>Verloren: <red><loses>",
+        "games": "<gray>Gespielte Spiele: <aqua><games>",
+        "score": "<gray>Gesamt Punkte: <green><score>"
+    },
+    "safe_reload_failed_to_stop_game": "<red>Manche Spiele konnten in der Zeit nicht gestoppt werden, die Arena könnte beschädigt sein!",
+    "list_header": "<green>Verfügbare Arenen:",
+    "success": "<green>Command war erfolgreich!",
+    "unknown_usage": "<red>Ungültige Argumente! Versuche <dark_red>/bw help <red>für Hilfe!",
+    "no_permissions": "<red>Du hast nicht genug Berechtigungen dafür!",
+    "safe_reload": "<green>Es wird gewartet bis alle Spiele gestoppt sind oder 60 Sekunden vorbei sind bevor das Plugin neu geladen wird.",
+    "in_game": {
+        "errors": {
+            "game_is_full": "<red>Spiel <gray><arena> <red>ist voll! Bitte warte auf das Spiel Ende!",
+            "game_not_found": "<red>Spiel nicht gefunden!",
+            "you_are_not_in_game": "<red>Du bist in keinem Spiel!",
+            "game_is_rebuilding": "<red>Spiel <gray><arena><red> wird neu geladen! Bitte warte...",
+            "already_in_game": "<red>Du bist schon in einem Spiel.",
+            "not_in_any_game_yet": "<red>Du warst bis jetzt in noch keinem Spiel.",
+            "vip_not_enough_players": "<red>Nicht genug Spieler in der Arena!",
+            "vip_game_is_full": "<red>Spiel <gray><arena> <red>ist voll VIP Spieler. Bitte warte auf das Spiel Ende!",
+            "game_kicked_by_vip": "<red>Du wurdest von einem VIP Spieler gekicked!",
+            "game_already_running": "<red>Spiel <gray><arena> <red>läuft gerade! Du kannst keinen laufenden Spielen beitreten!",
+            "command_is_not_allowed": "<red>Der Command wurde geblockt während das Spiel läuft!",
+            "game_is_gone": "<red>Schaut so aus als wäre das Spiel in dem du warst nicht mehr in dieser Welt."
+        }
+    }
 }
