@@ -48,7 +48,8 @@
         "spawner": {
             "countdown": "<yellow><seconds> <bold>с",
             "every_second": "<bold>ежесекундно",
-            "full": "<red><bold>Генератор истощён"
+            "full": "<red><bold>Генератор истощён",
+            "not_enough_level": "<red>Генератор не работает! Нужно прокачать его на <levels> уровней."
         },
         "respawn_cooldown": {
             "title": "<green>Появление через: <red><time>",
@@ -111,7 +112,7 @@
         "game_start_subtitle": "<green>Игра <gray><arena><green> началась! Удачи!"
     },
     "no_permissions": "<red>У вас на это недостаточно прав!",
-    "safe_reload": "<green>Перед перезагрузкой все арены должны быть остановлены в течение 60 секунд!",
+    "safe_reload": "<green>Ожидаем конец всех игр или 60 секунд до перезагрузки плагина.",
     "list_header": "<green>Доступные арены:",
     "success": "<green>Команда выполнена успешно!",
     "sign": {
@@ -162,6 +163,30 @@
         "title": "Screaming BedWars <version> - Помощь",
         "title_console": "Screaming BedWars <version> - Помощь для консоли",
         "bw_join": "/bw join <pre><arena></pre> - <green>Зайти в игру",
-        "bw_leave": "/bw leave - <green>Покинуть игру"
+        "bw_leave": "/bw leave - <green>Покинуть игру",
+        "bw_autojoin": "/bw autojoin - <green>Подключиться к первой свободной игре",
+        "bw_list": "/bw list - <green>Список арен",
+        "bw_leaderboard": "/bw leaderboard - <green>Показать топ игроков этого сервера",
+        "bw_stats": "/bw stats - <green>Просмотреть вашу статистику",
+        "bw_stats_other": "/bw stats [player] - <green>Отобразить чужую статистику",
+        "bw_reload": "/bw reload - <red>Перезагрузить плагин",
+        "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>Добавить голограмму на ваших координатах",
+        "bw_removeholo": "/bw removeholo - <yellow>После активации, игрок может убрать голограмму правой кнопкой мыши.",
+        "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Включить основное лобби или задать её координаты",
+        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Показать информацию об арене",
+        "bw_admin_add": "/bw admin <pre><arena></pre> add - <yellow>Создать арену",
+        "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Задать лобби на ваших координатах",
+        "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Задать точку возрождения наблюдателей",
+        "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Задать высочайшую точку арены",
+        "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Задать вторую низшую точку арены",
+        "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>Задать отчёт до начала игры",
+        "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>Задать минимально необходимое для начала количество игроков",
+        "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>Задать длительность игры",
+        "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>Изменить максимальное число игроков в команде",
+        "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>Задать командный целевой блок (это может быть любой блок, не только кровать)",
+        "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Добавить команду",
+        "bw_admin_team_color": "/bw admin <pre><arena></pre> team color <pre><team> <color></pre> - <yellow>Сменить цвет команды",
+        "bw_admin_team_spawn": "/bw admin <pre><arena></pre> team spawn <pre><team></pre> - <yellow>Задать точку возрождения команды",
+        "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Задать существо для присоединения к команде"
     }
 }
