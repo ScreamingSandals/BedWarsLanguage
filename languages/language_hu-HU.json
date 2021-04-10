@@ -8,7 +8,35 @@
     "unknown_usage": "<red> Érvénytelen mutató! Használd a <dark_red>/bw help <red>-et segítségért!",
     "sign": {
         "admin": {
-            "created": "<green>Tábla sikeresen létrehozva!"
+            "created": "<green>Tábla sikeresen létrehozva!",
+            "cannot_create": "<red>A tábla nem hozható létre! Ellenőrizd az aréna nevét!",
+            "cannot_destroy": "<red>Nincs jogod megsemmisíteni ezt a táblát!",
+            "unknown_game": "<red>A táblán szereplő játék nem létezik. Szólj az adminnak!"
+        },
+        "status": {
+            "disabled": {
+                "status": "Játék",
+                "players": "<red>letiltva"
+            },
+            "rebuilding": {
+                "status": "<red>Újjáépítés",
+                "players": "<gold>aréna"
+            },
+            "running": {
+                "status": "<green>Fut",
+                "players": "<red><players><dark_gray>/<red><maxplayers>"
+            },
+            "waiting": {
+                "status": "<gold>Várakozik",
+                "players": "<green><players><dark_gray>/<green><maxplayers>"
+            }
         }
+    },
+    "statistics": {
+        "disabled": "<red>A játékos-statisztika nincs engedélyezve ezen a szerveren!",
+        "player_does_not_exist": "<red>A játékos nem található!",
+        "not_found": "<red>A játékosnak statisztikája nem elérhető!",
+        "header": "<green>Statisztika - <red><player><green>:",
+        "kills": "<gray>Ölések: <green><kills>"
     }
 }
