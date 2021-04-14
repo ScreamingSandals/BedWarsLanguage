@@ -1,1 +1,150 @@
-{}
+{
+    "list_header": "<green>Arènes libres :",
+    "success": "<green>Commande exécutée avec succès !",
+    "sign": {
+        "admin": {
+            "created": "<green>Panneau créé avec succès !",
+            "cannot_create": "<red>Le panneau n'a pas pu être créé ! Veuillez vérifiez le nom de l'arène !",
+            "cannot_destroy": "<red>Vous n'avez pas la permission de détruire ce panneau !",
+            "unknown_game": "<red>La partie écrite sur le panneau n'éxiste pas ! Veuillez contacter un administrateur !"
+        },
+        "status": {
+            "disabled": {
+                "status": "<red>Partie",
+                "players": "<red>Désactivé"
+            },
+            "rebuilding": {
+                "status": "<gold>Reconstruction",
+                "players": "<gold>arène"
+            },
+            "running": {
+                "status": "<green>En cours",
+                "players": "<red><joueurs><drak_gray>/<red><joueursmax>"
+            },
+            "waiting": {
+                "status": "<gold>En attente",
+                "players": "<green><players><dark_gray>/<green><maxplayers>"
+            }
+        }
+    },
+    "statistics": {
+        "player_does_not_exist": "<red>Le joueurs n'a pas été trouvé !",
+        "not_found": "<red>Les statistiques pour ce joueur n'ont pas été trouvé !",
+        "deaths": "<gray>Morts : <yellow><deaths>",
+        "kd": "<gray>K/M : <green><kd>",
+        "wins": "<gray>Victoires : <green><wins>",
+        "loses": "<gray>Défaites : <red><loses>",
+        "games": "<gray>Parties jouées : <aqua><games>",
+        "score": "<gray>Score total : <green><score>",
+        "kills": "<gray>Kills : <green><kills>",
+        "disabled": "<red>Les statistiques de joueurs sont désactivés sur ce serveur !",
+        "header": "<green>Les statistiques de <red><player><green> :",
+        "beds": "<gray>Lits détruits : <green><beds>"
+    },
+    "in_game": {
+        "errors": {
+            "game_is_full": "<red>La partie <gray><arena> <red>est remplie ! Veuillez attendre la fin de la partie !",
+            "game_not_found": "<red>Partie non trouvée !",
+            "you_are_not_in_game": "<red>Vous n'êtes pas dans une partie !",
+            "game_is_rebuilding": "<red>La partie <gray><arena><red> se reconstruit ! Veuillez patienter...",
+            "already_in_game": "<red>Vous êtes déjà dans une partie.",
+            "not_in_any_game_yet": "<red>Vous n'avez encore jamais été dans une partie.",
+            "vip_not_enough_players": "<red>Il n'y a pas assez dans joueurs dans l'arène !",
+            "vip_game_is_full": "<red>La partie <gray><arena> <red>est remplie de joueurs VIP. Veuillez attendre la fin de la partie !",
+            "game_kicked_by_vip": "<red>Vous avez été éjecté par un joueur VIP !",
+            "there_is_no_empty_game": "<red>Il n'y a aucune partie en attente. Toutes les parties sont en cours !",
+            "game_already_running": "<red>La partie <gray><arena> <red>est déjà en cours ! Vous ne pouvez pas rejoindre une partie en cours !",
+            "command_is_not_allowed": "<red>Cette commande est blockée pendant que la partie est en cours !",
+            "game_is_gone": "<red>Il semblerait que la partie dans laquelle vous étiez n'est plus dans ce monde."
+        },
+        "target_block": {
+            "destroyed": {
+                "anchor": "L'ancre de réapparition de <team><reset> a été détruite !",
+                "any": "Le bloc cible de <team><reset> a été détruit !",
+                "subtitle": "Vous pouvez maintenant tuer les membres de l'équipe !",
+                "bed": "Le lit de <team><reset> a été détruit !",
+                "cake": "Le gâteau de <team><reset> a été mangé !",
+                "subtitle_victim": "Maintenant vous ne pourrez plus réapparaître !"
+            },
+            "hologram": {
+                "protect": {
+                    "any": "<teamcolor><bold>Protégez votre bloc cible !",
+                    "bed": "<teamcolor><bold>Protégez votre lit !",
+                    "anchor": "<teamcolor><bold>Protégez votre ancre !",
+                    "cake": "<teamcolor><bold>Protégez votre gâteau !"
+                },
+                "destroyed": {
+                    "bed": "<gray><bold>Le lit a été détruit.",
+                    "anchor": "<gray><bold>L'ancre a été détruite.",
+                    "cake": "<gray><bold>Le gâteau a été mangé.",
+                    "any": "<gray><bold>Le bloc cible a été détruit."
+                },
+                "destroy": {
+                    "any": "<teamcolor><bold>Détruisez ce bloc cible !",
+                    "bed": "<teamcolor><bold>Détruisez ce lit !",
+                    "cake": "<teamcolor><bold>Mangez ce gâteau !",
+                    "anchor": "<teamcolor><bold>Détruisez cette ancre !"
+                }
+            }
+        },
+        "respawn_cooldown": {
+            "title": "<green>Réapparition dans : <red><time>",
+            "title_cancel": "<red>L'équipe a été tuée :("
+        },
+        "spawner": {
+            "countdown": "<yellow><seconds> <bold>secondes",
+            "every_second": "<bold>chaque seconde",
+            "full": "<red><bold>Le spawner est épuisé",
+            "not_enough_level": "<red>LE spawner ne peut pas fonctionner ! Vous devez l'améliorer de <levels> niveaux."
+        },
+        "resources": {
+            "bronze": "Bronze",
+            "iron": "Fer",
+            "gold": "Or",
+            "netherite": "Netherite",
+            "diamond": "Diamant",
+            "emerald": "Émeraude"
+        },
+        "shop": {
+            "name": "Magasin",
+            "page_forward": "Page suivante",
+            "shop_back": "<red>Retour à la liste des catégories",
+            "price": "Prix :",
+            "amount": "Quantité :",
+            "page_back": "Page précédente",
+            "buy_success": "<green>Vous avez achetez avec succès <gray><item><green> for <gray><material><green> !",
+            "buy_failed": "<red>Il vous manque des ressources pour acheter <gray><item><red> ! Il vous faut <gray><material><red> !"
+        },
+        "team_selection": {
+            "inventory_name": "Choisissez une équipe - <arena>",
+            "selected": "<green>Équipe choisie : <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "already_selected": "<green>Vous êtes déjà dans l'équipe : <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "full": "<red>L'équipe <team><red> est complète !",
+            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)",
+            "select_item_lore": "<white>---------------------",
+            "select_item_lore_full": "<white>L'équipe est complète !",
+            "select_item_lore_join": "Cliquez pour rejoindre l'équipe !",
+            "full_no_change": "<red>L'équipe <team><red> est complète, vous restez dans <oldteam><red> !"
+        },
+        "lobby_items": {
+            "compass_selector_team": "<green>Choisissez une équipe",
+            "leave_from_game_item": "<red>Quitte la partie",
+            "start_game_item": "<dark_green>Démarre la partie"
+        },
+        "end": {
+            "you_won": "<green>Votre équipe a gagné !",
+            "you_lost": "<red>Votre équipe a perdu !",
+            "team_win": "<green>L'équipe <reset><team><green> a gagné la partie en <gray><time>",
+            "game_end": "<red>La partie est finie ! Merci d'avoir joué !"
+        },
+        "bossbar": {
+            "waiting": "<red>La partie va bientôt commencer !",
+            "running": "<green>La partie a commencé ! Bonne chance !"
+        }
+    },
+    "safe_reload": "<green>En attente jusqu'à ce que toutes les parties en cours soient arrêtées ou 60 secondes avant rechargement du plugin.",
+    "unknown_usage": "<red>Argument invalide ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide !",
+    "no_permissions": "<red>Vous n'avez pas assez de permission pour faire cela !",
+    "safe_reload_failed_to_stop_game": "<red>Certaines parties n'ont pas été arrêtées à temps, l'arène à peut-être été endommagée !",
+    "unknown_command": "<red>Commande inconnue ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide !"
+}
