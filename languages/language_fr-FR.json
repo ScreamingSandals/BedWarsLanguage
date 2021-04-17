@@ -140,7 +140,14 @@
         "bossbar": {
             "waiting": "<red>La partie va bientôt commencer !",
             "running": "<green>La partie a commencé ! Bonne chance !"
-        }
+        },
+        "respawn_protection": {
+            "remaining": "<red>La protection lors du Respawn va partir dans <white><time><green>secondes!",
+            "end": "<red>La protection lors du Respawn a disparue!"
+        },
+        "join": "<name> <green>a rejoins la partie!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+        "leave": "<name> <red>a quitté la partie !",
+        "player_self_killed": "<red>Joueur<victim> <red>est mort !"
     },
     "safe_reload": "<green>En attente jusqu'à ce que toutes les parties en cours soient arrêtées ou 60 secondes avant rechargement du plugin.",
     "unknown_usage": "<red>Argument invalide ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide !",
