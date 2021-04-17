@@ -179,6 +179,8 @@
         "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Sets specatator's spawn to your position",
         "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Sets the extreme point of the arena to your position",
         "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Sets the second extreme point of the arena to your position",
+        "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Sets the extreme point of the lobby to your position",
+        "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Sets the second extreme point of the lobby to your position",
         "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>Sets the pause duration before game starts",
         "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>Sets minimum of players needed to start the game",
         "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>Sets the game's duration",
