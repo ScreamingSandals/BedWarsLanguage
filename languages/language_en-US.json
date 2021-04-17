@@ -282,6 +282,8 @@
                     "spec_spawn_set": "<green>Spectator spawn was successfully set to position XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
                     "pos1_set": "<green>Position 1 of arena <gray><arena><green> was set to XYZ: <gray><x>/<y>/<z>",
                     "pos2_set": "<green>Position 2 of arena <gray><arena><green> was set to XYZ: <gray><x>/<y>/<z>",
+                    "lobby_pos1_set": "<green> Lobby position 1 of arena <gray><arena><green> was set to XYZ: <gray><x>/<y>/<z>",
+                    "lobby_pos2_set":  "<green> Lobby position 2 of arena <gray><arena><green> was set to XYZ: <gray><x>/<y>/<z>",
                     "lobby_countdown_set": "<green>Lobby countdown was set to <gray><countdown>",
                     "game_time_set": "<green>Game time was set to <gray><time>",
                     "min_players_set": "<green>Successfully set minimum players to <gray><min><green>!",
