@@ -157,16 +157,32 @@
     },
     "specials": {
         "team_chest": {
-            "name": "<green><bold>Tímová truhla"
+            "name": "<green><bold>Tímová truhla",
+            "not_yours": "<yellow>Táto tímová truhla nie je vaša!",
+            "placed": "<green>Nová tímová truhla bola položená!",
+            "broken": "<red>Vaša tímová truhla bola zničená!"
         },
         "warp_powder": {
-            "canceled": "<red>Teleportácia na základňu bola ukončená!"
+            "canceled": "<red>Teleportácia na základňu bola ukončená!",
+            "multiuse": "<red>Ďalší WarpPowder je už aktivovaný!"
         },
         "tracker": {
             "no_target_found": "<red>Nebol nájdený žiadny cieľ!"
         },
         "tntsheep": {
             "no_target_found": "<red>Nebol nájdený žiadny cieľ!"
+        },
+        "rescue_platform": {
+            "created_unbreakable": "<green>Nezničiteľná platforma bola vytvorená!"
+        },
+        "golem": {
+            "created": "<green>Golem bol spawnutý."
+        },
+        "protection_wall": {
+            "created_unbreakable": "<green>Nezničiteľná ochranná stena bola vytvorená!"
+        },
+        "arrow_blocker": {
+            "already_activated": "<red>Blokovanie šípov je už aktivované!"
         }
     },
     "admin": {
@@ -178,7 +194,8 @@
             },
             "success": {
                 "removed": "<red><b>Aréna bola odstránená!",
-                "added": "<green>Aréna pridaná!"
+                "added": "<green>Aréna pridaná!",
+                "edit_mode": "<green>Aréna prepnutá do režimu úprav!"
             },
             "edit": {
                 "errors": {
@@ -186,7 +203,12 @@
                     "team_does_not_exist": "<red>Tento tím neexistuje!",
                     "store_does_not_exist": "<red>Obchod neexistuje!",
                     "store_already_exist": "<red>Obchod už existuje!",
-                    "invalid_color": "<red>Farba je neplatná!"
+                    "invalid_color": "<red>Farba je neplatná!",
+                    "invalid_bar_color": "<red>Nesprávna farba pre Boss Bar!"
+                },
+                "success": {
+                    "team_removed": "<green>Tím <gray><team><green> bol úspešne zmazaný!",
+                    "custom_prefix_disabled": "<green>Vlastný prefix bol úspešne vypnutý."
                 }
             }
         },
@@ -207,13 +229,28 @@
             "villager_pos": "- XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
             "spawner_no_team": "<red>Žiadny tím",
             "file": "<gray><i>Súbor: <file>",
-            "constant": "- <gray><constant><reset>: <gray><value>"
+            "constant": "- <gray><constant><reset>: <gray><value>",
+            "spec": "<gray>Pozícia sledovateľov: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "team_spawn": "  <gray>Spawn tímu: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "min_players": "<gray>Minimálny počet hráčov: <reset><minplayers>",
+            "villager_shop": "  Má vlastný obchod: <gray><bool>",
+            "villager_shop_dealer_has_no_name": "<red>Nie je nastavené žiadne meno",
+            "constant_inherit": "<yellow>Zdedené z konfigurácie plugina"
         },
         "holo": {
-            "removed": "<green>Hologram bol úspešne zmazaný!"
+            "removed": "<green>Hologram bol úspešne zmazaný!",
+            "added": "<green>Hologram bol pridaný na vašu pozíciu!"
         },
         "info_select": {
-            "config": "<green>Konfigurácia<white> - <gray><command>"
+            "config": "<green>Konfigurácia<white> - <gray><command>",
+            "click": "<aqua>Kliknite pre spustenie <gray><command><aqua>!",
+            "stores": "<green>Zoznam obchodov<white> - <gray><command>",
+            "teams": "<green>Zoznam tímov<white> - <gray><command>",
+            "base": "<green>Základné informácie<white> - <gray><command>",
+            "spawners": "<green>Zoznam spawnerov<white> - <gray><command>"
+        },
+        "team_join_entity": {
+            "entity_added": "<green>Entita pre pripojenie do tímu bola pridaná!"
         }
     },
     "update": {
@@ -246,12 +283,24 @@
         "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Nastaví druhý krajný bod arény na tvoju pozíciu",
         "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>Nastaví minimum hráčov potrebných k spusteniu hry",
         "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>Nastaví dĺžku hry",
-        "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Pridá tým do hry"
+        "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Pridá tým do hry",
+        "bw_removeholo": "/bw removeholo - <yellow>Po spustení tohto príkazu, hráč môže kliknúť pravým tlačidlom myši na hologram so štatistikami aby ich odstránil.",
+        "bw_admin_team_spawn": "/bw admin <pre><arena></pre> team spawn <pre><team></pre> - <yellow>Nastaví spawn tímu na tvoju pozíciu",
+        "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Nastaví možnosť pripojiť sa do tímu pomocou entity",
+        "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [hologram] [prvý level] [meno] [tím] [maximum naspawnovaných surovín]</pre> - <yellow>Pridá item spawner na tvoju pozíciu",
+        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Odstráni všetky spawnery",
+        "bw_admin_store_remove": "/bw admin <pre><arena></pre> store remove - <yellow>Odoberie obchodujúceho vesničana z tvojej pozície",
+        "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>Zmení maximum hráčov v tíme",
+        "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>Nastaví cieľový blok na tvoju cieľovú pozíciu (môže to byť akýkoľvek blok, nie len posteľ)",
+        "bw_admin_store_add": "/bw admin <pre><arena></pre> store add [meno nad hlavou vesničana] [súbor s obchodom] [použiť hlavný obchod] - <yellow>Pridá obchodujúceho vesničana na tvoju pozíciu"
     },
     "dump": {
         "failed": "<red>Výpis zlyhal!"
     },
     "unknown_usage": "<red>Počet argumentov neodpovedá správnemu množstvu alebo neznámym argumentov! Napíš <dark_red>/bw help <red>pre zobrazenie nápovedy!",
     "safe_reload": "<green>Čakám 60 sekúnd na bezpečné zastavenie všetkých hier pred znovu načítaním!",
-    "safe_reload_failed_to_stop_game": "<red>Nejaké hry neskončili v časovom limite, takže ich aréna mohla byť poškodená!"
+    "safe_reload_failed_to_stop_game": "<red>Nejaké hry neskončili v časovom limite, takže ich aréna mohla byť poškodená!",
+    "leaderboard": {
+        "line": "<bold><order>.</bold> <gray><player> - <green><score>"
+    }
 }
