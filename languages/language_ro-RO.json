@@ -135,7 +135,8 @@
         },
         "leave": "<name> <red>a iesit din joc!",
         "player_killed": "<red>Jucatorul <killer> <red>l-a omorat pe <victim><red>!",
-        "game_start_title": "<green>Jocul a inceput!"
+        "game_start_title": "<green>Jocul a inceput!",
+        "vault_deposite": "<green>Au fost adaugati <gray><coins> <currency><green> la balanta ta!"
     },
     "unknown_usage": "<red>Argumente invalide! Foloseste <dark_red>/bw help <red> pentru ajutor!",
     "statistics": {
@@ -156,5 +157,39 @@
     "safe_reload": "<green>Se asteapta ca arenele sa se opreasca sau pluginul se reincarca in 60 de secunde.",
     "safe_reload_failed_to_stop_game": "<red>Unele arene nu au fost oprite in timp, arenele pot fi stricate!",
     "list_header": "<green>Arene valabile:",
-    "success": "<green>Comanda a fost executata cu succes!"
+    "success": "<green>Comanda a fost executata cu succes!",
+    "help": {
+        "bw_leaderboard": "/bw leaderboard - <green>Arata topul jucatorilor de pe server",
+        "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>Adauga o holograma la locatia jucatorului",
+        "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Porneste lobbyul principal sau il seteaza",
+        "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Seteaza spawnul spectatorilor la pozitia ta",
+        "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Seteaza punctul extrem al lobbyului la pozitia ta",
+        "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Seteaza al doilea punct de extrem al lobbyului la pozitia ta",
+        "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>Seteaza durata de pauza inainte de inceperea arenei",
+        "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>Seteaza minimul de jucatori pentru inceperea arenei",
+        "bw_admin_team_spawn": "/bw admin <pre><arena></pre> team spawn <pre><team></pre> - <yellow>Seteaza spawnul echipei la pozitia ta",
+        "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [hologram] [first level] [name] [team] [max spawned resources]</pre> - <yellow>Adauga un spawner de iteme la pozitia ta",
+        "title": "Screaming BedWars <version> - Ajutor",
+        "title_console": "Screaming BedWars <version> - Ajutor pentru consola",
+        "bw_join": "/bw join <pre><arena></pre> - <green> Intra in arena",
+        "bw_leave": "/bw leave - <green> Iesi din arena",
+        "bw_rejoin": "/bw rejoin - <green> Reintra in ultimul joc",
+        "bw_autojoin": "/bw autojoin - <green>Intra in primul joc in asteptare",
+        "bw_list": "/bw list - <green>Lista tuturor arenelor",
+        "bw_stats": "/bw stats - <green>Arata statisticile tale",
+        "bw_stats_other": "/bw stats [player] - <green>Arata statisticile altui jucator",
+        "bw_reload": "/bw reload - <red>Reincarca pluginul",
+        "bw_removeholo": "/bw removeholo - <yellow>Dupa executarea acestei comenzi, jucatorul poate apasa clic dreapta pe holograma pentru a o scoate.",
+        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Arata toate informatiile despre arena",
+        "bw_admin_add": "/bw admin <pre><arena></pre> add - <yellow>Creeaza o arena noua",
+        "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Seteaza pozitia lobbyului la pozitia ta",
+        "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Seteaza punctul extrem al arenei la pozitia ta",
+        "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Seteaza al doilea punct extrem al arenei la pozitia ta",
+        "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>Seteaza durata arenei",
+        "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Adauga o echipa in arena",
+        "bw_admin_team_color": "/bw admin <pre><arena></pre> team color <pre><team> <color></pre> - <yellow>Schimba culoarea echipei",
+        "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>Schimba numarul maxim de jucatori in echipa",
+        "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>Seteaza blocul tinta la pozitiq ta (poate fi si alt bloc, nu doar pat)",
+        "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Seteaza abilitatea de a conecta o echipa la o entitate"
+    }
 }
