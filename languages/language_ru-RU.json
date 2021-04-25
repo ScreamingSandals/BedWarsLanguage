@@ -187,6 +187,11 @@
         "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Добавить команду",
         "bw_admin_team_color": "/bw admin <pre><arena></pre> team color <pre><team> <color></pre> - <yellow>Сменить цвет команды",
         "bw_admin_team_spawn": "/bw admin <pre><arena></pre> team spawn <pre><team></pre> - <yellow>Задать точку возрождения команды",
-        "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Задать существо для присоединения к команде"
+        "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Задать существо для присоединения к команде",
+        "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Задать высочайшую точку лобби",
+        "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [hologram] [first level] [name] [team] [max spawned resources]</pre> - <yellow>Создать генератор на вашей позиции",
+        "bw_admin_store_add": "/bw admin <pre><arena></pre> store add [имя над головой] [файл магазина] [использовать основной магазин] - <yellow>Добавить торговца на вашей позиции",
+        "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Задать низшую точку лобби",
+        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Удалить все генераторы"
     }
 }
