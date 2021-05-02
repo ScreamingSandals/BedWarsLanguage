@@ -142,7 +142,7 @@
             "running": "<green>La partie a commencé ! Bonne chance !"
         },
         "respawn_protection": {
-            "remaining": "<red>La protection lors du Respawn va partir dans <white><time><green>secondes!",
+            "remaining": "<red>La protection lors du Respawn va partir dans <white><time> <green>secondes!",
             "end": "<red>La protection lors du Respawn a disparue!"
         },
         "join": "<name> <green>a rejoins la partie!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
