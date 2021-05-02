@@ -19,7 +19,7 @@
                 "players": "<gold>arena"
             },
             "running": {
-                "status": "<green>Andando",
+                "status": "<green>In esecuzione",
                 "players": "<red><players><dark_gray>/<red><maxplayers>"
             },
             "waiting": {
@@ -72,7 +72,7 @@
                     "bed": "<teamcolor><bold>Proteggi il tuo letto!",
                     "anchor": "<teamcolor><bold>Proteggi la tua ancora!",
                     "cake": "<teamcolor><bold>Proteggi la tua torta!",
-                    "any": "<teamcolor><bold>Proteggi il tuo blocco target!"
+                    "any": "<teamcolor><bold>Proteggi il tuo blocco!"
                 },
                 "destroyed": {
                     "any": "<gray><bold>Blocco target distrutto.",
@@ -154,10 +154,10 @@
         "player_killed": "<red>Il giocatore <killer> <red>ha ucciso <victim><red>!",
         "vault_deposite": "<green>Aggiunti <gray><coins> <currency><green> al tuo account Vault!"
     },
-    "unknown_command": "<red>Comando sconosciuto! Prova ad usare<dark_red>/bw help <red>per ricevere aiuto!",
+    "unknown_command": "<red>Comando non riconosciuto! Prova ad usare <dark_red>/bw help <red>per ricevere aiuto!",
     "unknown_usage": "<red>Argomenti non validi! Prova ad usare <dark_red>/bw help <red>per ricevere aiuto!",
     "no_permissions": "<red>Non hai abbastanza permessi per eseguire questo comando!",
-    "safe_reload": "<green>Aspettando finche tutte le partite sono ferme o 60 secondi dopo la ricarica del plugin.",
+    "safe_reload": "<green>Aspettando che tutte le partite vengano interrotte o 60 secondi prima di ricaricare il plug-in.",
     "help": {
         "title": "Screaming BedWars <version> - Aiuto",
         "title_console": "Screaming BedWars <version> - Aiuto per Console",
@@ -174,6 +174,22 @@
         "bw_rejoin": "/bw rejoin - <green>Unisciti di nuovo alla partita precedente",
         "bw_stats_other": "/bw stats [player] - <green>Mostra le statistiche degli altri giocatori",
         "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>Aggiunge un ologramma alla posizione del giocatore",
-        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Mostra tutte le informazioni riguardo l'arena"
+        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Mostra tutte le informazioni riguardo l'arena",
+        "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Imposta il primo angolo della lobby nella tua posizione",
+        "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>Modificare il numero massimo di giocatori in una squadra",
+        "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [hologram] [first level] [name] [team] [max spawned resources]</pre> - <yellow>Aggiunge un generatore di oggetti nella tua posizione",
+        "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Imposta lo spawn per la lobby nella tua posizione",
+        "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Imposta lo spawn per gli spettatori nella tua posizione",
+        "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Imposta il primo angolo della tua arena nella tua posizione",
+        "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Imposta il secondo angolo della tua arena nella tua posizione",
+        "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>Imposta l'intervallo di tempo prima dell'inizio della partita",
+        "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>Imposta il numero minimo di giocatori necessari per una partita",
+        "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>Imposta la durata della partita",
+        "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Aggiungere una squadra alla partita",
+        "bw_admin_team_color": "/bw admin <pre><arena></pre> team color <pre><team> <color></pre> - <yellow>Cambiare il colore di una squadra",
+        "bw_admin_team_spawn": "/bw admin <pre><arena></pre> team spawn <pre><team></pre> - <yellow>Imposta lo spawn della squadra nella tua posizione",
+        "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Imposta il secondo angolo della lobby nella tua posizione",
+        "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Imposta la capacità di connettersi a una squadra utilizzando un'entità",
+        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Rimuove tutti i generatori"
     }
 }
