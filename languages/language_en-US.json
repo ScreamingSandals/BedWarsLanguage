@@ -271,7 +271,7 @@
                 "success": {
                     "saved_and_started": "<green>The game has been successfully saved and is running! Now you can join and play in the arena!",
                     "target_block_set": "<green>Target block (<gray><material><green>) of team <gray><team><green> was successfully set to position XYZ: <gray><x>/<y>/<z>",
-                    "team_spawn_set": "<green>Spawn of team gray><team><green> was successfully set to position XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "team_spawn_set": "<green>Spawn of team <gray><team><green> was successfully set to position XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
                     "team_maxplayers_set": "<green>Maximal count of players in team <gray><team><green> was successfully set to <gray><maxplayers>",
                     "team_color_set": "<green>Color of <gray><team><green> was successfully set to <teamcolor>",
                     "team_removed": "<green>Team <gray><team><green> was successfully removed!",
