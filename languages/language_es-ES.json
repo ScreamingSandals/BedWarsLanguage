@@ -1,1 +1,174 @@
-{}
+{
+    "in_game": {
+        "target_block": {
+            "destroyed": {
+                "cake": "¡La tarta del equipo <team><reset> ha sido comida!",
+                "any": "¡El bloque objetivo del equipo <team><reset> fue destruído!",
+                "bed": "¡La cama del equipo <team><reset> fue destruída!",
+                "subtitle": "¡Ahora puedes matar a tus compañeros de equipo!",
+                "subtitle_victim": "¡Ahora no podrás reaparecer!",
+                "anchor": "¡El nexo de reaparición del equipo <team><reset> fue destruído!"
+            },
+            "hologram": {
+                "protect": {
+                    "any": "<teamcolor><bold>¡Protege el tu bloque objetivo!",
+                    "bed": "<teamcolor><bold>¡Protege tu cama!",
+                    "anchor": "<teamcolor><bold>¡Protege tu nexo!",
+                    "cake": "<teamcolor><bold>¡Protege tu tarta!"
+                },
+                "destroyed": {
+                    "anchor": "<gray><bold>El nexo ha sido destruído.",
+                    "any": "<gray><bold>El bloque objetivo ha sido destruído.",
+                    "bed": "<gray><bold>La cama ha sido destruída.",
+                    "cake": "<gray><bold>La tarta ha sido comida."
+                },
+                "destroy": {
+                    "anchor": "<teamcolor><bold>¡Destruye éste nexo!",
+                    "any": "<teamcolor><bold>¡Destruye el bloque objetivo!",
+                    "bed": "<teamcolor><bold>¡Destruye esta cama!",
+                    "cake": "<teamcolor><bold>¡Cómete esta tarta!"
+                }
+            }
+        },
+        "spawner": {
+            "not_enough_level": "<red>¡El spawner no puede funcionar! Necesitas potenciarlo en <levels> niveles.",
+            "countdown": "<yellow><seconds> <bold>segundos",
+            "every_second": "<bold>cada segundo",
+            "full": "<red><bold>Spawner está agotado"
+        },
+        "shop": {
+            "buy_success": "<green>Compra exitosa de <gray><item><green> por <gray><material><green>!",
+            "name": "Tienda",
+            "page_back": "Página anterior",
+            "page_forward": "Página posterior",
+            "shop_back": "<red>Volver a la lista de categoría",
+            "price": "Precio:",
+            "amount": "Cantidad:",
+            "buy_failed": "<red>¡No hay suficientes materiales para comprar <gray><item><red>! ¡Se necesitan <gray><material><red>!"
+        },
+        "team_selection": {
+            "selected": "<green>Equipo seleccionado: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "inventory_name": "Selecciona un equipo - <arena>",
+            "already_selected": "<green>Ya estás en el equipo: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "full": "<red>¡El equipo <team><red> está completo!",
+            "full_no_change": "<red>¡El equipo <team><red> está completo, te mantendrás en el equipo <oldteam><red>!",
+            "select_item_lore_full": "<white>¡El equipo está completo!",
+            "select_item_lore_join": "¡Haga click para unirse al equipo!"
+        },
+        "lobby_items": {
+            "compass_selector_team": "<green>Selecciona un equipo",
+            "leave_from_game_item": "<red>Salir de la partida",
+            "start_game_item": "<dark_green>Comenzar partida"
+        },
+        "bossbar": {
+            "waiting": "<red>¡La partida comenzará en breves!",
+            "running": "<green>¡Partida comenzada! ¡Buena suerte!"
+        },
+        "end": {
+            "team_win": "<green>El equipo <reset><team><green> ha ganado la partida en <gray><time>",
+            "you_won": "<green>¡Tu equipo ha ganado!",
+            "you_lost": "<red>¡Tu equipo ha perdido!",
+            "game_end": "<red>¡Partida terminada! ¡Gracias por jugar!"
+        },
+        "join": "¡<name> <green>se ha unido a la partida!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+        "game_start_subtitle": "<green>¡La partida <gray><arena><green> ha comenzado! ¡Disfruta de la partida!",
+        "errors": {
+            "game_already_running": "<red>¡La partida <gray><arena> <red>está en curso! ¡No puedes unirte a una partida en curso!",
+            "game_not_found": "<red>¡La partida no fue encontrada!",
+            "you_are_not_in_game": "<red>¡No estás en una partida!",
+            "game_is_rebuilding": "<red>¡La partida <gray><arena><red> se está reconstruyendo! Por favor, espera...",
+            "already_in_game": "<red>Ya estás en una partida.",
+            "not_in_any_game_yet": "<red>Aún no has estado en ninguna partida.",
+            "vip_not_enough_players": "<red>¡No hay suficientes jugadores!",
+            "vip_game_is_full": "<red>La partida <gray><arena> <red>está completa por jugadores VIP. ¡Espera a que terminen la partida!",
+            "game_kicked_by_vip": "<red>¡Fuiste echado por un jugador VIP!",
+            "there_is_no_empty_game": "<red>No hay partidas en estado de espera. ¡Todas las partidas ya están en curso!",
+            "game_is_full": "<red>¡La partida <gray><arena> <red>está llena! ¡Espera a que terminen la partida!",
+            "command_is_not_allowed": "<red>¡Este comando está bloqueado mientras la partida está en curso!",
+            "game_is_gone": "<red>Al parecer la partida en la que estabas ya no está disponible."
+        },
+        "respawn_cooldown": {
+            "title": "<green>Reapareciendo en: <red><time>",
+            "title_cancel": "<red>El equipo está muerto :("
+        },
+        "resources": {
+            "bronze": "Bronce",
+            "iron": "Hierro",
+            "gold": "Oro",
+            "netherite": "Netherita",
+            "diamond": "Diamante",
+            "emerald": "Esmeralda"
+        },
+        "respawn_protection": {
+            "remaining": "<red>¡La protección de reaparición se quitará en <white><time> <green>seconds!",
+            "end": "<red>¡La protección de reaparición ha desaparecido!"
+        },
+        "leave": "¡<name> <red>se fue de la partida!",
+        "player_self_killed": "<red>¡El jugador <victim> <red>murió!",
+        "player_killed": "<red>¡El jugador <killer> <red>asesinó a <victim><red>!",
+        "game_start_title": "<green>¡Partida comenzada!",
+        "vault_deposite": "<green> ¡<gray><coins> <currency><green> fueron añadidas a tu cuenta bancaria!"
+    },
+    "help": {
+        "bw_rejoin": "/bw rejoin - <green>Unirse a la partida reciente",
+        "bw_leaderboard": "/bw leaderboard - <green>Mostrar jugadores top del servidor",
+        "bw_stats_other": "/bw stats [player] - <green>Mostrar estadísticas de otros servidores",
+        "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>Añade un holograma a la localización del jugador",
+        "title": "Screaming BedWars <version> - Ayuda",
+        "title_console": "Screaming BedWars <version> - Ayuda para la Consola",
+        "bw_join": "/bw join <pre><arena></pre> - <green> Unirse a la partida",
+        "bw_leave": "/bw leave - <green>Dejar la partida",
+        "bw_autojoin": "/bw autojoin - <green>Unirse a partida en espera",
+        "bw_list": "/bw list - <green>Lista de partidas disponibles",
+        "bw_stats": "/bw stats - <green>Mostrar tus estadísticas",
+        "bw_reload": "/bw reload - <red>Recarga el plugin",
+        "bw_removeholo": "/bw removeholo - <yellow>Después de ejecutar este comando, el jugador puede hacer click derecho al holograma para removerlo.",
+        "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Crea el lobby principal"
+    },
+    "no_permissions": "<red>¡No tienes los suficientes permisos para hacer eso!",
+    "safe_reload": "<green>Esperando a que todas las partidas se terminen o 60 segundos antes de recargar el plugin.",
+    "list_header": "<green>Mapas disponibles:",
+    "success": "<green>¡El comando fue realizado con éxito!",
+    "sign": {
+        "admin": {
+            "created": "<green>¡El cartel fue creado con éxito!",
+            "cannot_create": "<red>¡El cartel no se ha podido crear! Por favor, ¡revise el nombre del mapa!",
+            "cannot_destroy": "<red>¡No tienes permiso para destruir este cartel!",
+            "unknown_game": "<red>¡La partida que está escrita en este cartel no existe! ¡Contacte a un administrador!"
+        },
+        "status": {
+            "disabled": {
+                "status": "<red>Partida",
+                "players": "<red>deshabilitado"
+            },
+            "rebuilding": {
+                "status": "<gold>Reconstruyendo",
+                "players": "<gold>mapa"
+            },
+            "running": {
+                "status": "<green>En curso",
+                "players": "<red><players><dark_gray>/<red><maxplayers>"
+            },
+            "waiting": {
+                "status": "<gold>En espera",
+                "players": "<green><players><dark_gray>/<green><maxplayers>"
+            }
+        }
+    },
+    "statistics": {
+        "player_does_not_exist": "<red>¡El jugador no fue encontrado!",
+        "not_found": "<red>¡No hay estadísticas disponibles para este jugador!",
+        "header": "<green>Estadísticas de <red><player><green>:",
+        "kills": "<gray>Asesinatos: <green><kills>",
+        "wins": "<gray>Victorias: <green><wins>",
+        "loses": "<gray>Derrotas: <red><loses>",
+        "games": "<gray>Partidas Jugadas: <aqua><games>",
+        "beds": "<gray>Camas Destruidas: <green><beds>",
+        "disabled": "<red>¡Las estadísticas del jugador están deshabilitadas para este servidor!",
+        "deaths": "<gray>Muertes: <yellow><deaths>",
+        "score": "<gray>Puntuación Total: <green><score>"
+    },
+    "unknown_command": "<red>¡Comando desconocido! ¡Pruebe el comando <dark_red>/bw help <red>para ver la lista de comandos!",
+    "unknown_usage": "<red>¡Argumentos inválidos! ¡Pruebe el comando <dark_red>/bw help <red>para ver la lista de comandos!",
+    "safe_reload_failed_to_stop_game": "<red>Algunas partidas no fueron paradas a tiempo, ¡el mapa podría haber sido dañado!"
+}
