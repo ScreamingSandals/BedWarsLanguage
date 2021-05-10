@@ -1,1 +1,151 @@
-{}
+{
+    "no_permissions": "<red>Você não tem permissão para fazer isso!",
+    "safe_reload": "<green>Esperando todos os jogos terminarem ou 60 segundos para recarregar o plugin.",
+    "list_header": "<green>Arenas disponíveis:",
+    "success": "<green>Comando bem sucedido!",
+    "sign": {
+        "admin": {
+            "created": "<green>Placa criada com êxito!",
+            "cannot_create": "<red>A Placa não pode ser criada! Por favor cheque o nome da arena!",
+            "cannot_destroy": "<red>Você não tem permissão para destruir essa placa!",
+            "unknown_game": "<red>O jogo que você tentou entrar não existe! Entre em contato com um administrador!"
+        },
+        "status": {
+            "disabled": {
+                "status": "<red>Jogo",
+                "players": "<red>desativado"
+            },
+            "rebuilding": {
+                "status": "<gold>Reconstruindo",
+                "players": ""
+            },
+            "running": {
+                "status": "<green>Em Andamento"
+            },
+            "waiting": {
+                "status": "<gold>Aguardando"
+            }
+        }
+    },
+    "statistics": {
+        "disabled": "<red>Estatistas de jogadores estão desativadas nesse servidor!",
+        "player_does_not_exist": "<red>Jogador não encontrado!",
+        "not_found": "<red>Não foram encontradas estatísticas para esse jogador!",
+        "kills": "<gray>Abates: <green><kills>",
+        "deaths": "<gray>Mortes: <yellow><deaths>",
+        "wins": "<gray>Vitórias: <green><wins>",
+        "loses": "<gray>Derrotas: <red><loses>",
+        "games": "<gray>Partidas jogadas: <aqua><games>",
+        "score": "<gray>Pontuação total: <green><score>",
+        "header": "<green>Estatística de <red><player><green>:",
+        "beds": "<gray>Camas destruídas: <green><beds>"
+    },
+    "in_game": {
+        "errors": {
+            "game_is_full": "<red>O mapa <gray><arena> <red>já está cheio! Por favor aguarde o jogo terminar!",
+            "game_not_found": "<red>Mapa não encontrado!",
+            "you_are_not_in_game": "<red>Você não está em uma partida!",
+            "game_is_rebuilding": "<red>O mapa <gray><arena><red> está sendo reconstruído! Por favor aguarde...",
+            "already_in_game": "<red>Você já está em uma partida.",
+            "command_is_not_allowed": "<red>Esse comando está indisponível durante a partida!",
+            "vip_not_enough_players": "<red>Jogadores insuficientes na partida!",
+            "game_is_gone": "<red>Parece que a partida em que você estava não está mais em andamento.",
+            "game_kicked_by_vip": "<red>Você foi expulso por um jogador VIP!",
+            "there_is_no_empty_game": "<red>Nenhuma partida disponível. Todas as partidas estão em andamento!",
+            "game_already_running": "<red>O mapa <gray><arena> <red>já está em andamento! Você não pode entrar em um mapa que está em andamento!",
+            "not_in_any_game_yet": "<red>Você ainda não entrou em nenhuma partida.",
+            "vip_game_is_full": "<red>O mapa <gray><arena> <red>está cheio de jogadores VIP. Por favor aguarde a partida terminar!"
+        },
+        "target_block": {
+            "destroyed": {
+                "any": "O bloco alvo do <team><reset> foi destruído!",
+                "bed": "A Cama do Time <team><reset> foi destruída!",
+                "subtitle_victim": "Você não poderá respawnar mais agora!",
+                "anchor": "Âncora de Respawn do time <team><reset> foi destruída!",
+                "cake": "O Bolo do time <team><reset> foi comido!",
+                "subtitle": "Você pode matar os membros do time agora!"
+            },
+            "hologram": {
+                "protect": {
+                    "any": "<teamcolor><bold>Proteja seu bloco alvo!",
+                    "bed": "<teamcolor><bold>Proteja sua cama!",
+                    "anchor": "<teamcolor><bold>Proteja sua âncora!",
+                    "cake": "<teamcolor><bold>Proteja seu bolo!"
+                },
+                "destroyed": {
+                    "any": "<gray><bold>O bloco alvo foi destruído.",
+                    "bed": "<gray><bold>A Cama foi destruída.",
+                    "anchor": "<gray><bold>A Âncora foi destruída.",
+                    "cake": "<gray><bold>O Bolo foi comido."
+                },
+                "destroy": {
+                    "any": "<teamcolor><bold>Destrua o bloco alvo!",
+                    "bed": "<teamcolor><bold>Destrua as camas!",
+                    "cake": "<teamcolor><bold>Coma o Bolo!",
+                    "anchor": "<teamcolor><bold>Destrua a Âncora!"
+                }
+            }
+        },
+        "respawn_cooldown": {
+            "title": "<green>Respawnando em: <red><time>",
+            "title_cancel": "<red>O time foi Morto :("
+        },
+        "spawner": {
+            "countdown": "<yellow><seconds> <bold>segundos",
+            "full": "<red><bold>Spawner esgotado",
+            "every_second": "<bold>Cada segundo",
+            "not_enough_level": "<red>O Spawner está desativado! Você precisa upar ele por <levels> levels."
+        },
+        "resources": {
+            "iron": "Ferro",
+            "gold": "Ouro",
+            "netherite": "Netherita",
+            "diamond": "Diamante",
+            "emerald": "Esmeralda"
+        },
+        "shop": {
+            "name": "Loja",
+            "page_back": "Voltar",
+            "page_forward": "Avançar",
+            "shop_back": "<red>Voltar para lista",
+            "price": "Preço:",
+            "amount": "Quantia:",
+            "buy_failed": "<red>Você não tem <gray><item><red> o suficiente! Você precisa de <gray><material><red>!",
+            "buy_success": "<gray><item><green>adquirido por <gray><material><green>!"
+        },
+        "team_selection": {
+            "inventory_name": "Selecionar Time - <arena>",
+            "selected": "<green>Time selecionado: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "full": "<red> O Time <team><red> está cheio!",
+            "full_no_change": "<red>O Time <team><red> está cheio, você continua no time <oldteam><red>!",
+            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)",
+            "select_item_lore_full": "<white>O Time está cheio!",
+            "select_item_lore_join": "Clique para entrar no time!",
+            "already_selected": "<green>Você já está em um time: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]"
+        },
+        "lobby_items": {
+            "compass_selector_team": "<green>Selecione o Time",
+            "leave_from_game_item": "<red>Sair do Jogo",
+            "start_game_item": "<dark_green>Iniciar partida"
+        },
+        "bossbar": {
+            "waiting": "<red>O Jogo vai começar em breve!",
+            "running": "<green>Jogo iniciado! Boa Sorte!"
+        },
+        "end": {
+            "you_won": "<green>Seu time Ganhou!",
+            "you_lost": "<red>Seu time Perdeu!",
+            "game_end": "<red>Fim de Jogo! Obrigado por jogar!",
+            "team_win": "<green>O TIme <reset><team><green> ganhou o jogo em <gray><time>"
+        },
+        "respawn_protection": {
+            "end": "<red>A proteção do respawn acabou!",
+            "remaining": "<red>A proteção de respawn acabará em <white><time> <green>seconds!"
+        },
+        "leave": "<name> <red>saiu da partida!",
+        "join": "<name> <green>entrou na partida!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]"
+    },
+    "unknown_command": "<red>Comando Desconhecido! Tente usar <dark_red>/bw help <red> para ajuda!",
+    "unknown_usage": "<red>Argumento Inválido! Tente usar <dark_red>/bw help <red>para ajuda!",
+    "safe_reload_failed_to_stop_game": "<red>Algumas partidas não foram paradas a tempo, as arenas podem ter sidos danificadas!"
+}
