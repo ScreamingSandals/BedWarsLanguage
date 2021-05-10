@@ -123,7 +123,13 @@
         "bw_stats": "/bw stats - <green>Mostrar tus estadísticas",
         "bw_reload": "/bw reload - <red>Recarga el plugin",
         "bw_removeholo": "/bw removeholo - <yellow>Después de ejecutar este comando, el jugador puede hacer click derecho al holograma para removerlo.",
-        "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Crea el lobby principal"
+        "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Crea el lobby principal",
+        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Muestra toda la información sobre arena",
+        "bw_admin_add": "/bw admin <pre><arena></pre> add - <yellow>Crea una nueva arena o mapa",
+        "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Pone la posición del lobby en tu posición",
+        "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Pone el punto de aparición de los espectadores en tu posición",
+        "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Pone el punto extremo del mapa en tu posición",
+        "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Pone el segundo punto extremo del mapa en tu posición"
     },
     "no_permissions": "<red>¡No tienes los suficientes permisos para hacer eso!",
     "safe_reload": "<green>Esperando a que todas las partidas se terminen o 60 segundos antes de recargar el plugin.",
