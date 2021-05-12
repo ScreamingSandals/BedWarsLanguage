@@ -53,7 +53,9 @@
             "full": "<red>¡El equipo <team><red> está completo!",
             "full_no_change": "<red>¡El equipo <team><red> está completo, te mantendrás en el equipo <oldteam><red>!",
             "select_item_lore_full": "<white>¡El equipo está completo!",
-            "select_item_lore_join": "¡Haga click para unirse al equipo!"
+            "select_item_lore_join": "¡Haga click para unirse al equipo!",
+            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)",
+            "select_item_lore": "<white>---------------------"
         },
         "lobby_items": {
             "compass_selector_team": "<green>Selecciona un equipo",
@@ -129,7 +131,9 @@
         "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Pone la posición del lobby en tu posición",
         "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Pone el punto de aparición de los espectadores en tu posición",
         "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Pone el punto extremo del mapa en tu posición",
-        "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Pone el segundo punto extremo del mapa en tu posición"
+        "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Pone el segundo punto extremo del mapa en tu posición",
+        "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Establece el punto extremo del lobby en tu posición",
+        "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Establece el segundo punto extremo del lobby en tu posición"
     },
     "no_permissions": "<red>¡No tienes los suficientes permisos para hacer eso!",
     "safe_reload": "<green>Esperando a que todas las partidas se terminen o 60 segundos antes de recargar el plugin.",
@@ -138,7 +142,7 @@
     "sign": {
         "admin": {
             "created": "<green>¡El cartel fue creado con éxito!",
-            "cannot_create": "<red>¡El cartel no se ha podido crear! Por favor, ¡revise el nombre del mapa!",
+            "cannot_create": "<red>¡El cartel no se ha podido crear! Por favor, ¡revisa el nombre del mapa!",
             "cannot_destroy": "<red>¡No tienes permiso para destruir este cartel!",
             "unknown_game": "<red>¡La partida que está escrita en este cartel no existe! ¡Contacte a un administrador!"
         },
@@ -172,9 +176,69 @@
         "beds": "<gray>Camas Destruidas: <green><beds>",
         "disabled": "<red>¡Las estadísticas del jugador están deshabilitadas para este servidor!",
         "deaths": "<gray>Muertes: <yellow><deaths>",
-        "score": "<gray>Puntuación Total: <green><score>"
+        "score": "<gray>Puntuación Total: <green><score>",
+        "kd": "<gray>B/M: <green><kd>"
     },
-    "unknown_command": "<red>¡Comando desconocido! ¡Pruebe el comando <dark_red>/bw help <red>para ver la lista de comandos!",
-    "unknown_usage": "<red>¡Argumentos inválidos! ¡Pruebe el comando <dark_red>/bw help <red>para ver la lista de comandos!",
-    "safe_reload_failed_to_stop_game": "<red>Algunas partidas no fueron paradas a tiempo, ¡el mapa podría haber sido dañado!"
+    "unknown_command": "<red>¡Comando desconocido! ¡Prueba el comando <dark_red>/bw help <red>para ver la lista de comandos!",
+    "unknown_usage": "<red>¡Argumentos inválidos! ¡Prueba el comando <dark_red>/bw help <red>para ver la lista de comandos!",
+    "safe_reload_failed_to_stop_game": "<red>Algunas partidas no fueron paradas a tiempo, ¡el mapa podría haber sido dañado!",
+    "admin": {
+        "info": {
+            "pos1": "<gray>Posición 1: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "lobby": "<gray>Posición del lobby: <white>Mundo: <gray><world> <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "status_running": "<green>JUEGO EMPEZADO",
+            "villager_pos": "- XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "constant": "- <gray><constant><reset>: <gray><value>",
+            "status_disabled_in_edit": "<red>DESACTIVADO<reset> (<yellow>EN MODO EDICIÓN<reset>)",
+            "world": "<gray>Mundo: <reset><world>",
+            "pos2": "<gray>Posición 2: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "spec": "<gray>Posición de espectador: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "team": "- <team><reset> (Número máximo de jugadores: <gray><maxplayers><reset>)",
+            "team_spawn": "  <gray>Reaparición de equipo: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "team_target": "  <gray>Cama: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "spawners": "<gray>Generadores:",
+            "villagers": "<gray>Tiendas:",
+            "teams": "<gray>Equipos:",
+            "header": "<green>Detalles de la arena:",
+            "name": "<gray>Nombre: <reset><name>",
+            "status": "<gray>Estado: <reset><status>",
+            "status_disabled": "<red>DESACTIVADO",
+            "status_waiting": "<yellow>ESPERANDO A JUGADORES",
+            "status_rebuilding": "<yellow>RECONSTRUYENDO",
+            "villager_entity_type": "  Tipo: <green><type>",
+            "villager_shop_dealer_has_no_name": "<red>No se ha establecido ningún nombre",
+            "constant_true": "<green>Verdadero",
+            "constant_false": "<red>Falso",
+            "spawner_no_team": "<red>Sin equipo",
+            "file": "<gray><i>Archivo: <file>"
+        },
+        "arena": {
+            "edit": {
+                "success": {
+                    "game_time_set": "<green>La hora del juego se estableció en <gray><time>"
+                },
+                "errors": {
+                    "invalid_bounds": "<red>¡La diferencia de altura entre pos1 y pos2 es demasiado pequeña! ¡El mínimo son 5 bloques!",
+                    "store_already_exist": "<red>¡La tienda ya existe!",
+                    "store_does_not_exist": "¡La tienda no existe!",
+                    "max_players": "<red>El número máximo de jugadores debe ser >= 1!",
+                    "need_2_teams": "<red>¡El juego necesita 2 o más equipos!",
+                    "team_does_not_exist": "<red>¡Este equipo no existe!",
+                    "team_already_exists": "<red>¡Este equipo ya existe!",
+                    "spawners_needed": "<red>¡El juego debe tener al menos un generador de items!",
+                    "invalid_time": "<red>¡El tiempo <gray><number><red> no es válido!"
+                }
+            },
+            "error": {
+                "already_exists": "<red>¡La arena ya existe!",
+                "already_working_on_it": "<red>¡La arena ya existe pero no está terminada!"
+            }
+        },
+        "usage": "<red>Utiliza: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>"
+    },
+    "update": {
+        "patch_release": [
+            "Puedes descargarlo desde <url>"
+        ]
+    }
 }
