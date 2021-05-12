@@ -192,6 +192,17 @@
         "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [hologram] [first level] [name] [team] [max spawned resources]</pre> - <yellow>Создать генератор на вашей позиции",
         "bw_admin_store_add": "/bw admin <pre><arena></pre> store add [имя над головой] [файл магазина] [использовать основной магазин] - <yellow>Добавить торговца на вашей позиции",
         "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Задать низшую точку лобби",
-        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Удалить все генераторы"
+        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Удалить все генераторы",
+        "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><тип></pre> - <yellow>Задать время суток (DAY, NIGHT, и т.д.)",
+        "bw_admin_arena_weather": "/bw admin <pre><arena></pre> arenaweather <pre><тип></pre> - <yellow>Задать погоду (default, CLEAN, DOWNFALL)",
+        "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Задать время ожидания до телепортации игрока из арены",
+        "bw_admin_save": "/bw admin <pre><arena></pre> save - <green>Сохранить и активировать арену!",
+        "bw_admin_store_remove": "/bw admin <pre><arena></pre> store remove - <yellow>Удалить торговца с ваших координат",
+        "bw_admin_store_type": "/bw admin <pre><arena></pre> store type <pre><тип существа></pre> - <yellow>Задать тип торговца (Villager, Horse, Cow, Pig и т.д.)",
+        "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><константа> <значение></pre> - <yellow>Задать значение константы для арены",
+        "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>Задать префикс для арены",
+        "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Удалить арену",
+        "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Отключить арену и перевести её в режим редактирования",
+        "bw_alljoin": "/bw alljoin [арена] - <green>Подключить всех игроков на сервере к арене"
     }
 }
