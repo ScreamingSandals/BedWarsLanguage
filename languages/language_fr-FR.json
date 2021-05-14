@@ -196,6 +196,65 @@
         "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Enlève tous les spawners",
         "bw_admin_store_remove": "/bw admin <pre><arena></pre> store remove - <yellow>Enlève le villageois de trade de votre position",
         "bw_admin_store_type": "/bw admin <pre><arena></pre> store type <pre><living entity></pre> - <yellow>Définit le type d'entité utilisé pour la boutique (Villageois, Cheval, Vache, Cochon etc.)",
-        "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>Définit le temps de la journée dans l'arène (JOUR, NUIT, etc.)"
+        "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>Définit le temps de la journée dans l'arène (JOUR, NUIT, etc.)",
+        "bw_admin_arena_weather": "/bw admin <pre><arena></pre> arenaweather <pre><type></pre> - <yellow>Définit la météo dans une arène (défault, dégagé, pluie)",
+        "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Définit le temps d'attente avant que le joueur soit téléporté en dehors de l'arène",
+        "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>Active le prefix modifiable pour l'arène",
+        "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Supprime l'arène",
+        "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Eteint la partie et active le mode édition",
+        "bw_admin_save": "/bw admin <pre><arena></pre> save - <green>Enregistre la partie et l'active!",
+        "bw_alljoin": "/bw alljoin [arena] - <green>Envoie tous les joueurs du serveur dans une partie de BedWars",
+        "bw_admin_spawner_remove": "w admin <pre><arena></pre> spawner remove - <yellow>Enlève tous les spawners à votre location",
+        "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Marque ce commerçant comme enfant",
+        "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>Marque ce commerçant comme adulte",
+        "bw_dump": "/bw dump - <yellow>Vide le serveur et vous donne le lien vers la décharge. Ce lien peut être utile pour le support",
+        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>Si l'arène est dans le mode édition, cette commande va activer le mode interactif"
+    },
+    "admin": {
+        "arena": {
+            "error": {
+                "arena_not_in_edit": "<red>L'arène n'existe pas ou n'a pas de partie en cours dessus. Désactivez là avec <gray>/bw admin <pre><arena></pre> edit<red> and then activate it with <gray>/bw admin <pre><arena></pre> save",
+                "already_exists": "<red>L'arène existe déjà!",
+                "already_working_on_it": "<red>L'arène existe déjà mais n'est pas finie!",
+                "arena_must_be_in_edit_mode": "<red>L'arène doit être en mode édition!"
+            },
+            "edit": {
+                "errors": {
+                    "set_bounds_first": "<red>Avant de définir le spawn, merci de définir la pos1 et le post2 (afin de déterminer la taille et la position de l'arène)!",
+                    "invalid_spawner_level": "<white>Mauvais nombre de niveau, par défaut le niveau 1 est utilisé.",
+                    "set_bounds_before_save": "<red>Avant de sauvegarder la partie merci de définir la pos1 et la pos2 (qui déterminément la position et la taille de l'arène)!",
+                    "must_be_in_same_world": "<red>Toutes les commandes doivent être executés dans le même monde!",
+                    "invalid_countdown": "<red>Le compte à rebours doit être entre <lowest> < x < <highest> secondes!",
+                    "must_be_in_bounds": "<red>La location doit se situer dans l'arène (entre pos1 et pos2)!",
+                    "invalid_bounds": "<red>La différence de hauteur entre pos1 et pos2 est trop petite! Le minimum est de 5 blocks!",
+                    "store_already_exist": "<red>La boutique existe déjà!",
+                    "store_does_not_exist": "<red>La boutique n'existe pas!",
+                    "invalid_spawner_type": "<red>Le spawner doit être de bronze, fer, or, ou par une configuration modifiée!",
+                    "invalid_color": "<red>Cette couleur est invalide!",
+                    "max_players": "<red>Le maximum de joueur doit être >= 1!",
+                    "need_2_teams": "<red>La partie a besoin de 2 équipe minimum!",
+                    "spawners_needed": "<red>La partie doit avoir au moin un spawner d'item!",
+                    "team_does_not_exist": "<red>L'équipe n'existe pas!",
+                    "team_already_exists": "<red>L'équipe existe déjà!",
+                    "set_lobby_before_save": "<red>Avant de démarrer la partie, merci de définir le spawn du lobby!"
+                }
+            },
+            "success": {
+                "removed": "<red><b>Arène supprimée!",
+                "added": "<green>Arène ajoutée!",
+                "edit_mode": "<green>Arène passée en mode édition!"
+            }
+        },
+        "usage": "<red>Utilisation: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>"
+    },
+    "update": {
+        "new_release": [
+            "<green>Nouvelle mise à jour <version> de BedWars est disponible!",
+            "Télécharge la depuis <url>"
+        ],
+        "patch_release": [
+            "<yellow>Nouvelle mise à jour réglant des bugs pour BedWars <version> est disponible!",
+            "Vous pouvez la télécharger depuis <url>"
+        ]
     }
 }
