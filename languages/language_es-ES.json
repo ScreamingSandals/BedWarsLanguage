@@ -133,7 +133,11 @@
         "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Pone el punto extremo del mapa en tu posición",
         "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Pone el segundo punto extremo del mapa en tu posición",
         "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Establece el punto extremo del lobby en tu posición",
-        "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Establece el segundo punto extremo del lobby en tu posición"
+        "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Establece el segundo punto extremo del lobby en tu posición",
+        "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>Establece la duración de la pausa antes de que comience el juego",
+        "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>Establece el mínimo de jugadores necesarios para iniciar el juego",
+        "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>Establece la duración del juego",
+        "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Añade un equipo al juego"
     },
     "no_permissions": "<red>¡No tienes los suficientes permisos para hacer eso!",
     "safe_reload": "<green>Esperando a que todas las partidas se terminen o 60 segundos antes de recargar el plugin.",
@@ -215,7 +219,8 @@
         "arena": {
             "edit": {
                 "success": {
-                    "game_time_set": "<green>La hora del juego se estableció en <gray><time>"
+                    "game_time_set": "<green>La hora del juego se estableció en <gray><time>",
+                    "team_removed": "<green>¡El equipo <gray><team><green> fue eliminado con éxito!"
                 },
                 "errors": {
                     "invalid_bounds": "<red>¡La diferencia de altura entre pos1 y pos2 es demasiado pequeña! ¡El mínimo son 5 bloques!",
@@ -226,19 +231,42 @@
                     "team_does_not_exist": "<red>¡Este equipo no existe!",
                     "team_already_exists": "<red>¡Este equipo ya existe!",
                     "spawners_needed": "<red>¡El juego debe tener al menos un generador de items!",
-                    "invalid_time": "<red>¡El tiempo <gray><number><red> no es válido!"
+                    "invalid_time": "<red>¡El tiempo <gray><number><red> no es válido!",
+                    "must_be_in_same_world": "<red>¡Todos los comandos deben ejecutarse en el mismo mundo!"
                 }
             },
             "error": {
                 "already_exists": "<red>¡La arena ya existe!",
-                "already_working_on_it": "<red>¡La arena ya existe pero no está terminada!"
+                "already_working_on_it": "<red>¡La arena ya existe pero no está terminada!",
+                "arena_must_be_in_edit_mode": "<red>¡La arena debe estar en modo edición!"
+            },
+            "success": {
+                "removed": "<red><b>¡Arena eliminada!",
+                "added": "<green>¡Arena añadida!",
+                "edit_mode": "<green>¡La arena cambió a modo edición!"
             }
         },
-        "usage": "<red>Utiliza: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>"
+        "usage": "<red>Utiliza: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>",
+        "team_join_entity": {
+            "entity_not_compatible": "<red>¡La entidad que estas intentando utilizar no es compatible! ¡Solo se pueden usar entidades vivas o soportes de armadura!",
+            "entity_added": "<green>¡Se añadió la entidad para unirse al equipo!"
+        }
     },
     "update": {
         "patch_release": [
             "Puedes descargarlo desde <url>"
+        ],
+        "new_release": [
+            "<green>¡La nueva versión de Bedwars <version> está disponible!",
+            "Descárgalo desde <url>"
         ]
+    },
+    "specials": {
+        "trap": {
+            "built": "<green>¡Has construido una trampa! ¡Ahora espera a que alguien quede atrapado!"
+        },
+        "tracker": {
+            "no_target_found": "<red>¡No se encontró ningún objetivo!"
+        }
     }
 }
