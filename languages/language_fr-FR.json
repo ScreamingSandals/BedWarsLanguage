@@ -236,7 +236,10 @@
                     "spawners_needed": "<red>La partie doit avoir au moin un spawner d'item!",
                     "team_does_not_exist": "<red>L'équipe n'existe pas!",
                     "team_already_exists": "<red>L'équipe existe déjà!",
-                    "set_lobby_before_save": "<red>Avant de démarrer la partie, merci de définir le spawn du lobby!"
+                    "set_lobby_before_save": "<red>Avant de démarrer la partie, merci de définir le spawn du lobby!",
+                    "set_spec_before_save": "<red>Avant de sauvegarder la partie, mercie de définir le spawn des spectateurs!",
+                    "set_stores_before_save": "<red>Avant de sauvegarder la partie, merci d'ajouter 1 boutique au minimum!",
+                    "set_spawners_before_save": "<red>Avant de sauvegarder la partie, merci d'ajouter au minimum 1 spawner!"
                 }
             },
             "success": {
