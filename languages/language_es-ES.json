@@ -137,7 +137,23 @@
         "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>Establece la duración de la pausa antes de que comience el juego",
         "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>Establece el mínimo de jugadores necesarios para iniciar el juego",
         "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>Establece la duración del juego",
-        "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Añade un equipo al juego"
+        "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Añade un equipo al juego",
+        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Eliminar todos los spawners",
+        "bw_alljoin": "/bw alljoin [arena] - <green>Unir a todos los jugadores del servidor a un juego de Bedwars",
+        "bw_admin_store_add": "/bw admin <pre><arena></pre> store add [nombre sobre la cabeza del aldeano] [archivo de la tienda] [usar la tienda principal] - <yellow>Añade un aldeano para comerciar en tu posición",
+        "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>Marcar a este comerciante como adulto",
+        "bw_admin_team_color": "/bw admin <pre><arena></pre> team color <pre><team> <color></pre> - <yellow>Cambiar el color del equipo",
+        "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>Cambiar jugadores máximos del equipo",
+        "bw_admin_team_spawn": "/bw admin <pre><arena></pre> team spawn <pre><team></pre> - <yellow>Establece el spawn del equipo en tu posición",
+        "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Establece la capacidad de conectarse a un equipo mediante una entidad",
+        "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [holograma] [primer nivel] [nombre] [equipo] [máximo de recursos generados]</pre> - <yellow>Añadir el spawn de items en tu posición",
+        "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>Establece el bloque objetivo del equipo en tu posición (puede ser otro bloque, no solo la cama)",
+        "bw_admin_save": "/bw admin <pre><arena></pre> save - <green>¡Guardar la partida y activarla!",
+        "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Elimina todos los spawns en tu ubicación",
+        "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>Establece la hora en la arena (DÍA, NOCHE, etc.)",
+        "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Establece el tiempo de espera antes de que el jugador sea teletransportado fuera de la arena",
+        "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>Habilita el prefijo personalizado para arena",
+        "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Eliminar la arena"
     },
     "no_permissions": "<red>¡No tienes los suficientes permisos para hacer eso!",
     "safe_reload": "<green>Esperando a que todas las partidas se terminen o 60 segundos antes de recargar el plugin.",
@@ -220,7 +236,9 @@
             "edit": {
                 "success": {
                     "game_time_set": "<green>La hora del juego se estableció en <gray><time>",
-                    "team_removed": "<green>¡El equipo <gray><team><green> fue eliminado con éxito!"
+                    "team_removed": "<green>¡El equipo <gray><team><green> fue eliminado con éxito!",
+                    "store_entity_type_set": "<green>¡El tipo de entidad viviente de la tienda se ha establecido en <gray><type><green>!",
+                    "removed_spawners": "<gray><count> <green>los spawners se han eliminado de <gray><x>/<y>/<z>"
                 },
                 "errors": {
                     "invalid_bounds": "<red>¡La diferencia de altura entre pos1 y pos2 es demasiado pequeña! ¡El mínimo son 5 bloques!",
@@ -232,13 +250,20 @@
                     "team_already_exists": "<red>¡Este equipo ya existe!",
                     "spawners_needed": "<red>¡El juego debe tener al menos un generador de items!",
                     "invalid_time": "<red>¡El tiempo <gray><number><red> no es válido!",
-                    "must_be_in_same_world": "<red>¡Todos los comandos deben ejecutarse en el mismo mundo!"
+                    "must_be_in_same_world": "<red>¡Todos los comandos deben ejecutarse en el mismo mundo!",
+                    "invalid_arena_weather": "<red>¡Incorrecto el tipo de clima del mundo de la arena!",
+                    "invalid_spawner_type": "<red>¡El generador debe ser de bronce, hierro, oro o por configuración personalizada!",
+                    "invalid_spawner_level": "<white>Número de nivel incorrecto, se utilizó el nivel 1 predeterminado.",
+                    "invalid_color": "<red>¡Este color no es válido!",
+                    "invalid_bar_color": "<red>¡Color incorrecto para el Boss Bar!",
+                    "invalid_entity_type": "<red>¡Tipo de entidad viviente erronea!"
                 }
             },
             "error": {
                 "already_exists": "<red>¡La arena ya existe!",
                 "already_working_on_it": "<red>¡La arena ya existe pero no está terminada!",
-                "arena_must_be_in_edit_mode": "<red>¡La arena debe estar en modo edición!"
+                "arena_must_be_in_edit_mode": "<red>¡La arena debe estar en modo edición!",
+                "arena_not_in_edit": "<red>¡La arena no existe o se está ejecutando! Desactívala con <gray>/bw admin <pre><arena></pre> edit<red> y luego actívala con <gray>/bw admin <pre><arena></pre> save"
             },
             "success": {
                 "removed": "<red><b>¡Arena eliminada!",
@@ -250,11 +275,16 @@
         "team_join_entity": {
             "entity_not_compatible": "<red>¡La entidad que estas intentando utilizar no es compatible! ¡Solo se pueden usar entidades vivas o soportes de armadura!",
             "entity_added": "<green>¡Se añadió la entidad para unirse al equipo!"
+        },
+        "info_select": {
+            "teams": "<green>Lista de equipos<white> - <gray><command>",
+            "config": "<green>Configuración<white> - <gray><command>",
+            "click": "<aqua>Haz clic para ejecutar <gray><command><aqua>!"
         }
     },
     "update": {
         "patch_release": [
-            "Puedes descargarlo desde <url>"
+            "<yellow>¡Ya está aquí el nuevo parche para BedWars <version> !"
         ],
         "new_release": [
             "<green>¡La nueva versión de Bedwars <version> está disponible!",
@@ -263,10 +293,29 @@
     },
     "specials": {
         "trap": {
-            "built": "<green>¡Has construido una trampa! ¡Ahora espera a que alguien quede atrapado!"
+            "built": "<green>¡Has construido una trampa! ¡Ahora espera a que alguien quede atrapado!",
+            "caught": "<red>¡Quedaste atrapado en la trampa del equipo <white><team><red>!",
+            "caught_team": "<white><player><red> quedó atrapado en la trampa de tu equipo!"
         },
         "tracker": {
             "no_target_found": "<red>¡No se encontró ningún objetivo!"
+        },
+        "tntsheep": {
+            "no_target_found": "<red>¡No se encontró ningún objetivo!"
+        },
+        "arrow_blocker": {
+            "already_activated": "<red>¡El bloqueador de flechas ya está activado!"
+        }
+    },
+    "leaderboard": {
+        "line": "<bold><order>.</bold> <gray><player> - <green><score>"
+    },
+    "party": {
+        "inform_game_join": "<green>Unirse al juego del líder del grupo",
+        "command": {
+            "help": "/bw party warp - <yellow>Transporta a todos los jugadores a tu juego o hacia ti",
+            "not_party_leader": "<red>¡No eres el líder de este grupo!",
+            "is_empty": "<red>¡Tu grupo está vacío, no puedes transportar a nadie!"
         }
     }
 }
