@@ -153,7 +153,10 @@
         "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>Establece la hora en la arena (DÍA, NOCHE, etc.)",
         "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Establece el tiempo de espera antes de que el jugador sea teletransportado fuera de la arena",
         "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>Habilita el prefijo personalizado para arena",
-        "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Eliminar la arena"
+        "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Eliminar la arena",
+        "bw_admin_store_remove": "/bw admin <pre><arena></pre> store remove - <yellow>Elimina el aldeano comerciante de tu posición",
+        "bw_admin_store_type": "/bw admin <pre><arena></pre> store type <pre><living entity></pre> - <yellow>Establece el tipo de entidad de la tienda (Aldeano, Caballo, Vaca, Cerdo, etc.)",
+        "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><constant> <value></pre> - <yellow>Establece el valor de la variable constante para el juego"
     },
     "no_permissions": "<red>¡No tienes los suficientes permisos para hacer eso!",
     "safe_reload": "<green>Esperando a que todas las partidas se terminen o 60 segundos antes de recargar el plugin.",
@@ -238,7 +241,9 @@
                     "game_time_set": "<green>La hora del juego se estableció en <gray><time>",
                     "team_removed": "<green>¡El equipo <gray><team><green> fue eliminado con éxito!",
                     "store_entity_type_set": "<green>¡El tipo de entidad viviente de la tienda se ha establecido en <gray><type><green>!",
-                    "removed_spawners": "<gray><count> <green>los spawners se han eliminado de <gray><x>/<y>/<z>"
+                    "removed_spawners": "<gray><count> <green>los spawners se han eliminado de <gray><x>/<y>/<z>",
+                    "custom_prefix_disabled": "<green>El prefijo personalizado se deshabilitó correctamente.",
+                    "custom_prefix_enabled": "<green>El prefijo personalizado se estableció correctamente en <gray><prefix><green>."
                 },
                 "errors": {
                     "invalid_bounds": "<red>¡La diferencia de altura entre pos1 y pos2 es demasiado pequeña! ¡El mínimo son 5 bloques!",
