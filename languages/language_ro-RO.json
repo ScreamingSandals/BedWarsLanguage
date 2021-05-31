@@ -190,6 +190,113 @@
         "bw_admin_team_color": "/bw admin <pre><arena></pre> team color <pre><team> <color></pre> - <yellow>Schimba culoarea echipei",
         "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>Schimba numarul maxim de jucatori in echipa",
         "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>Seteaza blocul tinta la pozitiq ta (poate fi si alt bloc, nu doar pat)",
-        "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Seteaza abilitatea de a conecta o echipa la o entitate"
+        "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Seteaza abilitatea de a conecta o echipa la o entitate",
+        "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Sterge arena",
+        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Sterge toate spawnerele",
+        "bw_admin_store_add": "/bw admin <pre><arena></pre> store add [numele deasupra entitatii] [fisierul shopului] [foloseste shop principal] - <yellow>Adauga un villager pentru shop la locatia ta",
+        "bw_admin_store_remove": "/bw admin <pre><arena></pre> store remove - <yellow>Sterge villagerul de la locatia ta",
+        "bw_admin_store_type": "/bw admin <pre><arena></pre> store type <pre><living entity></pre> - <yellow>Seteaza tipul de entitate al magazinului (Villager, Horse, Cow, Pig etc.)",
+        "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><constant> <value></pre> - <yellow>Seteaza o valoare constanta pentru joc",
+        "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>Seteaza timpul arenei (DAY, NIGHT, etc.)",
+        "bw_admin_arena_weather": "/bw admin <pre><arena></pre> arenaweather <pre><type></pre> - <yellow>Seteaza vremea arenei (default, CLEAN, DOWNFALL)",
+        "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Seteaza timpul de asteptare inainte ca jucatorul sa fie teleportat din arena",
+        "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>Activeaza prefix specific pentru arena",
+        "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Opreste arena si o schimba in modul de editat",
+        "bw_admin_save": "/bw admin <pre><arena></pre> save - <green>Salveaza arena si o activeaza!",
+        "bw_alljoin": "/bw alljoin [arena] - <green>Adauga toti jucatorii de pe server intr-un joc",
+        "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Sterge toate spawnerele la locatia ta",
+        "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>Marcheaza entitatea de shop ca si adult",
+        "bw_dump": "/bw dump - <yellow>Iti da link de la informatiile serverului. Acest link poate fi folositor pentru suport",
+        "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Marcheaza entitatea de shop ca si copil",
+        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>Daca arena este in modul de editare, aceasta comanda va activa modul interactiv"
+    },
+    "admin": {
+        "arena": {
+            "error": {
+                "arena_not_in_edit": "<red>Arena nu exista sau merge! Dezactiveaz-o cu <gray>/bw admin <pre><arena></pre> edit<red>si apoi activeaz-o cu <gray>/bw admin <pre><arena></pre> save",
+                "arena_must_be_in_edit_mode": "<red>Arena trebuie sa fie in modul de editat!",
+                "already_exists": "<red>Arena deja exista!",
+                "already_working_on_it": "<red>Arena deja exista dar nu e terminata!"
+            },
+            "edit": {
+                "errors": {
+                    "must_be_in_same_world": "<red>Toate comenzi trebuie executate in aceeasi lume!",
+                    "invalid_spawner_type": "<red>Spawnerul trebuie sa fie bronze, iron, gold, sau configuratie proprie!",
+                    "team_already_exists": "<red>Aceasta echipa exista deja!",
+                    "set_bounds_before_save": "<red>Inainte sa salvezi arena seteaza coordonatele pos1 si pos2 (Determina marimea si pozitia arenei)!",
+                    "set_stores_before_save": "<red>Inainte sa salvezi arena adauga macar 1 magazin!",
+                    "set_spawners_before_save": "<red>Inainte sa salvezi arena adauga macar 1 spawner!",
+                    "invalid_constant_value": "<red>Valoare gresita! Poate sa fie doar <gray>true<red>, <gray>false<red> sau <gray>inherit<red>!",
+                    "npc_must_have_skin_name": "<red>Faca folosesti tipul PLAYER, trebuie sa specifi skinul cu formatul <gray>PLAYER:[nume skin]",
+                    "invalid_countdown": "<red>Numaratoarea inversa trebuie sa fie intre <lowest> < x < <highest> secunde!",
+                    "must_be_in_bounds": "<red>Locatia trebuie plasata in arena (coordonatele pos1 si pos2)!",
+                    "set_bounds_first": "<red>Inainte sa setezi spawnul, seteaza coordonatele pos1 si pos2 (Determina marimea si pozitia arenei)!",
+                    "invalid_bounds": "<red>Inaltimea dintre pos1 si pos2 este prea mica! Minimul este de 5 blocuri!",
+                    "store_already_exist": "<red>Magazinul exista deja!",
+                    "store_does_not_exist": "<red>Magazinul nu exista!",
+                    "invalid_spawner_level": "<white>Numar nivel gresit, nivelul 1 a fost folosit.",
+                    "invalid_color": "<red>Aceasta culoare este invalida!",
+                    "max_players": "<red>Numarul de jucatori maxim trebuie sa fie >= 1!",
+                    "need_2_teams": "<red>Arena are nevoie de 2 sau mai multe echipe!",
+                    "spawners_needed": "<red>Arena trebuie sa aiba macar un spawner de iteme!",
+                    "team_does_not_exist": "<red>Aceasta echipa nu exista!",
+                    "set_lobby_before_save": "<red>Inainte sa salvezi arena seteaza spawnul lobby-ului!",
+                    "set_spec_before_save": "<red>Inainte sa salvezi arena si seteaza spawnul spectatorilor!",
+                    "set_target_block_for_team_before_save": "<red>Inainte sa salvezi arena seteaza blocul tinta pentru echipa <gray><team><red>!",
+                    "set_spawn_for_team_before_save": "<red>Inainte sa salvezi arena seteaza spawnul echipei <gray><team><red>!",
+                    "invalid_min_players": "<red>Minimul de jucatori trebuie sa fie 2 sau mai mult!",
+                    "invalid_constant_name": "<red>Nume gresit de constanta!",
+                    "invalid_arena_time": "<red>Tip de timp de arena gresit!",
+                    "invalid_arena_weather": "<red>Tipul de vreme pentru arena este gresit!",
+                    "invalid_bar_color": "<red>Culoare gresita pentru Boss Bar!",
+                    "invalid_entity_type": "<red>Tip de entitate gresit!",
+                    "invalid_time": "<red>Timpul <gray><number><red> este invalid!"
+                },
+                "success": {
+                    "target_block_set": "<green>Blocul tinta (<gray><material><green>) al echipei <gray><team><green> a fost setat cu succes la pozitia XYZ: <gray><x>/<y>/<z>",
+                    "spawner_added": "<green>Spawnerul <gray><resource><green> a fost adaugat cu succes la pozitia XYZ: <gray><x>/<y>/<z>",
+                    "lobby_spawn_set": "<green>Spawnul in lobby a fost setat la pozitia XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "pos2_set": "<green>Pozitia 2 a arenei <gray><arena><green> a fost setata la XYZ: <gray><x>/<y>/<z>",
+                    "game_time_set": "<green>Timpul in joc a fost setat la <gray><time>",
+                    "arena_time_set": "<green>Timpul arenei a fost setat la <gray><time><green>!",
+                    "bar_color_set": "<green>Culoare setata la <gray><color><green> pentru bossbar <gray><type><green>!",
+                    "removed_spawners": "<gray><count> <green>spawnere au fost sterse de la <gray><x>/<y>/<z>",
+                    "team_spawn_set": "<green>Spawnul echipei <gray><team><green> a fost setat cu succes la pozitia XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "saved_and_started": "<green>Arena a fost salvata cu succes si acum ruleaza! Poti intra si te juca in arena acum!",
+                    "team_maxplayers_set": "<green>Numarul maxim de playeri pentru echipa <gray><team><green> a fost setat la <gray><maxplayers>",
+                    "team_color_set": "<green>Culoarea echipei <gray><team><green> a fost setata la <teamcolor>",
+                    "team_removed": "<green>Echipa <gray><team><green> a fost stearsa cu succes!",
+                    "team_created": "<green>Echipa <gray><team><green> a fost creeata cu succes cu culoarea <teamcolor><green> si numarul maxim de jucatori: <gray><maxplayers>",
+                    "spawners_removed": "<green>Toate spawnerele echipei <gray><arena><green> au fost sterse!",
+                    "store_added": "<green>Un magazin a fost adaugat la pozitia: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "store_removed": "<green>Sateanul de la pozitia XYZ: <gray><x>/<y>/<z><green> a fost sters cu succes!",
+                    "spec_spawn_set": "<green>Spawnul spectatorilor a fost setat cu succes la pozitia XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "pos1_set": "<green>Pozitia 1 a arenei <gray><arena><green> a fost setata la XYZ: <gray><x>/<y>/<z>",
+                    "lobby_pos1_set": "<green> Pozitia 1 a lobbyului din arena <gray><arena><green> a fost setata la XYZ: <gray><x>/<y>/<z>",
+                    "lobby_pos2_set": "<green> Pozitia 2 a lobbyuluii din arena <gray><arena><green> a fost setat la XYZ: <gray><x>/<y>/<z>",
+                    "lobby_countdown_set": "<green>Numaratoare inversa a lobbyului a fost setata la <gray><countdown>",
+                    "min_players_set": "<green>Minimul de jucatori a fost setat cu succes la <gray><min><green>!",
+                    "constant_set": "<green>Constanta <gray><config><green> a fost setata cu succes la <gray><value><green>!",
+                    "weather_set": "<green>Vremea arenei a fost setata la <gray><weather><green>!",
+                    "store_entity_type_set": "<green>Tipul entitatii magazinului a fost setat la <gray><type><green>!",
+                    "child_state": "<green>Variabila isBaby pentru acest magazin a fost schimbata la <gray><value>"
+                }
+            },
+            "success": {
+                "removed": "<red><b>Arena stearsa!",
+                "added": "<green>Arena adaugata!",
+                "edit_mode": "<green>Arena schimbata in modul de editat!"
+            }
+        },
+        "usage": "<red>Foloseste: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>"
+    },
+    "update": {
+        "new_release": [
+            "<green>O noua versiune <version> de BedWars este valabila!",
+            "Descarca-l de la <url>"
+        ],
+        "patch_release": [
+            "<yellow>Un nou patch pentru BedWars <version> este aici!"
+        ]
     }
 }
