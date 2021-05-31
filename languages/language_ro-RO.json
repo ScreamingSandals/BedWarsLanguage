@@ -196,7 +196,7 @@
         "bw_admin_store_add": "/bw admin <pre><arena></pre> store add [numele deasupra entitatii] [fisierul shopului] [foloseste shop principal] - <yellow>Adauga un villager pentru shop la locatia ta",
         "bw_admin_store_remove": "/bw admin <pre><arena></pre> store remove - <yellow>Sterge villagerul de la locatia ta",
         "bw_admin_store_type": "/bw admin <pre><arena></pre> store type <pre><living entity></pre> - <yellow>Seteaza tipul de entitate al magazinului (Villager, Horse, Cow, Pig etc.)",
-        "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><constant> <value></pre> - <yellow>Seteaza o valoare constanta pentru joc",
+        "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><constant> <value></pre> - <yellow>Seteaza o valoare pentru variabila constanta pentru joc",
         "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>Seteaza timpul arenei (DAY, NIGHT, etc.)",
         "bw_admin_arena_weather": "/bw admin <pre><arena></pre> arenaweather <pre><type></pre> - <yellow>Seteaza vremea arenei (default, CLEAN, DOWNFALL)",
         "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Seteaza timpul de asteptare inainte ca jucatorul sa fie teleportat din arena",
@@ -279,7 +279,10 @@
                     "constant_set": "<green>Constanta <gray><config><green> a fost setata cu succes la <gray><value><green>!",
                     "weather_set": "<green>Vremea arenei a fost setata la <gray><weather><green>!",
                     "store_entity_type_set": "<green>Tipul entitatii magazinului a fost setat la <gray><type><green>!",
-                    "child_state": "<green>Variabila isBaby pentru acest magazin a fost schimbata la <gray><value>"
+                    "child_state": "<green>Variabila isBaby pentru acest magazin a fost schimbata la <gray><value>",
+                    "post_game_waiting": "<green>Timpul de asteptare dupa joc a fost setat cu succes la <gray><number><green>!",
+                    "custom_prefix_enabled": "<green>Prefix propriu a fost setat cu succes la <gray><prefix><green>.",
+                    "custom_prefix_disabled": "<green>Prefix propriu dezactivat cu succes."
                 }
             },
             "success": {
@@ -288,7 +291,69 @@
                 "edit_mode": "<green>Arena schimbata in modul de editat!"
             }
         },
-        "usage": "<red>Foloseste: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>"
+        "usage": "<red>Foloseste: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>",
+        "team_join_entity": {
+            "click_right_on_entity": "<green>Acum foloseste clic dreapta pe entitatea dorita pentru care vrei sa intri in echipa: <gray><team>",
+            "entity_not_compatible": "<red>Entitatea pe care vrei sa o alegi nu este compatibila! Doar entitati in viata sau armor standuri pot fi folosite!",
+            "entity_added": "<green>Entitate pentru a intra in echipa adaugata!"
+        },
+        "info": {
+            "status_waiting": "<yellow>ASTEAPTA JUCATORI",
+            "pos1": "<gray>Pozitia 1: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "lobby": "<gray>Pozitie lobby: <white>World: <gray><world> <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "team_target": "  <gray>Pat: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "villager_entity_type": "  Tip: <green><type>",
+            "villager_shop_name": "  Nume magazin: <gold><file><reset> (mostenit de la principal: <gray><bool><reset>)",
+            "game_time": "<gray>Durata jocului: <white><time> s",
+            "constant_inherit": "<yellow>Mostenit de la configurarea pluginului",
+            "header": "<green>Detaliile arenei:",
+            "name": "<gray>Nume: <reset><name>",
+            "status_disabled": "<red>DEZACTIVAT",
+            "status_running": "<green>IN JOC",
+            "status_rebuilding": "<yellow>RECONSTRUIRE",
+            "status_disabled_in_edit": "<red>DEZACTIVATA<reset> (<yellow>IN MODUL DE EDITAT<reset>)",
+            "world": "<gray>Lume: <reset><world>",
+            "pos2": "<gray>Pozitia 2: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "spec": "<gray>Pozitie spectatori: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "teams": "<gray>Echipe:",
+            "team": "- <team><reset> (Numar maxim de jucatori: <gray><maxplayers><reset>)",
+            "team_spawn": "  <gray>Spawnul echipei: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "spawners": "<gray>Spawnere:",
+            "spawner": "- <resource> <gray>- <team> <gray>- <yellow>Holograma: <white><holo> <gray>- XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "min_players": "<gray>Numar minim jucatori: <reset><minplayers>",
+            "villagers": "<gray>Magazine:",
+            "villager_shop": "  Are magazin propriu: <gray><bool>",
+            "villager_shop_dealer_name": "  Magazin nume propriu deasupra capului: <name><reset>",
+            "villager_shop_dealer_has_no_name": "<red>Nici un nume setat",
+            "lobby_countdown": "<gray>Numaratoare inversa inainte sa inceapa jocul: <white><time> s",
+            "status": "<gray>Stare: <reset><status>",
+            "villager_pos": "- XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "constants": "<gray>Configurarea constantelor:",
+            "constant_true": "<green>Adevarat",
+            "constant_false": "<red>Fals",
+            "post_game_waiting": "<gray>Timp asteptare dupa joc: <white><time> s",
+            "spawner_no_team": "<red>Fara echipa",
+            "file": "<gray><i>Fisier: <file>",
+            "constant": "- <gray><constant><reset>: <gray><value>"
+        },
+        "info_select": {
+            "header": "<green>Selecteaza sectiunea de informatie a arenei <gray><arena><green>:",
+            "click": "<aqua>Click pentru a executa <gray><command><aqua>!",
+            "base": "<green>Informatii de baza<white> - <gray><command>",
+            "stores": "<green>Lista magazinelor<white> - <gray><command>",
+            "spawners": "<green>Lista spawnerelor<white> - <gray><command>",
+            "teams": "<green>Lista echipelor<white> - <gray><command>",
+            "config": "<green>Configurare<white> - <gray><command>"
+        },
+        "mainlobby": {
+            "info": "<red>ATENTIE<white>: Trebuie sa executi /bw reload pentru ca lobbyul principal sa mearga!"
+        },
+        "holo": {
+            "not_enabled": "<red>Hologramele sunt dezactivate. Este Holographic Displays instalat?",
+            "added": "<green>Holograma adaugata la pozitia ta!",
+            "click_to_remove": "<yellow>Acum da clic pe holograma pe care o vrei stearsa!",
+            "removed": "<green>Holograma stearsa cu succes!"
+        }
     },
     "update": {
         "new_release": [
@@ -298,5 +363,79 @@
         "patch_release": [
             "<yellow>Un nou patch pentru BedWars <version> este aici!"
         ]
+    },
+    "language": {
+        "already_set": "Limba: [<lang>] este deja setata ca si limba prestabilita!",
+        "success": "<green>Limba setata cu succes la <white>[<lang>]",
+        "usage_bw_lang": "Foloseste: /bw lang <pre><locale></pre> - <yellow>Seteaza limba folosita de catre <red>Bed<white>Wars",
+        "invalid": "<red>Limba specificata nu poate fi incarcata!"
+    },
+    "specials": {
+        "trap": {
+            "built": "<green>Ai construit o capcana! Asteapta sa calce cineva in ea!",
+            "caught": "<red>Ai fost prins in capcana echipei <white><team><red>!",
+            "caught_team": "<white><player><red> a fost prin in capcana echipei tale!"
+        },
+        "tracker": {
+            "target_found": "<white><target> <green>a fost gasit la <white><distance> <geen>blocuri distanta!",
+            "no_target_found": "<red>Nu a fost gasita tinta!"
+        },
+        "rescue_platform": {
+            "created": "<green>Platforma este creata si va fi distrusa in <white><time> <green>secunde.",
+            "not_in_air": "<red>Pentru a folosi asta, trebuie sa fi in aer.",
+            "destroy": "<red>Platforma va fi distrusa in <white><time> <red>secunde.",
+            "created_unbreakable": "<green>Unbreakable Platform a fost creeata!"
+        },
+        "protection_wall": {
+            "created": "<green>Protection Wall este creata si va fi distrusa in <white><time> <green>secunde.",
+            "not_usable_here": "<red>Nu mai este spatiu pentru a creea Protection Wall.",
+            "destroy": "<red>Protection Wall va fi distrus in <white><time> <red>secunde.",
+            "created_unbreakable": "<green>Unbreakable Protection Wall este creata!"
+        },
+        "team_chest": {
+            "placed": "<green>Un nou cufar al echipei a fost plasat!",
+            "name": "<green><bold>Cufarul echipei",
+            "not_yours": "<yellow>Acest cufar nu este al echipei tale!",
+            "broken": "<red>Cufarul echipei tale a fost spart!"
+        },
+        "warp_powder": {
+            "multiuse": "<red>Alt WarpPowder este deja activat!",
+            "canceled": "<red>WarpPowder a fost oprit!",
+            "started": "<green>WarpPowder este pornit! Nu te misca pentru <gray><time><green> secunde!"
+        },
+        "tntsheep": {
+            "no_target_found": "<red>Nu a fost gasita tinta!"
+        },
+        "arrow_blocker": {
+            "started": "<green>Arrow blocker a fost activat pentru <white><time><green> secunde!",
+            "already_activated": "<red>Arrow blocker este deja activat!",
+            "ended": "<red>Arrow blocker nu mai este activat!"
+        },
+        "golem": {
+            "created": "<green>Golem a fost spawnat."
+        },
+        "item_delay": "<red>Trebuie sa astepti <time> secunde inainte sa folosesti acest item iarasi!"
+    },
+    "leaderboard": {
+        "holo_added": "<green>Holograma pentru clasament a fost adaugata la pozitia ta!",
+        "no_scores": "<gray>Nu sunt scoruri inca!",
+        "header": "<gold>Clasament BedWars - Top <number> jucatori",
+        "line": "<bold><order>.</bold> <gray><player> - <green><score>"
+    },
+    "party": {
+        "inform_game_join": "<green>Te alaturi jocului liderului echipei",
+        "warped": "<green>Liderul echipei te-a teleportat aici",
+        "command": {
+            "invalid_arguments": "<red>Numar invalid de argumente!, scrie /bw party help pentru mai multe",
+            "help": "/bw party warp - <yellow>Teleporteaza toti jucatorii la jocul tau sau la tine",
+            "not_in_party": "<red>Trebuie sa fi intr-o echipa pentru a face asta!",
+            "not_party_leader": "<red>Nu esti liderul acestei echipe!",
+            "is_empty": "<red>Echipa ta este goala, nu poti teleporta pe nimeni!",
+            "warped": "<green>Membrii echipei au fost teleportati"
+        }
+    },
+    "dump": {
+        "success": "<green>Informatii server trimise. Link: <dump>",
+        "failed": "<red>Informatii server nereusite!"
     }
 }
