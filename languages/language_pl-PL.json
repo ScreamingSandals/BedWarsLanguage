@@ -5,7 +5,8 @@
         "admin": {
             "created": "<green>Tabliczka została pomyślnie utworzona!",
             "cannot_create": "<red>Tabliczka nie może zostać stworzona! Proszę sprawdzić nazwę areny!",
-            "cannot_destroy": "<red>Nie masz uprawnień do zniszczenia tej tabliczki!"
+            "cannot_destroy": "<red>Nie masz uprawnień do zniszczenia tej tabliczki!",
+            "unknown_game": "<red>Gra napisana na tabliczce nie istnieje! Skontaktuj się z administratorem!"
         },
         "status": {
             "waiting": {
@@ -41,7 +42,7 @@
         "header": "<green>Statystyki dla <red><player><green>:"
     },
     "unknown_command": "<red>Nieznana komenda! Wpisz <dark_red>/bw help <red>aby uzyskać pomoc!",
-    "no_permissions": "<red>Nie posiadasz uprawnień do tego!",
+    "no_permissions": "<red>Nie posiadasz wymaganych uprawnień!",
     "unknown_usage": "<red>Błędne argumenty! Wpisz<dark_red>/bw help <red>aby uzyskać pomoc!",
     "in_game": {
         "errors": {
@@ -55,7 +56,9 @@
             "vip_not_enough_players": "<red>Nie ma wystarczającej ilości graczy na arenie!",
             "game_kicked_by_vip": "<red>Zostałeś wyrzucony przez VIPa!",
             "game_is_rebuilding": "<red>Arena <gray><arena><red> jest restartowana! Proszę czekać...",
-            "vip_game_is_full": "<red>Arena <gray><arena> <red>jest pełna graczy VIP . Poczekaj na zakończenie gry!"
+            "vip_game_is_full": "<red>Arena <gray><arena> <red>jest pełna graczy VIP . Poczekaj na zakończenie gry!",
+            "game_is_gone": "<red>Wygląda na to, że gra, w której byłeś, nie jest już na tym świecie.",
+            "there_is_no_empty_game": "<red>Nie ma gry w stanie oczekiwania. Wszystkie gry już działają!"
         },
         "target_block": {
             "hologram": {
@@ -72,7 +75,9 @@
                 }
             },
             "destroyed": {
-                "bed": "Łóżko drużyny <team><reset> zostało zniszczone!"
+                "bed": "Łóżko drużyny <team><reset> zostało zniszczone!",
+                "cake": "Ciasto drużyny <team><reset> zostało zjedzone!",
+                "anchor": "Kotwica odrodzenia drużyny <team><reset> została zniszczona!"
             }
         },
         "respawn_cooldown": {
@@ -125,5 +130,6 @@
         "game_start_subtitle": "<green>Arena <gray><arena><green> wystartowała! Miłej gry!",
         "player_self_killed": "<red>Gracz <victim> <red>zginął!"
     },
-    "success": "<green>Komenda wykonana pomyślnie!"
+    "success": "<green>Komenda wykonana pomyślnie!",
+    "safe_reload_failed_to_stop_game": "<red>Niektóre gry nie zostały zatrzymane na czas, arena mogła zostać uszkodzona!"
 }
