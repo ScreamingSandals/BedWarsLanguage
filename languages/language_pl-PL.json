@@ -77,7 +77,10 @@
             "destroyed": {
                 "bed": "Łóżko drużyny <team><reset> zostało zniszczone!",
                 "cake": "Ciasto drużyny <team><reset> zostało zjedzone!",
-                "anchor": "Kotwica odrodzenia drużyny <team><reset> została zniszczona!"
+                "anchor": "Kotwica odrodzenia drużyny <team><reset> została zniszczona!",
+                "any": "Blok docelowy <drużyna><reset> został zniszczony!",
+                "subtitle": "Możesz teraz zabijać członków drużyny!",
+                "subtitle_victim": "Teraz już nigdy się nie odrodzisz!"
             }
         },
         "respawn_cooldown": {
