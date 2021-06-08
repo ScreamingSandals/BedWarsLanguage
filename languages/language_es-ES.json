@@ -156,7 +156,12 @@
         "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Eliminar la arena",
         "bw_admin_store_remove": "/bw admin <pre><arena></pre> store remove - <yellow>Elimina el aldeano comerciante de tu posición",
         "bw_admin_store_type": "/bw admin <pre><arena></pre> store type <pre><living entity></pre> - <yellow>Establece el tipo de entidad de la tienda (Aldeano, Caballo, Vaca, Cerdo, etc.)",
-        "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><constant> <value></pre> - <yellow>Establece el valor de la variable constante para el juego"
+        "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><constant> <value></pre> - <yellow>Establece el valor de la variable constante para el juego",
+        "bw_admin_arena_weather": "/bw admin <pre><arena></pre> arenaweather <pre><type></pre> - <yellow>Establece el clima en la arena (predeterminado, CLEAN, DOWNFALL)",
+        "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Desactiva el juego y cambia la arena al modo de edición",
+        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>Si arena está en modo de edición, este comando habilitará el modo interactivo",
+        "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Marcar a este comerciante como niño",
+        "bw_dump": "/bw dump - <yellow>Volcado del servidor y te da un enlace de volcado. Este enlace puede ser útil para soporte"
     },
     "no_permissions": "<red>¡No tienes los suficientes permisos para hacer eso!",
     "safe_reload": "<green>Esperando a que todas las partidas se terminen o 60 segundos antes de recargar el plugin.",
@@ -243,7 +248,8 @@
                     "store_entity_type_set": "<green>¡El tipo de entidad viviente de la tienda se ha establecido en <gray><type><green>!",
                     "removed_spawners": "<gray><count> <green>los spawners se han eliminado de <gray><x>/<y>/<z>",
                     "custom_prefix_disabled": "<green>El prefijo personalizado se deshabilitó correctamente.",
-                    "custom_prefix_enabled": "<green>El prefijo personalizado se estableció correctamente en <gray><prefix><green>."
+                    "custom_prefix_enabled": "<green>El prefijo personalizado se estableció correctamente en <gray><prefix><green>.",
+                    "saved_and_started": "<green>¡El juego se ha guardado correctamente y se está ejecutando! ¡Ahora puedes unirte y jugar en la arena!"
                 },
                 "errors": {
                     "invalid_bounds": "<red>¡La diferencia de altura entre pos1 y pos2 es demasiado pequeña! ¡El mínimo son 5 bloques!",
@@ -261,7 +267,22 @@
                     "invalid_spawner_level": "<white>Número de nivel incorrecto, se utilizó el nivel 1 predeterminado.",
                     "invalid_color": "<red>¡Este color no es válido!",
                     "invalid_bar_color": "<red>¡Color incorrecto para el Boss Bar!",
-                    "invalid_entity_type": "<red>¡Tipo de entidad viviente erronea!"
+                    "invalid_entity_type": "<red>¡Tipo de entidad viviente erronea!",
+                    "npc_must_have_skin_name": "<red>Si usas el tipo de entidad PLAYER, debes especificar el nombre de la skin en formato <gray>PLAYER:[propietario de la skin]",
+                    "invalid_countdown": "<red>¡La cuenta regresiva debe estar dentro de <lowest> < x < <highest> segundos!",
+                    "set_bounds_first": "<red>¡Antes de configurar el spawn, configure las coordenadas pos1 y pos2 (determinando el tamaño y la posición de la arena)!",
+                    "set_lobby_before_save": "<red>¡Antes de guardar el juego, establece la aparición del lobby!",
+                    "set_stores_before_save": "<red>¡Antes de guardar el juego, añade al menos 1 tienda!",
+                    "must_be_in_bounds": "<red>¡La ubicación debe colocarse dentro de la arena (coordenadas pos1 y pos2)!",
+                    "set_bounds_before_save": "<red>¡Antes de guardar el juego, establezca las coordenadas pos1 y pos2 (Determinando el tamaño y la posición de la arena)!",
+                    "set_spec_before_save": "<red>¡Antes de guardar el juego, configura la reaparición de los espectadores!",
+                    "set_target_block_for_team_before_save": "<red>¡Antes de guardar el juego, establece el bloque objetivo del equipo <gray><team><red>!",
+                    "set_spawn_for_team_before_save": "<red>¡Antes de guardar el juego, configura la generación del equipo <gray><team><red>!",
+                    "invalid_constant_name": "<red>¡Nombre incorrecto de constante!",
+                    "invalid_arena_time": "<red>¡Tipo incorrecto de hora mundial de arena!",
+                    "set_spawners_before_save": "<red>¡Antes de guardar el juego, añade al menos 1 generador!",
+                    "invalid_min_players": "<red>¡Los jugadores mínimos deben ser 2 o más!",
+                    "invalid_constant_value": "<red>¡Valor incorrecto! ¡Podría ser <gray>true<red>, <gray>false<red> o <gray>inherit<red>!"
                 }
             },
             "error": {
@@ -310,6 +331,9 @@
         },
         "arrow_blocker": {
             "already_activated": "<red>¡El bloqueador de flechas ya está activado!"
+        },
+        "rescue_platform": {
+            "created_unbreakable": "<green>¡Se creó la plataforma irrompible!"
         }
     },
     "leaderboard": {
