@@ -47,7 +47,7 @@ task generateBuildInfoFile {
                 } else {
                     first = false
                 }
-                def locale = (it.name =~ /[a-z]{2}-[A-Z]{2}/).findAll()?.first()
+                def locale = (it.name =~ /[a-z]{2}-[A-Z][A-Za-z]{1,3}/).findAll()?.first()
                 contents += "\"${locale}\": \"languages/${it.name}\""
             }
             contents += "}}"
