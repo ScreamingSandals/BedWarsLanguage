@@ -1,1 +1,14 @@
-{}
+{
+    "unknown_command": "<red>없는 명령어입니다! <dark_red>/bw help <red> 이 명령어를 사용해서 도움말을 보세요!",
+    "no_permissions": "<red>당신은 필요한 권한을 가지고 있지 않습니다!",
+    "safe_reload_failed_to_stop_game": "<red>일부 게임은 제때에 중단되지 않았습니다. 경기장이 손상되었을 수 있습니다!",
+    "unknown_usage": "<red> 잘못된 접근입니다! <dark_red>/bw help <red> 이 명령어를 사용해서 도움말을 보세요!",
+    "safe_reload": "<green>모든 게임이 중지되거나 60초 동안 플러그인이 리로드 하기 전까지 기다립니다.",
+    "list_header": "<green> 사용 가능한 영역:",
+    "success": "<green> 명령이 성공했습니다!",
+    "sign": {
+        "admin": {
+            "created": ""
+        }
+    }
+}
