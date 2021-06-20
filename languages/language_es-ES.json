@@ -238,7 +238,10 @@
             "constant_true": "<green>Verdadero",
             "constant_false": "<red>Falso",
             "spawner_no_team": "<red>Sin equipo",
-            "file": "<gray><i>Archivo: <file>"
+            "file": "<gray><i>Archivo: <file>",
+            "constant_inherit": "<yellow>Heredado de la configuración del complemento",
+            "constants": "<gray>Configuración de constantes:",
+            "post_game_waiting": "<gray>Tiempo de espera posterior al juego: <white><time> s"
         },
         "arena": {
             "edit": {
@@ -249,7 +252,16 @@
                     "removed_spawners": "<gray><count> <green>los spawners se han eliminado de <gray><x>/<y>/<z>",
                     "custom_prefix_disabled": "<green>El prefijo personalizado se deshabilitó correctamente.",
                     "custom_prefix_enabled": "<green>El prefijo personalizado se estableció correctamente en <gray><prefix><green>.",
-                    "saved_and_started": "<green>¡El juego se ha guardado correctamente y se está ejecutando! ¡Ahora puedes unirte y jugar en la arena!"
+                    "saved_and_started": "<green>¡El juego se ha guardado correctamente y se está ejecutando! ¡Ahora puedes unirte y jugar en la arena!",
+                    "weather_set": "<green>¡El clima de la arena del mundo se ha establecido a <gray><weather><green>!",
+                    "team_spawn_set": "<green>La reaparición del equipo <gray><team><green> se ha establecido correctamente en la posición XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "team_color_set": "<green>El color de <gray><team><green> se ha establecido correctamente a <teamcolor>",
+                    "spawner_added": "<green>El generador <gray><resource><green> se ha añadido correctamente a la posición XYZ: <gray><x>/<y>/<z>",
+                    "target_block_set": "<green>El bloque objetivo (<gray><material><green>) del equipo <gray><team><green> se ha establecido con éxito en la posición XYZ: <gray><x>/<y>/<z>",
+                    "team_maxplayers_set": "<green>El máximo de jugadores en el equipo <gray><team><green> se ha establecido correctamente a <gray><maxplayers>",
+                    "team_created": "<green>El equipo <gray><team><green> se ha creado correctamente con el color <teamcolor><green> y el máximo de jugadores: <gray><maxplayers>",
+                    "spawners_removed": "<green>Los generadores del juego <gray><arena><green> se han eliminado!",
+                    "bar_color_set": "<green>¡El color de ha establecido a <gray><color><green> para el bossbar <gray><type><green>!"
                 },
                 "errors": {
                     "invalid_bounds": "<red>¡La diferencia de altura entre pos1 y pos2 es demasiado pequeña! ¡El mínimo son 5 bloques!",
@@ -305,7 +317,11 @@
         "info_select": {
             "teams": "<green>Lista de equipos<white> - <gray><command>",
             "config": "<green>Configuración<white> - <gray><command>",
-            "click": "<aqua>Haz clic para ejecutar <gray><command><aqua>!"
+            "click": "<aqua>Haz clic para ejecutar <gray><command><aqua>!",
+            "header": "<green>Por favor selecciona la sección de información de <gray><arena><green>:"
+        },
+        "holo": {
+            "removed": "<green>¡Eliminado correctamente el holográfico!"
         }
     },
     "update": {
@@ -333,7 +349,13 @@
             "already_activated": "<red>¡El bloqueador de flechas ya está activado!"
         },
         "rescue_platform": {
-            "created_unbreakable": "<green>¡Se creó la plataforma irrompible!"
+            "created_unbreakable": "<green>¡Se creó la plataforma irrompible!",
+            "not_in_air": "<red>Para usar esto, necesitas estar en el aire.",
+            "destroy": "<red>La plataforma será destruida en <white><time> <red>segundos.",
+            "created": "<green>Se ha creado la plataforma y se destruirá en <white><time> <green>segundos."
+        },
+        "protection_wall": {
+            "not_usable_here": "<red>No hay espacio para crear Muro de protección."
         }
     },
     "leaderboard": {
