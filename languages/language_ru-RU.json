@@ -204,5 +204,68 @@
         "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Удалить арену",
         "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Отключить арену и перевести её в режим редактирования",
         "bw_alljoin": "/bw alljoin [арена] - <green>Подключить всех игроков на сервере к арене"
+    },
+    "leaderboard": {
+        "holo_added": "<green>Голограмма таблицы лидеров была создана на вашей позиции!",
+        "no_scores": "<gray>Никто еще не играл!",
+        "header": "<gold>Таблица лидеров BedWars - Топ <number> игроков"
+    },
+    "specials": {
+        "item_delay": "<red>Вам нужно подождать<time> секунд прежде чем использовать этот предмет еще раз!",
+        "protection_wall": {
+            "destroy": "<red>Защитная стена будет уничтожена через <white><time> <red>секунд.",
+            "created_unbreakable": "<green>Создана неуязвимая защитная стена!",
+            "not_usable_here": "<red>Места для создания защитной стены не осталось.",
+            "created": "<green>Защитная стена развернута и закончит действие через <white><time> <green>секунд."
+        },
+        "golem": {
+            "created": "<green>Вы создали Голема."
+        },
+        "team_chest": {
+            "broken": "<red>Сундук вашей команды был сломан!",
+            "placed": "<green>Создан новый сундук команды!",
+            "not_yours": "<yellow>Этот сундук не вашей команды!",
+            "name": "<green><bold>Сундук команды"
+        },
+        "tntsheep": {
+            "no_target_found": "<red>Цель не найдена!"
+        },
+        "rescue_platform": {
+            "not_in_air": "<red>Чтобы использовать это, вы должны быть в воздухе."
+        },
+        "tracker": {
+            "no_target_found": "<red>Цель не найдена!",
+            "target_found": "<white><target> <green>найдена в<white><distance> <geen>блоках отсюда!"
+        },
+        "trap": {
+            "built": "<green>Вы поставили ловушку! Теперь дождитесь, когда кто-нибудь попадет в нее!",
+            "caught_team": "<white><player><red> попался в ловушку вашей команды!",
+            "caught": "<red>Вы попались в ловушку команды <white><team><red>!"
+        }
+    },
+    "language": {
+        "invalid": "Файл с этим переводом не может быть загружен!"
+    },
+    "dump": {
+        "success": "<green>Успешно создан дамп сервера. Ссылка:<dump>",
+        "failed": "<red>Дамп неудался!"
+    },
+    "party": {
+        "inform_game_join": "<green>Присоединение к игра лидера пати",
+        "command": {
+            "is_empty": "<red>Пати пустое, вы не можете никого варпнуть!"
+        },
+        "warped": "<green>Лидер пати телепортивал вас"
+    },
+    "admin": {
+        "info_select": {
+            "teams": "<green>Список команд<white> - <gray><command>",
+            "spawners": "<green>Список генераторов<white> - <gray><command>"
+        },
+        "info": {
+            "file": "<gray><i>Файл: <file>",
+            "spawner_no_team": "<red>Нет команды",
+            "villager_shop_dealer_has_no_name": "<red>Не задано имя"
+        }
     }
 }
