@@ -52,17 +52,103 @@
                     "team_maxplayers_set": "<green> 隊伍<gray><team><green>的最大玩家數已成功設置為 <gray><maxplayers>",
                     "target_block_set": "<green>隊伍 <gray><team><green> 的目標方塊（<gray><material><green>）已成功設置到位置 XYZ：<gray><x>/<y>/<z>",
                     "team_color_set": "<green><gray><team><green>的顏色已成功設置為<teamcolor>",
-                    "team_removed": "<green><gray><team><green> 隊伍已成功移除！"
+                    "team_removed": "<green><gray><team><green> 隊伍已成功移除！",
+                    "team_created": "<green>團隊 <gray><team><green> 已成功創建，顏色為 <teamcolor><green>，最大玩家數：<gray><maxplayers>",
+                    "spawners_removed": "<green>遊戲 <gray><arena><green> 的所有生成器都被移除了！",
+                    "spawner_added": "<green>生成器 <gray><resource><green> 已成功添加到位置 XYZ：<gray><x>/<y>/<z>",
+                    "store_added": "<green>一個商店被添加到您的位置：<gray><x>/<y>/<z> <green>YAW：<gray><yaw> <green>PITCH：<gray><pitch>",
+                    "store_removed": "<green>位於 XYZ 位置的村民：<gray><x>/<y>/<z><green> 已成功移除！",
+                    "lobby_spawn_set": "<green>大廳重生點已成功設置為位置 XYZ：<gray><x>/<y>/<z> <green>YAW：<gray><yaw> <green>PITCH：<gray><pitch>",
+                    "spec_spawn_set": "<green>觀察者重生點成功地設置到位置 XYZ：<gray><x>/<y>/<z> <green>YAW：<gray><yaw> <green>PITCH：<gray><pitch>",
+                    "pos2_set": "<green>競技場 <gray><arena><green> 的位置 2 被設置為 XYZ：<gray><x>/<y>/<z>",
+                    "lobby_pos2_set": "<green> 競技場 <gray><arena><green> 的大廳位置 2 設置為 XYZ：<gray><x>/<y>/<z>",
+                    "lobby_countdown_set": "<green>大廳倒計時設置為 <gray><countdown>",
+                    "game_time_set": "<green>遊戲時間設置為<gray><time>",
+                    "min_players_set": "<green>成功將最低玩家數設置為 <gray><min><green>！",
+                    "arena_time_set": "<green>競技場的世界時間已設置為<gray><time><green>!",
+                    "weather_set": "<green>競技場的世界天氣已設置為 <gray><weather><green>!",
+                    "bar_color_set": "<green>Boss條 <gray><type><green>的顏色設置為<gray><color><green>！",
+                    "child_state": "<green>該店主的變量 isBaby 已更改為 <gray><value>",
+                    "post_game_waiting": "<green>遊戲後等待時間已成功設置為<gray><number><green>！",
+                    "custom_prefix_disabled": "<green>自定義前綴已成功禁用。",
+                    "pos1_set": "<green>競技場 <gray><arena><green> 的位置 1 設置為 XYZ：<gray><x>/<y>/<z>",
+                    "lobby_pos1_set": "<green> 競技場 <gray><arena><green> 的大廳位置 1 設置為 XYZ：<gray><x>/<y>/<z>",
+                    "constant_set": "<green>常量 <gray><config><green> 已成功設置為 <gray><value><green>！",
+                    "store_entity_type_set": "<green>商店的生物類型已設置為 <gray><type><green>!",
+                    "custom_prefix_enabled": "<green>自定義前綴已成功設置為 <gray><prefix><green>。",
+                    "removed_spawners": "<gray><count> <green>生成器已從 <gray><x>/<y>/<z><red>移除<green>"
                 }
             }
         },
-        "usage": "<red>用法: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>"
+        "usage": "<red>用法: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>",
+        "mainlobby": {
+            "info": "<red>警告<white>：您需要執行 /bw reload 才能使 Mainlobby 工作！"
+        },
+        "holo": {
+            "not_enabled": "<red>全息已禁用。 你安裝了全息顯示器嗎？",
+            "added": "<green>全息圖添加到您的位置！",
+            "click_to_remove": "<yellow>現在點擊你想刪除的全息圖！",
+            "removed": "<green>全息圖成功移除！"
+        },
+        "team_join_entity": {
+            "click_right_on_entity": "<green>現在使用右鍵單擊要為其設置加入隊伍的所需實體：<gray><team>",
+            "entity_added": "<green>添加實體加入隊伍！",
+            "entity_not_compatible": "<red>您嘗試使用的實體不兼容！ 只能使用生物或盔甲架！"
+        },
+        "info": {
+            "header": "<green>競技場詳情：",
+            "name": "<gray>名稱: <reset><name>",
+            "status": "<gray>狀態: <reset><status>",
+            "status_disabled": "<red>禁用",
+            "status_waiting": "<yellow>等待玩家中",
+            "status_running": "<green>遊戲進行中",
+            "status_rebuilding": "<yellow>重建中",
+            "status_disabled_in_edit": "<red>禁用<reset> (<yellow>處於編輯模式<reset>)",
+            "world": "<gray>世界: <reset><world>",
+            "pos2": "<gray>位置 2: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "spec": "<gray>觀察者位置: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "teams": "<gray>隊伍:",
+            "team": "- <team><reset> (最大玩家數t: <gray><maxplayers><reset>)",
+            "team_spawn": "  <gray>隊伍重生點: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "spawners": "<gray>生成器:",
+            "min_players": "<gray>最少玩家數: <reset><minplayers>",
+            "villagers": "<gray>商店:",
+            "villager_pos": "- XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "villager_entity_type": "  類型: <green><type>",
+            "villager_shop": "  擁有自己的店鋪: <gray><bool>",
+            "villager_shop_name": "  商店名稱: <gold><file><reset> (從主繼承: <gray><bool><reset>)",
+            "villager_shop_dealer_has_no_name": "<red>未設置名稱",
+            "lobby_countdown": "<gray>比賽開始前倒計時： <white><time> 秒",
+            "game_time": "<gray>遊戲時長: <white><time> 秒",
+            "constants": "<gray>常量配置:",
+            "constant": "- <gray><constant><reset>: <gray><value>",
+            "constant_true": "<green>開啟",
+            "constant_false": "<red>關閉",
+            "post_game_waiting": "<gray>比賽後的等待時間: <white><time> 秒",
+            "spawner_no_team": "<red>沒有隊伍",
+            "file": "<gray><i>文件: <file>",
+            "pos1": "<gray>位置 1: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "lobby": "<gray>大廳位置: <white>World: <gray><world> <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "team_target": "  <gray>床: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "spawner": "- <resource> <gray>- <team> <gray>- <yellow>全息圖: <white><holo> <gray>- XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "villager_shop_dealer_name": "  頭頂商店自定義名稱: <name><reset>",
+            "constant_inherit": "<yellow>繼承自插件配置"
+        },
+        "info_select": {
+            "header": "<green>請選擇<gray><arena><green>信息部分 :",
+            "base": "<green>基本信息<white> - <gray><command>",
+            "spawners": "<green>生成器列表<white> - <gray><command>",
+            "teams": "<green>隊伍列表<white> - <gray><command>",
+            "config": "<green>配置<white> - <gray><command>",
+            "stores": "<green>店舖列表<white> - <gray><command>",
+            "click": "<aqua>點擊執行 <gray><command><aqua>!"
+        }
     },
     "sign": {
         "status": {
             "disabled": {
                 "status": "<red>遊戲",
-                "players": "<紅色>禁用"
+                "players": "<red>禁用"
             },
             "rebuilding": {
                 "status": "<gold>重建中",
@@ -151,8 +237,8 @@
         "spawner": {
             "countdown": "<yellow><seconds> <bold>秒",
             "every_second": "<bold>每一秒",
-            "full": "<red><bold>重生物資已耗盡",
-            "not_enough_level": "<red>重生物資無法工作！ 您需要 <levels> 級升級。"
+            "full": "<red><bold>物資生成器已耗盡",
+            "not_enough_level": "<red>生成器無法工作！ 您需要 <levels> 級升級。"
         },
         "resources": {
             "bronze": "青銅",
@@ -277,5 +363,79 @@
     },
     "unknown_command": "<red>未知命令！ 嘗試使用 <dark_red>/bw help <red> 尋求幫助！",
     "no_permissions": "<red>你沒有足夠的權限這樣做！",
-    "safe_reload": "<green>等待所有遊戲停止或重新加載插件前 60 秒。"
+    "safe_reload": "<green>等待所有遊戲停止或重新加載插件前 60 秒。",
+    "specials": {
+        "trap": {
+            "caught": "<red>你陷入了<white><team><red>隊伍的陷阱 !",
+            "caught_team": "<white><player><red>中了你隊伍的陷阱！",
+            "built": "<green>你設了一個陷阱！ 現在就等著有人遭殃吧！"
+        },
+        "warp_powder": {
+            "canceled": "<red>回憶粉末被取消了！",
+            "multiuse": "<red>另一個回憶粉末已經激活！",
+            "started": "<green>回憶粉末開始了！<gray><time><green> 內請不要移動 ！"
+        },
+        "tracker": {
+            "no_target_found": "<red>沒有找到目標！",
+            "target_found": "<white><target> <green>已被發現在 <white><distance> <geen>個方塊外！"
+        },
+        "rescue_platform": {
+            "not_in_air": "<red>要使用它，您需要在空中。",
+            "destroy": "<red>平台將在 <white><time> <red> 秒內被摧毀。",
+            "created_unbreakable": "<green>無法破壞的平台已創建！",
+            "created": "<green>平台已創建並將在 <white><time> <green> 秒內銷毀。"
+        },
+        "protection_wall": {
+            "not_usable_here": "<red>沒有剩餘空間可以創建保護牆。",
+            "destroy": "<red>防護牆將在<white><time> <red>秒內被摧毀。",
+            "created_unbreakable": "<green>堅不可摧的防護牆已創造！",
+            "created": "<green>保護牆已創建，並將在 <white><time> <green>秒內摧毀。"
+        },
+        "tntsheep": {
+            "no_target_found": "<red>沒有找到目標！"
+        },
+        "arrow_blocker": {
+            "already_activated": "<red>弓箭攔截器已經激活！",
+            "started": "<green>弓箭攔截器已被激活 <white><time><green> 秒！",
+            "ended": "<red>箭頭攔截器已關閉！"
+        },
+        "golem": {
+            "created": "<green>魔像已生成。"
+        },
+        "team_chest": {
+            "name": "<green><bold>隊伍寶箱",
+            "not_yours": "<yellow>這個隊伍寶箱不是你的！",
+            "placed": "<green>新隊伍寶箱已放置！",
+            "broken": "<red>你的隊伍寶箱被破壞了！"
+        },
+        "item_delay": "<red>您需要等待 <time> 秒才能再次使用此物品！"
+    },
+    "leaderboard": {
+        "no_scores": "<gray>還沒有分數！",
+        "holo_added": "<green>排行榜全息圖已添加到您的位置！",
+        "header": "<gold>BedWars 排行榜 - <number> 名玩家",
+        "line": "<bold><order>.</bold> <gray><player> - <green><score>"
+    },
+    "party": {
+        "inform_game_join": "<green>領導人加入遊戲",
+        "warped": "<green>領導人傳送你至這裡",
+        "command": {
+            "invalid_arguments": "<red>參數數量無效！，輸入 /bw party help 了解更多",
+            "help": "/bw party warp - <yellow>將所有玩家傳送至您的遊戲或您的位置",
+            "not_in_party": "<red>您必須參加遊戲才能執行此命令！",
+            "not_party_leader": "<red>你不是這個遊戲的領導！",
+            "is_empty": "<red>你的遊戲是空的，不能傳送任何人！",
+            "warped": "<green>遊戲成員已被傳送"
+        }
+    },
+    "dump": {
+        "success": "<green>成功轉儲服務器。 Link：<dump>",
+        "failed": "<red>轉儲失敗！"
+    },
+    "language": {
+        "usage_bw_lang": "Usage: /bw lang <pre><locale></pre> - <yellow>設置 <red>Bed<white>Wars 使用的語言環境",
+        "invalid": "<red>無法加載指定的語言文件！",
+        "already_set": "語言: [<lang>] 已經設置為默認語言！",
+        "success": "<green>成功將語言設置為 <white>[<lang>]"
+    }
 }
