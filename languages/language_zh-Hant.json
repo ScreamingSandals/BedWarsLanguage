@@ -50,7 +50,9 @@
                     "saved_and_started": "<green>遊戲已成功保存，正在運行！ 現在您可以加入並在競技場中玩耍了！",
                     "team_spawn_set": "<green>隊伍<gray><team><green> 的重生點被成功設置到位置 XYZ：<gray><x>/<y>/<z> <green> YAW：<gray><yaw> <green> PITCH：<gray><pitch>",
                     "team_maxplayers_set": "<green> 隊伍<gray><team><green>的最大玩家數已成功設置為 <gray><maxplayers>",
-                    "target_block_set": "<green>隊伍 <gray><team><green> 的目標方塊（<gray><material><green>）已成功設置到位置 XYZ：<gray><x>/<y>/<z>"
+                    "target_block_set": "<green>隊伍 <gray><team><green> 的目標方塊（<gray><material><green>）已成功設置到位置 XYZ：<gray><x>/<y>/<z>",
+                    "team_color_set": "<green><gray><team><green>的顏色已成功設置為<teamcolor>",
+                    "team_removed": "<green><gray><team><green> 隊伍已成功移除！"
                 }
             }
         },
