@@ -239,7 +239,30 @@
                     "set_lobby_before_save": "<red>Avant de démarrer la partie, merci de définir le spawn du lobby!",
                     "set_spec_before_save": "<red>Avant de sauvegarder la partie, mercie de définir le spawn des spectateurs!",
                     "set_stores_before_save": "<red>Avant de sauvegarder la partie, merci d'ajouter 1 boutique au minimum!",
-                    "set_spawners_before_save": "<red>Avant de sauvegarder la partie, merci d'ajouter au minimum 1 spawner!"
+                    "set_spawners_before_save": "<red>Avant de sauvegarder la partie, merci d'ajouter au minimum 1 spawner!",
+                    "set_target_block_for_team_before_save": "<red>Avant de sauvegarder la partie, veuillez définir le bloc cible de l'équipe <gray><team><red>!",
+                    "set_spawn_for_team_before_save": "<red>Avant de sauvegarder la partie, veuillez définir le point d'apparition de l'équipe <gray><team><red>!",
+                    "invalid_bar_color": "<red>Mauvaise couleur pour la boss bar !",
+                    "npc_must_have_skin_name": "<red>Si vous utilisez le type d'entité PLAYER, vous devez spécifier le nom du skin de la manière suivante <gray>PLAYER:[nom du skin]",
+                    "invalid_min_players": "<red>Le minimum de joueurs doit être de 2 ou plus!",
+                    "invalid_constant_value": "<red>Mauvaise donnée entrée! Cela ne peut être que <gray>true<red>, <gray>false<red> ou <gray>inherit<red>!",
+                    "invalid_constant_name": "<red>Mauvais nom de constante !",
+                    "invalid_arena_time": "<red>Mauvais type de temps d'arène !",
+                    "invalid_arena_weather": "<red>Mauvais type de météo d'arène !",
+                    "invalid_entity_type": "<red>Mauvais type d'entité !",
+                    "invalid_time": "<red>Le temps <gray><number><red> est invalide !"
+                },
+                "success": {
+                    "team_spawn_set": "<green>Le point d'apparition de l'équipe <gray><team><green> a été défini avec succès à la position XYZ : <gray><x>/<y>/<z> <green>YAW : <gray><yaw> <green>PITCH : <gray><pitch>",
+                    "team_maxplayers_set": "<green>Le nombre maximal de joueurs dans l'équipe <gray><team><green> a été défini avec succès à <gray><maxplayers>",
+                    "team_created": "<green>L'équipe <gray><team><green> a été crée avec succès avec la couleur <teamcolor><green> et un nombre maximal de joueurs : <gray><maxplayers>",
+                    "store_added": "<green>Une boutique a été ajoutée à votre position : <gray><x>/<y>/<z> <green>YAW : <gray><yaw> <green>PITCH : <gray><pitch>",
+                    "saved_and_started": "<green>La partie a été sauvegardée avec succès et est joignable ! Vous pouvez désormais la rejoindre et y jouer !",
+                    "target_block_set": "<green>Le bloc cible (<gray><material><green>) de l'équipe <gray><team><green> a été défini avec succès à la position XYZ : <gray><x>/<y>/<z>",
+                    "team_color_set": "<green>La couleur de l'équipe <gray><team><green> a été défini avec succès en <teamcolor>",
+                    "team_removed": "<green>L'équipe <gray><team><green> a été supprimée avec succès !",
+                    "spawners_removed": "<green>Tous les générateurs de la partie <gray><arena><green> ont été supprimés !",
+                    "spawner_added": "<green>Le générateur <gray><resource><green> a été ajouté avec succès à la position XYZ : <gray><x>/<y>/<z>"
                 }
             },
             "success": {
