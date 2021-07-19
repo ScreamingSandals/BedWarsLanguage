@@ -142,16 +142,16 @@
             "running": "<green>La partie a commencé ! Bonne chance !"
         },
         "respawn_protection": {
-            "remaining": "<red>La protection lors du Respawn va partir dans <white><time> <green>secondes!",
-            "end": "<red>La protection lors du Respawn a disparue!"
+            "remaining": "<red>La protection lors du Respawn va partir dans <white><time> <green>secondes !",
+            "end": "<red>La protection lors du Respawn a disparue !"
         },
         "join": "<name> <green>a rejoins la partie!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "leave": "<name> <red>a quitté la partie !",
         "player_self_killed": "<red>Joueur<victim> <red>est mort !",
         "player_killed": "<red>Le joueur <killer><red> a tué <victim><red> !",
-        "game_start_title": "<green>La Game a démaré!",
+        "game_start_title": "<green>La Game a démaré !",
         "game_start_subtitle": "<green> La Game <grey><arena><green> a démarré ! Bon jeu !",
-        "vault_deposite": "<green>Ajout de <gray><coins> <currency><green> à votre compte Vault!"
+        "vault_deposite": "<green>Ajout de <gray><coins> <currency><green> à votre compte Vault !"
     },
     "safe_reload": "<green>En attente jusqu'à ce que toutes les parties en cours soient arrêtées ou 60 secondes avant rechargement du plugin.",
     "unknown_usage": "<red>Argument invalide ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide !",
@@ -202,7 +202,7 @@
         "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>Active le prefix modifiable pour l'arène",
         "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Supprime l'arène",
         "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Eteint la partie et active le mode édition",
-        "bw_admin_save": "/bw admin <pre><arena></pre> save - <green>Enregistre la partie et l'active!",
+        "bw_admin_save": "/bw admin <pre><arena></pre> save - <green>Enregistre la partie et l'active !",
         "bw_alljoin": "/bw alljoin [arena] - <green>Envoie tous les joueurs du serveur dans une partie de BedWars",
         "bw_admin_spawner_remove": "w admin <pre><arena></pre> spawner remove - <yellow>Enlève tous les spawners à votre location",
         "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Marque ce commerçant comme enfant",
@@ -214,17 +214,17 @@
         "arena": {
             "error": {
                 "arena_not_in_edit": "<red>L'arène n'existe pas ou n'a pas de partie en cours dessus. Désactivez là avec <gray>/bw admin <pre><arena></pre> edit<red> and then activate it with <gray>/bw admin <pre><arena></pre> save",
-                "already_exists": "<red>L'arène existe déjà!",
-                "already_working_on_it": "<red>L'arène existe déjà mais n'est pas finie!",
-                "arena_must_be_in_edit_mode": "<red>L'arène doit être en mode édition!"
+                "already_exists": "<red>L'arène existe déjà !",
+                "already_working_on_it": "<red>L'arène existe déjà mais n'est pas finie !",
+                "arena_must_be_in_edit_mode": "<red>L'arène doit être en mode édition !"
             },
             "edit": {
                 "errors": {
                     "set_bounds_first": "<red>Avant de définir le spawn, merci de définir la pos1 et le post2 (afin de déterminer la taille et la position de l'arène)!",
                     "invalid_spawner_level": "<white>Mauvais nombre de niveau, par défaut le niveau 1 est utilisé.",
                     "set_bounds_before_save": "<red>Avant de sauvegarder la partie merci de définir la pos1 et la pos2 (qui déterminément la position et la taille de l'arène)!",
-                    "must_be_in_same_world": "<red>Toutes les commandes doivent être executés dans le même monde!",
-                    "invalid_countdown": "<red>Le compte à rebours doit être entre <lowest> < x < <highest> secondes!",
+                    "must_be_in_same_world": "<red>Toutes les commandes doivent être executés dans le même monde !",
+                    "invalid_countdown": "<red>Le compte à rebours doit être entre <lowest> < x < <highest> secondes !",
                     "must_be_in_bounds": "<red>La location doit se situer dans l'arène (entre pos1 et pos2)!",
                     "invalid_bounds": "<red>La différence de hauteur entre pos1 et pos2 est trop petite! Le minimum est de 5 blocks!",
                     "store_already_exist": "<red>La boutique existe déjà!",
@@ -262,24 +262,37 @@
                     "team_color_set": "<green>La couleur de l'équipe <gray><team><green> a été défini avec succès en <teamcolor>",
                     "team_removed": "<green>L'équipe <gray><team><green> a été supprimée avec succès !",
                     "spawners_removed": "<green>Tous les générateurs de la partie <gray><arena><green> ont été supprimés !",
-                    "spawner_added": "<green>Le générateur <gray><resource><green> a été ajouté avec succès à la position XYZ : <gray><x>/<y>/<z>"
+                    "spawner_added": "<green>Le générateur <gray><resource><green> a été ajouté avec succès à la position XYZ : <gray><x>/<y>/<z>",
+                    "weather_set": "<green>La météo du monde de l'arène a été défini sur <gray><weather><green> !",
+                    "store_removed": "<green>Villageois des positions XYZ : <gray><x>/<y>/<z><green> a été supprimé avec succès !",
+                    "lobby_spawn_set": "<green>Le spawn du lobby a bien été set au coordonnées : <gray><x>/<y>/<z> <green>YAW : <gray><yaw> <green>PITCH : <gray><pitch>",
+                    "spec_spawn_set": "<green>Le spawn des spectateurs a bien été set au coordonnée : <gray><x>/<y>/<z> <green>YAW : <gray><yaw> <green>PITCH : <gray><pitch>",
+                    "pos1_set": "<green>La 1ère position de l'arène <gray><arena><green> au coordonnées : <gray><x>/<y>/<z>",
+                    "pos2_set": "<green>La 2ème position de l'arène <gray><arena><green> au coordonnées : <gray><x>/<y>/<z>",
+                    "lobby_pos1_set": "<green>La 1ère position du lobby de l'arène <gray><arena><green> au coordonnées : <gray><x>/<y>/<z>",
+                    "lobby_pos2_set": "<green>La 2ème position du lobby de l'arène <gray><arena><green> au coordonnées : <gray><x>/<y>/<z>",
+                    "lobby_countdown_set": "<green>Le compte à rebours du lobby a été défini sur <gray><countdown>",
+                    "game_time_set": "<green>La durée de la partie a été défini sur <gray><time>",
+                    "min_players_set": "<green>Le minimum de joueurs as correctement été défini sur <gray><min><green> !",
+                    "constant_set": "<green>Constant <gray><config><green> a été défini sur <gray><value><green> !",
+                    "arena_time_set": "<green>Le temps du monde de l'arène a été défini sur <gray><time><green> !"
                 }
             },
             "success": {
-                "removed": "<red><b>Arène supprimée!",
-                "added": "<green>Arène ajoutée!",
-                "edit_mode": "<green>Arène passée en mode édition!"
+                "removed": "<red><b>Arène supprimée !",
+                "added": "<green>Arène ajoutée !",
+                "edit_mode": "<green>Arène passée en mode édition !"
             }
         },
-        "usage": "<red>Utilisation: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>"
+        "usage": "<red>Utilisation : /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>"
     },
     "update": {
         "new_release": [
-            "<green>Nouvelle mise à jour <version> de BedWars est disponible!",
+            "<green>Une Nouvelle mise à jour <version> de BedWars est disponible !",
             "Télécharge la depuis <url>"
         ],
         "patch_release": [
-            "<yellow>Nouvelle mise à jour réglant des bugs pour BedWars <version> est disponible!",
+            "<yellow>Nouvelle mise à jour réglant des bugs pour BedWars <version> est disponible !",
             "Vous pouvez la télécharger depuis <url>"
         ]
     }
