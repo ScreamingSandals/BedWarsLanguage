@@ -59,7 +59,16 @@
             "game_kicked_by_vip": "<red>Du wurdest von einem VIP Spieler gekicked!",
             "game_already_running": "<red>Spiel <gray><arena> <red>läuft gerade! Du kannst keinen laufenden Spielen beitreten!",
             "command_is_not_allowed": "<red>Der Command wurde geblockt während das Spiel läuft!",
-            "game_is_gone": "<red>Schaut so aus als wäre das Spiel in dem du warst nicht mehr in dieser Welt."
+            "game_is_gone": "<red>Schaut so aus als wäre das Spiel in dem du warst nicht mehr in dieser Welt.",
+            "there_is_no_empty_game": "<red>Es gibt keine offenen Spiele! Alle Spiele laufen noch!"
+        },
+        "target_block": {
+            "destroyed": {
+                "any": "Block von <team><reset> wurde zerstört!",
+                "bed": "Bett von <team><reset> wurde zerstört!",
+                "anchor": "Der Respawnanker des Teams <team><reset> wurde zerstört!",
+                "cake": "Der Kuchen von <team><reset> wurde gegessen!"
+            }
         }
     }
 }
