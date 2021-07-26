@@ -67,8 +67,37 @@
                 "any": "<team><reset>의 목표 블럭이 파괴되었습니다!",
                 "bed": "<team><reset>팀의 침대가 파괴되었습니다!",
                 "anchor": "<team><reset>팀의 리스폰 정박기가 파괴되었습니다!",
-                "cake": "<team><reset>팀의 케이크가 먹혔습니다!"
+                "cake": "<team><reset>팀의 케이크가 먹혔습니다!",
+                "subtitle": "이제 팀 멤버를 죽일 수 있습니다!",
+                "subtitle_victim": "더이상 리스폰되지 않습니다!"
+            },
+            "hologram": {
+                "protect": {
+                    "any": "<teamcolor><bold> 목표 블럭을 보호하세요!",
+                    "bed": "<teamcolor><bold>침대를 보호하세요!",
+                    "anchor": "<teamcolor><bold>정박기를 보호하세요!",
+                    "cake": "<teamcolor><bold>케이크를 보호하세요!"
+                },
+                "destroyed": {
+                    "any": "<gray><bold>목표 블럭이 파괴되었습니다.",
+                    "bed": "<gray><bold>침대가 파괴되었습니다.",
+                    "anchor": "<gray><bold>정박기가 파괴되었습니다.",
+                    "cake": "<gray><bold>케이크가 먹혔습니다."
+                },
+                "destroy": {
+                    "any": "<teamcolor><bold>목표 블럭을 파괴하세요!",
+                    "bed": "<teamcolor><bold>침대를 파괴하세요!",
+                    "anchor": "<teamcolor><bold>정박기를 파괴하세요!",
+                    "cake": "<teamcolor><bold>케이크를 먹으세요!"
+                }
             }
+        },
+        "respawn_cooldown": {
+            "title": "<red><time><green>초 후 리스폰",
+            "title_cancel": "<red>팀이 사망했습니다 :("
+        },
+        "spawner": {
+            "countdown": "<yellow><seconds> <bold>초"
         }
     }
 }
