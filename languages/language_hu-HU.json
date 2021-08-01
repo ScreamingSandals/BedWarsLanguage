@@ -1,42 +1,124 @@
 {
-    "no_permissions": "<red>Nincs jogosultságod erre!",
-    "safe_reload": "<green>Várakozás a játékok befejézésére, vagy 60 másodpercig, majd a plugin újraindítása.",
-    "safe_reload_failed_to_stop_game": "<red>Néhány játék nem lett időben léállítva, az arénák sérülhettek!",
+    "no_permissions": "<red>Nincs jogosultságod ehhez!",
+    "safe_reload": "<green>Várj 60 másodpercet mielőtt újraindítanád a szervert.",
+    "safe_reload_failed_to_stop_game": "<red>Néhány aréna nem lett időben leállítva így lehet hogy megsérültek a fájljaik!",
     "list_header": "<green>Elérhető arénák:",
-    "success": "<green>Sikeres parancs!",
-    "unknown_command": "<red>Ismeretlen parancs! Használd a <dark_red>/bw help <red>-et segítségért!",
-    "unknown_usage": "<red> Érvénytelen mutató! Használd a <dark_red>/bw help <red>-et segítségért!",
+    "success": "<green>Sikeresen lefutott a parancs!",
+    "unknown_command": "<red>Ismeretlen parancs! Használd a <dark_red>/bw help <red> parancsot a segítségért!",
+    "unknown_usage": "<red> Érvénytelen argumentum! Használd a <dark_red>/bw help <red>parancsot a segítségért!",
     "sign": {
         "admin": {
-            "created": "<green>Tábla sikeresen létrehozva!",
-            "cannot_create": "<red>A tábla nem hozható létre! Ellenőrizd az aréna nevét!",
-            "cannot_destroy": "<red>Nincs jogod megsemmisíteni ezt a táblát!",
-            "unknown_game": "<red>A táblán szereplő játék nem létezik. Szólj az adminnak!"
+            "created": "<green>A tábla sikeresen létrehozva!",
+            "cannot_create": "<red>A tábla nem hozható létre, mert nem találja a megadott arénát!",
+            "cannot_destroy": "<red>Nincs jogod kiütni ezt a táblát!",
+            "unknown_game": "<red>A táblán szereplő aréna nem létezik. Szólj egy szerveren lévő adminisztrátornak!"
         },
         "status": {
             "disabled": {
-                "status": "Játék",
-                "players": "<red>letiltva"
+                "status": "<red>Játék",
+                "players": "<red>Letiltva"
             },
             "rebuilding": {
                 "status": "<red>Újjáépítés",
-                "players": "<gold>aréna"
+                "players": "<gold>Aréna"
             },
             "running": {
                 "status": "<green>Fut",
                 "players": "<red><players><dark_gray>/<red><maxplayers>"
             },
             "waiting": {
-                "status": "<gold>Várakozik",
+                "status": "<gold>Várakozás",
                 "players": "<green><players><dark_gray>/<green><maxplayers>"
             }
         }
     },
     "statistics": {
-        "disabled": "<red>A játékos-statisztika nincs engedélyezve ezen a szerveren!",
-        "player_does_not_exist": "<red>A játékos nem található!",
-        "not_found": "<red>A játékosnak statisztikája nem elérhető!",
-        "header": "<green>Statisztika - <red><player><green>:",
-        "kills": "<gray>Ölések: <green><kills>"
+        "disabled": "<red>A statisztika nincs engedélyezve ezen a szerveren!",
+        "player_does_not_exist": "<red>Ez a játékos nem található!",
+        "not_found": "<red>Ennek a játékosnak a statisztikája nem található!",
+        "header": "<red><player> <green>statisztikája:",
+        "kills": "<gray>Ölések: <green><kills>",
+        "deaths": "<gray>Halálok: <yellow><deaths>",
+        "kd": "<gray>K/D: <green><kd>",
+        "wins": "<gray>Győzelmek: <green><wins>",
+        "loses": "<gray>Vereségek: <red><loses>",
+        "games": "<gray>Játszott körök: <aqua><games>",
+        "score": "<gray>Összesített pontszám: <green><score>",
+        "beds": "<gray>Kiütött ágyak: <green><beds>"
+    },
+    "in_game": {
+        "errors": {
+            "you_are_not_in_game": "<red>Jelenleg nem vagy játékban!",
+            "game_already_running": "<red>A(z)<gray><arena> <red>már elindult, ezért már nem tudsz csatlakozni!",
+            "already_in_game": "<red>Már játékban vagy.",
+            "not_in_any_game_yet": "<red>Még nem játszottál egy arénában se.",
+            "vip_not_enough_players": "<red>Nincs elég játékos hogy elinduljon az aréna!",
+            "vip_game_is_full": "<red>A(z) <gray><arena> <red>tele van VIP játékosokkal. Várd meg amíg véget ér az aréna!",
+            "game_kicked_by_vip": "<red>Ki lettél rúgva az arénából mert csatlakozott egy VIP játékos!",
+            "there_is_no_empty_game": "<red>Nincs olyan aréna amibe csatlakozhatnál, mivel az összes fut!",
+            "game_is_full": "<red>A(z) <gray><arena> <red>aréna tele van! Kérlek csatlakozz egy másik arénába!",
+            "game_not_found": "<red>Az aréna nem található!",
+            "game_is_rebuilding": "<red>A(z) <gray><arena><red> aréna újraindul! Kérlek várj...",
+            "command_is_not_allowed": "<red>Ezt a parancsot nem használhatod játék közben!",
+            "game_is_gone": "<red>Az aréna ahol játszottál, már nem ebben a világban van."
+        },
+        "target_block": {
+            "destroyed": {
+                "any": "A <team><reset> csapat kijelölt blokkja el lett pusztítva!",
+                "anchor": "A <team><reset> csapat horgonyát kiütötték!",
+                "cake": "A <team><reset> csapat tortáját megették!",
+                "subtitle": "Most már véglegesen megtudod ölni a csapat tagjait!",
+                "subtitle_victim": "Most már nem éledsz újra!",
+                "bed": "A <team><reset> csapat ágyát kiütötték!"
+            },
+            "hologram": {
+                "protect": {
+                    "bed": "<teamcolor><bold>Védd meg a csapat ágyát!",
+                    "anchor": "<teamcolor><bold>Védd meg a csapat horgonyát!",
+                    "cake": "<teamcolor><bold>Védd meg a csapat tortáját!",
+                    "any": "<teamcolor><bold>Védd meg a blokkot!"
+                },
+                "destroyed": {
+                    "bed": "<gray><bold>Az ágyat kiütötték.",
+                    "anchor": "<gray><bold>A horgonyt kiütötték.",
+                    "cake": "<gray><bold>A tortát megették.",
+                    "any": "<gray><bold>A blokkot kiütötték."
+                },
+                "destroy": {
+                    "bed": "<teamcolor><bold>Üssd ki az ágyat!",
+                    "cake": "<teamcolor><bold>Edd meg a tortát!",
+                    "any": "<teamcolor><bold>Üssd ki a blokkot!",
+                    "anchor": "<teamcolor><bold>Üssd ki a horgonyt!"
+                }
+            }
+        },
+        "respawn_cooldown": {
+            "title": "<green>Újraéledés: <red><time>",
+            "title_cancel": "<red>A csapat kiesett. :("
+        },
+        "spawner": {
+            "countdown": "<yellow><seconds> <bold>másodperc",
+            "every_second": "<bold>minden másodperc",
+            "full": "<red><bold>A spawner kiürült",
+            "not_enough_level": "<red>A spawner nem működik! A fejlesztáshez <levels> szintre van szükséged."
+        },
+        "resources": {
+            "bronze": "Bronz",
+            "iron": "Vas",
+            "gold": "Arany",
+            "netherite": "Netherit",
+            "diamond": "Gyémánt",
+            "emerald": "Smaragd"
+        },
+        "shop": {
+            "name": "Bolt",
+            "page_forward": "Következő oldal",
+            "shop_back": "<red>Vissza a kategóriákhoz",
+            "page_back": "Előző oldal",
+            "price": "Ár:",
+            "amount": "Mennyiség:",
+            "buy_failed": "<red>Nem tudod megvásárolni a(z) <gray><item><red> itemet, mert még ezekre van szükséged: <gray><material><red>!",
+            "buy_success": "<green>Sikeresen megvásároltad a(z) <gray><item><green> az itemet ennyiért: <gray><material><green>!"
+        }
     }
 }
