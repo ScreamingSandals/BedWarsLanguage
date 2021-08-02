@@ -237,7 +237,24 @@
                 "errors": {
                     "must_be_in_same_world": "<red>Az összes parancsot ugyanabban a világban kell végrehajtanod!",
                     "invalid_countdown": "<red>A visszaszámlálásnak <lowest> < x < <highest> másodpercnek belül kell lennie!",
-                    "must_be_in_bounds": "<red>A kijelöléseket az arénában kell elvégezni!"
+                    "must_be_in_bounds": "<red>A kijelöléseket az arénában kell elvégezni!",
+                    "store_already_exist": "<red>Ez a boltos már létezik!",
+                    "store_does_not_exist": "<red>Ez a boltos nem létezik!",
+                    "invalid_spawner_type": "<red>A spawner csak bronzt, aranyat, aranyat és egyedi tárgyakat spawnoltat!",
+                    "invalid_spawner_level": "<white>Hibás szint szám, ezért az alapértelmezett 1 szintet használtuk.",
+                    "invalid_color": "<red>Ez a szín ismeretlen!",
+                    "max_players": "<red>A maximális játékosszám nem lehet kisebb vagy egyenlő mint 1!",
+                    "spawners_needed": "<red>Az aréna mentéséhez minimum 1 spawnert be kell állítani!",
+                    "team_does_not_exist": "<red>Ez a csapat nem létezik!",
+                    "team_already_exists": "<red>Ez a csapat már létezik!",
+                    "set_lobby_before_save": "<red>Mielőtt mentenéd az arénát állítsd be a várakozót!",
+                    "set_spec_before_save": "<red>Mielött mentenéd az arénát állítsd be a nézők spawnját!",
+                    "set_stores_before_save": "<red>Mielőtt mentenéd az arénát állíts be egy boltost!",
+                    "set_spawners_before_save": "<red>Mielőtt mented az arénát állíts be egy spawnert!",
+                    "set_bounds_first": "<red>Mielőtt beállítanád a spawnt, előbb jelöld ki az aréna első és második pozícióját!",
+                    "invalid_bounds": "<red>A két kijelölt pozíció közötti terület túl kicsi. Minimum 5 blokk távolságnak kell lennie!",
+                    "need_2_teams": "<red>Az aréna mentéséhez minimum 2 csapat kell!",
+                    "set_bounds_before_save": "<red>Mielőtt mentenéd az arénát jelöld ki mind a kettő pozíciót!"
                 }
             }
         }
