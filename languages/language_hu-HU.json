@@ -119,6 +119,127 @@
             "amount": "Mennyiség:",
             "buy_failed": "<red>Nem tudod megvásárolni a(z) <gray><item><red> itemet, mert még ezekre van szükséged: <gray><material><red>!",
             "buy_success": "<green>Sikeresen megvásároltad a(z) <gray><item><green> az itemet ennyiért: <gray><material><green>!"
+        },
+        "team_selection": {
+            "already_selected": "<green>Te már ebben a csapatban vagy: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "full": "<red>A <team><red> tele vanl!",
+            "full_no_change": "<red>A <team><red> csapat tele van, ezért a <oldteam><red> csapatba maradtál!",
+            "select_item_lore": "<white>---------------------",
+            "select_item_lore_full": "<white>A csapat tele van!",
+            "select_item_lore_join": "Katt ide a csatlakozáshoz!",
+            "inventory_name": "Válassz csapatot",
+            "selected": "<green>Kiválasztott csapat: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)"
+        },
+        "lobby_items": {
+            "compass_selector_team": "<green>Csapat Választó",
+            "leave_from_game_item": "<red>Kilépés",
+            "start_game_item": "<dark_green>Játék Indítása"
+        },
+        "bossbar": {
+            "waiting": "<red>Az aréna kis időn belül indul!",
+            "running": "<green>Az aréna elindult. Sok szerencsét!"
+        },
+        "end": {
+            "you_won": "<green>Graulálok a te csapatod nyerte meg a játékot!",
+            "you_lost": "<red>Sajnálom, de a te csapatod vesztett!",
+            "game_end": "<red>A játék véget ért. Köszönjük hogy játszottál!",
+            "team_win": "<green>A <reset><team><green> csapat megnyerte a játékot ennyi idő alatt: <gray><time>"
+        },
+        "respawn_protection": {
+            "remaining": "<red>A kezdővédelem <white><time> <green>másodperc múlva lejár!",
+            "end": "<red>A kezdővédelem lejárt!"
+        },
+        "leave": "<name> <red>kilépett az arénából!",
+        "player_self_killed": "<red><victim> <red>meghalt!",
+        "player_killed": "<red><killer> <red>megölte <victim><red> játékost!",
+        "game_start_title": "<green>Az aréna elindult!",
+        "game_start_subtitle": "<green>A(z) <gray><arena><green> aréna elindult. Jó szórakozást!",
+        "join": "<name> <green>csatlakozott az arénába!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+        "vault_deposite": "<green>Hozzáadtak <gray><coins> <currency><green>-t a karakteredhez!"
+    },
+    "help": {
+        "title": "Screaming BedWars <version> - Segítség",
+        "title_console": "Screaming BedWars <version> - Konzol Segítség",
+        "bw_join": "/bw join <pre><arena></pre> - <green>Csatlakozik egy arénába",
+        "bw_leave": "/bw leave - <green>Kilép egy arénából",
+        "bw_rejoin": "/bw rejoin - <green>Visszacsatlakozik az arénába",
+        "bw_list": "/bw list - <green>Kilistázza az arénákat",
+        "bw_leaderboard": "/bw leaderboard - <green>Megnézi a legjobb játékosokat",
+        "bw_stats": "/bw stats - <green>Megnézi a statisztikáid",
+        "bw_reload": "/bw reload - <red>Újra tölti a plugint",
+        "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>Létrehoz egy statisztika/toplista hologramot",
+        "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Engedélyezi vagy beállítja a főlobbyt",
+        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Megnézi az aréna információit",
+        "bw_admin_add": "/bw admin <pre><arena></pre> add - <yellow>Létrehoz egy új arénát",
+        "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Beállítja a nézők spawnját",
+        "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Kijelöli az aréna második pozícióját",
+        "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>Beállít egy szünetet mielőtt elindulna az aréna",
+        "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>Beállítja az aréna időtartamát",
+        "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Hozzáad az arénához egy új csapatot",
+        "bw_admin_team_color": "/bw admin <pre><arena></pre> team color <pre><team> <color></pre> - <yellow>Megváltoztatja a csapat színét",
+        "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>Beállít a csapatnak egy sebezhető blokkot",
+        "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Beállítja egy entitásra a csapatba csatlakozást",
+        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Törli az összes item spawnert",
+        "bw_admin_store_add": "/bw admin <pre><arena></pre> store add [name above dealer head] [file with shop] [use main shop] - <yellow>Hozzáad az arénához egy boltost",
+        "bw_admin_store_remove": "/bw admin <pre><arena></pre> store remove - <yellow>Töröl egy boltost a pozíciódról",
+        "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><constant> <value></pre> - <yellow>Beállít az arénának egy megadott konfigot",
+        "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>Beállítja az aréna időzónáját (NAPPAL, ESTE, stb.)",
+        "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Beállítja a várakozási időt",
+        "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>Engedélyezi az egyedi prefixeket",
+        "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Törli az arénát",
+        "bw_admin_save": "/bw admin <pre><arena></pre> save - <green>Elmenti az aréna beállításait!",
+        "bw_alljoin": "/bw alljoin [arena] - <green>Csatlakoztatja a játékosokat az arénába",
+        "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Beállítja boltos méretét",
+        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>Ha az aréna szerkesztés módban van akkor engedélyezi az interaktív módot",
+        "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>Beállítja a boltos méretét",
+        "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>Beállít egy minimum játékos számot",
+        "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>Megváltoztatja a csapat maximális játékos számát",
+        "bw_admin_team_spawn": "/bw admin <pre><arena></pre> team spawn <pre><team></pre> - <yellow>Beállítja a csapat spawnját",
+        "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [hologram] [first level] [name] [team] [max spawned resources]</pre> - <yellow>Hozzáad egy új item spawnert",
+        "bw_admin_store_type": "/bw admin <pre><arena></pre> store type <pre><living entity></pre> - <yellow>Beállítja a boltos entitánsát (Falusi, Ló, Tehén, Malac, stb.)",
+        "bw_admin_arena_weather": "/bw admin <pre><arena></pre> arenaweather <pre><type></pre> - <yellow>Beállítja az aréna időjárását (alap, TISZTA, ESŐS)",
+        "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Be/kikapcsolja a szerkesztési módot",
+        "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Törli az összes spawnert a pozíciódról",
+        "bw_autojoin": "/bw autojoin - <green>Véletlenszerűen csatlakozik egy arénába",
+        "bw_stats_other": "/bw stats [player] - <green>Megnézi egy játékos statisztikáit",
+        "bw_removeholo": "/bw removeholo - <yellow>Törli a hologramot amint jobb klikkelsz rá.",
+        "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Beállítja az aréna várakozóját",
+        "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Kijelöli az aréna első pozícióját",
+        "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Kijelöli az aréna első pozícióját",
+        "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Kijelöli az aréna második pozícióját",
+        "bw_dump": "/bw dump - <yellow>Dumpolja a szervert vagyis lekér egy linket hogy megnézd az esetleges hibákat"
+    },
+    "update": {
+        "new_release": [
+            "<green>Elérhető a BedWars <version> verziója!",
+            "Letölthető az alábbi linken <url>"
+        ],
+        "patch_release": [
+            "<yellow>Elérhető a BedWars <version> patch verziója!"
+        ]
+    },
+    "admin": {
+        "usage": "<red>Használat: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>",
+        "arena": {
+            "error": {
+                "already_exists": "<red>Ez az aréna már létezik!",
+                "arena_must_be_in_edit_mode": "<red>Az arénának szerkesztő módba kell lennie!",
+                "already_working_on_it": "<red>Ez az aréna már létezik csak még nincs beállítva!",
+                "arena_not_in_edit": "<red>Ez az aréna nem létezik vagy fut. Letiltani a <gray>/bw admin <pre><arena></pre> edit<red> és engedélyezni pedig a <gray>/bw admin <pre><arena></pre> save<red> paranccsal lehet"
+            },
+            "success": {
+                "removed": "<red><b>Az aréna törölve lett!",
+                "edit_mode": "<green>Az aréna átváltott a szerkesztés módra!",
+                "added": "<green>Sikeresen hozzáadtad az arénát!"
+            },
+            "edit": {
+                "errors": {
+                    "must_be_in_same_world": "<red>Az összes parancsot ugyanabban a világban kell végrehajtanod!",
+                    "invalid_countdown": "<red>A visszaszámlálásnak <lowest> < x < <highest> másodpercnek belül kell lennie!",
+                    "must_be_in_bounds": "<red>A kijelöléseket az arénában kell elvégezni!"
+                }
+            }
         }
     }
 }
