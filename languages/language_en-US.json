@@ -150,6 +150,12 @@
             "remaining": "<red>Respawn protection will be gone in <white><time> <green>seconds!",
             "end": "<red>Respawn protection is gone!"
         },
+        "cheat": {
+            "please_provide_valid_cheat_type": "<red>Provided cheat type isn't valid or is missing!",
+            "invalid_player": "<red>Specified player is not in any game or is a spectator!",
+            "received_give": "<green>Player <gray><player><green> got <gray><amount><green> of <gray><resource>",
+            "received_kill": "<green>Player <gray><player><green> killed by cheat!"
+        },
         "join": "<name> <green>joined the game!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "leave": "<name> <red>left the game!",
         "player_self_killed": "<red>Player <victim> <red>died!",
