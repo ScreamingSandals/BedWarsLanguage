@@ -272,7 +272,10 @@
                     "team_color_set": "<green>队伍 <gray><team><green> 的颜色已被成功设置为 <teamcolor>",
                     "team_removed": "<green>队伍 <gray><team><green> 已被成功删除！",
                     "team_created": "<green>队伍 <gray><team><green> 已被成功创建！ 队伍颜色: <teamcolor><green> ， 队伍最大玩家数量: <gray><maxplayers>",
-                    "spawners_removed": "<green>游戏房间 <gray><arena><green> 的所有资源发生器均已被成功移除！"
+                    "spawners_removed": "<green>游戏房间 <gray><arena><green> 的所有资源发生器均已被成功移除！",
+                    "spawner_added": "<gray><resource><green>的生成器已成功添加到坐标：<gray><x>/<y>/<z>",
+                    "store_removed": "<green>来自坐标<gray><x>/<y>/<z><green>的村民已成功移除！",
+                    "store_added": "<green>已将商店添加到你的坐标：<gray><x>/<y>/<z> <green>YAW：<gray><yaw> <green>PITCH：<gray><pitch>"
                 }
             }
         },
