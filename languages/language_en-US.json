@@ -154,7 +154,8 @@
             "please_provide_valid_cheat_type": "<red>Provided cheat type isn't valid or is missing!",
             "invalid_player": "<red>Specified player is not in any game or is a spectator!",
             "received_give": "<green>Player <gray><player><green> got <gray><amount><green> of <gray><resource>",
-            "received_kill": "<green>Player <gray><player><green> killed by cheat!"
+            "received_kill": "<green>Player <gray><player><green> killed by cheat!",
+            "game_not_running": "<red>You can only cheat when game is running!"
         },
         "join": "<name> <green>joined the game!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "leave": "<name> <red>left the game!",
@@ -214,7 +215,9 @@
         "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Mark this shopkeeper as child",
         "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>Mark this shopkeeper as adult",
         "bw_dump": "/bw dump - <yellow>Dumps the server and gives you link to the dump. This link can be useful for support",
-        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>If arena is in edit mode, this command will enable interactive mode"
+        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>If arena is in edit mode, this command will enable interactive mode",
+        "bw_cheat_give": "/bw cheat give <resource> [amount] [player] - <red>Gives player specified amount of resource",
+        "bw_cheat_kill": "/bw cheat kill [player] - <red>Kills specified player"
     },
     "update": {
         "new_release": [
