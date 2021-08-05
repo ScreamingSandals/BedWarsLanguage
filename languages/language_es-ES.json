@@ -11,7 +11,7 @@
             },
             "hologram": {
                 "protect": {
-                    "any": "<teamcolor><bold>¡Protege el tu bloque objetivo!",
+                    "any": "<teamcolor><bold>¡Protege tu bloque objetivo!",
                     "bed": "<teamcolor><bold>¡Protege tu cama!",
                     "anchor": "<teamcolor><bold>¡Protege tu nexo!",
                     "cake": "<teamcolor><bold>¡Protege tu tarta!"
@@ -102,64 +102,70 @@
             "emerald": "Esmeralda"
         },
         "respawn_protection": {
-            "remaining": "<red>¡La protección de reaparición se quitará en <white><time> <green>seconds!",
+            "remaining": "<red>¡La protección de reaparición se quitará en <white><time> <green>segundos!",
             "end": "<red>¡La protección de reaparición ha desaparecido!"
         },
         "leave": "¡<name> <red>se fue de la partida!",
         "player_self_killed": "<red>¡El jugador <victim> <red>murió!",
         "player_killed": "<red>¡El jugador <killer> <red>asesinó a <victim><red>!",
         "game_start_title": "<green>¡Partida comenzada!",
-        "vault_deposite": "<green> ¡<gray><coins> <currency><green> fueron añadidas a tu cuenta bancaria!"
+        "vault_deposite": "<green> ¡<gray><coins> <currency><green> fueron añadidas a tu cuenta bancaria!",
+        "cheat": {
+            "please_provide_valid_cheat_type": "<red>¡El tipo de truco proporcionado no es válido o no se encuentra!",
+            "invalid_player": "<red>¡El jugador especificado no está en ningún juego o es un espectador!",
+            "received_give": "<green>El Jugador <gray><player><green> obtuvo <gray><amount><green> de <gray><resource>",
+            "received_kill": "<green>El jugador <gray><player><green> eliminado por trucos!"
+        }
     },
     "help": {
         "bw_rejoin": "/bw rejoin - <green>Unirse a la partida reciente",
         "bw_leaderboard": "/bw leaderboard - <green>Mostrar jugadores top del servidor",
-        "bw_stats_other": "/bw stats [player] - <green>Mostrar estadísticas de otros servidores",
-        "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>Añade un holograma a la localización del jugador",
+        "bw_stats_other": "/bw stats [player] - <green>Muestra estadísticas de otros jugadores",
+        "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>Añade un holograma en la posición del jugador",
         "title": "Screaming BedWars <version> - Ayuda",
         "title_console": "Screaming BedWars <version> - Ayuda para la Consola",
         "bw_join": "/bw join <pre><arena></pre> - <green> Unirse a la partida",
         "bw_leave": "/bw leave - <green>Dejar la partida",
         "bw_autojoin": "/bw autojoin - <green>Unirse a partida en espera",
         "bw_list": "/bw list - <green>Lista de partidas disponibles",
-        "bw_stats": "/bw stats - <green>Mostrar tus estadísticas",
+        "bw_stats": "/bw stats - <green>Muestra tus estadísticas",
         "bw_reload": "/bw reload - <red>Recarga el plugin",
         "bw_removeholo": "/bw removeholo - <yellow>Después de ejecutar este comando, el jugador puede hacer click derecho al holograma para removerlo.",
-        "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Crea el lobby principal",
-        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Muestra toda la información sobre arena",
+        "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Habilita el lobby principal o establece la ubicación del lobby principal",
+        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Muestra toda la información sobre la arena",
         "bw_admin_add": "/bw admin <pre><arena></pre> add - <yellow>Crea una nueva arena o mapa",
-        "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Pone la posición del lobby en tu posición",
-        "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Pone el punto de aparición de los espectadores en tu posición",
+        "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Establece la posición del lobby en tu posición",
+        "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Establece el punto de aparición de los espectadores en tu posición",
         "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Pone el punto extremo del mapa en tu posición",
-        "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Pone el segundo punto extremo del mapa en tu posición",
+        "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Establece el segundo punto extremo del mapa en tu posición",
         "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Establece el punto extremo del lobby en tu posición",
         "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Establece el segundo punto extremo del lobby en tu posición",
         "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>Establece la duración de la pausa antes de que comience el juego",
         "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>Establece el mínimo de jugadores necesarios para iniciar el juego",
         "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>Establece la duración del juego",
         "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Añade un equipo al juego",
-        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Eliminar todos los spawners",
-        "bw_alljoin": "/bw alljoin [arena] - <green>Unir a todos los jugadores del servidor a un juego de Bedwars",
+        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Elimina todos los spawners",
+        "bw_alljoin": "/bw alljoin [arena] - <green>Une a todos los jugadores del servidor a un juego de Bedwars",
         "bw_admin_store_add": "/bw admin <pre><arena></pre> store add [nombre sobre la cabeza del aldeano] [archivo de la tienda] [usar la tienda principal] - <yellow>Añade un aldeano para comerciar en tu posición",
         "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>Marcar a este comerciante como adulto",
         "bw_admin_team_color": "/bw admin <pre><arena></pre> team color <pre><team> <color></pre> - <yellow>Cambiar el color del equipo",
-        "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>Cambiar jugadores máximos del equipo",
+        "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>Cambia los jugadores máximos del equipo",
         "bw_admin_team_spawn": "/bw admin <pre><arena></pre> team spawn <pre><team></pre> - <yellow>Establece el spawn del equipo en tu posición",
         "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Establece la capacidad de conectarse a un equipo mediante una entidad",
-        "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [holograma] [primer nivel] [nombre] [equipo] [máximo de recursos generados]</pre> - <yellow>Añadir el spawn de items en tu posición",
+        "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [holograma] [primer nivel] [nombre] [equipo] [máximo de recursos generados]</pre> - <yellow>Añade un spawner de items en tu posición",
         "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>Establece el bloque objetivo del equipo en tu posición (puede ser otro bloque, no solo la cama)",
-        "bw_admin_save": "/bw admin <pre><arena></pre> save - <green>¡Guardar la partida y activarla!",
-        "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Elimina todos los spawns en tu ubicación",
+        "bw_admin_save": "/bw admin <pre><arena></pre> save - <green>¡Guarda la arena y la activa!",
+        "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Elimina todos los spawners en tu ubicación",
         "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>Establece la hora en la arena (DÍA, NOCHE, etc.)",
         "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Establece el tiempo de espera antes de que el jugador sea teletransportado fuera de la arena",
-        "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>Habilita el prefijo personalizado para arena",
-        "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Eliminar la arena",
+        "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>Habilita el prefijo personalizado para la arena",
+        "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Elimina la arena",
         "bw_admin_store_remove": "/bw admin <pre><arena></pre> store remove - <yellow>Elimina el aldeano comerciante de tu posición",
         "bw_admin_store_type": "/bw admin <pre><arena></pre> store type <pre><living entity></pre> - <yellow>Establece el tipo de entidad de la tienda (Aldeano, Caballo, Vaca, Cerdo, etc.)",
-        "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><constant> <value></pre> - <yellow>Establece el valor de la variable constante para el juego",
+        "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><constant> <value></pre> - <yellow>Establece el valor de una variable constante para el juego",
         "bw_admin_arena_weather": "/bw admin <pre><arena></pre> arenaweather <pre><type></pre> - <yellow>Establece el clima en la arena (predeterminado, CLEAN, DOWNFALL)",
         "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Desactiva el juego y cambia la arena al modo de edición",
-        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>Si arena está en modo de edición, este comando habilitará el modo interactivo",
+        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>Si la arena está en modo de edición, este comando habilitará el modo interactivo",
         "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Marcar a este comerciante como niño",
         "bw_dump": "/bw dump - <yellow>Volcado del servidor y te da un enlace de volcado. Este enlace puede ser útil para soporte"
     },
@@ -205,7 +211,7 @@
         "disabled": "<red>¡Las estadísticas del jugador están deshabilitadas para este servidor!",
         "deaths": "<gray>Muertes: <yellow><deaths>",
         "score": "<gray>Puntuación Total: <green><score>",
-        "kd": "<gray>B/M: <green><kd>"
+        "kd": "<gray>A/M: <green><kd>"
     },
     "unknown_command": "<red>¡Comando desconocido! ¡Prueba el comando <dark_red>/bw help <red>para ver la lista de comandos!",
     "unknown_usage": "<red>¡Argumentos inválidos! ¡Prueba el comando <dark_red>/bw help <red>para ver la lista de comandos!",
@@ -268,9 +274,9 @@
                     "team_maxplayers_set": "<green>El máximo de jugadores en el equipo <gray><team><green> se ha establecido correctamente a <gray><maxplayers>",
                     "team_created": "<green>El equipo <gray><team><green> se ha creado correctamente con el color <teamcolor><green> y el máximo de jugadores: <gray><maxplayers>",
                     "spawners_removed": "<green>Los generadores del juego <gray><arena><green> se han eliminado!",
-                    "bar_color_set": "<green>¡El color de ha establecido a <gray><color><green> para el bossbar <gray><type><green>!",
+                    "bar_color_set": "<green>¡El color se ha establecido a <gray><color><green> para el bossbar <gray><type><green>!",
                     "lobby_spawn_set": "<green>El spawn del lobby fue establecido en la posición de XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
-                    "spec_spawn_set": "<green>Se puso al espectador en la posición de XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "spec_spawn_set": "<green>Se estableció al espectador en la posición de XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
                     "pos2_set": "<green>La posición 2 de la arena <gray><arena><green> fue puesto en XYZ: <gray><x>/<y>/<z>",
                     "lobby_pos1_set": "<green> La posición 1 del lobby de la arena <gray><arena><green> fue puesto en XYZ: <gray><x>/<y>/<z>",
                     "constant_set": "<green>La constante <gray><config><green> fue establecida correctamente en <gray><value><green>!",
@@ -280,14 +286,14 @@
                     "store_removed": "<green>Aldeano en la posición XYZ: <gray><x>/<y>/<z><green> fue removido!",
                     "pos1_set": "<green>La posición 1 de la arena <gray><arena><green> fue puesto en XYZ: <gray><x>/<y>/<z>",
                     "lobby_pos2_set": "<green> La posición 2 del lobby de la arena <gray><arena><green> fue puesto en XYZ: <gray><x>/<y>/<z>",
-                    "lobby_countdown_set": "<green>Cuenta regresiva para el lobby en <gray><countdown>",
+                    "lobby_countdown_set": "<green>Cuenta regresiva para el lobby establecida en <gray><countdown>",
                     "min_players_set": "<green>Se estableció correctamente el mínimo de jugadores a <gray><min><green>!",
                     "post_game_waiting": "<green>¡El tiempo de espera después del juego se ha establecido correctamente en <gray><number><green>!"
                 },
                 "errors": {
                     "invalid_bounds": "<red>¡La diferencia de altura entre pos1 y pos2 es demasiado pequeña! ¡El mínimo son 5 bloques!",
                     "store_already_exist": "<red>¡La tienda ya existe!",
-                    "store_does_not_exist": "¡La tienda no existe!",
+                    "store_does_not_exist": "<red>¡La tienda no existe!",
                     "max_players": "<red>El número máximo de jugadores debe ser >= 1!",
                     "need_2_teams": "<red>¡El juego necesita 2 o más equipos!",
                     "team_does_not_exist": "<red>¡Este equipo no existe!",
@@ -346,10 +352,10 @@
             "spawners": "<green>Lista de generadores<white> - <gray><command>"
         },
         "holo": {
-            "removed": "<green>¡Eliminado correctamente el holográfico!",
+            "removed": "<green>¡El Holograma a sido eliminado correctamente!",
             "not_enabled": "<red>Holographic está desactivado. Tienes Holographic Displays instalado?",
-            "added": "<green>¡Holográfico añadido a su posición!",
-            "click_to_remove": "<yellow>¡Ahora haz clic en el holográfico que deseas eliminar!"
+            "added": "<green>¡Holograma añadido a tu posición!",
+            "click_to_remove": "<yellow>¡Ahora haz clic en el holograma que deseas eliminar!"
         },
         "mainlobby": {
             "info": "<red>ADVERTENCIA<white>: ¡Necesitas ejecutar /bw reload para que funcione el lobby principal!"
@@ -357,7 +363,8 @@
     },
     "update": {
         "patch_release": [
-            "<yellow>¡Ya está aquí el nuevo parche para BedWars <version> !"
+            "<yellow>¡Ya está aquí el nuevo parche para BedWars <version> !",
+            "Puedes descargarlo desde <url>"
         ],
         "new_release": [
             "<green>¡La nueva versión de Bedwars <version> está disponible!",
