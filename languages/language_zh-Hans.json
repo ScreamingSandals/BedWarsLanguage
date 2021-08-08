@@ -161,7 +161,13 @@
         "game_start_title": "<green>游戏开始！",
         "game_start_subtitle": "<green><gray><arena><green> 已经开始游戏！ 祝你好运！",
         "vault_deposite": "<green>你获得了 <gray><coins> <currency><green> ！",
-        "join": "<name> <green>加入了游戏！<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]"
+        "join": "<name> <green>加入了游戏！<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+        "cheat": {
+            "please_provide_valid_cheat_type": "<red>提供的作弊类型不合法或不存在!",
+            "invalid_player": "<red>指定的玩家不在任何一场游戏中或者为观察者模式!",
+            "received_give": "<green>玩家<gray><player><green> 获得了 <gray><amount><green> 个 <gray><resource>",
+            "received_kill": "<green>玩家<gray><player><green> 被通过作弊杀死了!"
+        }
     },
     "unknown_usage": "<red>该指令传入的参数不正确！ 你可以尝试输入 <dark_red>/bw help <red>来获取帮助！",
     "no_permissions": "<red>你没有权限哦！",
