@@ -136,7 +136,14 @@
         "leave": "<name> <red>a iesit din joc!",
         "player_killed": "<red>Jucatorul <killer> <red>l-a omorat pe <victim><red>!",
         "game_start_title": "<green>Jocul a inceput!",
-        "vault_deposite": "<green>Au fost adaugati <gray><coins> <currency><green> la balanta ta!"
+        "vault_deposite": "<green>Au fost adaugati <gray><coins> <currency><green> la balanta ta!",
+        "cheat": {
+            "game_not_running": "<red>Poti sa trisezi doar in timpul jocului!",
+            "please_provide_valid_cheat_type": "<red>Tipul de cheat nu este valid sau nu exista!",
+            "invalid_player": "<red>Jucatorul specificat nu este in joc sau nu este spectator!",
+            "received_give": "<green>Jucatorul <gray><player><green> a primit <gray><amount><green> de <gray><resource>",
+            "received_kill": "<green>Jucatoru,l <gray><player><green> a fost omorat de cheat!"
+        }
     },
     "unknown_usage": "<red>Argumente invalide! Foloseste <dark_red>/bw help <red> pentru ajutor!",
     "statistics": {
@@ -208,7 +215,9 @@
         "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>Marcheaza entitatea de shop ca si adult",
         "bw_dump": "/bw dump - <yellow>Iti da link de la informatiile serverului. Acest link poate fi folositor pentru suport",
         "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Marcheaza entitatea de shop ca si copil",
-        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>Daca arena este in modul de editare, aceasta comanda va activa modul interactiv"
+        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>Daca arena este in modul de editare, aceasta comanda va activa modul interactiv",
+        "bw_cheat_give": "/bw cheat give <pre><resource></pre> [amount] [player] - <red>Da jucatorului resursa specificata",
+        "bw_cheat_kill": "/bw cheat kill [player] - <red>Omoara jucatorul specificat"
     },
     "admin": {
         "arena": {
@@ -361,7 +370,8 @@
             "Descarca-l de la <url>"
         ],
         "patch_release": [
-            "<yellow>Un nou patch pentru BedWars <version> este aici!"
+            "<yellow>Un nou patch pentru BedWars <version> este aici!",
+            "Poti sa-l descarci de la <url>"
         ]
     },
     "language": {
