@@ -114,7 +114,8 @@
             "please_provide_valid_cheat_type": "<red>¡El tipo de truco proporcionado no es válido o no se encuentra!",
             "invalid_player": "<red>¡El jugador especificado no está en ningún juego o es un espectador!",
             "received_give": "<green>El Jugador <gray><player><green> obtuvo <gray><amount><green> de <gray><resource>",
-            "received_kill": "<green>El jugador <gray><player><green> eliminado por trucos!"
+            "received_kill": "<green>El jugador <gray><player><green> eliminado por trucos!",
+            "game_not_running": "<red>¡Solo puedes hacer trampa cuando el juego está funcionando!"
         }
     },
     "help": {
@@ -167,7 +168,9 @@
         "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Desactiva el juego y cambia la arena al modo de edición",
         "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>Si la arena está en modo de edición, este comando habilitará el modo interactivo",
         "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Marcar a este comerciante como niño",
-        "bw_dump": "/bw dump - <yellow>Volcado del servidor y te da un enlace de volcado. Este enlace puede ser útil para soporte"
+        "bw_dump": "/bw dump - <yellow>Volcado del servidor y te da un enlace de volcado. Este enlace puede ser útil para soporte",
+        "bw_cheat_give": "/bw cheat give <pre><recurso></pre> [cantidad] [jugador] - <red>Le da al jugador una cantidad específica del recurso",
+        "bw_cheat_kill": "/bw cheat kill [jugador] - <red>Mata al jugador específico"
     },
     "no_permissions": "<red>¡No tienes los suficientes permisos para hacer eso!",
     "safe_reload": "<green>Esperando a que todas las partidas se terminen o 60 segundos antes de recargar el plugin.",
