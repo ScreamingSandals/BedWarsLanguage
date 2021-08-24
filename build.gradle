@@ -1,20 +1,13 @@
+plugins {
+    id 'org.screamingsandals.plugin-builder-lite' version "${SCREAMING_PLUGIN_BUILDER}"
+}
+
 defaultTasks 'clean', 'screamCompile'
 
 allprojects {
     group = 'org.screamingsandals.language.bedwars'
     version = TRANSLATION_BRANCH + '-SNAPSHOT'
 }
-
-buildscript {
-    repositories {
-        maven { url 'https://repo.screamingsandals.org/public/' }
-    }
-    dependencies {
-		classpath 'org.screamingsandals.gradle.builder:screaming-plugin-builder:1.0.41'
-    }
-}
-
-apply plugin: 'org.screamingsandals.gradle.builder.lite'
 
 sourceSets {
     main {
@@ -61,3 +54,5 @@ sourceSets {
         output.dir(new File(projectDir, "build/generated/buildinfo"), builtBy: 'generateBuildInfoFile')
     }
 }
+
+sourceCompatibility = '11.0'
