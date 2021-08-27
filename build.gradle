@@ -1,16 +1,17 @@
 plugins {
-    id 'org.screamingsandals.plugin-builder-lite' version "${SCREAMING_PLUGIN_BUILDER}"
+    id 'org.screamingsandals.plugin-builder-lite' version "${SCREAMING_PLUGIN_BUILDER}" apply false
 }
 
 defaultTasks 'clean', 'screamCompile'
 
-allprojects {
-    group = 'org.screamingsandals.language.bedwars'
-    version = TRANSLATION_BRANCH + '-SNAPSHOT'
-}
+group = 'org.screamingsandals.language.bedwars'
+version = TRANSLATION_BRANCH + '-SNAPSHOT'
+
+apply plugin: 'org.screamingsandals.plugin-builder-lite' // we need to apply the plugin later
 
 sourceSets {
     main {
+        output.dir(new File(projectDir, "build/generated/buildinfo"), builtBy: 'generateBuildInfoFile')
         resources {
             srcDirs "."
             include '/languages/**'
@@ -46,12 +47,6 @@ task generateBuildInfoFile {
             contents += "}}"
             writer.write(contents)
         }
-    }
-}
-
-sourceSets {
-    main {
-        output.dir(new File(projectDir, "build/generated/buildinfo"), builtBy: 'generateBuildInfoFile')
     }
 }
 
