@@ -49,7 +49,9 @@
         "bw_reload": "/bw reload - <red>重新加载该插件",
         "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>在当前玩家的位置添加一个浮空文字",
         "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>开启游戏大厅或设置游戏大厅位置",
-        "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>将当前位置设为观战者的出生点"
+        "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>将当前位置设为观战者的出生点",
+        "bw_cheat_give": "/bw cheat give <pre><resource></pre> [数量] [玩家] - <red>给予玩家指定数量的资源",
+        "bw_cheat_kill": "/bw cheat kill [玩家] - <red>杀死指定玩家"
     },
     "in_game": {
         "target_block": {
@@ -166,7 +168,8 @@
             "please_provide_valid_cheat_type": "<red>提供的作弊类型不合法或不存在!",
             "invalid_player": "<red>指定的玩家不在任何一场游戏中或者为观察者模式!",
             "received_give": "<green>玩家<gray><player><green> 获得了 <gray><amount><green> 个 <gray><resource>",
-            "received_kill": "<green>玩家<gray><player><green> 被通过作弊杀死了!"
+            "received_kill": "<green>玩家<gray><player><green> 被通过作弊杀死了!",
+            "game_not_running": "<red>你只能在游戏运行中聊天！"
         }
     },
     "unknown_usage": "<red>该指令传入的参数不正确！ 你可以尝试输入 <dark_red>/bw help <red>来获取帮助！",
@@ -281,12 +284,29 @@
                     "spawners_removed": "<green>游戏房间 <gray><arena><green> 的所有资源发生器均已被成功移除！",
                     "spawner_added": "<gray><resource><green>的生成器已成功添加到坐标：<gray><x>/<y>/<z>",
                     "store_removed": "<green>来自坐标<gray><x>/<y>/<z><green>的村民已成功移除！",
-                    "store_added": "<green>已将商店添加到你的坐标：<gray><x>/<y>/<z> <green>YAW：<gray><yaw> <green>PITCH：<gray><pitch>"
+                    "store_added": "<green>已将商店添加到你的坐标：<gray><x>/<y>/<z> <green>YAW：<gray><yaw> <green>PITCH：<gray><pitch>",
+                    "lobby_spawn_set": "<green>大厅出生点被成功设置到XYZ：<gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "lobby_countdown_set": "<green>大厅的倒计时被设置为 <gray><countdown>",
+                    "game_time_set": "<green>游戏时间被设置为 <gray><time>",
+                    "spec_spawn_set": "<green>旁观者出生点被成功设置到 XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "min_players_set": "<green>最低玩家数成功被设置为 <gray><min><green>！"
                 }
             }
         },
-        "usage": "<red>使用方式: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>"
+        "usage": "<red>使用方式: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>",
+        "info": {
+            "constant": "- <gray><constant><reset>: <gray><value>"
+        }
     },
     "unknown_command": "<red>你输入的指令似乎是错误的， 你可以尝试输入 <dark_red>/bw help <red>来获取帮助！",
-    "safe_reload": "<green>正在等待所有游戏结束， 或于60秒后自动重新加载插件。"
+    "safe_reload": "<green>正在等待所有游戏结束， 或于60秒后自动重新加载插件。",
+    "language": {
+        "usage_bw_lang": "使用: /bw lang <pre><locale></pre> - <yellow>设置 <red>Bed<white>Wars 所使用的语言环境",
+        "success": "<green>成功将语言设置为 <white>[<lang>]",
+        "already_set": "语言: [<lang>] 已经是默认语言了！",
+        "invalid": "<red>无法加载指定的语言文件！"
+    },
+    "dump": {
+        "failed": "<red>转储失败！"
+    }
 }
