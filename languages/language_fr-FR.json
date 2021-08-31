@@ -151,7 +151,11 @@
         "player_killed": "<red>Le joueur <killer><red> a tué <victim><red> !",
         "game_start_title": "<green>La Game a démaré !",
         "game_start_subtitle": "<green> La Game <grey><arena><green> a démarré ! Bon jeu !",
-        "vault_deposite": "<green>Ajout de <gray><coins> <currency><green> à votre compte Vault !"
+        "vault_deposite": "<green>Ajout de <gray><coins> <currency><green> à votre compte Vault !",
+        "cheat": {
+            "game_not_running": "<red>vous ne pouvez tricher que quand une partie est en court !",
+            "please_provide_valid_cheat_type": "<rouge> a essayer un type de  triche non valide ou perdu"
+        }
     },
     "safe_reload": "<green>En attente jusqu'à ce que toutes les parties en cours soient arrêtées ou 60 secondes avant rechargement du plugin.",
     "unknown_usage": "<red>Argument invalide ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide !",
