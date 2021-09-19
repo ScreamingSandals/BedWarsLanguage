@@ -5,7 +5,7 @@ plugins {
 defaultTasks 'clean', 'screamCompile'
 
 group = 'org.screamingsandals.language.bedwars'
-version = TRANSLATION_BRANCH + '-SNAPSHOT-local'
+version = TRANSLATION_BRANCH + '-SNAPSHOT'
 
 apply plugin: 'org.screamingsandals.plugin-builder-lite' // we need to apply the plugin later
 
