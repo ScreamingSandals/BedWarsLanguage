@@ -203,6 +203,15 @@
         "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>Sets team target block to your target position (it can be another block, not just bed)",
         "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Sets the ability to connect to a team using an entity",
         "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [hologram] [first level] [name] [team] [max spawned resources]</pre> - <yellow>Add item spawner to your position",
+        "bw_admin_spawner_max_spawned_resources": "/bw admin <pre><arena></pre> spawner maxSpawnedResources <pre><value></pre> - <yellow>Sets max spawned resources limit of the spawner at your position",
+        "bw_admin_spawner_rotation_mode": "/bw admin <pre><arena></pre> spawner rotationMode <pre><mode></pre> - <yellow>Sets the floating hologram's rotation mode of the spawner at your position",
+        "bw_admin_spawner_change_type": "/bw admin <pre><arena></pre> spawner changeType <pre><type></pre> - <yellow>Changes the type of the spawner at your position",
+        "bw_admin_spawner_custom_name": "/bw admin <pre><arena></pre> spawner customName <pre><name></pre> - <yellow>Sets the custom name of the spawner at your position",
+        "bw_admin_spawner_hologram_type": "/bw admin <pre><arena></pre> spawner hologramType <pre><type></pre> - <yellow>Sets the type of the spawner's hologram at your position",
+        "bw_admin_spawner_linked_team": "/bw admin <pre><arena></pre> spawner linkedTeam <pre><team|null></pre> - <yellow>Links the spawner at your position with the specified team",
+        "bw_admin_spawner_base_amount": "/bw admin <pre><arena></pre> spawner baseAmount <pre><amount></pre> - <yellow>Sets the base amount of resources that the spawner should spawn per cycle",
+        "bw_admin_spawner_hologram": "/bw admin <pre><arena></pre> spawner hologram <pre><true|false></pre> - <yellow>Enables/Disables hologram above the spawner",
+        "bw_admin_spawner_floating": "/bw admin <pre><arena></pre> spawner floating <pre><true|false></pre> - <yellow>Enables/Disables floating block under the spawner's hologram",
         "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>Remove all spawners",
         "bw_admin_store_add": "/bw admin <pre><arena></pre> store add [name above dealer head] [file with shop] [use main shop] - <yellow>Add trading villager to your position",
         "bw_admin_store_remove": "/bw admin <pre><arena></pre> store remove - <yellow>Remove trading villager from your position",
@@ -280,7 +289,12 @@
                     "invalid_bar_color": "<red>Wrong color for Boss Bar!",
                     "invalid_entity_type": "<red>Wrong living entity type!",
                     "invalid_time": "<red>Time <gray><number><red> is invalid!",
-                    "npc_must_have_skin_name": "<red>If you use entity type PLAYER, you must specify skin name in format <gray>PLAYER:[skin's owner]"
+                    "npc_must_have_skin_name": "<red>If you use entity type PLAYER, you must specify skin name in format <gray>PLAYER:[skin's owner]",
+                    "no_spawner": "<red>There's no spawner on this position!",
+                    "multiple_spawners": {
+                        "first_line": "<red>There are more spawners in the same place, please choose a specific one:",
+                        "line": "- <type> - <gray><command></gray>"
+                    }
                 },
                 "success": {
                     "saved_and_started": "<green>The game has been successfully saved and is running! Now you can join and play in the arena!",
@@ -312,7 +326,19 @@
                     "child_state": "<green>Variable isBaby for this shopkeeper has been changed to <gray><value>",
                     "post_game_waiting": "<green>Waiting time after game has been successfully set to <gray><number><green>!",
                     "custom_prefix_enabled": "<green>Custom prefix was successfully set to <gray><prefix><green>.",
-                    "custom_prefix_disabled": "<green>Custom prefix was successfully disabled."
+                    "custom_prefix_disabled": "<green>Custom prefix was successfully disabled.",
+                    "spawner_hologram_enabled": "<green>Hologram of this <type> spawner has been <gray>enabled<green>.",
+                    "spawner_hologram_disabled": "<green>Hologram of this <type> spawner has been <gray>disabled<green>.",
+                    "spawner_floating_enabled": "<green>Floating block of this <type> spawner has been <gray>enabled<green>.",
+                    "spawner_floating_disabled": "<green>Floating block of this <type> spawner has been <gray>disabled<green>.",
+                    "spawner_base_amount_set": "<green>Base amount of resource of this <type> spawner has been set to <gray><amount><green>.",
+                    "spawner_max_spawned_resources_set": "<green>Max spawned resources limit for this <type> spawner has been set to <gray><amount><green>.",
+                    "spawner_team_linked": "<green>This <type> spawner has been linked with to <team> team.",
+                    "spawner_team_unlinked": "<green>This <type> spawner is no longer linked to any team.",
+                    "spawner_rotation_mode_set": "<green>Rotation mode of hologram of this <type> spawner has been set to <gray><rotation><green>.",
+                    "spawner_hologram_type_set": "<green>Hologram type of this <type> spawner has been set to <gray><type><green>.",
+                    "spawner_custom_name_set": "<green>Custom name of this <type> spawner has been set to <gray><name><green>.",
+                    "spawner_type_changed": "<green>Type of this <type> spawner has been changed to <new_type>."
                 }
             }
         },
