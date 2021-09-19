@@ -98,9 +98,14 @@
         },
         "spawner": {
             "countdown": "<yellow><seconds> <bold>seconds",
+            "countdown_custom": "<yellow><value> <bold><unit>",
             "every_second": "<bold>every second",
             "full": "<red><bold>Spawner is depleted",
-            "not_enough_level": "<red>Spawner can't work! You need to upgrade by <levels> levels."
+            "full_hypixel": "<red><bold>Spawner is full!",
+            "not_enough_level": "<red>Spawner can't work! You need to upgrade by <levels> levels.",
+            "tier": "<yellow>Tier <red><tier>",
+            "countdown_hypixel": "<yellow>Spawns in <red><seconds> <yellow>seconds",
+            "countdown_custom_hypixel": "<yellow>Spawns in <red><value> <yellow><unit>"
         },
         "resources": {
             "bronze": "Bronze",
