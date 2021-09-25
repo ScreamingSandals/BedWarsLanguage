@@ -109,7 +109,10 @@
         "player_self_killed": "<red>Игрок <victim> <red>умер!",
         "player_killed": "<red>Игрок <killer> <red>убил <victim><red>!",
         "game_start_title": "<green>Игра началась!",
-        "game_start_subtitle": "<green>Игра <gray><arena><green> началась! Удачи!"
+        "game_start_subtitle": "<green>Игра <gray><arena><green> началась! Удачи!",
+        "cheat": {
+            "game_not_running": "<red>Вы можете читерить только когда игра запущена!"
+        }
     },
     "no_permissions": "<red>У вас на это недостаточно прав!",
     "safe_reload": "<green>Ожидаем конец всех игр или 60 секунд до перезагрузки плагина.",
@@ -203,7 +206,9 @@
         "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>Задать префикс для арены",
         "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Удалить арену",
         "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Отключить арену и перевести её в режим редактирования",
-        "bw_alljoin": "/bw alljoin [арена] - <green>Подключить всех игроков на сервере к арене"
+        "bw_alljoin": "/bw alljoin [арена] - <green>Подключить всех игроков на сервере к арене",
+        "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Отметьте этого торговца как ребёнка",
+        "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Удалить все генераторы в этой локации"
     },
     "leaderboard": {
         "holo_added": "<green>Голограмма таблицы лидеров была создана на вашей позиции!",
