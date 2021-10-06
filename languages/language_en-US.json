@@ -221,6 +221,7 @@
         "bw_admin_arena_weather": "/bw admin <pre><arena></pre> arenaweather <pre><type></pre> - <yellow>Sets weather in arena (default, CLEAN, DOWNFALL)",
         "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Sets the waiting time before player is teleported out of the arena",
         "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>Enables custom prefix for arena",
+        "bw_admin_display_name": "/bw admin <pre><arena></pre> displayName <pre><name|off></pre> - <yellow>Sets display name of the arena",
         "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>Remove the arena",
         "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Turns the game off and switches the arena to edit mode",
         "bw_admin_save": "/bw admin <pre><arena></pre> save - <green>Saves the game and activates it!",
@@ -338,7 +339,9 @@
                     "spawner_rotation_mode_set": "<green>Rotation mode of hologram of this <type> spawner has been set to <gray><rotation><green>.",
                     "spawner_hologram_type_set": "<green>Hologram type of this <type> spawner has been set to <gray><type><green>.",
                     "spawner_custom_name_set": "<green>Custom name of this <type> spawner has been set to <gray><name><green>.",
-                    "spawner_type_changed": "<green>Type of this <type> spawner has been changed to <new_type>."
+                    "spawner_type_changed": "<green>Type of this <type> spawner has been changed to <new_type>.",
+                    "display_name_enabled": "<green>Display name was successfully set to <gray><display_name><green>.",
+                    "display_name_disabled": "<green>Display name was successfully disabled."
                 }
             }
         },
