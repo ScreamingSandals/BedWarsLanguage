@@ -186,7 +186,7 @@
         "bw_removeholo": "/bw removeholo - <yellow>After executing this command, the player can right-click the holographic statistic to remove it.",
         "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Enables main lobby or sets main lobby location",
         "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Shows you all information about arena",
-        "bw_admin_add": "/bw admin <pre><arena></pre> add - <yellow>Create a new arena",
+        "bw_admin_add": "/bw admin <pre><arena></pre> add [variant] - <yellow>Create a new arena",
         "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Sets lobby position to your position",
         "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Sets specatator's spawn to your position",
         "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Sets the extreme point of the arena to your position",
@@ -255,7 +255,8 @@
             },
             "success": {
                 "removed": "<red><b>Arena removed!",
-                "added": "<green>Arena added!",
+                "added": "<green>Arena <gray><arena><green> added!",
+                "added_with_variant": "<green>Arena <gray><arena><green> added! Used game variant: <gray><variant><green>!",
                 "edit_mode": "<green>Arena switched to edit mode!"
             },
             "edit": {
@@ -295,7 +296,8 @@
                     "multiple_spawners": {
                         "first_line": "<red>There are more spawners in the same place, please choose a specific one:",
                         "line": "- <type> - <gray><command></gray>"
-                    }
+                    },
+                    "invalid_variant": "<red>Game variant <gray><variant><red> does not exist!"
                 },
                 "success": {
                     "saved_and_started": "<green>The game has been successfully saved and is running! Now you can join and play in the arena!",
