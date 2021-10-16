@@ -30,7 +30,21 @@
                     "team_created": "<green>Tým <gray><team><green> byl úspěšně vytvořen pod barvou <teamcolor><green> a maximálním počtem hráčů: <gray><maxplayers>",
                     "lobby_spawn_set": "<green>Lobby spawn byl úspěšně nastaven na pozici XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
                     "spec_spawn_set": "<green>Spectator spawn byl úspěšně nastaven na pozici XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
-                    "constant_set": "<green>Konstanta <gray><config><green> byla úspěšně nastavena na <gray><value><green>!"
+                    "constant_set": "<green>Konstanta <gray><config><green> byla úspěšně nastavena na <gray><value><green>!",
+                    "spawner_team_unlinked": "<green>Tento spawner na <type> již není propojen s žádným týmem.",
+                    "spawner_hologram_type_set": "<green>Typ hologramu pro tento spawner na <type> byl nastaven na <gray><type><green>.",
+                    "lobby_pos1_set": "<green>Krajní bod lobby pro arénu <gray><arena><green> byl nastaven na XYZ: <gray><x>/<y>/<z>",
+                    "lobby_pos2_set": "<green>Druhý krajní bod lobby pro arénu <gray><arena><green> byl nastaven na XYZ: <gray><x>/<y>/<z>",
+                    "spawner_hologram_enabled": "<green>Hologram tohoto spawneru na <type> byl <gray>povolen<green>.",
+                    "spawner_hologram_disabled": "<green>Hologram tohoto spawneru na <type> byl <gray>zakázán<green>.",
+                    "spawner_floating_enabled": "<green>Rotující blok tohoto spawneru na <type> byl <gray>povolen<green>.",
+                    "spawner_floating_disabled": "<green>Rotující blok tohoto spawneru na <type> byl <gray>zakázán<green>.",
+                    "spawner_base_amount_set": "<green>Základní množství vyrobených surovin pro tento spawner na <type> byl nastaven na <gray><amount><green>.",
+                    "spawner_max_spawned_resources_set": "<green>Maximální počet vyrobených surovin pro tento spawner na <type> byl nastaven na <gray><amount><green>.",
+                    "spawner_team_linked": "<green>Tento spawner na <type> byl propojen s týmem <team>.",
+                    "spawner_rotation_mode_set": "<green>Mód rotace hologramu pro tento spawner na <type> byl nastaven na <gray><rotation><green>.",
+                    "spawner_custom_name_set": "<green>Vlastní jméno pro tento spawner na <type> bylo nastaveno na <gray><name><green>.",
+                    "spawner_type_changed": "<green>Typ tohoto spawneru na <type> byl změněn na <new_type>."
                 },
                 "errors": {
                     "must_be_in_same_world": "<red>Všechny přikazy musí být spuštěny ve stejném světě!",
@@ -63,7 +77,12 @@
                     "set_bounds_before_save": "<red>Před uložením hry prosím nastavte souřadnice pos1 a pos2 (Určení velikosti a polohy arény)!",
                     "set_spawn_for_team_before_save": "<red>Před uložením hry prosím nastavte spawn týmu <gray><team><red>!",
                     "invalid_entity_type": "<red>Špatný typ entity!",
-                    "npc_must_have_skin_name": "<red>Pokud používáte typ entity PLAYER, musíte zadat název skinu ve formátu <gray>PLAYER:[vlastník skinu]"
+                    "npc_must_have_skin_name": "<red>Pokud používáte typ entity PLAYER, musíte zadat název skinu ve formátu <gray>PLAYER:[vlastník skinu]",
+                    "no_spawner": "<red>Na této pozici není žádný spawner!",
+                    "multiple_spawners": {
+                        "first_line": "<red>Na této pozici je více spawnerů, prosím vyber jeden konkrétní:",
+                        "line": "- <type> - <gray><command></gray>"
+                    }
                 }
             },
             "error": {
@@ -234,9 +253,14 @@
         },
         "spawner": {
             "countdown": "<yellow><seconds> <bold>sekund(y)",
-            "every_second": "<bold>každou sekundu",
+            "every_second": "<aqua>každou sekundu",
             "full": "<red><bold>Spawner je vyčerpán",
-            "not_enough_level": "<red>Spawner nemůže pracovat! Musíš upgradovat o <levels> level(y)."
+            "not_enough_level": "<red>Spawner nemůže pracovat! Musíš upgradovat o <levels> level(y).",
+            "countdown_custom": "<yellow><value> <aqua><unit>",
+            "full_hypixel": "<red><bold>Spawner je plný!",
+            "tier": "<yellow>Úroveň <red><tier>",
+            "countdown_hypixel": "<yellow>Spawn za <red><seconds> <yellow>sekund",
+            "countdown_custom_hypixel": "<yellow>Spawn za <red><value> <yellow><unit>"
         },
         "resources": {
             "bronze": "Bronz",
@@ -292,7 +316,14 @@
         "player_killed": "<red>Hráč <killer> <red>zabil hráče <victim><red>!",
         "game_start_title": "<green>Hra začala!",
         "game_start_subtitle": "<green>Hra <gray><arena><green> začala! Užijte si hru!",
-        "vault_deposite": "<gray><coins> <currency><green> přidáno do tvého Vault účtu!"
+        "vault_deposite": "<gray><coins> <currency><green> přidáno do tvého Vault účtu!",
+        "cheat": {
+            "game_not_running": "<red>Můžete cheatovat pouze, pokud hra běží!",
+            "please_provide_valid_cheat_type": "<red>Zadaný cheat není zadán správně nebo neexistuje!",
+            "invalid_player": "<red>Zadaný hráč není v žádné hře nebo je pouze pozorovatel!",
+            "received_give": "<green>Hráč <gray><player><green> získal <gray><amount><green> <gray><resource>",
+            "received_kill": "<green>Hráč <gray><player><green> byl zabit cheatem!"
+        }
     },
     "no_permissions": "<red>Nemáš dostatečné oprávnění pro tuto akci!",
     "safe_reload_failed_to_stop_game": "<red>Některé hry neskončily v časovém limitu, takže jejich aréna mohla být poškozena!",
@@ -345,7 +376,20 @@
         "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>Nastaví čas v aréně (DAY, NIGHT, atd.)",
         "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Nastaví čekací čas než bude hráč teleportován pryč z arény",
         "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Odstraní všechny spawnery na lokaci",
-        "bw_dump": "/bw dump - <yellow>Vypíše podrobnosti o serveru a dá vám odkaz na výpis. Tento odkaz může být užitečný pro podporu."
+        "bw_dump": "/bw dump - <yellow>Vypíše podrobnosti o serveru a dá vám odkaz na výpis. Tento odkaz může být užitečný pro podporu.",
+        "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Nastaví krajní bod lobby na tvojí pozici",
+        "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Nastaví druhý krajní bod lobby na tvoji pozici",
+        "bw_admin_spawner_max_spawned_resources": "/bw admin <pre><arena></pre> spawner maxSpawnedResources <pre><value></pre> - <yellow>Nastaví maximální počet vygenerovaných surovin pro spawner na tvojí pozici",
+        "bw_admin_spawner_rotation_mode": "/bw admin <pre><arena></pre> spawner rotationMode <pre><mode></pre> - <yellow>Nastaví mód rotace hologramu pro spawner na tvojí pozici",
+        "bw_admin_spawner_change_type": "/bw admin <pre><arena></pre> spawner changeType <pre><type></pre> - <yellow>Změní typ spawneru na tvojí pozici",
+        "bw_admin_spawner_custom_name": "/bw admin <pre><arena></pre> spawner customName <pre><name></pre> - <yellow>Nastaví vlastní jméno pro spawner na tvojí pozici",
+        "bw_admin_spawner_hologram_type": "/bw admin <pre><arena></pre> spawner hologramType <pre><type></pre> - <yellow>Nastaví typ hologramu pro spawner na tvojí pozici",
+        "bw_admin_spawner_linked_team": "/bw admin <pre><arena></pre> spawner linkedTeam <pre><team|null></pre> - <yellow>Propojí spawner na tvojí pozici se zadaným týmem",
+        "bw_admin_spawner_base_amount": "/bw admin <pre><arena></pre> spawner baseAmount <pre><amount></pre> - <yellow>Nastaví základní množství vygenerovaných surovin, které by měl spawner vyrobit za určitý čas",
+        "bw_admin_spawner_hologram": "/bw admin <pre><arena></pre> spawner hologram <pre><true|false></pre> - <yellow>Povolí/Zakáže hologram pro spawner na tvojí pozici",
+        "bw_admin_spawner_floating": "/bw admin <pre><arena></pre> spawner floating <pre><true|false></pre> - <yellow>Povolí/Zakáže rotující blok pod hologramem pro spawner na tvojí pozici",
+        "bw_cheat_give": "/bw cheat give <pre><resource></pre> [amount] [player] - <red>Dá hráči určité množství zadané suroviny",
+        "bw_cheat_kill": "/bw cheat kill [player] - <red>Zabije zadaného hráče"
     },
     "update": {
         "new_release": [
