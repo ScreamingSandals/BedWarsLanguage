@@ -232,7 +232,8 @@
         "bw_dump": "/bw dump - <yellow>Dumps the server and gives you link to the dump. This link can be useful for support",
         "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>If arena is in edit mode, this command will enable interactive mode",
         "bw_cheat_give": "/bw cheat give <pre><resource></pre> [amount] [player] - <red>Gives player specified amount of resource",
-        "bw_cheat_kill": "/bw cheat kill [player] - <red>Kills specified player"
+        "bw_cheat_kill": "/bw cheat kill [player] - <red>Kills specified player",
+        "bw_gamesinv": "/bw gamesinv <pre><inventory></pre> - <green>Opens the specific games inventory"
     },
     "games_inventory": {
         "could_not_find_game": "<red>Could not find a game!",
