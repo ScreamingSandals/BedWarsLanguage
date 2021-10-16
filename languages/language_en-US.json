@@ -234,6 +234,10 @@
         "bw_cheat_give": "/bw cheat give <pre><resource></pre> [amount] [player] - <red>Gives player specified amount of resource",
         "bw_cheat_kill": "/bw cheat kill [player] - <red>Kills specified player"
     },
+    "games_inventory": {
+        "could_not_find_game": "<red>Could not find a game!",
+        "unknown_inventory": "<red>Unknown games inventory <gray><type><red>!"
+    },
     "update": {
         "new_release": [
             "<green>New RELEASE version <version> of BedWars is available!",
