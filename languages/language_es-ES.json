@@ -33,8 +33,13 @@
         "spawner": {
             "not_enough_level": "<red>¡El spawner no puede funcionar! Necesitas potenciarlo en <levels> niveles.",
             "countdown": "<yellow><seconds> <bold>segundos",
-            "every_second": "<bold>cada segundo",
-            "full": "<red><bold>Spawner está agotado"
+            "every_second": "<aqua>cada segundo",
+            "full": "<red><bold>Spawner está agotado",
+            "full_hypixel": "<red><bold>El Spawner está lleno!",
+            "countdown_custom": "<yellow><value> <aqua><unit>",
+            "tier": "<yellow>Nivel <red><tier>",
+            "countdown_hypixel": "<yellow>Spawn en <red><seconds> <yellow>segundos",
+            "countdown_custom_hypixel": "<yellow>Spawn en <red><value> <yellow><unit>"
         },
         "shop": {
             "buy_success": "<green>Compra exitosa de <gray><item><green> por <gray><material><green>!",
@@ -134,7 +139,7 @@
         "bw_removeholo": "/bw removeholo - <yellow>Después de ejecutar este comando, el jugador puede hacer click derecho al holograma para removerlo.",
         "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Habilita el lobby principal o establece la ubicación del lobby principal",
         "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Muestra toda la información sobre la arena",
-        "bw_admin_add": "/bw admin <pre><arena></pre> add - <yellow>Crea una nueva arena o mapa",
+        "bw_admin_add": "/bw admin <pre><arena></pre> add [variante]- <yellow>Crea una nueva arena o mapa",
         "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Establece la posición del lobby en tu posición",
         "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Establece el punto de aparición de los espectadores en tu posición",
         "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Pone el punto extremo del mapa en tu posición",
@@ -170,7 +175,13 @@
         "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Marcar a este comerciante como niño",
         "bw_dump": "/bw dump - <yellow>Volcado del servidor y te da un enlace de volcado. Este enlace puede ser útil para soporte",
         "bw_cheat_give": "/bw cheat give <pre><recurso></pre> [cantidad] [jugador] - <red>Le da al jugador una cantidad específica del recurso",
-        "bw_cheat_kill": "/bw cheat kill [jugador] - <red>Mata al jugador específico"
+        "bw_cheat_kill": "/bw cheat kill [jugador] - <red>Mata al jugador específico",
+        "bw_admin_spawner_max_spawned_resources": "/bw admin <pre><arena></pre> spawner maxSpawnedResources <pre><value></pre> - <yellow>Establece el límite máximo de recursos generados del generador en su posición",
+        "bw_admin_spawner_change_type": "/bw admin <pre><arena></pre> spawner changeType <pre><type></pre> - <yellow>Cambia el tipo de spawner en tu posición",
+        "bw_admin_spawner_linked_team": "/bw admin <pre><arena></pre> spawner linkedTeam <pre><team|null></pre> - <yellow>Vincula el spawner de tu posición con el equipo especificado",
+        "bw_admin_spawner_rotation_mode": "/bw admin <pre><arena></pre> spawner rotationMode <pre><mode></pre> - <yellow>Establece el modo de rotación del holograma flotante del generador en tu posición",
+        "bw_admin_spawner_custom_name": "/bw admin <pre><arena></pre> spawner customName <pre><name></pre> - <yellow>Establece el nombre personalizado del spawner en su posición",
+        "bw_admin_spawner_hologram_type": "/bw admin <pre><arena></pre> spawner hologramType <pre><type></pre> - <yellow>Establece el tipo de holograma del generador en tu posición"
     },
     "no_permissions": "<red>¡No tienes los suficientes permisos para hacer eso!",
     "safe_reload": "<green>Esperando a que todas las partidas se terminen o 60 segundos antes de recargar el plugin.",
@@ -291,7 +302,14 @@
                     "lobby_pos2_set": "<green> La posición 2 del lobby de la arena <gray><arena><green> fue puesto en XYZ: <gray><x>/<y>/<z>",
                     "lobby_countdown_set": "<green>Cuenta regresiva para el lobby establecida en <gray><countdown>",
                     "min_players_set": "<green>Se estableció correctamente el mínimo de jugadores a <gray><min><green>!",
-                    "post_game_waiting": "<green>¡El tiempo de espera después del juego se ha establecido correctamente en <gray><number><green>!"
+                    "post_game_waiting": "<green>¡El tiempo de espera después del juego se ha establecido correctamente en <gray><number><green>!",
+                    "spawner_team_unlinked": "<green>Este generador de <type> ya no está vinculado a ningún equipo.",
+                    "spawner_rotation_mode_set": "<green>El modo de rotación del holograma de este generador de <type> se ha establecido en <gray><rotation><green>.",
+                    "spawner_custom_name_set": "<green>El nombre personalizado de este generador de <type> se ha establecido en <gray><name><green>.",
+                    "spawner_hologram_type_set": "<green>El tipo de holograma de este generador de <type> se ha establecido en <gray><type><green>.",
+                    "spawner_type_changed": "<green>El tipo de este generador de <type> se ha cambiado a <new_type>.",
+                    "display_name_enabled": "<green>El nombre para mostrar se configuró correctamente en <gray><display_name><green>.",
+                    "display_name_disabled": "<green>El nombre para mostrar se desactivó correctamente."
                 },
                 "errors": {
                     "invalid_bounds": "<red>¡La diferencia de altura entre pos1 y pos2 es demasiado pequeña! ¡El mínimo son 5 bloques!",
@@ -335,7 +353,7 @@
             },
             "success": {
                 "removed": "<red><b>¡Arena eliminada!",
-                "added": "<green>¡Arena añadida!",
+                "added": "<green>¡Arena <gray><arena><green> añadida!",
                 "edit_mode": "<green>¡La arena cambió a modo edición!"
             }
         },
