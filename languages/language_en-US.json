@@ -160,7 +160,9 @@
             "invalid_player": "<red>Specified player is not in any game or is a spectator!",
             "received_give": "<green>Player <gray><player><green> got <gray><amount><green> of <gray><resource>",
             "received_kill": "<green>Player <gray><player><green> killed by cheat!",
-            "game_not_running": "<red>You can only cheat when game is running!"
+            "game_not_running": "<red>You can only cheat when game is running!",
+            "special_item_used": "<green>Special item <gray><item></gray> has been used!",
+            "region_regenerated": "<green>Region of arena <gray><arena></gray> has been regenerated!"
         },
         "join": "<name> <green>joined the game!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "leave": "<name> <red>left the game!",
@@ -233,6 +235,8 @@
         "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>If arena is in edit mode, this command will enable interactive mode",
         "bw_cheat_give": "/bw cheat give <pre><resource></pre> [amount] [player] - <red>Gives player specified amount of resource",
         "bw_cheat_kill": "/bw cheat kill [player] - <red>Kills specified player",
+        "bw_cheat_build_pop_up_tower": "/bw cheat buildPopUpTower [game] - <red>Builds popup tower",
+        "bw_cheat_rebuild_region": "/bw cheat rebuildRegion [game] - <red>Rebuilds the game region",
         "bw_gamesinv": "/bw gamesinv <pre><inventory></pre> - <green>Opens the specific games inventory"
     },
     "games_inventory": {
