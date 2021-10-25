@@ -370,6 +370,18 @@
             "entity_not_compatible": "<red>The Entity you are trying to use is not compatible! Only Living entities or Armor Stands can be used!",
             "entity_added": "<green>Entity to join team added!"
         },
+        "npc": {
+            "added": "<green>New npc has been added to the position XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+            "now_click": "<yellow>Now right-click on the NPC you want to edit.",
+            "no_longer_editing": "<green>You are no longer editing any NPC. Use <gray>/bw npc select<green> to select new one.",
+            "editing": "<green>You are now editing NPC at the position XYZ: <gray><x>/<y>/<z>",
+            "not_editing": "<red>You are not editing any NPC! Select one using <gray>/bw npc select",
+            "should_look": "<green>The NPC should now look at players!",
+            "should_not_look": "<green>The NPC no longer should look at players!",
+            "requires_value": "<green>This action requires value to be specified!",
+            "action_set": "<green>The action of this NPC has been set to <gray><action><green> with argument \"<gray><value><green>\"",
+            "removed": "<green>The NPC has been removed!"
+        },
         "info": {
             "header": "<green>Details of the arena:",
             "name": "<gray>Name: <reset><name>",
