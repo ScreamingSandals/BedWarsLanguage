@@ -131,7 +131,7 @@
             "already_selected": "<green>You are already in team: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
             "full": "<red>Team <team><red> is full!",
             "full_no_change": "<red>Team <team><red> is full, You stay in <oldteam><red>!",
-            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)",
+            "select_item": "<team> <gray>(<yellow><inteam> <white>/ <yellow><maxinteam><gray>)",
             "select_item_lore": "<white>---------------------",
             "select_item_lore_full": "<white>Team is full!",
             "select_item_lore_join": "Click to join the team!"
