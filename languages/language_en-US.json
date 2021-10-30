@@ -380,7 +380,17 @@
             "should_not_look": "<green>The NPC no longer should look at players!",
             "requires_value": "<green>This action requires value to be specified!",
             "action_set": "<green>The action of this NPC has been set to <gray><action><green> with argument \"<gray><value><green>\"",
-            "removed": "<green>The NPC has been removed!"
+            "removed": "<green>The NPC has been removed!",
+            "skin_changed": "<green>The skin has been changed!",
+            "skin_change_failed": "<red>The skin could not be changed!"
+        },
+        "hologram": {
+            "line_added": "<green>New line has been added to the end of the hologram: <white><line>",
+            "line_set": "<green>The line number <gray><linenumber><green> of the hologram has been set to <white><line>",
+            "line_removed": "<green>The line number <gray><linenumber><green> of the hologram has been removed!",
+            "theres_no_line_number": "<red>There is no line with number <linenumber>",
+            "invalid_number": "<red>The line number must be higher than 0!",
+            "reset": "<green>The hologram has been reset."
         },
         "info": {
             "header": "<green>Details of the arena:",
