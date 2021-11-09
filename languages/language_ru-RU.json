@@ -51,7 +51,9 @@
             "full": "<red><bold>Генератор истощён",
             "not_enough_level": "<red>Генератор не работает! Нужно прокачать его на <levels> уровней.",
             "full_hypixel": "<red><bold>Генератор переполнен!",
-            "tier": "<yellow>Уровень <red><tier>"
+            "tier": "<yellow>Уровень <red><tier>",
+            "countdown_custom": "<yellow><value> <aqua><unit>",
+            "countdown_hypixel": "<yellow>Появление через <red><seconds> <yellow>сек."
         },
         "respawn_cooldown": {
             "title": "<green>Появление через: <red><time>",
