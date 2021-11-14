@@ -170,7 +170,8 @@
         "player_killed": "<red>Player <killer> <red>killed <victim><red>!",
         "game_start_title": "<green>Game started!",
         "game_start_subtitle": "<green>Game <gray><arena><green> has started! Enjoy the game!",
-        "vault_deposite": "<green>Added <gray><coins> <currency><green> to your Vault account!"
+        "economy_deposited": "<green>Added <gray><coins> <currency><green> to your balance!",
+        "economy_missing_coins": "<red>You need <yellow><coins> <currency><red> to enter this game!"
     },
     "help": {
         "title": "Screaming BedWars <version> - Help",
