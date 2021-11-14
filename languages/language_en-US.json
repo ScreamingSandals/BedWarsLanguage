@@ -233,6 +233,7 @@
         "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Removes all spawners at location",
         "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Mark this shopkeeper as child",
         "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>Mark this shopkeeper as adult",
+        "bw_migrate": "/bw migrate <pre><plugin</pre> - <yellow>Migrates the configuration from a different BedWars plugin.",
         "bw_dump": "/bw dump - <yellow>Dumps the server and gives you link to the dump. This link can be useful for support",
         "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>If arena is in edit mode, this command will enable interactive mode",
         "bw_cheat_give": "/bw cheat give <pre><resource></pre> [amount] [player] - <red>Gives player specified amount of resource",
@@ -517,5 +518,9 @@
         "invalid": "<red>The specified language file could not be loaded!",
         "already_set": "Language: [<lang>] is already set as the default language!",
         "success": "<green>Successfully set language to <white>[<lang>]"
+    },
+    "migrate": {
+        "success": "<green>Successfully migrated the configuration from <red><plugin><green>!",
+        "failure": "<red>Something went wrong while migrating the configuration! See the console for details."
     }
 }
