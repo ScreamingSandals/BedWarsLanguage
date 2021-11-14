@@ -220,6 +220,7 @@
         "bw_admin_store_remove": "/bw admin <pre><arena></pre> store remove - <yellow>Remove trading villager from your position",
         "bw_admin_store_type": "/bw admin <pre><arena></pre> store type <pre><living entity></pre> - <yellow>Sets entity type of store (Villager, Horse, Cow, Pig etc.)",
         "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><constant> <value></pre> - <yellow>Sets value of constant variable for game",
+        "bw_admin_fee": "/bw admin <pre><arena></pre> fee <pre><fee></pre> - <yellow>Sets the economy fee needed to enter the arena.",
         "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>Sets time in arena (DAY, NIGHT, etc.)",
         "bw_admin_arena_weather": "/bw admin <pre><arena></pre> arenaweather <pre><type></pre> - <yellow>Sets weather in arena (default, CLEAN, DOWNFALL)",
         "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Sets the waiting time before player is teleported out of the arena",
@@ -353,7 +354,8 @@
                     "spawner_custom_name_set": "<green>Custom name of this <type> spawner has been set to <gray><name><green>.",
                     "spawner_type_changed": "<green>Type of this <type> spawner has been changed to <new_type>.",
                     "display_name_enabled": "<green>Display name was successfully set to <gray><display_name><green>.",
-                    "display_name_disabled": "<green>Display name was successfully disabled."
+                    "display_name_disabled": "<green>Display name was successfully disabled.",
+                    "fee_set": "<green>Arena entry fee was successfully set to <gray><fee><green>."
                 }
             }
         },
