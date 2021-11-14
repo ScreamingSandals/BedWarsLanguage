@@ -233,7 +233,7 @@
         "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Removes all spawners at location",
         "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Mark this shopkeeper as child",
         "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>Mark this shopkeeper as adult",
-        "bw_migrate": "/bw migrate <pre><plugin</pre> - <yellow>Migrates the configuration from a different BedWars plugin.",
+        "bw_migrate": "/bw migrate <pre><plugin></pre> - <yellow>Migrates the configuration from a different BedWars plugin.",
         "bw_dump": "/bw dump - <yellow>Dumps the server and gives you link to the dump. This link can be useful for support",
         "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>If arena is in edit mode, this command will enable interactive mode",
         "bw_cheat_give": "/bw cheat give <pre><resource></pre> [amount] [player] - <red>Gives player specified amount of resource",
@@ -501,12 +501,12 @@
         "inform_game_join": "<green>Joining game of party leader",
         "warped": "<green>Party leader has warped you here",
         "command": {
-            "invalid_arguments": "<red>Invalid number of arguments!, type /bw party help to know more",
+            "invalid_arguments": "<red>Invalid number of arguments! Type /bw party help to know more.",
             "help": "/bw party warp - <yellow>Warps all players to your game or towards you",
             "not_in_party": "<red>You have to be in a party to do this command!",
             "not_party_leader": "<red>You are not the leader of this party!",
             "is_empty": "<red>Your party is empty, cannot warp anyone!",
-            "warped": "<green>Party members have been warped"
+            "warped": "<green>Party members have been warped."
         }
     },
     "dump": {
