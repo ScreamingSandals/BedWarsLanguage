@@ -53,7 +53,8 @@
             "full_hypixel": "<red><bold>Генератор переполнен!",
             "tier": "<yellow>Уровень <red><tier>",
             "countdown_custom": "<yellow><value> <aqua><unit>",
-            "countdown_hypixel": "<yellow>Появление через <red><seconds> <yellow>сек."
+            "countdown_hypixel": "<yellow>Появление через <red><seconds> <yellow>сек.",
+            "countdown_custom_hypixel": "<yellow>Появление через <red><value> <yellow><unit>"
         },
         "respawn_cooldown": {
             "title": "<green>Появление через: <red><time>",
@@ -116,8 +117,14 @@
         "game_start_subtitle": "<green>Игра <gray><arena><green> началась! Удачи!",
         "cheat": {
             "game_not_running": "<red>Вы можете читерить только когда игра запущена!",
-            "invalid_player": "<red>Данный игрок не наблюдатель или не в игре!"
-        }
+            "invalid_player": "<red>Данный игрок не наблюдатель или не в игре!",
+            "please_provide_valid_cheat_type": "<red>Данный чит некорректен или не существует!",
+            "received_give": "<green>Игрок <gray><player><green> получил <gray><amount><green> <gray><resource>",
+            "received_kill": "<green>Игрок <gray><player><green> был убит с помощью чита!",
+            "special_item_used": "<green>Был использован специальный предмет: <gray><item></gray><green>!</green>"
+        },
+        "economy_deposited": "<green>Добавлено <gray><coins> <currency><green> на ваш счёт!",
+        "economy_missing_coins": "<red>Вам нужно <yellow><coins> <currency><red> для входа в игру!"
     },
     "no_permissions": "<red>У вас на это недостаточно прав!",
     "safe_reload": "<green>Ожидаем конец всех игр или 60 секунд до перезагрузки плагина.",
@@ -182,7 +189,7 @@
         "bw_removeholo": "/bw removeholo - <yellow>После активации, игрок может убрать голограмму правой кнопкой мыши.",
         "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Включить основное лобби или задать её координаты",
         "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Показать информацию об арене",
-        "bw_admin_add": "/bw admin <pre><arena></pre> add - <yellow>Создать арену",
+        "bw_admin_add": "/bw admin <pre><arena></pre> add [variant] - <yellow>Добавить арену",
         "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Задать лобби на ваших координатах",
         "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Задать точку возрождения наблюдателей",
         "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Задать высочайшую точку арены",
@@ -213,7 +220,11 @@
         "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>Отключить арену и перевести её в режим редактирования",
         "bw_alljoin": "/bw alljoin [арена] - <green>Подключить всех игроков на сервере к арене",
         "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>Отметьте этого торговца как ребёнка",
-        "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Удалить все генераторы в этой локации"
+        "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Удалить все генераторы в этой локации",
+        "bw_admin_spawner_max_spawned_resources": "/bw admin <pre><arena></pre> spawner maxSpawnedResources <pre><value></pre> - <yellow>Задать лимит ресурсов для генератора на вашей позиции",
+        "bw_admin_spawner_rotation_mode": "/bw admin <pre><arena></pre> spawner rotationMode <pre><mode></pre> - <yellow>Задать голограмму для генератора на ваших координатах",
+        "bw_admin_spawner_custom_name": "/bw admin <pre><arena></pre> spawner customName <pre><name></pre> - <yellow>Задать имя генератора на ваших координатах",
+        "bw_admin_spawner_change_type": "/bw admin <pre><arena></pre> spawner changeType <pre><type></pre> - <yellow>Изменить тип ресурсов для генератора на ваших координатах"
     },
     "leaderboard": {
         "holo_added": "<green>Голограмма таблицы лидеров была создана на вашей позиции!",
