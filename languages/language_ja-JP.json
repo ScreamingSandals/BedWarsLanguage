@@ -378,7 +378,39 @@
             "added": "<green>新しいnpcが追加されました。位置XYZ<gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
             "editing": "<green>あなたは今、XYZの位置<gray><x>/<y>/<z>でNPCを編集しています",
             "not_editing": "<red>あなたはどのNPCも編集していません!<gray>/bw npc select で選択してください",
-            "should_look": "<green>NPCがプレイヤーを見るようになりました！"
+            "should_look": "<green>NPCがプレイヤーを見るようになりました！",
+            "action_set": "<green>このNPCのアクションは、引数\"<gray><value><green>\"で<gray><action><green>に設定されました",
+            "removed": "<green>NPCが削除されました!",
+            "skin_changed": "<green>スキンを変更しました！",
+            "skin_change_failed": "<red>スキンの変更ができませんでした!"
+        },
+        "hologram": {
+            "line_added": "<緑>ホログラムの端に新しいラインが追加されました。<white> <line>",
+            "line_removed": "<green>ホログラムの行番号<gray><linenumber><green>が削除されました!",
+            "theres_no_line_number": "<red>番号<linenumber>の行がありません",
+            "reset": "<green>ホログラムがリセットされました。",
+            "line_set": "<green>ホログラムのライン番号<gray><linenumber><green>が<white><line>に設定されました",
+            "invalid_number": "<red>ライン番号は0より大きい必要があります!"
+        },
+        "info": {
+            "header": "<green>競技場の詳細です。",
+            "status": "<gray>ステータス: <reset><status>",
+            "status_disabled": "<red>無効化",
+            "status_waiting": "<yellow>プレイヤーを待っています",
+            "status_running": "<green>ゲーム実行中",
+            "status_rebuilding": "<yellow>再構築中",
+            "world": "<gray>ワールド: <reset><world>",
+            "pos2": "<gray>ポジション2：<white>XYZ<gray><x><white>/<gray><y><white>/<gray><z>",
+            "spec": "<gray>スペクタイターの位置。<white>XYZ<gray><x><white>/<gray><y><white>/<gray><z>",
+            "teams": "<gray>チーム:",
+            "team": "- <team><reset>（最大プレイヤー数：<gray><maxplayers><reset>）",
+            "team_spawn": "  <gray>チームスポーン。<white>XYZ<gray><x><white>/<gray><y><white>/<gray><z>",
+            "team_target": "  <gray>ベッド：<white>XYZ<gray><x><white>/<gray><y><white>/<gray><z>",
+            "spawners": "<gray>スポナー:",
+            "name": "<gray>名前: <reset><name>",
+            "status_disabled_in_edit": "<red>無効<reset> (<yellow>編集モード<reset>)",
+            "pos1": "<gray>ポジション1：<white>XYZ<gray><x><white>/<gray><y><white>/<gray><z>",
+            "lobby": "<gray>ロビーのポジション。<white>ワールド<gray><world> <white>XYZ<gray><x><white>/<gray><y><white>/<gray><z>"
         }
     },
     "unknown_usage": "<red>無効な引数です。<dark_red>で試してください/bw help <red>でヘルプを表示します!",
