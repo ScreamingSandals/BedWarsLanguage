@@ -1,5 +1,5 @@
 {
-    "unknown_command": "<red>不明なコマンドです!<dark_red>で試してください/bw help <red>でヘルプを表示します!",
+    "unknown_command": "<red>不明なコマンドです!<dark_red>/bw help <red>でヘルプを試してください!",
     "no_permissions": "<red>あなたにはそれをする十分な権限がありません!",
     "sign": {
         "admin": {
@@ -62,7 +62,7 @@
         "target_block": {
             "destroyed": {
                 "any": "<team><reset>のターゲットブロックを破壊!",
-                "bed": "<チーム><reset>のベッドが破壊された!",
+                "bed": "<team><reset>のベッドが破壊された!",
                 "anchor": "<team><reset>の リスポーンアンカー が破壊されました!",
                 "cake": "<team><reset>のケーキが食べられました!",
                 "subtitle": "チームのメンバーを殺すことができるようになりました!",
@@ -97,7 +97,7 @@
             "countdown": "<yellow><seconds> <bold>秒",
             "countdown_custom": "<yellow><value> <aqua><unit>",
             "every_second": "<aqua>毎秒",
-            "not_enough_level": "<赤>スポナーが動作しません! <levels>レベルごとにアップグレードする必要があります。",
+            "not_enough_level": "<red>スポナーが動作しません! <levels>レベルごとにアップグレードする必要があります。",
             "countdown_custom_hypixel": "<red><value> <yellow><unit>でスポーンします",
             "tier": "<yellow>Tier <red><tier>です",
             "full": "<red><bold>スポナーが枯渇してます",
@@ -119,7 +119,7 @@
             "amount": "金額:",
             "buy_success": "<green><gray><item><green>を<gray><material><green>で購入することに成功しました!",
             "name": "店",
-            "shop_back": "<br> カテゴリ一覧へ戻る",
+            "shop_back": "<red> カテゴリ一覧へ戻る",
             "buy_failed": "<gray><item><red><red>を買うためのアイテムがありません！ <gray><material><red>が必要です！"
         },
         "team_selection": {
@@ -149,7 +149,7 @@
             "team_win": "<green>チーム<reset><team><green>が<gray><time>で試合に勝ちました"
         },
         "respawn_protection": {
-            "end": "<redリスポーンの保護がなくなりました!",
+            "end": "<red>リスポーンの保護がなくなりました!",
             "remaining": "<red>リスポーンの保護は<white><time><green>秒でなくなります!"
         },
         "cheat": {
@@ -441,7 +441,7 @@
             "click": "<aqua>クリックで<gray><command><aqua>を実行!"
         }
     },
-    "unknown_usage": "<red>無効な引数です。<dark_red>で試してください/bw help <red>でヘルプを表示します!",
+    "unknown_usage": "<red>無効な引数です。<dark_red>/bw help <red>でヘルプで試してください!",
     "safe_reload": "<green>すべてのゲームが停止するまで、または60秒待ってから、プラグインを再読み込みしてください。",
     "safe_reload_failed_to_stop_game": "<red>ゲームの停止が間に合わず、アリーナが破損した可能性があります!",
     "specials": {
@@ -466,7 +466,60 @@
             "destroy": "<red>プラットフォームは<white><time><red>秒後に破壊されます。"
         },
         "protection_wall": {
-            "not_usable_here": "<red>「プロテクション・ウォール」を作成するためのスペースがありません。"
+            "not_usable_here": "<red>「プロテクションウォール」を作成するためのスペースがありません。",
+            "destroy": "<red>プロテクションウォールは<white><time><red>秒で破壊されます。",
+            "created_unbreakable": "<green>破れないプロテクションウォールができました!",
+            "created": "<green>プロテクションウォールが作成され、<white><time> <green>秒後に破壊されます。"
+        },
+        "tntsheep": {
+            "no_target_found": "<red>ターゲットが見つかりません!"
+        },
+        "arrow_blocker": {
+            "started": "<green>アローブロッカーが<white><time><green>秒間発動しました!",
+            "already_activated": "<赤>アローブロッカーがすでに起動しています!",
+            "ended": "<red>アローブロッカーが作動しなくなりました!"
+        },
+        "golem": {
+            "created": "<green>ゴーレムが召喚されました。"
+        },
+        "team_chest": {
+            "name": "<green><bold>チームチェスト",
+            "placed": "<green>新しいチームチェストを設置しました！",
+            "broken": "<red>あなたのチームチェストが壊れた!",
+            "not_yours": "<yellow>このチームのチェストはあなたのチームのものではありません!"
+        },
+        "item_delay": "<red>このアイテムを再度使用するには、<time>秒待つ必要があります!"
+    },
+    "leaderboard": {
+        "no_scores": "<gray>まだスコアはありません!",
+        "header": "<gold>BedWars リーダーボード - トップ<nuber>プレイヤー",
+        "line": "<bold><order>.</bold> <gray><player> - <green><score>",
+        "holo_added": "<green>リーダーボードのホログラムがあなたのポジションに追加されました！"
+    },
+    "party": {
+        "inform_game_join": "<green>パーティーリーダーのゲームに参加する",
+        "warped": "<green>パーティーリーダーがあなたをここにワープさせました",
+        "command": {
+            "help": "/bw party warp - <yellow>すべてのプレイヤーを自分のゲームに、または自分の方にワープさせます",
+            "not_in_party": "<red>このコマンドはパーティーに参加していないとできません！",
+            "is_empty": "<red>パーティーにプレイヤーがいませんなので、誰もワープできません！",
+            "warped": "<green>パーティーのメンバーがワープしてしました。",
+            "invalid_arguments": "<red>引数の数が無効です! 詳細を知りたい場合は、/bw party help と入力してください。",
+            "not_party_leader": "<red>あなたはこのパーティーのリーダーではありません!"
         }
+    },
+    "dump": {
+        "success": "<green>サーバーのダンプに成功しました。リンクです<dump>",
+        "failed": "<red>ダンプに失敗しました!"
+    },
+    "language": {
+        "invalid": "<red>指定された言語ファイルが読み込めませんでした！",
+        "success": "<green>言語の設定を<white>[<lang>]にすることに成功しました",
+        "usage_bw_lang": "使用法です。/bw lang <pre><locale></pre> - <yellow><red>Bed<white>Warsで使用するロケールを設定します",
+        "already_set": "言語です[<lang>]はすでにデフォルトの言語として設定されています!"
+    },
+    "migrate": {
+        "success": "<green><red><plugin><green>からの設定の移行に成功しました!",
+        "failure": "<red>設定の移行中に何か問題が発生しました。詳細は、コンソールをご覧ください。"
     }
 }
