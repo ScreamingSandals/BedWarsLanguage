@@ -121,7 +121,8 @@
             "please_provide_valid_cheat_type": "<red>Данный чит некорректен или не существует!",
             "received_give": "<green>Игрок <gray><player><green> получил <gray><amount><green> <gray><resource>",
             "received_kill": "<green>Игрок <gray><player><green> был убит с помощью чита!",
-            "special_item_used": "<green>Был использован специальный предмет: <gray><item></gray><green>!</green>"
+            "special_item_used": "<green>Был использован специальный предмет: <gray><item></gray><green>!</green>",
+            "region_regenerated": "был восстановлен!"
         },
         "economy_deposited": "<green>Добавлено <gray><coins> <currency><green> на ваш счёт!",
         "economy_missing_coins": "<red>Вам нужно <yellow><coins> <currency><red> для входа в игру!"
@@ -224,7 +225,23 @@
         "bw_admin_spawner_max_spawned_resources": "/bw admin <pre><arena></pre> spawner maxSpawnedResources <pre><value></pre> - <yellow>Задать лимит ресурсов для генератора на вашей позиции",
         "bw_admin_spawner_rotation_mode": "/bw admin <pre><arena></pre> spawner rotationMode <pre><mode></pre> - <yellow>Задать голограмму для генератора на ваших координатах",
         "bw_admin_spawner_custom_name": "/bw admin <pre><arena></pre> spawner customName <pre><name></pre> - <yellow>Задать имя генератора на ваших координатах",
-        "bw_admin_spawner_change_type": "/bw admin <pre><arena></pre> spawner changeType <pre><type></pre> - <yellow>Изменить тип ресурсов для генератора на ваших координатах"
+        "bw_admin_spawner_change_type": "/bw admin <pre><arena></pre> spawner changeType <pre><type></pre> - <yellow>Изменить тип ресурсов для генератора на ваших координатах",
+        "bw_admin_spawner_linked_team": "Связывает создателя на вашей позиции с указанной командой",
+        "bw_admin_spawner_base_amount": "Задает базовое количество ресурсов, которые создатель должен создавать за цикл",
+        "bw_admin_spawner_hologram_type": "Устанавливает тип голограммы создателя на вашей позиции",
+        "bw_migrate": "Переносит конфигурацию из другого плагина БедВарс.",
+        "bw_dump": "Сбрасывает сервер и дает вам ссылку на дамп. Эта ссылка может быть полезна для поддержки",
+        "bw_admin_interactive": "Если арена находится в режиме редактирования, эта команда включит интерактивный режим",
+        "bw_cheat_build_pop_up_tower": "Строит всплывающую башню",
+        "bw_cheat_rebuild_region": "Перестраивает игровой регион",
+        "bw_admin_spawner_hologram": "Включает/отключает голограмму над создателем",
+        "bw_admin_spawner_floating": "Включает/отключает плавающий блок под голограммой создателя",
+        "bw_admin_fee": "Устанавливает плату за экономию, необходимую для входа на арену.",
+        "bw_admin_display_name": "Задает отображаемое название арены",
+        "bw_admin_store_adult": "Отметьте этого продавца как взрослого",
+        "bw_cheat_give": "Дает игроку определенное количество ресурсов",
+        "bw_cheat_kill": "Убивает определенного игрока",
+        "bw_gamesinv": "Открывает инвентарь для определенных игр"
     },
     "leaderboard": {
         "holo_added": "<green>Голограмма таблицы лидеров была создана на вашей позиции!",
@@ -288,5 +305,14 @@
             "spawner_no_team": "<red>Нет команды",
             "villager_shop_dealer_has_no_name": "<red>Не задано имя"
         }
+    },
+    "update": {
+        "new_release": [
+            "<green>Новая версия ВЫПУСКА <version> из БедВарс есть в наличии!"
+        ]
+    },
+    "games_inventory": {
+        "unknown_inventory": "<red>Инвентарь неизвестных игр <gray><type><red>!",
+        "could_not_find_game": "Не удалось найти игру!"
     }
 }
