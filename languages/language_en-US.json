@@ -97,7 +97,7 @@
             "title_cancel": "<red>Team is dead :("
         },
         "spawner": {
-            "countdown": "<yellow><seconds> <bold>seconds",
+            "countdown": "<yellow><seconds> <aqua>seconds",
             "countdown_custom": "<yellow><value> <aqua><unit>",
             "every_second": "<aqua>every second",
             "full": "<red><bold>Spawner is depleted",
