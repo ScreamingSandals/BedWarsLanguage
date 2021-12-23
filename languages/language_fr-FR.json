@@ -93,9 +93,14 @@
         },
         "spawner": {
             "countdown": "<yellow><seconds> <bold>secondes",
-            "every_second": "<bold>chaque seconde",
+            "every_second": "<aqua>chaque seconde",
             "full": "<red><bold>Le spawner est épuisé",
-            "not_enough_level": "<red>LE spawner ne peut pas fonctionner ! Vous devez l'améliorer de <levels> niveaux."
+            "not_enough_level": "<red>LE spawner ne peut pas fonctionner ! Vous devez l'améliorer de <levels> niveaux.",
+            "full_hypixel": "<red><bold>Le spawner est plein !",
+            "tier": "<yellow>Tier <red><tier>",
+            "countdown_hypixel": "<yellow>Apparaît dans <red><seconds> <yellow>secondes",
+            "countdown_custom": "<yellow><value> <aqua><unit>",
+            "countdown_custom_hypixel": "<yellow>Apparaît dans <red><value> <yellow><unit>"
         },
         "resources": {
             "bronze": "Bronze",
@@ -120,7 +125,7 @@
             "selected": "<green>Équipe choisie : <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
             "already_selected": "<green>Vous êtes déjà dans l'équipe : <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
             "full": "<red>L'équipe <team><red> est complète !",
-            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)",
+            "select_item": "<team> <gray>(<yellow><inteam> <white>/ <yellow><maxinteam><gray>)",
             "select_item_lore": "<white>---------------------",
             "select_item_lore_full": "<white>L'équipe est complète !",
             "select_item_lore_join": "Cliquez pour rejoindre l'équipe !",
