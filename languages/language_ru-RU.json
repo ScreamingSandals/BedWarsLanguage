@@ -304,11 +304,42 @@
             "file": "<gray><i>Файл: <file>",
             "spawner_no_team": "<red>Нет команды",
             "villager_shop_dealer_has_no_name": "<red>Не задано имя"
+        },
+        "usage": "<red>Использование: /bw admin <pre><название арены> <add|edit|remove|save|...> ...</pre>",
+        "arena": {
+            "error": {
+                "arena_not_in_edit": "<red>Арены с таким названием не существует или уже запущена! Деактивируй её с помощью <gray>/bw admin <pre><название арены></pre> edit<red> и затем активируй её командой <gray>/bw admin <pre><название арены></pre> save",
+                "already_working_on_it": "<red>Арена с таким именем уже существует, но не была закончена!",
+                "arena_must_be_in_edit_mode": "<red>Арена должна быть в режиме редактирования!",
+                "already_exists": "<red>Арена с таким же именем уже создана!"
+            },
+            "edit": {
+                "errors": {
+                    "must_be_in_same_world": "<red>Все команды должны быть выполнены в том же мире!",
+                    "set_bounds_first": "<red>Перед настройкой спавна, пожалуйста, установите координаты pos1 и pos2 (В зависимости от размера и позиции арены)!",
+                    "invalid_spawner_type": "<red>Спавнер ресурсов должен быть бронзовым, железным, золотым, или используя конфигурацию плагина!",
+                    "invalid_countdown": "<red>Обратный отчёт должен быть между <lowest> и <highest> секундами!",
+                    "must_be_in_bounds": "<red>Место расположения должно быть внутри границ арены(координатами pos1 и po2)!",
+                    "invalid_bounds": "<red>Разница в высоте между pos1 и pos2 слишком маленькое! Минимум - 5 блоков!",
+                    "store_already_exist": "<red>Магазин уже существует!",
+                    "store_does_not_exist": "<red>Магазин не существует!"
+                }
+            },
+            "success": {
+                "removed": "<red><b>Арена удалена!",
+                "added": "<green>Арена <gray><arena><green> добавлена!",
+                "added_with_variant": "<green>Арена <gray><arena><green> добавлена! Использован вариант игры: <gray><variant><green>!",
+                "edit_mode": "<green>Арена переключена в режим редактирования!"
+            }
         }
     },
     "update": {
         "new_release": [
-            "<green>Новая версия ВЫПУСКА <version> из БедВарс есть в наличии!"
+            "<green>Новая версия ВЫПУСКА <version> из БедВарс есть в наличии!",
+            "Скачать по ссылке: <url>"
+        ],
+        "patch_release": [
+            "<yellow>Новая версия плагина Bedwars <version> уже доступна!"
         ]
     },
     "games_inventory": {
