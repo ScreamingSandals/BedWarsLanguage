@@ -46,7 +46,7 @@
             }
         },
         "spawner": {
-            "countdown": "<yellow><seconds> <bold>с",
+            "countdown": "<yellow><seconds> <aqua>с",
             "every_second": "<bold>ежесекундно",
             "full": "<red><bold>Генератор истощён",
             "not_enough_level": "<red>Генератор не работает! Нужно прокачать его на <levels> уровней.",
@@ -67,7 +67,7 @@
             "already_selected": "<green>Вы уже в команде: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
             "full": "<red>Команда <team><red> заполнена!",
             "full_no_change": "<red>Команда <team><red> заполнена, вы остались в команде <oldteam><red>!",
-            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)",
+            "select_item": "<team> <gray>(<yellow><inteam> <white>/ <yellow><maxinteam><gray>)",
             "select_item_lore_full": "<white>Команда заполнена!",
             "select_item_lore_join": "Нажмите для присоединения!"
         },
@@ -378,7 +378,26 @@
                     "min_players_set": "<green>Успешно установлено минимальное кол-во игроков в <gray><min><green>!",
                     "constant_set": "<green>Константа <gray><config><green> была успешно установлена в <gray><value><green>!",
                     "weather_set": "<green>Погода для мира арены было установлено в <gray><weather><green>!",
-                    "bar_color_set": "<green>Цвет установлен как <gray><color><green> для боссбара <gray><type><green>!"
+                    "bar_color_set": "<green>Цвет установлен как <gray><color><green> для боссбара <gray><type><green>!",
+                    "child_state": "<green>Переменная isBaby для торговца была изменена на <gray><value>",
+                    "custom_prefix_enabled": "<green>Пользовательский префикс был изменён на <gray><prefix><green>.",
+                    "custom_prefix_disabled": "<green>Пользовательский префикс был отключен.",
+                    "spawner_hologram_enabled": "<green>Голограмма для генератора <type> была <gray>включена<green>.",
+                    "spawner_floating_enabled": "<green>Летающий блок для генератора <type> был <gray>включен<green>.",
+                    "spawner_floating_disabled": "<green>Летающий блок для генератора <type> был <gray>отключен<green>.",
+                    "spawner_max_spawned_resources_set": "<green>Максимальное количество ресурсов для генератора <type> было изменено на <gray><amount><green>.",
+                    "spawner_team_linked": "<green>Генератор <type> был привязан к команде <team>.",
+                    "spawner_custom_name_set": "<green>Пользовательское имя для генератора <type> было изменено на <gray><name><green>.",
+                    "display_name_enabled": "<green>Отображаемое имя было изменено на <gray><display_name><green>.",
+                    "display_name_disabled": "<green>Отображаемое имя было отключено.",
+                    "removed_spawners": "<gray><count> <green>генераторов были удалены с <gray><x>/<y>/<z>",
+                    "post_game_waiting": "<green>Время ожидания после конца игры было изменено на <gray><number><green>!",
+                    "spawner_hologram_disabled": "<green>Голограмма для генератора <type> была <gray>отключена<green>.",
+                    "spawner_base_amount_set": "<green>Базовое количество ресурсов для генератора <type> было задано на <gray><amount><green>.",
+                    "spawner_team_unlinked": "<green>Генератор <type> теперь больше не привязан к какой-либо команде.",
+                    "spawner_hologram_type_set": "<green>Тип голограммы для генератора <type> был изменён на <gray><type><green>.",
+                    "spawner_type_changed": "<green>Тип генератора <type> был изменён на <new_type>.",
+                    "fee_set": "<green>Цена для входа была изменена на <gray><fee><green>."
                 }
             },
             "success": {
@@ -387,6 +406,9 @@
                 "added_with_variant": "<green>Арена <gray><arena><green> добавлена! Использован вариант игры: <gray><variant><green>!",
                 "edit_mode": "<green>Арена переключена в режим редактирования!"
             }
+        },
+        "mainlobby": {
+            "info": "<red>ВЫНИМАНИЕ<white>: Вам нужно написать /bw reload для функционирования основного лобби!"
         }
     },
     "update": {
