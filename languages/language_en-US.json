@@ -364,7 +364,7 @@
             "info": "<red>WARNING<white>: You need to execute /bw reload to make Mainlobby work!"
         },
         "holo": {
-            "not_enabled": "<red>Holographic is disabled. Do you have Holographic Displays installed?",
+            "not_enabled": "<red>Holographic is disabled.",
             "added": "<green>Holographic added to your position!",
             "click_to_remove": "<yellow>Now click the holographic you want to remove!",
             "removed": "<green>Holographic successfully removed!"
