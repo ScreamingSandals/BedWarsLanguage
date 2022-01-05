@@ -93,13 +93,13 @@
             },
             "success": {
                 "removed": "<red><b>Aréna odstraněna!",
-                "added": "<green>Aréna přidána!",
+                "added": "<green>Aréna <gray><arena><green> přidána!",
                 "edit_mode": "<green>Aréna přepnuta do režimu úprav!"
             }
         },
         "holo": {
             "click_to_remove": "<yellow>Teď klikněte na hologram který chcete odstranit!",
-            "not_enabled": "<red>Hologramy jsou vypnuté. Máte nainstalovány HolographicDisplays?",
+            "not_enabled": "<red>Hologramy jsou vypnuté.",
             "added": "<green>Hologram přidán na vaši pozici!",
             "removed": "<green>Hologram úspěšně odebrán!"
         },
@@ -252,7 +252,7 @@
             "title_cancel": "<red>Tým je mrtev :("
         },
         "spawner": {
-            "countdown": "<yellow><seconds> <bold>sekund(y)",
+            "countdown": "<yellow><seconds> <aqua>sekund(y)",
             "every_second": "<aqua>každou sekundu",
             "full": "<red><bold>Spawner je vyčerpán",
             "not_enough_level": "<red>Spawner nemůže pracovat! Musíš upgradovat o <levels> level(y).",
@@ -322,8 +322,12 @@
             "please_provide_valid_cheat_type": "<red>Zadaný cheat není zadán správně nebo neexistuje!",
             "invalid_player": "<red>Zadaný hráč není v žádné hře nebo je pouze pozorovatel!",
             "received_give": "<green>Hráč <gray><player><green> získal <gray><amount><green> <gray><resource>",
-            "received_kill": "<green>Hráč <gray><player><green> byl zabit cheatem!"
-        }
+            "received_kill": "<green>Hráč <gray><player><green> byl zabit cheatem!",
+            "region_regenerated": "<green>Region arény <gray><arena></grey> byl regenerován!",
+            "special_item_used": "<green>Speciální item <gray><item></gray> byl použit!"
+        },
+        "economy_deposited": "<green>Bylo přidáno <gray><coins> <currency><green> k tvému zůstatku!",
+        "economy_missing_coins": "<red>Potřebuješ <yellow><coins> <currency><red> pro připojení do této hry!"
     },
     "no_permissions": "<red>Nemáš dostatečné oprávnění pro tuto akci!",
     "safe_reload_failed_to_stop_game": "<red>Některé hry neskončily v časovém limitu, takže jejich aréna mohla být poškozena!",
@@ -460,8 +464,8 @@
             "help": "/bw party warp - <yellow>Teleportuje všechny hráče v party do vaší hry nebo směrem k vám",
             "not_in_party": "<red>Musíte být v party, abyste mohli provést tento příkaz!",
             "not_party_leader": "<red>Nejste vedoucí party!",
-            "warped": "<green>Členové party byli teleportováni",
-            "invalid_arguments": "<red>Neplatný počet argumentů!, zadejte /bw party, abyste věděli více",
+            "warped": "<green>Členové party byli teleportováni.",
+            "invalid_arguments": "<red>Neplatný počet argumentů! Zadejte /bw party help pro více informací.",
             "is_empty": "<red>Vaše party je prázdná, nemůžeme nikoho teleportovat!"
         }
     },
