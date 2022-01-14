@@ -305,7 +305,9 @@
                     "display_name_disabled": "<green>玩家名称显示已成功关闭。",
                     "fee_set": "<green>加入游戏所需要的金币已设置为: <gray><fee><green>.",
                     "pos1_set": "<green>竞技场的1号位置 <gray><arena><green> 被设置到 XYZ: <gray><x>/<y>/<z>",
-                    "pos2_set": "<green>游戏的2号位置 <gray><arena><green> 被设置在 XYZ: <gray><x>/<y>/<z>"
+                    "pos2_set": "<green>游戏的2号位置 <gray><arena><green> 被设置在 XYZ: <gray><x>/<y>/<z>",
+                    "lobby_pos1_set": "<green> 大厅的1号位置 <gray><arena><green> 被设置在 XYZ: <gray><x>/<y>/<z>",
+                    "lobby_pos2_set": "<green> 大厅的2号位置 <gray><arena><green> 被设置在 XYZ: <gray><x>/<y>/<z>"
                 }
             }
         },
@@ -329,5 +331,8 @@
     },
     "dump": {
         "failed": "<red>转储失败！"
+    },
+    "games_inventory": {
+        "could_not_find_game": "<red>无法找到游戏！"
     }
 }
