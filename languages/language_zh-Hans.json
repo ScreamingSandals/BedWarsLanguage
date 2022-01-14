@@ -22,7 +22,7 @@
         "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>修改队伍人数上限",
         "bw_removeholo": "/bw removeholo - <yellow>执行该命令后， 玩家可以通过右键某个浮空文字来移除它。",
         "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>查看该游戏房间的所有信息",
-        "bw_admin_add": "/bw admin <pre><arena></pre> add - <yellow>创建一个新的游戏房间",
+        "bw_admin_add": "/bw admin <pre><arena></pre> add [variant] - <yellow>创建一个新的游戏",
         "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>将当前位置设为游戏房间大厅位置",
         "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>将当前位置设为该游戏房间大厅的一个端点",
         "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>将当前位置设为该游戏房间大厅的第二个端点",
@@ -51,7 +51,8 @@
         "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>开启游戏大厅或设置游戏大厅位置",
         "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>将当前位置设为观战者的出生点",
         "bw_cheat_give": "/bw cheat give <pre><resource></pre> [数量] [玩家] - <red>给予玩家指定数量的资源",
-        "bw_cheat_kill": "/bw cheat kill [玩家] - <red>杀死指定玩家"
+        "bw_cheat_kill": "/bw cheat kill [玩家] - <red>杀死指定玩家",
+        "bw_admin_spawner_max_spawned_resources": "/bw admin <pre><arena></pre> spawner maxSpawnedResources <pre><value></pre> - <yellow>在您的位置限制可生成资源的最大值"
     },
     "in_game": {
         "target_block": {
@@ -80,15 +81,20 @@
                 "bed": "<team><reset> 的床已被摧毁！",
                 "cake": "<team><reset> 的蛋糕已经被吃了！",
                 "subtitle": "你现在可以杀队友了！",
-                "subtitle_victim": "从现在起，你将无法再次复活！",
+                "subtitle_victim": "从现在起，你将无法复活！",
                 "anchor": "<team><reset> 的重生锚已被摧毁！"
             }
         },
         "spawner": {
             "not_enough_level": "<red>资源生成器无法使用了！ 你需要升级到 <levels> 等级。",
-            "countdown": "<yellow><seconds> <bold>秒",
-            "every_second": "<bold>每一秒",
-            "full": "<red><bold>资源生成器已枯竭"
+            "countdown": "<yellow><seconds> <aqua>秒",
+            "every_second": "<aqua>每秒",
+            "full": "<red><bold>资源生成器已枯竭",
+            "full_hypixel": "<red><bold>资源生成点已溢出！",
+            "tier": "<yellow>等级 <red><tier>",
+            "countdown_custom": "<yellow><value> <aqua><unit>",
+            "countdown_hypixel": "<yellow>在 <red><seconds>秒 <yellow>重生",
+            "countdown_custom_hypixel": "<yellow>重生在 <red><value> <yellow><unit>"
         },
         "shop": {
             "buy_success": "<green>已成功使用 <gray><material> 购买 <gray><item> <green>!",
@@ -106,25 +112,25 @@
             "inventory_name": "选择队伍 - <arena>",
             "already_selected": "<green>你已经在队伍中: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
             "full": "<red><team><red> 队伍已满！",
-            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)",
+            "select_item": "<team> <gray>(<yellow><inteam> <white>/ <yellow><maxinteam><gray>)",
             "select_item_lore": "<white>---------------------",
             "select_item_lore_full": "<white>队伍已满！",
             "select_item_lore_join": "点击以加入队伍！"
         },
         "errors": {
-            "game_is_full": "<red>房间 <gray><arena> <red>已满！ 请等待游戏结束！",
+            "game_is_full": "<red>游戏 <gray><arena> <red>已满！ 请等待游戏结束！",
             "game_not_found": "<red>没有找到游戏！",
             "you_are_not_in_game": "<red>你不在游戏中！",
-            "game_is_rebuilding": "<red>房间 <gray><arena><red> 正在重建， 请等待…",
-            "already_in_game": "<red>你已经在某个房间里了。",
+            "game_is_rebuilding": "<red>游戏 <gray><arena><red> 正在重置， 请等待…",
+            "already_in_game": "<red>你已经在一个游戏内了。",
             "command_is_not_allowed": "<red>在游戏过程中你不能使用这个命令！",
-            "game_is_gone": "<red>你所在的房间好像已经不在这个世界里了。",
+            "game_is_gone": "<red>你所在的游戏好像已经不在这个世界里了。",
             "game_kicked_by_vip": "<red>你被一位VIP玩家踢出了游戏！",
             "there_is_no_empty_game": "<red>没有正在等待的游戏房间。 所有游戏都在进行中！",
-            "game_already_running": "<red>房间 <gray><arena> <red>正在进行游戏中， 你不能中途加入！",
-            "not_in_any_game_yet": "<red>你还没有在任何房间里。",
-            "vip_not_enough_players": "<red>房间内玩家数量不足！",
-            "vip_game_is_full": "<red>房间 <gray><arena> <red>内已经坐满了VIP玩家， 请等待游戏结束！"
+            "game_already_running": "<red>游戏 <gray><arena> <red>正在进行游戏中， 你不能中途加入！",
+            "not_in_any_game_yet": "<red>你还没有在任何游戏内。",
+            "vip_not_enough_players": "<red>游戏内玩家数量不足！",
+            "vip_game_is_full": "<red>游戏 <gray><arena> <red>内已经坐满了VIP玩家， 请等待游戏结束！"
         },
         "respawn_cooldown": {
             "title": "<green><red><time> 后复活",
@@ -169,18 +175,22 @@
             "invalid_player": "<red>指定的玩家不在任何一场游戏中或者为观察者模式!",
             "received_give": "<green>玩家<gray><player><green> 获得了 <gray><amount><green> 个 <gray><resource>",
             "received_kill": "<green>玩家<gray><player><green> 被通过作弊杀死了!",
-            "game_not_running": "<red>你只能在游戏运行中聊天！"
-        }
+            "game_not_running": "<red>你只能在游戏运行中聊天！",
+            "region_regenerated": "<green>游戏场地 <gray><arena></gray> 已重置！",
+            "special_item_used": "<green>特殊道具 <gray><item></gray> 已经用过了！"
+        },
+        "economy_deposited": "<green>已添加 <gray><coins> <currency><green> 金币到你的钱包啦！",
+        "economy_missing_coins": "<red>你需要 <yellow><coins> <currency><red> 金币才能加入这个游戏！"
     },
-    "unknown_usage": "<red>该指令传入的参数不正确！ 你可以尝试输入 <dark_red>/bw help <red>来获取帮助！",
-    "no_permissions": "<red>你没有权限哦！",
-    "safe_reload_failed_to_stop_game": "<red>有一些游戏并没有在规定时间内结束， 部分游戏房间可能发生了损坏！",
-    "list_header": "<green>可用的游戏房间：",
+    "unknown_usage": "<red>参数不正确！你可以尝试输入 <dark_red>/bw help <red>来获取帮助！",
+    "no_permissions": "<red>你没有足够的权限去这么做！",
+    "safe_reload_failed_to_stop_game": "<red>有一些游戏并没有在规定时间内结束， 部分游戏可能受到损坏！",
+    "list_header": "<green>可用的游戏：",
     "success": "<green>命令执行完成！",
     "sign": {
         "admin": {
             "created": "<green>告示牌创建成功！",
-            "cannot_destroy": "<red>你没有权限删除这个告示牌！",
+            "cannot_destroy": "<red>你没有权限破坏这个告示牌！",
             "unknown_game": "<red>告示牌上的游戏并不存在！ 请联系管理员！",
             "cannot_create": "<red>无法创建告示牌， 请检查游戏房间的名称！"
         },
@@ -190,7 +200,7 @@
                 "players": "<red>未被开启"
             },
             "rebuilding": {
-                "status": "<gold>重建",
+                "status": "<gold>重置",
                 "players": "<gold>游戏房间中"
             },
             "running": {
@@ -204,8 +214,8 @@
         }
     },
     "statistics": {
-        "disabled": "<red>用户数据统计并未在该服务器上开启！",
-        "player_does_not_exist": "<red>没有找到用户！",
+        "disabled": "<red>玩家数据统计并未在该服务器上开启！",
+        "player_does_not_exist": "<red>没有找到玩家！",
         "kills": "<gray>击杀: <green><kills>",
         "deaths": "<gray>死亡: <yellow><deaths>",
         "wins": "<gray>胜利: <green><wins>",
@@ -214,16 +224,17 @@
         "games": "<gray>玩过的游戏: <aqua><games>",
         "score": "<gray>总分: <green><score>",
         "kd": "<gray>K/D: <green><kd>",
-        "not_found": "<red>没有找到用户数据！",
+        "not_found": "<red>没有找到玩家数据！",
         "header": "<green><red><player><green>的统计数据:"
     },
     "update": {
         "new_release": [
-            "<green>床战有新版本 <version> 啦！",
+            "<green>起床战争有新版本 <version> 啦！",
             "从 <url> 下载"
         ],
         "patch_release": [
-            "<yellow>床战 <version> 的补丁上线啦！"
+            "<yellow>床战 <version> 的补丁上线啦！",
+            "你可以在 <url> 上下载"
         ]
     },
     "admin": {
@@ -236,7 +247,7 @@
             },
             "success": {
                 "removed": "<red><b>游戏房间已移除！",
-                "added": "<green>游戏房间已创建！",
+                "added": "<green>游戏 <gray><arena><green> 已添加！",
                 "edit_mode": "<green>已切换当前游戏房间至编辑模式！"
             },
             "edit": {
@@ -271,7 +282,8 @@
                     "invalid_bar_color": "<red>顶栏的颜色错误！",
                     "invalid_entity_type": "<red>错误的生物实体类型！",
                     "invalid_bounds": "<red>两个端点之间的高度差太小了！ 至少5个格子！",
-                    "invalid_spawner_type": "<red>资源发生器必须是铜块、铁块、金块， 或者是自定义配置！"
+                    "invalid_spawner_type": "<red>资源发生器必须是铜块、铁块、金块， 或者是自定义配置！",
+                    "no_spawner": "<red>当前位置没有资源生成点！"
                 },
                 "success": {
                     "team_spawn_set": "<green>队伍 <gray><team><green> 的出生点已被成功设置为以下坐标 XYZ： <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
@@ -289,17 +301,26 @@
                     "lobby_countdown_set": "<green>大厅的倒计时被设置为 <gray><countdown>",
                     "game_time_set": "<green>游戏时间被设置为 <gray><time>",
                     "spec_spawn_set": "<green>旁观者出生点被成功设置到 XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
-                    "min_players_set": "<green>最低玩家数成功被设置为 <gray><min><green>！"
+                    "min_players_set": "<green>最低玩家数成功被设置为 <gray><min><green>！",
+                    "display_name_disabled": "<green>玩家名称显示已成功关闭。",
+                    "fee_set": "<green>加入游戏所需要的金币已设置为: <gray><fee><green>.",
+                    "pos1_set": "<green>游戏的1号位置 <gray><arena><green> 被设置在 XYZ: <gray><x>/<y>/<z>",
+                    "pos2_set": "<green>游戏的2号位置 <gray><arena><green> 被设置在 XYZ: <gray><x>/<y>/<z>"
                 }
             }
         },
         "usage": "<red>使用方式: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>",
         "info": {
             "constant": "- <gray><constant><reset>: <gray><value>"
+        },
+        "holo": {
+            "click_to_remove": "<yellow>现在请点击你想移除的全息显示！",
+            "removed": "<green>全息显示成功移除！",
+            "not_enabled": "<red>全息显示已关闭。"
         }
     },
-    "unknown_command": "<red>你输入的指令似乎是错误的， 你可以尝试输入 <dark_red>/bw help <red>来获取帮助！",
-    "safe_reload": "<green>正在等待所有游戏结束， 或于60秒后自动重新加载插件。",
+    "unknown_command": "<red>指令错误！你可以尝试输入 <dark_red>/bw help <red>来获取帮助！",
+    "safe_reload": "<green>正在等待所有游戏结束， 或于60秒后自动重载插件。",
     "language": {
         "usage_bw_lang": "使用: /bw lang <pre><locale></pre> - <yellow>设置 <red>Bed<white>Wars 所使用的语言环境",
         "success": "<green>成功将语言设置为 <white>[<lang>]",
