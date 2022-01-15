@@ -36,14 +36,14 @@
         "bw_admin_edit": "/bw admin <pre><arena></pre> edit - <yellow>关闭游戏房间并切换至编辑模式",
         "bw_admin_save": "/bw admin <pre><arena></pre> save - <green>保存设置并开启该游戏！",
         "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>移除当前位置的所有资源生成点",
-        "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>将该交易商店的生物类型设置为幼年",
+        "bw_admin_store_child": "/bw admin <pre><arena></pre> store child - <yellow>将商人的生物类型设置为幼年",
         "bw_dump": "/bw dump - <yellow>存储服务器日志并生成链接。（ 该日志对排除故障有很大的用处）",
         "bw_admin_config": "/bw admin <pre><arena></pre> config <pre><constant> <value></pre> - <yellow>设置该游戏的某个配置项",
         "bw_admin_arena_weather": "/bw admin <pre><arena></pre> arenaweather <pre><type></pre> - <yellow>设置游戏房间内的天气 (default, CLEAN, DOWNFALL)",
         "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>设置游戏结束后的等待时间",
         "bw_alljoin": "/bw alljoin [arena] - <green>将服务器上的所有玩家加入起床战争",
-        "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>将该交易商店的生物类型设置为成年",
-        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>如果该游戏房间在编辑模式下，该命令将开启交互模式",
+        "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>将商人的生物类型设置为成年",
+        "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>如果该游戏在编辑模式下，该命令将开启交互模式",
         "bw_join": "/bw join <pre><arena></pre> - <green>加入游戏",
         "bw_list": "/bw list - <green>游戏房间列表",
         "bw_reload": "/bw reload - <red>重新加载该插件",
@@ -296,7 +296,7 @@
                     "invalid_arena_weather": "<red>游戏的世界天气类型错误！",
                     "invalid_bar_color": "<red>错误的BOSS条颜色！",
                     "invalid_entity_type": "<red>错误的生物实体类型！",
-                    "invalid_bounds": "<red>两个端点之间的高度差太小了！ 至少5个格子！",
+                    "invalid_bounds": "<red>两个端点之间的高度差太小了！ 至少间隔5个方块！",
                     "invalid_spawner_type": "<red>资源生成点必须是铜、铁、金， 或者是自定义配置！",
                     "no_spawner": "<red>当前位置没有资源生成点！",
                     "multiple_spawners": {
@@ -481,10 +481,10 @@
             "created": "<green>保护墙已生成，且将在 <white><time> <green>秒内消失。"
         },
         "rescue_platform": {
-            "created_unbreakable": "<green>无法破坏的平台已生成！",
+            "created_unbreakable": "<green>无法破坏的救援平台已生成！",
             "not_in_air": "<red>你只有在空中才能使用它。",
-            "destroy": "<red>平台将在<white><time> <red>秒内消失。",
-            "created": "<green>平台已生成并在 <white><time> <green> 秒内消失。"
+            "destroy": "<red>救援平台将在<white><time> <red>秒内消失。",
+            "created": "<green>救援平台已生成并在 <white><time> <green> 秒内消失。"
         },
         "arrow_blocker": {
             "started": "<green>弓弩拦截者已激活<white><time><green> 秒！",
