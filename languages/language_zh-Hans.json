@@ -196,10 +196,10 @@
         "economy_deposited": "<green>已添加 <gray><coins> <currency><green> 金币至你的钱包！",
         "economy_missing_coins": "<red>你需要 <yellow><coins> <currency><red> 金币才能加入这个游戏！"
     },
-    "unknown_usage": "<red>参数无效！你可以尝试输入 <dark_red>/bw help <red>来获取帮助！",
-    "no_permissions": "<red>你没有足够的权限这么做！",
-    "safe_reload_failed_to_stop_game": "<red>部分游戏没有在规定时间内结束， 其可能受到损坏！",
-    "list_header": "<green>可用的游戏：",
+    "unknown_usage": "<red>无效的参数！请尝试使用 <dark_red>/bw help <red>来获得帮助！",
+    "no_permissions": "<red>你没有权限这么做！",
+    "safe_reload_failed_to_stop_game": "<red>部分游戏没有在规定时间内结束， 可能受到损坏！",
+    "list_header": "<green>可用的游戏场地：",
     "success": "<green>命令执行完成！",
     "sign": {
         "admin": {
@@ -440,8 +440,8 @@
             "spawners": "<green>资源生成点列表<white> - <gray><command>"
         }
     },
-    "unknown_command": "<red>未知指令！你可以尝试输入 <dark_red>/bw help <red>来获取帮助！",
-    "safe_reload": "<green>正在等待所有游戏结束， 或于60秒后自动重载插件。",
+    "unknown_command": "<red>未知的命令！请尝试使用 <dark_red>/bw help <red>来获取帮助！",
+    "safe_reload": "<green>正在等待所有游戏结束或在60秒后重载插件。",
     "language": {
         "usage_bw_lang": "使用: /bw lang <pre><locale></pre> - <yellow>设置 <red>Bed<white>Wars 所使用的语言环境",
         "success": "<green>成功将语言设置为 <white>[<lang>]",
