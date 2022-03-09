@@ -67,8 +67,143 @@
                 "any": "Block von <team><reset> wurde zerstört!",
                 "bed": "Bett von <team><reset> wurde zerstört!",
                 "anchor": "Der Respawnanker des Teams <team><reset> wurde zerstört!",
-                "cake": "Der Kuchen von <team><reset> wurde gegessen!"
+                "cake": "Der Kuchen von <team><reset> wurde gegessen!",
+                "subtitle_victim": "Jetzt wirst du nie mehr respawnen!",
+                "subtitle": "Du kannst jetzt die Teammitglieder töten!"
+            },
+            "hologram": {
+                "protect": {
+                    "bed": "<teamcolor><bold>Schütze dein Bett!",
+                    "anchor": "<teamcolor><bold>Schütze deinen Anker!",
+                    "cake": "<teamcolor><bold>Schütze deinen Kuchen!",
+                    "any": "<teamcolor><bold>Schütze deinen Zielblock!"
+                },
+                "destroyed": {
+                    "any": "<gray><bold>Der Zielblock wurde zerstört.",
+                    "bed": "<gray><bold>Bett ist zerstört.",
+                    "cake": "<gray><bold>Der Kuchen wurde gegessen.",
+                    "anchor": "<gray><bold>Anker ist zerstört."
+                },
+                "destroy": {
+                    "any": "<teamcolor><bold>Zerstöre diesen Zielblock!",
+                    "bed": "<teamcolor><fett>Zerstöre dieses Bett!",
+                    "anchor": "Zerstöre diesen Anker!",
+                    "cake": "<teamcolor><bold>Iss diesen Kuchen!"
+                }
             }
-        }
+        },
+        "respawn_cooldown": {
+            "title_cancel": "<red>Team ist tot :(",
+            "title": "<green>Respawnt in: <red><time>"
+        },
+        "spawner": {
+            "every_second": "<aqua>jede Sekunde",
+            "not_enough_level": "<red>Spawner kann nicht funktionieren! Du musst um <levels> Level aufsteigen.",
+            "countdown": "<yellow><seconds> <aqua>Sekunden",
+            "tier": "<yellow>Ebene <red><tier>",
+            "countdown_hypixel": "<yellow>Spawnt in <red><seconds> <yellow>Sekunden",
+            "countdown_custom": "<yellow><value> <aqua><unit>",
+            "full": "<red><bold>Spawner ist aufgebraucht",
+            "full_hypixel": "<red><bold>Spawner ist voll!",
+            "countdown_custom_hypixel": "<yellow>Spawnt in <red><value> <yellow><unit>"
+        },
+        "economy_deposited": "<green>Deinem Guthaben wurden <gray><coins> <currency><green> hinzugefügt!",
+        "economy_missing_coins": "<red>Du brauchst <yellow><coins> <currency><red>, um an diesem Spiel teilzunehmen!",
+        "cheat": {
+            "game_not_running": "<red>Du kannst nur cheaten, wenn das Spiel läuft!",
+            "region_regenerated": "<green>Region der Arena <gray><arena></gray> wurde regeneriert!",
+            "invalid_player": "<red>Der angegebene Spieler nimmt an keinem Spiel teil oder ist ein Zuschauer!",
+            "received_kill": "<green>Spieler <gray><player><green> durch Cheat getötet!",
+            "please_provide_valid_cheat_type": "<red>Angegebener Cheat-Typ ist nicht gültig oder fehlt!",
+            "received_give": "<green>Spieler <gray><player><green> hat <gray><amount><green> von <gray><resource>",
+            "special_item_used": "<green>Spezialgegenstand <gray><item></gray> wurde verwendet!"
+        },
+        "leave": "<name> <red>hat das Spiel verlassen!",
+        "resources": {
+            "bronze": "Bronze",
+            "iron": "Eisen",
+            "gold": "Gold",
+            "netherite": "Netherite",
+            "diamond": "Diamant",
+            "emerald": "Smaragd"
+        },
+        "shop": {
+            "name": "Shop",
+            "page_back": "Seite zurück",
+            "page_forward": "Seite vorwärts",
+            "shop_back": "<red>Zurück zur Kategorieliste",
+            "price": "Preis:",
+            "amount": "Anzahl:",
+            "buy_success": "<green>Erfolgreich <gray><item><green> gekauft für <gray><material><green>!",
+            "buy_failed": "<red>Materialmangel, um <gray><item><red> zu kaufen! Benötigt <gray><material><red>!"
+        },
+        "team_selection": {
+            "inventory_name": "Team auswählen - <arena>",
+            "selected": "<green>Ausgewähltes Team: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "full": "<red>Team <team><red> ist voll!",
+            "full_no_change": "<red>Team <team><red> ist voll, du bleibst in <oldteam><red>!",
+            "select_item": "<team> <gray>(<yellow><inteam> <white>/ <yellow><maxinteam><gray>)",
+            "select_item_lore": "<white>---------------------",
+            "select_item_lore_full": "<white>Team ist voll!",
+            "select_item_lore_join": "Klicken, um dem Team beizutreten!",
+            "already_selected": "<green>Du bist bereits im Team: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]"
+        },
+        "lobby_items": {
+            "compass_selector_team": "<green>Team auswählen",
+            "leave_from_game_item": "<red>Das Spiel verlassen",
+            "start_game_item": "<dark_green>Spiel starten"
+        },
+        "bossbar": {
+            "running": "<green>Das Spiel hat begonnen! Viel Glück!",
+            "waiting": "<red>Das Spiel wird in Kürze beginnen!"
+        },
+        "end": {
+            "you_won": "<green>Dein Team hat gewonnen!",
+            "you_lost": "<red>Dein Team hat verloren!",
+            "game_end": "<red>Spiel beendet! Danke fürs Spielen!",
+            "team_win": "<green>Team <reset><team><green> hat das Spiel in <gray><time> gewonnen"
+        },
+        "respawn_protection": {
+            "remaining": "<red>Der Respawn-Schutz wird in <white><time> <green>Sekunden weg sein!",
+            "end": "<red>Respawn-Schutz ist weg!"
+        },
+        "join": "<name> <green>hat das Spiel betreten!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+        "player_self_killed": "<red>Spieler <victim> <red>ist gestorben!",
+        "game_start_title": "<green>Das Spiel hat begonnen!",
+        "game_start_subtitle": "<green>Das Spiel <gray><arena><green> hat begonnen! Viel Spass beim Spiel!",
+        "player_killed": "<red>Spieler <killer> <red>hat <victim><red> getötet!"
+    },
+    "help": {
+        "bw_leave": "/bw leave - <green>Das Spiel verlassen",
+        "bw_autojoin": "/bw autojoin - <green>Dem ersten Wartespiel beitreten",
+        "bw_stats": "/bw stats - <green>Zeige deine Statistiken",
+        "bw_stats_other": "/bw stats [Spieler] - <green>Zeigt Statistiken von anderen Spielern an",
+        "bw_reload": "/bw reload - <red>Lädt das Plugin neu",
+        "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>Maximalspieler ändern",
+        "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>Stellt die Fähigkeit ein, sich mit einem Team über eine Entität zu verbinden",
+        "bw_admin_team_color": "/bw admin <pre><arena></pre> Teamfarbe <pre><team> <color></pre> - <yellow>Teamfarbe ändern",
+        "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Aktiviert die Hauptlobby oder setzt den Standort der Hauptlobby",
+        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Zeigt dir alle Informationen über die Arena an",
+        "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>Setzt die Position der Lobby auf deine Position",
+        "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>Setzt den äussersten Punkt der Arena auf deine Position",
+        "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Setzt den zweitäussersten Punkt der Arena auf deine Position",
+        "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Setzt den zweitäussersten Punkt der Lobby auf deine Position",
+        "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>Legt die Mindestanzahl der Spieler fest, die für den Start des Spiels benötigt werden",
+        "title": "Screaming BedWars <Version> - Hilfe",
+        "bw_join": "/bw join <pre><arena></pre> - <green>Das Spiel betreten",
+        "title_console": "Screaming BedWars <version> - Hilfe für Konsole",
+        "bw_rejoin": "/bw rejoin - <green>Dem letzten Spiel erneut beitreten",
+        "bw_list": "/bw list - <green>Liste der aktiven Spiele",
+        "bw_leaderboard": "/bw leaderboard - <green>Zeigt die besten Spieler des Servers an",
+        "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow> Fügt ein Hologramm zum Standort des Spielers hinzu",
+        "bw_removeholo": "/bw removeholo - <yellow>Nach der Ausführung dieses Befehls kann der Spieler mit der rechten Maustaste auf die holografische Statistik klicken, um sie zu entfernen.",
+        "bw_admin_add": "/bw admin <pre><arena></pre> add [Variante] - <yellow>Erstellt eine neue Arena",
+        "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Setzt den Spawn der Zuschauer auf deine Position",
+        "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Setzt den äussersten Punkt der Lobby auf deine Position",
+        "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>Setzt die Pausendauer vor Spielbeginn",
+        "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>Setzt die Dauer des Spiels",
+        "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Ein Team zum Spiel hinzufügen",
+        "bw_admin_team_spawn": "/bw admin <pre><arena></pre> team spawn <pre><team></pre> - <yellow>Setzt den Teamspawn auf deine Position",
+        "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>Setzt den Teamzielblock auf die Zielposition (es kann ein anderer Block sein, nicht nur das Bett)"
     }
 }
