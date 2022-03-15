@@ -204,6 +204,10 @@
         "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>Setzt die Dauer des Spiels",
         "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>Ein Team zum Spiel hinzufügen",
         "bw_admin_team_spawn": "/bw admin <pre><arena></pre> team spawn <pre><team></pre> - <yellow>Setzt den Teamspawn auf deine Position",
-        "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>Setzt den Teamzielblock auf die Zielposition (es kann ein anderer Block sein, nicht nur das Bett)"
+        "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>Setzt den Teamzielblock auf die Zielposition (es kann ein anderer Block sein, nicht nur das Bett)",
+        "bw_admin_spawner_rotation_mode": "/bw admin <pre><arena></pre> spawner rotationMode <pre><mode></pre> - <yellow>Setzt den Rotationsmodus des schwebenden Hologramms des Spawners an deiner Position",
+        "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [hologram] [first level] [name] [team] [max spawned resources]</pre> - <yellow>Fügt einen Item Spawner an deiner Position hinzu",
+        "bw_admin_spawner_change_type": "/bw admin <pre><arena></pre> spawner changeType <pre><type></pre> - <yellow>Ändert den Typ des Spawners an deiner Position",
+        "bw_admin_spawner_custom_name": "/bw admin <pre><arena></pre> spawner customName <pre><name></pre> - <yellow>Setzt den benutzerdefinierten Namen des Spawners an deiner Position"
     }
 }
