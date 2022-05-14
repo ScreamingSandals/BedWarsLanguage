@@ -397,7 +397,8 @@
                     "spawner_team_unlinked": "<green>Генератор <type> теперь больше не привязан к какой-либо команде.",
                     "spawner_hologram_type_set": "<green>Тип голограммы для генератора <type> был изменён на <gray><type><green>.",
                     "spawner_type_changed": "<green>Тип генератора <type> был изменён на <new_type>.",
-                    "fee_set": "<green>Цена для входа была изменена на <gray><fee><green>."
+                    "fee_set": "<green>Цена для входа была изменена на <gray><fee><green>.",
+                    "spawner_rotation_mode_set": "<green>Режим вращения голограммы этого <type> спавнер был установлен на <gray><rotation><green>."
                 }
             },
             "success": {
@@ -415,6 +416,9 @@
             "added": "<green>Голограмма добавлена на вашем месте!",
             "click_to_remove": "<yellow>Теперь нажмите на голограмму, которую хотите удалить!",
             "removed": "<green>Голограмма удалена!"
+        },
+        "team_join_entity": {
+            "click_right_on_entity": "<green>Нажмите правой кнопкой мыши на стойку для брони, для того чтобы настроить присоединение к команде: <gray><team>"
         }
     },
     "update": {
