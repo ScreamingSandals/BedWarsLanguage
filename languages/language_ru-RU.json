@@ -246,7 +246,8 @@
     "leaderboard": {
         "holo_added": "<green>Голограмма таблицы лидеров была создана на вашей позиции!",
         "no_scores": "<gray>Никто еще не играл!",
-        "header": "<gold>Таблица лидеров BedWars - Топ <number> игроков"
+        "header": "<gold>Таблица лидеров BedWars - Топ <number> игроков",
+        "line": "<bold><order>.</bold> <gray><player> - <green><score>"
     },
     "specials": {
         "item_delay": "<red>Вам нужно подождать<time> секунд прежде чем использовать этот предмет еще раз!",
@@ -269,7 +270,10 @@
             "no_target_found": "<red>Цель не найдена!"
         },
         "rescue_platform": {
-            "not_in_air": "<red>Чтобы использовать это, вы должны быть в воздухе."
+            "not_in_air": "<red>Чтобы использовать это, вы должны быть в воздухе.",
+            "created_unbreakable": "<green>Спасательная Платформа была создана!",
+            "destroy": "<red>Платформа будет уничтожена через <white><time> <red>секунд.",
+            "created": "<green>Платформа создана и будет уничтожена через <white><time> <green>секунд."
         },
         "tracker": {
             "no_target_found": "<red>Цель не найдена!",
@@ -279,10 +283,23 @@
             "built": "<green>Вы поставили ловушку! Теперь дождитесь, когда кто-нибудь попадет в нее!",
             "caught_team": "<white><player><red> попался в ловушку вашей команды!",
             "caught": "<red>Вы попались в ловушку команды <white><team><red>!"
+        },
+        "warp_powder": {
+            "multiuse": "<red>Ловушка уже активирована!",
+            "canceled": "<red>Ловушка была отменёна!",
+            "started": "<green>Ловушка! Пожалуйста, не двигайтесь в течение <gray><time><green> секунды!"
+        },
+        "arrow_blocker": {
+            "already_activated": "<red>Блокировщик стрел уже активирован!",
+            "ended": "<red>Блокиратор стрелок больше не активирован!",
+            "started": "<green>Блокиратор стрел активирован на <white><time><green> секунд!"
         }
     },
     "language": {
-        "invalid": "Файл с этим переводом не может быть загружен!"
+        "invalid": "Файл с этим переводом не может быть загружен!",
+        "already_set": "Язык: [<lang>] уже установлен в качестве языка по умолчанию!",
+        "success": "<green>Успешно установлен язык <white>[<lang>]",
+        "usage_bw_lang": "Используйте: /bw lang <pre><locale></pre> - <yellow>Задает язык, который будет использоваться в <red>Bed<white>Wars"
     },
     "dump": {
         "success": "<green>Успешно создан дамп сервера. Ссылка:<dump>",
@@ -291,19 +308,63 @@
     "party": {
         "inform_game_join": "<green>Присоединение к игра лидера пати",
         "command": {
-            "is_empty": "<red>Пати пустое, вы не можете никого варпнуть!"
+            "is_empty": "<red>Пати пустое, вы не можете никого варпнуть!",
+            "help": "/bw party warp - <yellow>Настраивает всех игроков на вашу игру или на вас",
+            "invalid_arguments": "<red>Недопустимое количество аргументов! /bw party поможет узнать больше.",
+            "not_party_leader": "<red>Ты не лидер этой пати!",
+            "not_in_party": "<red>Вы должны быть в пати, чтобы выполнить эту команду!",
+            "warped": "<green>Warp пати был изменён."
         },
         "warped": "<green>Лидер пати телепортивал вас"
     },
     "admin": {
         "info_select": {
             "teams": "<green>Список команд<white> - <gray><command>",
-            "spawners": "<green>Список генераторов<white> - <gray><command>"
+            "spawners": "<green>Список генераторов<white> - <gray><command>",
+            "base": "<green>Базовая информация<white> - <gray><command>",
+            "header": "<green>Пожалуйста, выберите раздел информации <gray><arena><green>:",
+            "stores": "<green>Список магазинов<white> - <gray><command>",
+            "click": "<aqua>Нажмите для выполнения <gray><command><aqua>!",
+            "config": "<green>Конфигурация<white> - <gray><command>"
         },
         "info": {
             "file": "<gray><i>Файл: <file>",
             "spawner_no_team": "<red>Нет команды",
-            "villager_shop_dealer_has_no_name": "<red>Не задано имя"
+            "villager_shop_dealer_has_no_name": "<red>Не задано имя",
+            "name": "<gray>Имя: <reset><name>",
+            "spawners": "<gray>Спавнеры:",
+            "header": "<green>Подробная информация об арене:",
+            "status": "<gray>Статус: <reset><status>",
+            "status_disabled_in_edit": "<red>ВЫКЛЮЧЕНО<reset> (<yellow>В РЕЖИМЕ РЕДАКТИРОВАНИЯ<reset>)",
+            "pos2": "<gray>Позиция 2: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "status_disabled": "<red>ВЫКЛЮЧЕНО",
+            "status_waiting": "<yellow>ОЖИДАНИЕ ИГРОКОВ",
+            "status_running": "<green>ИГРА НАЧАЛАСЬ",
+            "status_rebuilding": "<yellow>ПЕРЕСТРОЙКА",
+            "world": "<gray>Мир: <reset><world>",
+            "pos1": "<gray>Позиция 1: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "spec": "<gray>Позиция наблюдателей: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "team_spawn": "  <gray>Командный Спавн: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "team_target": "  <gray>Кровать: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "min_players": "<gray>Минимальное количество игроков: <reset><minplayers>",
+            "villagers": "<gray>Магазины:",
+            "villager_pos": "- XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "villager_entity_type": "  Тип: <green><type>",
+            "villager_shop": "  Имеет собственный магазин: <gray><bool>",
+            "villager_shop_dealer_name": "  Пользовательское имя дилера над заголовком: <name><reset>",
+            "lobby_countdown": "<gray>Обратный отсчет до начала игры: <white><time> с",
+            "game_time": "<gray>Продолжительность игры: <white><time> с",
+            "constant": "- <gray><constant><reset>: <gray><value>",
+            "constant_true": "<green>True",
+            "constant_false": "<red>False",
+            "lobby": "<gray>Позиция Лобби: <white>World: <gray><world> <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "teams": "<gray>Команды:",
+            "team": "- <team><reset> Максимальное количество игроков: <gray><maxplayers><reset>)",
+            "spawner": "- <resource> <gray>- <team> <gray>- <yellow>Holo: <white><holo> <gray>- XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "villager_shop_name": "  Имя магазина: <gold><file><reset> (наследуется от основного: <gray><bool><reset>)",
+            "constants": "<gray>Конфигурация констант:",
+            "constant_inherit": "<yellow>Унаследован от конфигурации плагина",
+            "post_game_waiting": "<gray>Время ожидания после игры: <white><time> c"
         },
         "usage": "<red>Использование: /bw admin <pre><название арены> <add|edit|remove|save|...> ...</pre>",
         "arena": {
@@ -418,7 +479,31 @@
             "removed": "<green>Голограмма удалена!"
         },
         "team_join_entity": {
-            "click_right_on_entity": "<green>Нажмите правой кнопкой мыши на стойку для брони, для того чтобы настроить присоединение к команде: <gray><team>"
+            "click_right_on_entity": "<green>Нажмите правой кнопкой мыши на стойку для брони, для того чтобы настроить присоединение к команде: <gray><team>",
+            "entity_not_compatible": "<red>Объект, который вы пытаетесь использовать, несовместим! Можно использовать только живых существ или стойку для брони!",
+            "entity_added": "<green>Добавлено присоединения к команде!"
+        },
+        "npc": {
+            "skin_change_failed": "<red>Скин не может быть изменен!",
+            "added": "<green>Новый npc был добавлен на позицию XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+            "now_click": "<yellow>Теперь щелкните правой кнопкой мыши на NPC, которого вы хотите отредактировать.",
+            "no_longer_editing": "<green>Вы больше не редактируете NPC. Используйте <gray>/bw npc select<green> чтобы редактировать.",
+            "editing": "<green>Теперь вы редактируете NPC на позиции XYZ: <gray><x>/<y>/<z>",
+            "should_not_look": "<green>NPC больше не смотрит на игроков!",
+            "requires_value": "<green>Для этого действия требуется указать значение!",
+            "removed": "<green>NPC был удален!",
+            "skin_changed": "<green>Скин был изменен!",
+            "not_editing": "<res>Вы не редактируете NPC! Выберите один из них, используя <gray>/bw npc select",
+            "should_look": "<green>Теперь NPC смотреть только на игроков!",
+            "action_set": "<green>Действие этого NPC было настроено на <gray><action><green> с аргументом \"<gray><value><green>\""
+        },
+        "hologram": {
+            "line_removed": "<green>Номер строки <gray><linenumber><green> голограммы был удалён!",
+            "line_added": "<green>В конце голограммы добавлена новая строка: <white><line>",
+            "line_set": "<green>Номер строки <gray><linenumber><green> голограммы был установлен на <white><line>",
+            "theres_no_line_number": "<red>Нет строки с номером <linenumber>",
+            "invalid_number": "<red>Номер строки должен быть больше 0!",
+            "reset": "<green>Голограмма была сброшена."
         }
     },
     "update": {
@@ -434,5 +519,9 @@
     "games_inventory": {
         "unknown_inventory": "<red>Инвентарь неизвестных игр <gray><type><red>!",
         "could_not_find_game": "Не удалось найти игру!"
+    },
+    "migrate": {
+        "success": "<green>Успешно перенесена конфигурация из <red><plugin><green>!",
+        "failure": "<red>Что-то пошло не так при переносе конфигурации! Подробности см. в консоли."
     }
 }
