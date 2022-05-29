@@ -4,11 +4,42 @@
     "success": "<green> دستور(کامند) موفقیت آمیز بود!",
     "sign": {
         "admin": {
-            "created": "<green> تابلو با موفقیت ساخته شد!"
+            "created": "<green> تابلو با موفقیت ساخته شد!",
+            "cannot_create": "<red>علامت ایجاد نشد! لطفا نام مپ را بررسی کنید!",
+            "cannot_destroy": "<red>شما مجوز تخریب این علامت را ندارید!",
+            "unknown_game": "<red>بازی که روی تابلو نوشته شده وجود ندارد! لطفا با یک ادمین تماس بگیرید!"
+        },
+        "status": {
+            "disabled": {
+                "status": "<red>بازی",
+                "players": "<red>غیرفعال شد"
+            },
+            "rebuilding": {
+                "status": "<gold>بازسازی",
+                "players": "<gold>دنیا"
+            },
+            "waiting": {
+                "status": "<gold>درانتظار"
+            },
+            "running": {
+                "status": "<green>دویدن",
+                "players": "<red><بازیکن ها><خاکستری تیره>/<red><بیشترین_بازیکن>"
+            }
         }
     },
     "unknown_command": "<red>دستور ناشناخته! برای کمک، <dark_red>/bw help <red> رو امتحان کنید!",
     "no_permissions": "<red> شما دسترسی لازم برای این کار رو ندارید!",
-    "safe_reload": "<green> منتظر بمونین تا همه بازی ها متوقف بشن یا 60 ثانیه قبل از ذیلود کردن پلاگین باشه.",
-    "safe_reload_failed_to_stop_game": "<red> بعضی از بازیا متوقف نشدن.اون منطقه ممکنه آسیب دیده باشه!"
+    "safe_reload": "<green>منتظر بمانید تا تمام بازی ها متوقف شوند یا 60 ثانیه قبل از بارگیری مجدد پلاگین .",
+    "safe_reload_failed_to_stop_game": "<red> بعضی از بازیا متوقف نشدن.اون منطقه ممکنه آسیب دیده باشه!",
+    "statistics": {
+        "disabled": "<red>آمار بازیکن در این سرور غیرفعال است!",
+        "not_found": "<red>آمار این بازیکن یافت نشد!",
+        "header": "<green>آمار از<red><player><green>:",
+        "player_does_not_exist": "<red>بازیکن پیدا نشد!"
+    },
+    "specials": {
+        "tntsheep": {
+            "no_target_found": "‌<red>هدفی پیدا نشد!"
+        }
+    }
 }
