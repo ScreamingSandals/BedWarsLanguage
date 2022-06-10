@@ -1,7 +1,7 @@
 {
     "no_permissions": "<red>Nincs jogosultságod ehhez!",
     "safe_reload": "<green>Várj 60 másodpercet mielőtt újraindítanád a szervert.",
-    "safe_reload_failed_to_stop_game": "<red>Néhány aréna nem lett időben leállítva így lehet hogy megsérültek a fájljaik!",
+    "safe_reload_failed_to_stop_game": "<red>Néhány aréna nem lett időben leállítva, így lehet hogy megsérültek a fájljaik!",
     "list_header": "<green>Elérhető arénák:",
     "success": "<green>Sikeresen lefutott a parancs!",
     "unknown_command": "<red>Ismeretlen parancs! Használd a <dark_red>/bw help <red> parancsot a segítségért!",
@@ -39,26 +39,26 @@
         "header": "<red><player> <green>statisztikája:",
         "kills": "<gray>Ölések: <green><kills>",
         "deaths": "<gray>Halálok: <yellow><deaths>",
-        "kd": "<gray>K/D: <green><kd>",
+        "kd": "<gray>Ö/H: <green><kd>",
         "wins": "<gray>Győzelmek: <green><wins>",
         "loses": "<gray>Vereségek: <red><loses>",
-        "games": "<gray>Játszott körök: <aqua><games>",
+        "games": "<gray>Lejátszott játékok száma: <aqua><games>",
         "score": "<gray>Összesített pontszám: <green><score>",
         "beds": "<gray>Kiütött ágyak: <green><beds>"
     },
     "in_game": {
         "errors": {
-            "you_are_not_in_game": "<red>Jelenleg nem vagy játékban!",
-            "game_already_running": "<red>A(z)<gray><arena> <red>már elindult, ezért már nem tudsz csatlakozni!",
-            "already_in_game": "<red>Már játékban vagy.",
-            "not_in_any_game_yet": "<red>Még nem játszottál egy arénában se.",
-            "vip_not_enough_players": "<red>Nincs elég játékos hogy elinduljon az aréna!",
-            "vip_game_is_full": "<red>A(z) <gray><arena> <red>tele van VIP játékosokkal. Várd meg amíg véget ér az aréna!",
-            "game_kicked_by_vip": "<red>Ki lettél rúgva az arénából mert csatlakozott egy VIP játékos!",
+            "you_are_not_in_game": "<red>Nem vagy játékban!",
+            "game_already_running": "<red>A <gray><arena> <red>játék már elindult! Nem léphetsz be egy olyan játékba, ami már elindult!",
+            "already_in_game": "<red>Már benne vagy egy játékban.",
+            "not_in_any_game_yet": "<red>Még egy játékot sem játszottál.",
+            "vip_not_enough_players": "<red>Nincs elég játékos az aréna indításához!",
+            "vip_game_is_full": "<red>A <gray><arena> <red>játék megtelt VIP játékosokkal. Kérlek várd meg amíg véget ér!",
+            "game_kicked_by_vip": "<red>Ki lettél rúgva egy VIP játékos által!",
             "there_is_no_empty_game": "<red>Nincs olyan aréna amibe csatlakozhatnál, mivel az összes fut!",
-            "game_is_full": "<red>A(z) <gray><arena> <red>aréna tele van! Kérlek csatlakozz egy másik arénába!",
-            "game_not_found": "<red>Az aréna nem található!",
-            "game_is_rebuilding": "<red>A(z) <gray><arena><red> aréna újraindul! Kérlek várj...",
+            "game_is_full": "<red>A<gray><arena> <red>játék már megtelt! Kérlek, várd ki a végéig!",
+            "game_not_found": "<red>Nincs ilyen játék!",
+            "game_is_rebuilding": "<red>A <gray><arena><red> játék éppen újraindul! Kérlek várj...",
             "command_is_not_allowed": "<red>Ezt a parancsot nem használhatod játék közben!",
             "game_is_gone": "<red>Az aréna ahol játszottál, már nem ebben a világban van."
         },
@@ -67,7 +67,7 @@
                 "any": "A <team><reset> csapat kijelölt blokkja el lett pusztítva!",
                 "anchor": "A <team><reset> csapat horgonyát kiütötték!",
                 "cake": "A <team><reset> csapat tortáját megették!",
-                "subtitle": "Most már véglegesen megtudod ölni a csapat tagjait!",
+                "subtitle": "Most már megtudod ölni a csapat tagjait!",
                 "subtitle_victim": "Most már nem éledsz újra!",
                 "bed": "A <team><reset> csapat ágyát kiütötték!"
             },
@@ -97,8 +97,8 @@
             "title_cancel": "<red>A csapat kiesett. :("
         },
         "spawner": {
-            "countdown": "<yellow><seconds> <bold>másodperc",
-            "every_second": "<bold>minden másodperc",
+            "countdown": "<yellow><seconds> <aqua>másodperc",
+            "every_second": "<aqua>minden másodperc",
             "full": "<red><bold>A spawner kiürült",
             "not_enough_level": "<red>A spawner nem működik! A fejlesztáshez <levels> szintre van szükséged."
         },
@@ -129,7 +129,7 @@
             "select_item_lore_join": "Katt ide a csatlakozáshoz!",
             "inventory_name": "Válassz csapatot",
             "selected": "<green>Kiválasztott csapat: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
-            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)"
+            "select_item": "<team> <gray>(<yellow><inteam> <white>/ <yellow><maxinteam><gray>)"
         },
         "lobby_items": {
             "compass_selector_team": "<green>Csapat Választó",
@@ -161,7 +161,7 @@
     "help": {
         "title": "Screaming BedWars <version> - Segítség",
         "title_console": "Screaming BedWars <version> - Konzol Segítség",
-        "bw_join": "/bw join <pre><arena></pre> - <green>Csatlakozik egy arénába",
+        "bw_join": "/bw join \\<arena> - <green>Csatlakozik egy arénába",
         "bw_leave": "/bw leave - <green>Kilép egy arénából",
         "bw_rejoin": "/bw rejoin - <green>Visszacsatlakozik az arénába",
         "bw_list": "/bw list - <green>Kilistázza az arénákat",
@@ -170,7 +170,7 @@
         "bw_reload": "/bw reload - <red>Újra tölti a plugint",
         "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>Létrehoz egy statisztika/toplista hologramot",
         "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Engedélyezi vagy beállítja a főlobbyt",
-        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Megnézi az aréna információit",
+        "bw_admin_info": "/bw admin \\<arena> info [section] - <yellow>Megnézi az aréna információit",
         "bw_admin_add": "/bw admin <pre><arena></pre> add - <yellow>Létrehoz egy új arénát",
         "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow>Beállítja a nézők spawnját",
         "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>Kijelöli az aréna második pozícióját",
@@ -216,11 +216,12 @@
             "Letölthető az alábbi linken <url>"
         ],
         "patch_release": [
-            "<yellow>Elérhető a BedWars <version> patch verziója!"
+            "<yellow>Elérhető a BedWars <version> patch verziója!",
+            "Letölthető az alábbi linken: <url>"
         ]
     },
     "admin": {
-        "usage": "<red>Használat: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>",
+        "usage": "<red>Használat: /bw admin \\<arena> \\<add|edit|remove|save|...> ...",
         "arena": {
             "error": {
                 "already_exists": "<red>Ez az aréna már létezik!",
