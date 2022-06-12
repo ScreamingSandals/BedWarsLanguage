@@ -167,6 +167,47 @@
             "special_item_used": "<green>Special item <gray><item></gray> has been used!",
             "region_regenerated": "<green>Region of arena <gray><arena></gray> has been regenerated!"
         },
+        "scoreboard": {
+            "you": "<gray>YOU",
+            "state": {
+                "waiting": "<white>Waiting...",
+                "countdown": "<white>Starting in <green><countdown>s"
+            },
+            "mode": {
+                "solo": "Solo",
+                "doubles": "Doubles",
+                "triples": "Triples",
+                "squads": "Squads"
+            }
+        },
+        "messages": {
+            "game_start": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "                             <white><bold>Bed Wars</bold>",
+                "",
+                "    <yellow><bold>Protect your bed and destroy the enemy beds.</bold>",
+                "     <yellow><bold>Upgrade yourself and your team by collecting</bold>",
+                "<yellow><bold><resources></bold>",
+                "            <yellow><bold>to access powerful upgrades.</bold>",
+                "",
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                ""
+            ],
+            "game_over_statistics": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "                             <yellow><bold>Bed Wars</bold>",
+                "",
+                "                             <team_color><win_team>",
+                "                             <winners>",
+                "",
+                "    <yellow><bold>1st<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+                "    <gold><bold>2nd<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
+                "    <red><bold>3rd<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
+                "",
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                ""
+            ]
+        },
         "join": "<name> <green>joined the game!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "leave": "<name> <red>left the game!",
         "player_self_killed": "<red>Player <victim> <red>died!",
