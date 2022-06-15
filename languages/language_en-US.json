@@ -219,6 +219,20 @@
     },
     "help": {
         "title": "Screaming BedWars <version> - Help",
+        "messages": {
+            "command": "Command",
+            "description": "Description",
+            "no_description": "No description",
+            "arguments": "Arguments",
+            "optional": "Optional",
+            "showing_results_for_query": "Showing search results for query",
+            "no_results_for_query": "No results for query",
+            "available_commands": "Available Commands",
+            "click_to_show_help": "Click to show help for this command",
+            "page_out_of_range": "Error: Page <page> is not in range. Must be in range [1, <max_pages>]",
+            "click_for_next_page": "Click for next page",
+            "click_for_previous_page": "Click for previous page"
+        },
         "title_console": "Screaming BedWars <version> - Help for Console",
         "bw_join": "/bw join \\<arena> - <green>Join the game",
         "bw_leave": "/bw leave - <green>Leave the game",
