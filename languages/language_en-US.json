@@ -362,6 +362,7 @@
                     "invalid_constant_value": "<red>Wrong value! It could be <gray>true<red>, <gray>false<red> or <gray>inherit<red>!",
                     "invalid_constant_name": "<red>Wrong name of constant!",
                     "invalid_constant_position": "<red>Wrong position of constant list's member!",
+                    "invalid_constant_enum_value": "<red>Invalid value <gray><value></gray>! Must be one of these: <gray><values>",
                     "invalid_arena_time": "<red>Wrong type of arena's world time!",
                     "invalid_arena_weather": "<red>Wrong type of arena's world weather!",
                     "invalid_bar_color": "<red>Wrong color for Boss Bar!",
