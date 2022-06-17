@@ -512,7 +512,12 @@
             "constant_inherit": "<yellow>Inherited from plugin configuration",
             "post_game_waiting": "<gray>Post game waiting time: <white><time> s",
             "spawner_no_team": "<red>No team",
-            "file": "<gray><i>File: <file>"
+            "file": "<gray><i>File: <file>",
+            "config": "Configuration of <gray><configured-component>",
+            "key": "Key",
+            "value": "Value",
+            "data_type": "Data type",
+            "default_value": "<yellow>Uses default value from configuration file or variant file"
         },
         "info_select": {
             "header": "<green>Please select information section of <gray><arena><green>:",
@@ -521,7 +526,7 @@
             "spawners": "<green>List of spawners<white> - <gray><command>",
             "teams": "<green>List of teams<white> - <gray><command>",
             "config": "<green>Configuration<white> - <gray><command>",
-            "click": "<aqua>Click for execute <gray><command><aqua>!"
+            "click": "<aqua>Click to execute <gray><command><aqua>!"
         }
     },
     "specials": {
