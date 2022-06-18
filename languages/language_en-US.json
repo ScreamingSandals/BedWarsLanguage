@@ -448,6 +448,13 @@
             "click_to_remove": "<yellow>Now click the holographic you want to remove!",
             "removed": "<green>Holographic successfully removed!"
         },
+        "group": {
+            "added": "<green>Game <gray><game><green> has been added to the group <gray><group><green>!",
+            "removed": "<green>Game <gray><game><green> has been removed from the group <gray><group><green>!",
+            "invalid_group_name": "<red>Invalid group name <gray><group><red>! Name must contain only alphanumeric characters, dashes and underscores!",
+            "empty": "<red>Group <gray><group><red> is empty!",
+            "list": "<green>List of games in group <gray><group><green>:"
+        },
         "team_join_entity": {
             "click_right_on_entity": "<green>Now use right click on the desired entity for which you want to set up join to team: <gray><team>",
             "entity_not_compatible": "<red>The Entity you are trying to use is not compatible! Only Living entities or Armor Stands can be used!",
