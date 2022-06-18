@@ -381,13 +381,14 @@
                     },
                     "invalid_variant": "<red>Game variant <gray><variant><red> does not exist!",
                     "team_spawn_set_blocked": "<red>The team <gray><team><red> has more than one spawnpoint, so using set command is not allowed.",
-                    "team_spawn_on_the_same_block": "<red>There is already a spawnpoint at this position. If you want to change the rotation, remove it first."
+                    "team_spawn_on_the_same_block": "<red>There is already a spawnpoint at this position. If you want to change the rotation, remove it first.",
+                    "team_no_spawn_there": "<red>There is no spawnpoint at this position."
                 },
                 "success": {
                     "saved_and_started": "<green>The game has been successfully saved and is running! Now you can join and play in the arena!",
                     "target_block_set": "<green>Target block (<gray><material><green>) of team <gray><team><green> was successfully set to position XYZ: <gray><x>/<y>/<z>",
                     "team_spawn_set": "<green>Spawn of team <gray><team><green> was successfully set to position XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
-                    "team_multiple_spawns_ad": "<blue>Do you want to setup more than one spawnpoint for a team? Use <gray><command>",
+                    "team_multiple_spawns_ad": "<aqua>Do you want to setup more than one spawnpoint for a team? Use <gray><command>",
                     "team_spawn_added": "<green>Spawn of team <gray><team><green> has been successfully added to position XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
                     "team_spawn_removed": "<green>Spawn of team <gray><team><green> has been successfully removed from position XYZ: <gray><x>/<y>/<z>",
                     "team_spawn_reset": "<green>All spawns of team <gray><team><green> has been removed.",
