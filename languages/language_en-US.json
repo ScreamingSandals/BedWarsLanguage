@@ -208,6 +208,10 @@
                 ""
             ]
         },
+        "record": {
+            "no": "<aqua>This is the first time this game is played. What about setting a new record?",
+            "current": "<aqua>The current record of this game is <gray><time><aqua> achieved by <gray><team-members><aqua>!"
+        },
         "join": "<name> <green>joined the game!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "leave": "<name> <red>left the game!",
         "player_self_killed": "<red>Player <victim> <red>died!",
@@ -393,7 +397,7 @@
                     "team_spawn_removed": "<green>Spawn of team <gray><team><green> has been successfully removed from position XYZ: <gray><x>/<y>/<z>",
                     "team_spawn_reset": "<green>All spawns of team <gray><team><green> has been removed.",
                     "team_spawn_list": "<green>The team <gray><team><green> has <gray><count><green> spawnpoints at these positions:",
-                    "team_spawn_list_entry": "<gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "team_spawn_list_entry": "- <green>XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
                     "team_spawn_list_no": "<red>The team <gray><team><red> has no spawnpoints yet.",
                     "team_maxplayers_set": "<green>Maximal count of players in team <gray><team><green> was successfully set to <gray><maxplayers>",
                     "team_color_set": "<green>Color of <gray><team><green> was successfully set to <teamcolor>",
