@@ -391,6 +391,10 @@
                 "success": {
                     "saved_and_started": "<green>The game has been successfully saved and is running! Now you can join and play in the arena!",
                     "target_block_set": "<green>Target block (<gray><material><green>) of team <gray><team><green> was successfully set to position XYZ: <gray><x>/<y>/<z>",
+                    "target_none_set": "<green>Team <gray><team><green> will now play without any target. That means they will not be able to respawn!",
+                    "target_not_properly_balanced": "<yellow>Target has been set, however not every team has the same target type now, this may make the game unbalanced. Consider changing that.",
+                    "target_countdown_set": "<green>Target countdown of team <gray><team><green> was successfully set to <gray><countdown><green> seconds!",
+                    "target_block_countdown_set": "<green>Target block (<gray><material><green>) of team <gray><team><green> was successfully set to position XYZ: <gray><x>/<y>/<z><green> and its countdown was set to <gray><countdown><green> seconds!",
                     "team_spawn_set": "<green>Spawn of team <gray><team><green> was successfully set to position XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
                     "team_multiple_spawns_ad": "<aqua>Do you want to setup more than one spawnpoint for a team? Use <gray><command>",
                     "team_spawn_added": "<green>Spawn of team <gray><team><green> has been successfully added to position XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
