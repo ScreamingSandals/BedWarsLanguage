@@ -65,11 +65,21 @@
         "target_block": {
             "destroyed": {
                 "any": "Target block of <team><reset> is destroyed!",
+                "any_certain_popular_server": "<red><bold>TARGET BLOCK DESTROYED!",
                 "bed": "Bed of <team><reset> is destroyed!",
+                "bed_certain_popular_server": "<red><bold>BED DESTROYED!",
                 "anchor": "Respawn Anchor of <team><reset> is destroyed!",
+                "anchor_certain_popular_server": "<red><bold>ANCHOR DESTROYED!",
                 "cake": "Cake of <team><reset> has been eaten!",
+                "cake_certain_popular_server": "<red><bold>CAKE EATEN!",
+                "killable": "You are now able to kill all members of <team>!",
                 "subtitle": "You can now kill the team members!",
-                "subtitle_victim": "Now you will never be respawned!"
+                "subtitle_victim": "You will no longer respawn!",
+                "death_mode": "<dark_purple><bold>Death mode!",
+                "all_beds": "All beds have been destroyed!",
+                "all_anchors": "All anchors have been destroyed!",
+                "all_target_blocks": "All target blocks have been destroyed!",
+                "all_cakes": "All cakes have been eaten!"
             },
             "hologram": {
                 "protect": {
@@ -101,12 +111,12 @@
             "countdown_custom": "<yellow><value> <aqua><unit>",
             "every_second": "<aqua>every second",
             "full": "<red><bold>Spawner is depleted",
-            "full_hypixel": "<red><bold>Spawner is full!",
+            "full_certain_popular_server": "<red><bold>Spawner is full!",
             "not_enough_level": "<red>Spawner can't work! You need to upgrade by <levels> levels.",
             "reached_maximum_level": "<red>Spawner has reached its maximum level!",
             "tier": "<yellow>Tier <red><tier>",
-            "countdown_hypixel": "<yellow>Spawns in <red><seconds> <yellow>seconds",
-            "countdown_custom_hypixel": "<yellow>Spawns in <red><value> <yellow><unit>"
+            "countdown_certain_popular_server": "<yellow>Spawns in <red><seconds> <yellow>seconds",
+            "countdown_custom_certain_popular_server": "<yellow>Spawns in <red><value> <yellow><unit>"
         },
         "resources": {
             "bronze": "Bronze",
