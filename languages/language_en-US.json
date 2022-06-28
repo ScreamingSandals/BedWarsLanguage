@@ -175,7 +175,9 @@
             "received_kill": "<green>Player <gray><player><green> killed by cheat!",
             "game_not_running": "<red>You can only cheat when game is running!",
             "special_item_used": "<green>Special item <gray><item></gray> has been used!",
-            "region_regenerated": "<green>Region of arena <gray><arena></gray> has been regenerated!"
+            "region_regenerated": "<green>Region of arena <gray><arena></gray> has been regenerated!",
+            "game_not_waiting": "<red>You can execute this cheat only when game is in the waiting state!",
+            "game_forced": "<green>Game is now going to start with one empty team, so at least two teams are in the game for plugin to work correctly. Invalidate its target to win! (It is not protected so it should be easy for you, right?)"
         },
         "scoreboard": {
             "you": "<gray>YOU",
