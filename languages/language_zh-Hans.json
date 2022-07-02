@@ -108,7 +108,8 @@
             "tier": "<yellow>等级 <red><tier>",
             "countdown_custom": "<yellow><value> <aqua><unit>",
             "countdown_hypixel": "<yellow>在 <red><seconds>秒 <yellow>重生",
-            "countdown_custom_hypixel": "<yellow>生成在 <red><value> <yellow><unit>"
+            "countdown_custom_hypixel": "<yellow>生成在 <red><value> <yellow><unit>",
+            "reached_maximum_level": "<red>刷怪笼已达到最大等级！"
         },
         "shop": {
             "buy_success": "<green>已成功使用 <gray><material> 购买 <gray><item> <green>!",
