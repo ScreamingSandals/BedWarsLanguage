@@ -80,7 +80,9 @@
                 "anchor": "Kotwica odrodzenia drużyny <team><reset> została zniszczona!",
                 "any": "Blok docelowy <drużyna><reset> został zniszczony!",
                 "subtitle": "Możesz teraz zabijać członków drużyny!",
-                "subtitle_victim": "Teraz już nigdy się nie odrodzisz!"
+                "subtitle_victim": "Teraz już nigdy się nie odrodzisz!",
+                "bed_certain_popular_server": "<red><bold>BLOK DOCELOWY ZNISZCZONY!",
+                "anchor_certain_popular_server": "<red><bold>ZNISZCZONA KOTWICA!"
             }
         },
         "respawn_cooldown": {
