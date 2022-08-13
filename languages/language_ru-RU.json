@@ -7,13 +7,13 @@
             "already_in_game": "<red>Вы уже играете.",
             "you_are_not_in_game": "<red>Вы не в игре!",
             "game_is_rebuilding": "<red>Арена <gray><arena><red> восстанавливается! Подождите...",
-            "vip_game_is_full": "<red>Арена <gray><arena> <red>заполнена VIP игроками. Подождите, когда появится свободное место!",
+            "vip_game_is_full": "<red>Арена <gray><arena> <red>заполнена VIP игроками. Дождитесь свободного места или конца игры!",
             "game_is_gone": "<red>Похоже, что вашей арены больше нет в этом мире.",
             "game_kicked_by_vip": "<red>Вы были кикнуты VIP игроком!",
-            "game_is_full": "<red>Арена <gray><arena> <red>заполнена! Подождите, когда появится свободное место!",
+            "game_is_full": "<red>Арена <gray><arena> <red>заполнена! Дождитесь свободного места или конца игры!",
             "game_not_found": "<red>Арена не найдена!",
             "there_is_no_empty_game": "<red>Нет свободных арен. Все запущены!",
-            "game_already_running": "<red>Арена <gray><arena> <red>уже запущена! Вы не можете подключиться к запущенной арене!"
+            "game_already_running": "<red>Арена <gray><arena> <red>уже запущена! Вы не можете к ней подключиться!"
         },
         "target_block": {
             "destroyed": {
@@ -47,7 +47,7 @@
         },
         "spawner": {
             "countdown": "<yellow><seconds> <aqua>с",
-            "every_second": "<bold>ежесекундно",
+            "every_second": "<aqua>ежесекундно",
             "full": "<red><bold>Генератор истощён",
             "not_enough_level": "<red>Генератор не работает! Нужно прокачать его на <levels> уровней.",
             "full_hypixel": "<red><bold>Генератор переполнен!",
@@ -62,9 +62,9 @@
         },
         "team_selection": {
             "select_item_lore": "<white>---------------------",
-            "inventory_name": "Выбрать команду - <arena>",
+            "inventory_name": "Выбор команды - <arena>",
             "selected": "<green>Выбрана команда: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
-            "already_selected": "<green>Вы уже в команде: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "already_selected": "<green>Вы уже в команде <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
             "full": "<red>Команда <team><red> заполнена!",
             "full_no_change": "<red>Команда <team><red> заполнена, вы остались в команде <oldteam><red>!",
             "select_item": "<team> <gray>(<yellow><inteam> <white>/ <yellow><maxinteam><gray>)",
@@ -100,14 +100,14 @@
             "you_won": "<green>Вы победили!",
             "team_win": "<green>Команда <reset><team><green> победила за <gray><time>"
         },
-        "join": "<name> <green>подключился к игре!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+        "join": "<name> <green>зашёл в игру!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "vault_deposite": "<green>Добавлено <gray><coins> <currency><green> монет на ваш аккаунт Vault!",
         "bossbar": {
             "waiting": "<red>Игра скоро начнётся!",
             "running": "<green>Игра началась! Удачи!"
         },
         "respawn_protection": {
-            "remaining": "<red>Защита кончится через <white><time> <green>с.",
+            "remaining": "<red>Защита кончится через <white><time> <green>с",
             "end": "<red>Теперь вы уязвимы!"
         },
         "leave": "<name> <red>покинул игру!",
@@ -117,18 +117,18 @@
         "game_start_subtitle": "<green>Игра <gray><arena><green> началась! Удачи!",
         "cheat": {
             "game_not_running": "<red>Вы можете читерить только когда игра запущена!",
-            "invalid_player": "<red>Данный игрок не наблюдатель или не в игре!",
-            "please_provide_valid_cheat_type": "<red>Данный чит некорректен или не существует!",
+            "invalid_player": "<red>Данный игрок не играет или наблюдает!",
+            "please_provide_valid_cheat_type": "<red>Данный чит некорректен или отсутствует!",
             "received_give": "<green>Игрок <gray><player><green> получил <gray><amount><green> <gray><resource>",
             "received_kill": "<green>Игрок <gray><player><green> был убит с помощью чита!",
-            "special_item_used": "<green>Был использован специальный предмет: <gray><item></gray><green>!</green>",
-            "region_regenerated": "был восстановлен!"
+            "special_item_used": "<green>Специальный предмет <gray><item></gray> был использован!",
+            "region_regenerated": "<green>Данный регион <gray><arena></gray> был восстановлен!"
         },
         "economy_deposited": "<green>Добавлено <gray><coins> <currency><green> на ваш счёт!",
         "economy_missing_coins": "<red>Вам нужно <yellow><coins> <currency><red> для входа в игру!"
     },
     "no_permissions": "<red>У вас на это недостаточно прав!",
-    "safe_reload": "<green>Ожидаем конец всех игр или 60 секунд до перезагрузки плагина.",
+    "safe_reload": "<green>Ожидание конца всех игр или 60 секунд до перезагрузки плагина.",
     "list_header": "<green>Доступные арены:",
     "success": "<green>Команда выполнена успешно!",
     "sign": {
@@ -173,21 +173,21 @@
     },
     "unknown_command": "<red>Неизвестная команда! Напишите <dark_red>/bw help <red>для помощи!",
     "unknown_usage": "<red>Неверное количество аргументов! Напишите <dark_red>/bw help <red>для помощи!",
-    "safe_reload_failed_to_stop_game": "<red>Некоторые арены не успели остановиться, они возможно будут повреждены!",
+    "safe_reload_failed_to_stop_game": "<red>Некоторые арены не остановились вовремя, их миры могут быть повреждены!",
     "help": {
-        "bw_rejoin": "/bw rejoin - <green>Переподключиться в последнюю игру",
+        "bw_rejoin": "/bw rejoin - <green>Переподключиться в игру",
         "title": "Screaming BedWars <version> - Помощь",
         "title_console": "Screaming BedWars <version> - Помощь для консоли",
         "bw_join": "/bw join <pre><arena></pre> - <green>Зайти в игру",
         "bw_leave": "/bw leave - <green>Покинуть игру",
         "bw_autojoin": "/bw autojoin - <green>Подключиться к первой свободной игре",
-        "bw_list": "/bw list - <green>Список арен",
+        "bw_list": "/bw list - <green>Вывести список арен",
         "bw_leaderboard": "/bw leaderboard - <green>Показать топ игроков этого сервера",
-        "bw_stats": "/bw stats - <green>Просмотреть вашу статистику",
-        "bw_stats_other": "/bw stats [player] - <green>Отобразить чужую статистику",
+        "bw_stats": "/bw stats - <green>Показать вашу статистику",
+        "bw_stats_other": "/bw stats [игрок] - <green>Показать чужую статистику",
         "bw_reload": "/bw reload - <red>Перезагрузить плагин",
         "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>Добавить голограмму на ваших координатах",
-        "bw_removeholo": "/bw removeholo - <yellow>После активации, игрок может убрать голограмму правой кнопкой мыши.",
+        "bw_removeholo": "/bw removeholo - <yellow>Начать удаление голограммы (после выполнения нажать ПКМ по нужной)",
         "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Включить основное лобби или задать её координаты",
         "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Показать информацию об арене",
         "bw_admin_add": "/bw admin <pre><arena></pre> add [variant] - <yellow>Добавить арену",
@@ -230,17 +230,17 @@
         "bw_admin_spawner_base_amount": "Задает базовое количество ресурсов, которые создатель должен создавать за цикл",
         "bw_admin_spawner_hologram_type": "Устанавливает тип голограммы создателя на вашей позиции",
         "bw_migrate": "Переносит конфигурацию из другого плагина БедВарс.",
-        "bw_dump": "Сбрасывает сервер и дает вам ссылку на дамп. Эта ссылка может быть полезна для поддержки",
+        "bw_dump": "/bw dump - <yellow>Создать слепок информации о сервере. Полученная ссылка полезна для получения поддержки",
         "bw_admin_interactive": "Если арена находится в режиме редактирования, эта команда включит интерактивный режим",
-        "bw_cheat_build_pop_up_tower": "Строит всплывающую башню",
-        "bw_cheat_rebuild_region": "Перестраивает игровой регион",
+        "bw_cheat_build_pop_up_tower": "/bw cheat buildPopUpTower [арена] - <red>Построить башню",
+        "bw_cheat_rebuild_region": "/bw cheat rebuildRegion [арена] - <red>Перестроить регион",
         "bw_admin_spawner_hologram": "Включает/отключает голограмму над создателем",
         "bw_admin_spawner_floating": "Включает/отключает плавающий блок под голограммой создателя",
         "bw_admin_fee": "Устанавливает плату за экономию, необходимую для входа на арену.",
         "bw_admin_display_name": "Задает отображаемое название арены",
         "bw_admin_store_adult": "Отметьте этого продавца как взрослого",
         "bw_cheat_give": "Дает игроку определенное количество ресурсов",
-        "bw_cheat_kill": "Убивает определенного игрока",
+        "bw_cheat_kill": "/bw cheat kill [игрок] - <red>Убить игрока",
         "bw_gamesinv": "Открывает инвентарь для определенных игр"
     },
     "leaderboard": {
@@ -370,29 +370,29 @@
         "arena": {
             "error": {
                 "arena_not_in_edit": "<red>Арены с таким названием не существует или уже запущена! Деактивируй её с помощью <gray>/bw admin <pre><название арены></pre> edit<red> и затем активируй её командой <gray>/bw admin <pre><название арены></pre> save",
-                "already_working_on_it": "<red>Арена с таким именем уже существует, но не была закончена!",
-                "arena_must_be_in_edit_mode": "<red>Арена должна быть в режиме редактирования!",
-                "already_exists": "<red>Арена с таким же именем уже создана!"
+                "already_working_on_it": "<red>Данная арена уже существует, но её настройка не завершена!",
+                "arena_must_be_in_edit_mode": "<red>Арена должна быть в режиме настройки!",
+                "already_exists": "<red>Данная арена уже существует!"
             },
             "edit": {
                 "errors": {
                     "must_be_in_same_world": "<red>Все команды должны быть выполнены в том же мире!",
-                    "set_bounds_first": "<red>Перед настройкой спавна, пожалуйста, установите координаты pos1 и pos2 (В зависимости от размера и позиции арены)!",
-                    "invalid_spawner_type": "<red>Спавнер ресурсов должен быть бронзовым, железным, золотым, или используя конфигурацию плагина!",
+                    "set_bounds_first": "<red>Перед настройкой спавна, пожалуйста, установите границы арены (pos1 и pos2)!",
+                    "invalid_spawner_type": "<red>Данный тип ресурса не существует!",
                     "invalid_countdown": "<red>Обратный отчёт должен быть между <lowest> и <highest> секундами!",
-                    "must_be_in_bounds": "<red>Место расположения должно быть внутри границ арены(координатами pos1 и po2)!",
-                    "invalid_bounds": "<red>Разница в высоте между pos1 и pos2 слишком маленькое! Минимум - 5 блоков!",
-                    "store_already_exist": "<red>Магазин уже существует!",
-                    "store_does_not_exist": "<red>Магазин не существует!",
+                    "must_be_in_bounds": "<red>Точка должна быть расположена внутри границ арены (координатами pos1 и po2)!",
+                    "invalid_bounds": "<red>Разница в высоте между pos1 и pos2 должна быть как минимум 5 блоков!",
+                    "store_already_exist": "<red>Торговец уже существует!",
+                    "store_does_not_exist": "<red>Торговец не существует!",
                     "team_already_exists": "<red>Эта команда уже существует!",
-                    "invalid_spawner_level": "<white>Неправильный уровень, был выбран уровень по умолчанию(1).",
+                    "invalid_spawner_level": "<white>Неверный уровень, был использован уровень 1.",
                     "invalid_color": "<red>Данного цвета не существует!",
-                    "max_players": "<red>Максимальное кол-во игроков должно быть больше или равно 1!",
+                    "max_players": "<red>Максимальное количество игроков должно быть >= 1!",
                     "need_2_teams": "<red>Для игры нужно 2 или более команды!",
-                    "spawners_needed": "<red>В игре должно быть хотя бы один спавнер ресурсов!",
+                    "spawners_needed": "<red>Арена должна иметь как минимум один генератор!",
                     "team_does_not_exist": "<red>Этой команды не существует!",
-                    "set_bounds_before_save": "<red>Перед сохранением игры, пожалуйста, установите координаты pos1 и pos2(в зависимости от размера и позиции арены)!",
-                    "set_lobby_before_save": "<red>Перед сохранением игры, пожалуйста, установите место спавна игроков в лобби!",
+                    "set_bounds_before_save": "<red>Перед сохранением игры установите границы арены (pos1 и pos2)!",
+                    "set_lobby_before_save": "<red>Перед сохранением арены необходимо установить лобби!",
                     "set_spec_before_save": "<red>Перед сохранением игры, пожалуйста, установите спавн игроков в режиме наблюдения(spec spawn)!",
                     "set_stores_before_save": "<red>Перед сохранением игры, пожалуйста, добавьте хотя бы 1 магазин предметов!",
                     "set_spawners_before_save": "<red>Перед сохранением игры, пожалуйста, добавьте хотя бы один спавнер ресурсов!",
@@ -466,7 +466,7 @@
                 "removed": "<red><b>Арена удалена!",
                 "added": "<green>Арена <gray><arena><green> добавлена!",
                 "added_with_variant": "<green>Арена <gray><arena><green> добавлена! Использован вариант игры: <gray><variant><green>!",
-                "edit_mode": "<green>Арена переключена в режим редактирования!"
+                "edit_mode": "<green>Арена переключена в режим настройки!"
             }
         },
         "mainlobby": {
@@ -508,17 +508,17 @@
     },
     "update": {
         "new_release": [
-            "<green>Новая версия ВЫПУСКА <version> из БедВарс есть в наличии!",
+            "<green>Вышла новая СТАБИЛЬНАЯ версия <version> BedWars!",
             "Скачать по ссылке: <url>"
         ],
         "patch_release": [
-            "<yellow>Новая версия плагина Bedwars <version> уже доступна!",
-            "Вы можете скачать здесь: <url>"
+            "<yellow>New patch release for BedWars <version> is here!",
+            "You can download it from <url>"
         ]
     },
     "games_inventory": {
-        "unknown_inventory": "<red>Инвентарь неизвестных игр <gray><type><red>!",
-        "could_not_find_game": "Не удалось найти игру!"
+        "unknown_inventory": "<red>Unknown games inventory <gray><type><red>!",
+        "could_not_find_game": "<red>Не удалось найти игру!"
     },
     "migrate": {
         "success": "<green>Успешно перенесена конфигурация из <red><plugin><green>!",
