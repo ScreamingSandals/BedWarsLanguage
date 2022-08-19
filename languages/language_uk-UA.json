@@ -260,7 +260,7 @@
         "bw_admin_team_color": "/bw admin \\<arena> team color \\<team> \\<color> - <yellow>Змінити колір команди",
         "bw_admin_team_spawn": "/bw admin \\<arena> team spawn \\<team> - <yellow>Встановити спавн команди в вашу позиції",
         "bw_admin_spawner_max_spawned_resources": "/bw admin \\<arena> spawner maxSpawnedResources \\<value> - <yellow>Встановлює максимальний ліміт спавну ресурсів в вашій позиції",
-        "bw_admin_spawner_rotation_mode": "/bw admin \\<arena> spawner rotationMode \\<mode> - <yellow>Встановлює режим обертання голограми до спавну в вашій позиції",
+        "bw_admin_spawner_rotation_mode": "/bw admin \\<arena> spawner rotationMode \\<mode> - <yellow>Встановлює режим обертання голограми спавнеру в вашій позиції",
         "bw_admin_spawner_change_type": "/bw admin \\<arena> spawner changeType \\<type> - <yellow>Змінює тип спавну в вашій позиції",
         "bw_admin_spawner_hologram_type": "/bw admin \\<arena> spawner hologramType \\<type> - <yellow>Встановлює тип голограми спавнера в вашій позиції",
         "bw_stats": "/bw stats - <green>Показати твою статистику",
@@ -297,11 +297,22 @@
         "bw_admin_arena_time": "/bw admin \\<arena> arenatime \\<type> - <yellow>Встановлює час на арені (ДЕНЬ, НІЧ тощо)",
         "bw_admin_arena_weather": "/bw admin \\<arena> arenaweather \\<type> - <yellow>Встановлює погоду на арені (default, CLEAN, DOWNFALL)",
         "bw_cheat_rebuild_region": "/bw cheat rebuildRegion [game] - <red>Перебудовує область гри",
-        "bw_gamesinv": "/bw gamesinv \\<inventory> - <green>Відкриває інвентар певних ігор"
+        "bw_gamesinv": "/bw gamesinv \\<inventory> - <green>Відкриває інвентар певних ігор",
+        "bw_admin_edit": "/bw admin \\<arena> edit - <yellow>Вимикає гру, та змінює арену в режим редагування",
+        "bw_admin_save": "/bw admin \\<arena> save - <green>Зберігає гру та активує її!",
+        "bw_alljoin": "/bw alljoin [arena] - <green>Приєднує всіх гравців на сервері в bedwars",
+        "bw_admin_spawner_remove": "/bw admin \\<arena> spawner remove - <yellow>Видалити всі локації спавнерів",
+        "bw_admin_store_child": "/bw admin \\<arena> store child - <yellow>Зробити з продавця дитину",
+        "bw_dump": "/bw dump - <yellow>Скидує сервер і кидає вам повідомленя на скидане. Це повідомленя може бути корисним для підтримки",
+        "bw_admin_store_adult": "/bw admin \\<arena> store adult - <yellow>Зробити з торговця дорослого",
+        "bw_migrate": "/bw migrate \\<plugin> - <yellow>Переміщає конфігурацію з іношого BedWars плагіну.",
+        "bw_admin_interactive": "/bw admin \\<arena> interactive - <yellow>Якщо арена в режимі редагуваня то ця команда вмикає інтерактивний режим"
     },
     "language": {
         "success": "<green>Успішно встановлено мову на <white>[<lang>]",
-        "already_set": "Мова: [<lang>] уже встановлено як мову за умовчанням!"
+        "already_set": "Мова: [<lang>] уже встановлено як мову за умовчанням!",
+        "invalid": "<red>Вказаний мовний файл не може бути підгружений!",
+        "usage_bw_lang": "Використаня: /bw lang \\<locale> - <yellow>Встановлює локалізацію для <red>Bed<white>Wars"
     },
     "migrate": {
         "success": "<green>Конфігурацію успішно переміщено з <red><plugin><green>!",
@@ -402,7 +413,10 @@
                     "min_players_set": "<green>Успішно встановлено мінімальну кількість гравців на <gray><min><green>!",
                     "constant_list_added": "<green>Значення <gray><value><green> успішно додано до списку <gray><config><green> у позицію <gray><position><green>!",
                     "constant_reset": "<green>Константу <gray><config><green> успішно скинуто до успадкованого значення!",
-                    "arena_time_set": "<green>Світовий час Арени встановлено на <gray><time><green>!"
+                    "arena_time_set": "<green>Світовий час Арени встановлено на <gray><time><green>!",
+                    "store_entity_type_set": "<green>Тип магазину встановлений на <gray><type><green>!",
+                    "removed_spawners": "<gray><count> <green>спавнер видалений з <gray><x>/<y>/<z>",
+                    "child_state": "<green>Варіація дитини торговця тепер змінена на <gray><value>"
                 }
             },
             "error": {
@@ -432,5 +446,55 @@
             "<yellow>Новий випуск патча для BedWars <version> тут!",
             "Ви можете завантажити його з <url>"
         ]
+    },
+    "specials": {
+        "team_chest": {
+            "not_yours": "<yellow>Ця скринька не вашої команди!",
+            "name": "<green><bold>Скринька команди",
+            "broken": "<red>Скриня вашої команди зруйнована!",
+            "placed": "<green>Нова скриння команди поставлена!"
+        },
+        "golem": {
+            "created": "<green>Голем створений."
+        },
+        "arrow_blocker": {
+            "already_activated": "<red>Блокуватор стріл працює!",
+            "started": "<green>Блокуватор стріл активований на <white><time><green> секунд!",
+            "ended": "<red>Блокуватор стріл більше не працює!"
+        },
+        "tntsheep": {
+            "no_target_found": "<red>Ціль не знайдена!"
+        },
+        "protection_wall": {
+            "created_unbreakable": "<green>Не зруйновна захисна стіна збудована!",
+            "destroy": "<red>Захисна стіна буде зруйнована через <white><time> <red>секунд.",
+            "created": "<green>Захисна стіна створена і буде зруйнована через <white><time> <green>секунд.",
+            "not_usable_here": "<red>Тут нема місця для будуваня Захисної стіни."
+        },
+        "rescue_platform": {
+            "created_unbreakable": "<green>Незруйновна платформа збудована!",
+            "created": "<green>Платформа збудована і буде зруйнована через <white><time> <green>секунд."
+        },
+        "item_delay": "<red>Ви маєте почекати <time> секунд перед тим як використувувати цей предмет знов!"
+    },
+    "party": {
+        "command": {
+            "not_party_leader": "<red>Ви не лідер в вашій команді!",
+            "not_in_party": "<red>Ви маєте бути в команді щоб використовувати цю команду!",
+            "invalid_arguments": "<red>Невірне число або аргумент! Напишість /bw party help щоб дізнатися більше.",
+            "warped": "<green>Участники команди були перміщені.",
+            "is_empty": "<red>В вас нема команди! Нема кого перемістити!",
+            "help": "/bw party warp - <yellow>Переміщює всіх гравців в твоїй команді в твою гру до тебе"
+        },
+        "warped": "<green>Голова команди перемістив вас сюди",
+        "inform_game_join": "<green>Приєднання до гри лідера"
+    },
+    "dump": {
+        "success": "<green>Сервер успішно скинувся. Посилання: <dump>",
+        "failed": "<red>Скидування не вдалося!"
+    },
+    "leaderboard": {
+        "holo_added": "<green>Голограма таблиці лідерів додана в вашу позицію!",
+        "no_scores": "<gray>Поки що нема результатів!"
     }
 }
