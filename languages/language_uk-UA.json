@@ -133,9 +133,118 @@
             "buy_failed": "<red>Не вистачає матеріалу для покупки <grey><item><red>! Потрібен <gray><material><red>!",
             "page_back": "Сторінка назад",
             "buy_success": "<green>Успішно придбано <grey><item><green> за <gray><material><green>!",
-            "upgrade_success": "<green><name> успішно оновив <spawner> до рівня <level>!"
-        }
+            "upgrade_success": "<green><name> успішно оновив <spawner> до рівня <level>!",
+            "upgrade_translate": "оновлення"
+        },
+        "team_selection": {
+            "inventory_name": "Виберіть команду - <arena>",
+            "selected": "<green>Вибрана команда: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "already_selected": "<green>Ви вже в команді: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "full": "<red>Команда <team><red> повна!",
+            "select_item_lore": "<white>---------------------",
+            "select_item_lore_full": "<white>Команда повна!",
+            "full_no_change": "<red>Команда <team><red> повна, Ви залишаєтеся в <oldteam><red>!",
+            "select_item": "<team> <gray>(<yellow><inteam> <white>/ <yellow><maxinteam><gray>)",
+            "select_item_lore_join": "Натисніть, щоб приєднатися до команди!"
+        },
+        "lobby_items": {
+            "compass_selector_team": "<green>Виберіть команду",
+            "leave_from_game_item": "<red>Вийти з гри",
+            "start_game_item": "<dark_green>Почати гру"
+        },
+        "bossbar": {
+            "waiting": "<red>Гра незабаром розпочнеться!",
+            "running": "<green>Гру розпочато! Удачі!"
+        },
+        "end": {
+            "you_lost": "<red>Ваша команда програла!",
+            "team_win": "<green>Команда <reset><team><green> виграла гру за <gray><time>",
+            "you_won": "<green>Ваша команда перемогла!",
+            "game_end": "<red>Гру закінчено! Дякуємо за гру!"
+        },
+        "respawn_protection": {
+            "remaining": "<червоний>Захист від відродження зникне через <білий><час> <зелений>секунд!",
+            "end": "<red>Захист від відродження зник!"
+        },
+        "cheat": {
+            "please_provide_valid_cheat_type": "<red>Наданий тип коду недійсний або відсутній!",
+            "invalid_player": "<red>Вказаний гравець не бере участі в жодній грі або є глядачем!",
+            "game_not_running": "<red>Шахрувати можна лише під час роботи гри!",
+            "region_regenerated": "<green>Регіон арени <gray><arena></gray> було відновлено!",
+            "received_give": "<green>Гравець <gray><player><green> отримав <gray><amount><green> з <gray><resource>",
+            "received_kill": "<green>Гравець <gray><player><green> убитий через чит!",
+            "special_item_used": "<green>Використано спеціальний предмет <grey><item></gray>!",
+            "game_not_waiting": "<red>Ви можете виконати цей чіт, лише коли гра знаходиться в стані очікування!",
+            "game_forced": "<green>Гра розпочнеться з однією порожньою командою, тому в грі є принаймні дві команди, щоб плагін працював належним чином. Скасуйте його ціль, щоб виграти! (Він не захищений, тож вам буде легко, чи не так?)"
+        },
+        "scoreboard": {
+            "you": "<gray>ТИ",
+            "state": {
+                "waiting": "<white>Очікування...",
+                "countdown": "<white>Початок через <green><countdown>с"
+            },
+            "mode": {
+                "solo": "Соло",
+                "doubles": "Двоє",
+                "triples": "Троє",
+                "squads": "Четверо"
+            }
+        },
+        "messages": {
+            "game_start": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "    <yellow><bold>Захистіть своє ліжко та знищуйте ворожі ліжка.</bold>",
+                "     <yellow><bold>Покращуйте себе та свою команду, збираючи</bold>",
+                "            <yellow><bold>для доступу до потужних оновлень.</bold>",
+                "<yellow><bold><resources></bold>",
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+            ],
+            "game_over_statistics": [
+                "                             <team_color><win_team>",
+                "                             <yellow><bold>Бед Варс</bold>",
+                "    <gold><bold>2-гий<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
+                "    <yellow><bold>1-ший<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+                "    <red><bold>3-ій<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+            ]
+        },
+        "record": {
+            "current": "<aqua>Поточний рекорд цієї гри становить <gray><time><aqua>, досягнутий <gray><team-members><aqua>!",
+            "no": "<aqua>Ця гра грається вперше. А як щодо встановлення нового рекорду?"
+        },
+        "leave": "<name> <red>залишив гру!",
+        "player_self_killed": "<red>Гравець <victim> <red>помер!",
+        "game_start_title": "<green>Гру розпочато!",
+        "economy_deposited": "<green>Додано <gray><coins> <currency><green> на ваш баланс!",
+        "join": "<name> <green>приєднався до гри!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+        "player_killed": "<red>Гравець <killer> <red>убитий <victim><red>!",
+        "game_start_subtitle": "<green>Гра <gray><arena><green> почалася! Насолоджуйтесь грою!",
+        "economy_missing_coins": "<red>Щоб увійти в гру, вам потрібні <yellow><coins> <currency><red>!"
     },
     "unknown_command": "<red>Невідома команда! Спробуй використати <dark_red>/bw help <red>для допомоги!",
-    "safe_reload": "<green>Очікуйте поки всі ігри будуть зупинені, або 60 секунд перед перезавантаженням плагіна."
+    "safe_reload": "<green>Очікуйте поки всі ігри будуть зупинені, або 60 секунд перед перезавантаженням плагіна.",
+    "help": {
+        "title": "Screaming BedWars <version> - Довідка",
+        "messages": {
+            "command": "Команда",
+            "no_description": "Без опису",
+            "arguments": "Аргументи",
+            "optional": "Додатково",
+            "no_results_for_query": "Немає результатів для запиту",
+            "available_commands": "Доступні команди",
+            "page_out_of_range": "Помилка: Сторінка <page> не в діапазоні. Має бути в діапазоні [1, <max_pages>]",
+            "click_for_next_page": "Натисніть для наступної сторінки",
+            "description": "Опис",
+            "showing_results_for_query": "Показ результатів пошуку за запитом",
+            "click_to_show_help": "Натисніть, щоб показати довідку для цієї команди"
+        }
+    },
+    "language": {
+        "success": "<green>Успішно встановлено мову на <white>[<lang>]",
+        "already_set": "Мова: [<lang>] уже встановлено як мову за умовчанням!"
+    },
+    "migrate": {
+        "success": "<green>Конфігурацію успішно переміщено з <red><plugin><green>!",
+        "failure": "<red>Під час міграції конфігурації сталася помилка! Подробиці дивіться на консолі."
+    }
 }
