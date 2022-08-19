@@ -1,1 +1,141 @@
-{}
+{
+    "unknown_usage": "<red>Невідомі аргументи! Спробуй використати <dark_red>/bw help <red>для допомоги!",
+    "no_permissions": "<red>У вас недостатньо прав на це!",
+    "safe_reload_failed_to_stop_game": "<red>Деякі ігри не були зупинені вчасно, арена могла бути пошкоджена!",
+    "list_header": "<green>Доступні арени:",
+    "success": "<green>Команду виконано успішно!",
+    "sign": {
+        "admin": {
+            "cannot_create": "<red>Не вдалося створити знак! Будь ласка, перевірте назву арени!",
+            "created": "<green>Знак успішно створено!",
+            "cannot_destroy": "<red>У вас немає дозволу знищити цей знак!",
+            "unknown_game": "<red>Гра, яка написана на табличці, не існує! Будь ласка, зверніться до адміністратора!"
+        },
+        "status": {
+            "disabled": {
+                "status": "<red>Гра",
+                "players": "<red>вимкнено"
+            },
+            "rebuilding": {
+                "status": "<gold>Перебудова",
+                "players": "<gold>арена"
+            },
+            "running": {
+                "status": "<green>В процесі",
+                "players": "<red><players><dark_gray>/<red><maxplayers>"
+            },
+            "waiting": {
+                "status": "<gold>Очікування",
+                "players": "<green><players><dark_gray>/<green><maxplayers>"
+            }
+        }
+    },
+    "statistics": {
+        "player_does_not_exist": "<red>Гравця не знайдено!",
+        "not_found": "<red>Статистика для цього гравця не знайдена!",
+        "header": "<green>Статистика <red><player><green>:",
+        "kills": "<gray>Вбивств: <green><kills>",
+        "kd": "<gray>К/Д: <green><kd>",
+        "wins": "<gray>Перемог: <green><wins>",
+        "loses": "<gray>Програши: <red><loses>",
+        "games": "<gray>Зіграно ігор: <aqua><games>",
+        "score": "<gray>Загальний рахунок: <green><score>",
+        "disabled": "<red>Статистика гравців вимкнена на цьому сервері!",
+        "deaths": "<gray>Смертей: <yellow><deaths>",
+        "beds": "<gray>Знищено ліжок: <green><beds>"
+    },
+    "in_game": {
+        "errors": {
+            "game_is_full": "<red>Гра <gray><arena> <red>заповнена! Зачекайте кінця гри!",
+            "game_not_found": "<red>Гра не знайдена!",
+            "you_are_not_in_game": "<red>Ти не в грі!",
+            "already_in_game": "<red>Ти вже в грі.",
+            "game_is_gone": "<red>Схоже, гри, в якій ви були, більше немає в цьому світі.",
+            "game_kicked_by_vip": "<red>Ти був викинутий ВІП гравцем!",
+            "there_is_no_empty_game": "<red>Немає жодної гри в стані очікування. Всі ігри вже запущені!",
+            "game_already_running": "<red>Гра <gray><arena> <red>вже в процесі! Не можливо під'єднатися до гри!",
+            "game_is_rebuilding": "<red>Гра <gray><arena><red> в процесі перебудови! Зачекайте...",
+            "not_in_any_game_yet": "<red>Ти ще не був ні в одній грі.",
+            "command_is_not_allowed": "<red>Ця команда заблокована під час гри!",
+            "vip_not_enough_players": "<red>Не достатньо гравців в арені!",
+            "vip_game_is_full": "<red>Гра <gray><arena> <red>заповнена ВІП гравцями. Зачекайте кінця гри!"
+        },
+        "target_block": {
+            "destroyed": {
+                "any": "Цільовий блок <team><reset> знищено!",
+                "bed": "Ліжко <team><reset> знищено!",
+                "bed_certain_popular_server": "<red><bold>ЛІЖКО ЗНИЩЕНО!",
+                "anchor": "Якір відродження <team><reset> знищено!",
+                "anchor_certain_popular_server": "<red><bold>ЯКІР ЗНИЩЕНО!",
+                "cake_certain_popular_server": "<red><bold>ТОРТ З'ЇДЕНО!",
+                "killable": "Тепер ви можете вбити всіх членів команди <team>!",
+                "subtitle": "Тепер ви можете вбивати членів команди!",
+                "subtitle_victim": "Ви більше не відродитесь!",
+                "death_mode": "<dark_purple><bold>Режим смерті!",
+                "all_beds": "Всі ліжка знищені!",
+                "all_anchors": "Всі якоря знищено!",
+                "any_certain_popular_server": "<red><bold>ЦІЛЬОВИЙ БЛОК ЗНИЩЕНО!",
+                "cake": "Торт <team><reset> з'їдено!",
+                "all_target_blocks": "Усі цільові блоки знищено!",
+                "all_cakes": "Всі тортики з'їдені!"
+            },
+            "hologram": {
+                "protect": {
+                    "any": "<teamcolor><bold>Захистіть свій цільовий блок!",
+                    "bed": "<teamcolor><bold>Захистіть своє ліжко!",
+                    "anchor": "<teamcolor><bold>Захистіть свій якір!",
+                    "cake": "<teamcolor><bold>Захистіть свій торт!"
+                },
+                "destroyed": {
+                    "any": "<сірий><болд>Цільовий блок знищено.",
+                    "bed": "<gray><bold>Ліжко знищено.",
+                    "cake": "<gray><bold>Торт з'їдено.",
+                    "anchor": "<сірий><болд>Якір знищено."
+                },
+                "destroy": {
+                    "any": "<teamcolor><bold>Знищіть цей цільовий блок!",
+                    "cake": "<teamcolor><bold>З'їжте цей торт!",
+                    "bed": "<teamcolor><bold>Знищи це ліжко!",
+                    "anchor": "<teamcolor><bold>Знищити цей якір!"
+                }
+            }
+        },
+        "respawn_cooldown": {
+            "title_cancel": "<red>Команда мертва :(",
+            "title": "<green>Відродження через: <red><time>"
+        },
+        "spawner": {
+            "countdown": "<yellow><seconds> <aqua>секунд",
+            "countdown_custom": "<yellow><value> <aqua><unit>",
+            "every_second": "<aqua>кожну секунду",
+            "full": "<red><bold>Спаунер вичерпано",
+            "reached_maximum_level": "<red>Спавнер досяг максимального рівня!",
+            "tier": "<yellow>Рівень <red><tier>",
+            "countdown_certain_popular_server": "<yellow>З'являється через <red><seconds> <yellow>секунд",
+            "full_certain_popular_server": "<red><bold>Спавнер повний!",
+            "not_enough_level": "<red>Spawner не працює! Вам потрібно оновити на рівні <levels>.",
+            "countdown_custom_certain_popular_server": "<yellow>З'являється в <red><value> <yellow><unit>"
+        },
+        "resources": {
+            "bronze": "Бронза",
+            "iron": "Залізо",
+            "gold": "Золото",
+            "diamond": "Діамант",
+            "netherite": "Незеріт",
+            "emerald": "Смарагд"
+        },
+        "shop": {
+            "name": "Магазин",
+            "page_forward": "Сторінка вперед",
+            "shop_back": "<red>Назад до списку категорій",
+            "price": "Ціна:",
+            "amount": "Кількість:",
+            "buy_failed": "<red>Не вистачає матеріалу для покупки <grey><item><red>! Потрібен <gray><material><red>!",
+            "page_back": "Сторінка назад",
+            "buy_success": "<green>Успішно придбано <grey><item><green> за <gray><material><green>!",
+            "upgrade_success": "<green><name> успішно оновив <spawner> до рівня <level>!"
+        }
+    },
+    "unknown_command": "<red>Невідома команда! Спробуй використати <dark_red>/bw help <red>для допомоги!",
+    "safe_reload": "<green>Очікуйте поки всі ігри будуть зупинені, або 60 секунд перед перезавантаженням плагіна."
+}
