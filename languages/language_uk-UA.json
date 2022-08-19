@@ -274,7 +274,30 @@
         "bw_admin_team_bed": "/bw admin \\<arena> team bed \\<team> - <yellow>Встановити блок-ціль команди, в вашу позицію(Це може бути інший блок, не тільки ліжко)",
         "bw_admin_jointeam": "/bw admin \\<arena> jointeam \\<team> - <yellow>Встановлює можливість приєднатися до команди за допомогою створіння",
         "bw_admin_spawner_add": "/bw admin \\<arena> spawner add \\<bronze|gold|iron> [hologram] [first level] [name] [team] [max spawned resources] - <yellow>Створити спавн предметів в вашій позиції",
-        "bw_admin_spawner_custom_name": "/bw admin \\<arena> spawner customName \\<name> - <yellow>Встановити своє імя спавнеру в вашій позиції"
+        "bw_admin_spawner_custom_name": "/bw admin \\<arena> spawner customName \\<name> - <yellow>Встановити своє імя спавнеру в вашій позиції",
+        "bw_admin_spawner_hologram": "/bw admin \\<arena> spawner hologram \\<true|false> - <yellow>Вмикає/вимикає голограму над спаунером",
+        "bw_admin_spawner_reset": "/bw admin \\<arena> spawner reset - <yellow>Видалити всі спаунери",
+        "bw_admin_store_remove": "/bw admin \\<arena> store remove - <yellow>Видаліть торгового селянина зі своєї посади",
+        "bw_admin_store_type": "/bw admin \\<arena> store type \\<living entity> - <yellow>Встановлює тип сутності магазину (селянин, кінь, корова, свиня тощо)",
+        "bw_admin_config_list_add": "/bw admin \\<arena> config list \\<data type> \\<constant> add \\<value> - <yellow>Додає нове значення до списку констант",
+        "bw_admin_config_list_clear": "/bw admin \\<arena> config list \\<data type> \\<constant> clear - <yellow>Очищає список констант, не встановлюючи його для успадкування",
+        "bw_admin_fee": "/bw admin \\<arena> fee \\<fee> - <yellow>Встановлює економічну комісійну плату, необхідну для входу на арену.",
+        "bw_admin_post_game_waiting": "/bw admin \\<arena> postgamewaiting \\<seconds> - <yellow>Встановлює час очікування перед телепортацією гравця з арени",
+        "bw_admin_customprefix": "/bw admin \\<arena> customprefix \\<name|off> - <yellow>Вмикає спеціальний префікс для арени",
+        "bw_admin_display_name": "/bw admin \\<arena> displayName \\<name|off> - <yellow>Встановлює відображувану назву арени",
+        "bw_admin_remove": "/bw admin \\<arena> remove - <red>Видалити арену",
+        "bw_admin_spawner_linked_team": "/bw admin \\<arena> spawner linkedTeam \\<team|null> - <yellow>Пов’язує спаунер на вашій позиції з указаною командою",
+        "bw_admin_spawner_base_amount": "/bw admin \\<arena> spawner baseAmount \\<amount> - <yellow>Встановлює базову кількість ресурсів, які породжувач має створювати за цикл",
+        "bw_admin_spawner_floating": "/bw admin \\<arena> spawner floating \\<true|false> - <yellow>Вмикає/вимикає плаваючий блок під голограмою спаунера",
+        "bw_admin_store_add": "/bw admin \\<arena> store add [name above dealer head] [file with shop] [use main shop] - <yellow>Додайте на свою позицію торгового селянина",
+        "bw_admin_config_set": "/bw admin \\<arena> config set \\<data type> \\<constant> \\<value> - <yellow>Встановлює значення константи для гри",
+        "bw_admin_config_reset": "/bw admin \\<arena> config reset \\<constant> - <yellow>Скидає константу до успадкованого значення",
+        "bw_admin_config_list_set": "/bw admin \\<arena> config list \\<data type> \\<constant> set \\<position> \\<value> - <yellow>Змінює значення в позиції списку констант",
+        "bw_admin_config_list_remove": "/bw admin \\<arena> config list \\<data type> \\<constant> remove \\<position> - <yellow>Видаляє значення з позиції в списку констант",
+        "bw_admin_arena_time": "/bw admin \\<arena> arenatime \\<type> - <yellow>Встановлює час на арені (ДЕНЬ, НІЧ тощо)",
+        "bw_admin_arena_weather": "/bw admin \\<arena> arenaweather \\<type> - <yellow>Встановлює погоду на арені (default, CLEAN, DOWNFALL)",
+        "bw_cheat_rebuild_region": "/bw cheat rebuildRegion [game] - <red>Перебудовує область гри",
+        "bw_gamesinv": "/bw gamesinv \\<inventory> - <green>Відкриває інвентар певних ігор"
     },
     "language": {
         "success": "<green>Успішно встановлено мову на <white>[<lang>]",
@@ -301,7 +324,8 @@
                     "invalid_entity_type": "<red>Неправильний тип живої істоти!",
                     "no_spawner": "<red>На цій позиції немає спаунера!",
                     "multiple_spawners": {
-                        "first_line": "<red>У тому самому місці є ,більше спавнерів, виберіть конкретний:"
+                        "first_line": "<red>У тому самому місці є ,більше спавнерів, виберіть конкретний:",
+                        "line": "- <type> - <gray><command></gray>"
                     },
                     "team_spawn_on_the_same_block": "<red>На цій позиції вже є точка появи. Якщо ви хочете змінити обертання, спочатку видаліть його.",
                     "team_no_spawn_there": "<red>На цій позиції немає точки появи.",
@@ -315,7 +339,25 @@
                     "invalid_time": "<red>Час <gray><number><red> недійсний!",
                     "npc_must_have_skin_name": "<red>Якщо ви використовуєте тип сутності PLAYER, ви повинні вказати назву скіна у форматі <gray>PLAYER:[skin's owner]",
                     "invalid_variant": "<red>Ігровий варіант <gray><variant><red> не існує!",
-                    "team_spawn_set_blocked": "<red>Команда <grey><team><red> має більше однієї точки спавну, тому використовувати команду set заборонено."
+                    "team_spawn_set_blocked": "<red>Команда <grey><team><red> має більше однієї точки спавну, тому використовувати команду set заборонено.",
+                    "must_be_in_same_world": "<red>Усі команди мають виконуватися в одному світі!",
+                    "invalid_bounds": "<red>Різниця у висоті між поз.1 і поз.2 надто мала! Мінімум 5 блоків!",
+                    "store_already_exist": "<red>Магазин вже існує!",
+                    "store_does_not_exist": "<red>Магазину не існує!",
+                    "invalid_spawner_type": "<red>Спаунер має бути бронзовим, залізним, золотим або мати спеціальну конфігурацію!",
+                    "need_2_teams": "<red>Для гри потрібні 2 або більше команд!",
+                    "team_does_not_exist": "<red>Цієї команди не існує!",
+                    "set_bounds_before_save": "<red>Перед збереженням гри встановіть координати pos1 і pos2 (визначення розміру та положення арени)!",
+                    "set_lobby_before_save": "<red>Перед збереженням гри встановіть спавн лобі!",
+                    "invalid_countdown": "<red>Зворотний відлік має бути в межах <lowest> < x < <highest> секунд!",
+                    "must_be_in_bounds": "<red>Місце має бути розміщене всередині арени (координати позиції1 та позиції2)!",
+                    "set_bounds_first": "<red>Перед встановленням spawnу, будь ласка, встановіть координати pos1 і pos2 (визначаючи розмір і положення арени)!",
+                    "invalid_spawner_level": "<white>Неправильний номер рівня, використано стандартний рівень 1.",
+                    "invalid_color": "<red>Цей колір недійсний!",
+                    "max_players": "<red>Максимальна кількість гравців має бути >= 1!",
+                    "spawners_needed": "<red>Гра повинна мати принаймні один спавнер предметів!",
+                    "team_already_exists": "<red>Ця команда вже існує!",
+                    "cannot_rename_team": "<red>Неможливо перейменувати команду <gray><team><red> на <grey><new-team><red>! Ця назва вже зайнята!"
                 },
                 "success": {
                     "target_block_set": "<green>Цільовий блок (<gray><material><green>) команди <gray><team><green> успішно встановлено на позицію XYZ: <gray><x>/<y>/<z>",
@@ -350,9 +392,45 @@
                     "store_file_set": "<green>Файл магазину в позиції XYZ: <gray><x>/<y>/<z><green> тепер <gray><file><green>!",
                     "lobby_spawn_set": "<green>Створення лобі було успішно встановлено на позицію XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
                     "pos2_set": "<green>Позиція 2 арени <gray><arena><green> була встановлена на XYZ: <gray><x>/<y>/<z>",
-                    "lobby_pos1_set": "<green> Позиція лобі 1 арени <gray><arena><green> була встановлена на XYZ: <gray><x>/<y>/<z>"
+                    "lobby_pos1_set": "<green> Позиція лобі 1 арени <gray><arena><green> була встановлена на XYZ: <gray><x>/<y>/<z>",
+                    "game_time_set": "<green>Час гри було встановлено<gray><time>",
+                    "constant_set": "<green>Константу <gray><config><green> було успішно встановлено на <gray><value><green>!",
+                    "constant_list_removed": "<green>Значення в позиції <gray><position><green> видалено зі списку <gray><config><green>!",
+                    "constant_list_cleared": "<green>Список <gray><config><green> тепер порожній, але не повертається до успадкованого!",
+                    "weather_set": "<green>Світову погоду на Арені встановлено на <gray><weather><green>!",
+                    "team_spawn_list_entry": "- <green>XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "min_players_set": "<green>Успішно встановлено мінімальну кількість гравців на <gray><min><green>!",
+                    "constant_list_added": "<green>Значення <gray><value><green> успішно додано до списку <gray><config><green> у позицію <gray><position><green>!",
+                    "constant_reset": "<green>Константу <gray><config><green> успішно скинуто до успадкованого значення!",
+                    "arena_time_set": "<green>Світовий час Арени встановлено на <gray><time><green>!"
                 }
+            },
+            "error": {
+                "already_exists": "<red>Арена вже існує!",
+                "already_working_on_it": "<red>Арена вже існує, але ще не завершена!",
+                "arena_must_be_in_edit_mode": "<red>Арена має бути в режимі редагування!",
+                "arena_not_in_edit": "<red>Арена не існує або працює! Деактивуйте його за допомогою <gray>/bw admin \\<arena> edit<red>, а потім активуйте за допомогою <gray>/bw admin \\<arena> save"
+            },
+            "success": {
+                "added": "<green>Арену <gray><arena><green> додано!",
+                "edit_mode": "<green>Арена перейшла в режим редагування!",
+                "removed": "<red><b>Арену видалено!",
+                "added_with_variant": "<green>Арену <gray><arena><green> додано! Використані варіанти гри: <gray><variant><green>!"
             }
-        }
+        },
+        "usage": "<red>Використання: /bw admin \\<arena> \\<add|edit|remove|save|...> ..."
+    },
+    "games_inventory": {
+        "unknown_inventory": "<red>Інвентар невідомих ігор <gray><type><red>!",
+        "could_not_find_game": "<red>Не вдалося знайти гру!"
+    },
+    "update": {
+        "new_release": [
+            "<green>Доступна нова версія <version> BedWars!"
+        ],
+        "patch_release": [
+            "<yellow>Новий випуск патча для BedWars <version> тут!",
+            "Ви можете завантажити його з <url>"
+        ]
     }
 }
