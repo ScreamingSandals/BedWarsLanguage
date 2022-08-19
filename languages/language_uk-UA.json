@@ -630,6 +630,7 @@
     "leaderboard": {
         "holo_added": "<green>Голограма таблиці лідерів додана в вашу позицію!",
         "no_scores": "<gray>Поки що нема результатів!",
-        "line": "<bold><order>.</bold> <gray><player> - <green><score>"
+        "line": "<bold><order>.</bold> <gray><player> - <green><score>",
+        "header": "<gold>Таблиця лідерів BedWars - топ <number> гравців"
     }
 }
