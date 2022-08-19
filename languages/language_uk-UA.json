@@ -246,5 +246,76 @@
     "migrate": {
         "success": "<green>Конфігурацію успішно переміщено з <red><plugin><green>!",
         "failure": "<red>Під час міграції конфігурації сталася помилка! Подробиці дивіться на консолі."
+    },
+    "admin": {
+        "arena": {
+            "edit": {
+                "errors": {
+                    "set_spawners_before_save": "<red>Перед збереженням гри додайте принаймні 1 спавнер!",
+                    "set_target_block_for_team_before_save": "<red>Перед збереженням гри будь ласка встановіть цільовий блок команди <grey><team><red>!",
+                    "missing_spawners": "<yellow>У грі немає спавнерів.",
+                    "missing_stores": "<yellow>У грі немає магазинів.",
+                    "skip_warnings": "<yellow>Якщо ви все одно хочете зберегти <gray><game><yellow>, виконайте цю команду: <gray><command>",
+                    "invalid_min_players": "<red>Мінімальна кількість гравців має бути 2 або більше!",
+                    "invalid_constant_name": "<red>Неправильна назва константи!",
+                    "invalid_constant_position": "<red>Неправильна позиція постійного члена списку!",
+                    "invalid_arena_time": "<red>Неправильний тип світового часу арени!",
+                    "invalid_bar_color": "<red>Неправильний колір для Boss Bar!",
+                    "invalid_entity_type": "<red>Неправильний тип живої істоти!",
+                    "no_spawner": "<red>На цій позиції немає спаунера!",
+                    "multiple_spawners": {
+                        "first_line": "<red>У тому самому місці є ,більше спавнерів, виберіть конкретний:"
+                    },
+                    "team_spawn_on_the_same_block": "<red>На цій позиції вже є точка появи. Якщо ви хочете змінити обертання, спочатку видаліть його.",
+                    "team_no_spawn_there": "<red>На цій позиції немає точки появи.",
+                    "set_spec_before_save": "<red>Перед збереженням гри будь ласка встановіть специфікацію появи!",
+                    "set_stores_before_save": "<red>Перед збереженням гри додайте принаймні 1 магазин!",
+                    "set_spawn_for_team_before_save": "<red>Перед збереженням гри будь ласка встановіть точку появи команди <grey><team><red>!",
+                    "weird_store_count": "<yellow>У цій грі кількість магазинів дорівнює <gray><count><yellow>, що не є множником кількості команд. Це правильно?",
+                    "invalid_constant_value": "<red>Неправильне значення! Це може бути <gray>true<red>, <gray>false<red> або <gray>inherit<red>!",
+                    "invalid_constant_enum_value": "<red>Недійсне значення <gray><value></gray>! Має бути одне з таких: <сірий><значення>",
+                    "invalid_arena_weather": "<red>Неправильний тип погоди на арені!",
+                    "invalid_time": "<red>Час <gray><number><red> недійсний!",
+                    "npc_must_have_skin_name": "<red>Якщо ви використовуєте тип сутності PLAYER, ви повинні вказати назву скіна у форматі <gray>PLAYER:[skin's owner]",
+                    "invalid_variant": "<red>Ігровий варіант <gray><variant><red> не існує!",
+                    "team_spawn_set_blocked": "<red>Команда <grey><team><red> має більше однієї точки спавну, тому використовувати команду set заборонено."
+                },
+                "success": {
+                    "target_block_set": "<green>Цільовий блок (<gray><material><green>) команди <gray><team><green> успішно встановлено на позицію XYZ: <gray><x>/<y>/<z>",
+                    "target_none_set": "<green>Команда <grey><team><green> тепер гратиме без жодної мішені. Це означає, що вони не зможуть відродитися!",
+                    "team_multiple_spawns_ad": "<aqua>Ви бажаєте встановити більше однієї точки спавну для команди? Використовуйте <gray><command>",
+                    "team_spawn_removed": "<green>Відродження команди <grey><team><green> успішно видалено з позиції XYZ: <gray><x>/<y>/<z>",
+                    "team_spawn_reset": "<green>Усі точки відродження команди <grey><team><green> видалено.",
+                    "team_maxplayers_set": "<green>Максимальну кількість гравців у команді <grey><team><green> успішно встановлено на <gray><maxplayers>",
+                    "team_removed": "<green>Команду <gray><team><green> успішно видалено!",
+                    "spawner_added": "<green>Спавнер <gray><resource><green> успішно додано до позиції XYZ: <gray><x>/<y>/<z>",
+                    "store_removed": "<green>Магазин з позиції XYZ: <gray><x>/<y>/<z><green> успішно видалено!",
+                    "store_name_set": "<green>Назва магазину на позиції XYZ: <gray><x>/<y>/<z><green> тепер <gray><name><green>!",
+                    "store_file_reset": "<green>Магазин на позиції XYZ: <gray><x>/<y>/<z><green> більше не має спеціального файлу!",
+                    "spec_spawn_set": "<green>Оглядач успішно встановлено в позицію XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "pos1_set": "<green>Позиція 1 арени <gray><arena><green> була встановлена на XYZ: <gray><x>/<y>/<z>",
+                    "lobby_pos2_set": "<green> Позиція лобі 2 арени <gray><arena><green> була встановлена на XYZ: <gray><x>/<y>/<z>",
+                    "lobby_countdown_set": "<green>Зворотний відлік у лобі встановлено на <gray><countdown>",
+                    "saved_and_started": "<green>Гра була успішно збережена та запущена! Тепер ви можете приєднатися та грати на арені!",
+                    "target_not_properly_balanced": "<yellow>Мета встановлена, однак тепер не кожна команда має однаковий тип цілі, це може зробити гру незбалансованою. Подумайте про те, щоб це змінити.",
+                    "target_countdown_set": "<green>Цільовий відлік команди <grey><team><green> успішно встановлено на <gray><countdown><green> секунд!",
+                    "target_block_countdown_set": "<green>Цільовий блок (<gray><material><green>) команди <gray><team><green> успішно встановлено на позицію XYZ: <gray><x>/<y>/<z><green > і його зворотний відлік було встановлено на <gray><countdown><green> секунди!",
+                    "team_spawn_set": "<green>Відродження команди <grey><team><green> успішно встановлено на позицію XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "team_spawn_added": "<green>Відродження команди <grey><team><green> успішно додано на позицію XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "team_spawn_list": "<green>Команда <grey><team><green> має <gray><count><green> точок спавну на цих позиціях:",
+                    "team_spawn_list_no": "<red>Команда <grey><team><red> ще не має точок спавну.",
+                    "team_color_set": "<green>Колір <grey><team><green> успішно встановлено на <teamcolor>",
+                    "team_created": "<green>Команду <grey><team><green> успішно створено кольором <teamcolor><green> і максимальною кількістю гравців: <gray><maxplayers>",
+                    "team_renamed": "<green>Команду <grey><team><green> успішно перейменовано на <grey><new-team><green>!",
+                    "spawners_removed": "<green>Усі спавнери для гри <gray><arena><green> видалено!",
+                    "store_added": "<green>До вашої позиції додано магазин: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "store_name_reset": "<green>Магазин на позиції XYZ: <gray><x>/<y>/<z><green> більше не має спеціальної назви!",
+                    "store_file_set": "<green>Файл магазину в позиції XYZ: <gray><x>/<y>/<z><green> тепер <gray><file><green>!",
+                    "lobby_spawn_set": "<green>Створення лобі було успішно встановлено на позицію XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "pos2_set": "<green>Позиція 2 арени <gray><arena><green> була встановлена на XYZ: <gray><x>/<y>/<z>",
+                    "lobby_pos1_set": "<green> Позиція лобі 1 арени <gray><arena><green> була встановлена на XYZ: <gray><x>/<y>/<z>"
+                }
+            }
+        }
     }
 }
