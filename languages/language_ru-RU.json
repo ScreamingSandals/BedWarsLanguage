@@ -245,24 +245,24 @@
     },
     "leaderboard": {
         "holo_added": "<green>Голограмма таблицы лидеров была создана на вашей позиции!",
-        "no_scores": "<gray>Никто еще не играл!",
+        "no_scores": "<gray>Очков ещё нет!",
         "header": "<gold>Таблица лидеров BedWars - Топ <number> игроков",
         "line": "<bold><order>.</bold> <gray><player> - <green><score>"
     },
     "specials": {
-        "item_delay": "<red>Вам нужно подождать<time> секунд прежде чем использовать этот предмет еще раз!",
+        "item_delay": "<red>Вам нужно подождать<time> секунд перед повторным использованием!",
         "protection_wall": {
             "destroy": "<red>Защитная стена будет уничтожена через <white><time> <red>секунд.",
             "created_unbreakable": "<green>Создана неуязвимая защитная стена!",
-            "not_usable_here": "<red>Места для создания защитной стены не осталось.",
-            "created": "<green>Защитная стена развернута и закончит действие через <white><time> <green>секунд."
+            "not_usable_here": "<red>Здесь нет места для размещения стены.",
+            "created": "<green>Защитная стена создана и разрушится через <white><time> <green>секунд."
         },
         "golem": {
             "created": "<green>Вы создали Голема."
         },
         "team_chest": {
             "broken": "<red>Сундук вашей команды был сломан!",
-            "placed": "<green>Создан новый сундук команды!",
+            "placed": "<green>Создан новый командный сундук!",
             "not_yours": "<yellow>Этот сундук не вашей команды!",
             "name": "<green><bold>Сундук команды"
         },
@@ -270,24 +270,24 @@
             "no_target_found": "<red>Цель не найдена!"
         },
         "rescue_platform": {
-            "not_in_air": "<red>Чтобы использовать это, вы должны быть в воздухе.",
-            "created_unbreakable": "<green>Спасательная Платформа была создана!",
+            "not_in_air": "<red>Вы должны быть в воздухе.",
+            "created_unbreakable": "<green>Неразрушимая Платформа была создана!",
             "destroy": "<red>Платформа будет уничтожена через <white><time> <red>секунд.",
             "created": "<green>Платформа создана и будет уничтожена через <white><time> <green>секунд."
         },
         "tracker": {
             "no_target_found": "<red>Цель не найдена!",
-            "target_found": "<white><target> <green>найдена в<white><distance> <geen>блоках отсюда!"
+            "target_found": "<white><target> <green>найден в<white><distance> <geen>блоках отсюда!"
         },
         "trap": {
-            "built": "<green>Вы поставили ловушку! Теперь дождитесь, когда кто-нибудь попадет в нее!",
+            "built": "<green>Вы поставили ловушку! Теперь дождитесь, пока кто-нибудь попадёт в неё!",
             "caught_team": "<white><player><red> попался в ловушку вашей команды!",
             "caught": "<red>Вы попались в ловушку команды <white><team><red>!"
         },
         "warp_powder": {
-            "multiuse": "<red>Ловушка уже активирована!",
-            "canceled": "<red>Ловушка была отменёна!",
-            "started": "<green>Ловушка! Пожалуйста, не двигайтесь в течение <gray><time><green> секунды!"
+            "multiuse": "<red>Телепортер на базу уже активирован!",
+            "canceled": "<red>Телепортация отменена!",
+            "started": "<green>Телепортация началась! Пожалуйста, не двигайтесь в течение <gray><time><green> секунд!"
         },
         "arrow_blocker": {
             "already_activated": "<red>Блокировщик стрел уже активирован!",
@@ -306,7 +306,7 @@
         "failed": "<red>Дамп неудался!"
     },
     "party": {
-        "inform_game_join": "<green>Присоединение к игра лидера пати",
+        "inform_game_join": "<green>Подключение к игре лидера группы",
         "command": {
             "is_empty": "<red>Пати пустое, вы не можете никого варпнуть!",
             "help": "/bw party warp - <yellow>Настраивает всех игроков на вашу игру или на вас",
@@ -315,7 +315,7 @@
             "not_in_party": "<red>Вы должны быть в пати, чтобы выполнить эту команду!",
             "warped": "<green>Warp пати был изменён."
         },
-        "warped": "<green>Лидер пати телепортивал вас"
+        "warped": "<green>Лидер группы переместил вас"
     },
     "admin": {
         "info_select": {
@@ -323,46 +323,46 @@
             "spawners": "<green>Список генераторов<white> - <gray><command>",
             "base": "<green>Базовая информация<white> - <gray><command>",
             "header": "<green>Пожалуйста, выберите раздел информации <gray><arena><green>:",
-            "stores": "<green>Список магазинов<white> - <gray><command>",
+            "stores": "<green>Список торговцев<white> - <gray><command>",
             "click": "<aqua>Нажмите для выполнения <gray><command><aqua>!",
             "config": "<green>Конфигурация<white> - <gray><command>"
         },
         "info": {
             "file": "<gray><i>Файл: <file>",
             "spawner_no_team": "<red>Нет команды",
-            "villager_shop_dealer_has_no_name": "<red>Не задано имя",
+            "villager_shop_dealer_has_no_name": "<red>Нет имени",
             "name": "<gray>Имя: <reset><name>",
-            "spawners": "<gray>Спавнеры:",
-            "header": "<green>Подробная информация об арене:",
+            "spawners": "<gray>Генераторы:",
+            "header": "<green>Информация об арене:",
             "status": "<gray>Статус: <reset><status>",
             "status_disabled_in_edit": "<red>ВЫКЛЮЧЕНО<reset> (<yellow>В РЕЖИМЕ РЕДАКТИРОВАНИЯ<reset>)",
             "pos2": "<gray>Позиция 2: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
             "status_disabled": "<red>ВЫКЛЮЧЕНО",
             "status_waiting": "<yellow>ОЖИДАНИЕ ИГРОКОВ",
-            "status_running": "<green>ИГРА НАЧАЛАСЬ",
+            "status_running": "<green>ИГРА ЗАПУЩЕНА",
             "status_rebuilding": "<yellow>ПЕРЕСТРОЙКА",
             "world": "<gray>Мир: <reset><world>",
             "pos1": "<gray>Позиция 1: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
             "spec": "<gray>Позиция наблюдателей: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
-            "team_spawn": "  <gray>Командный Спавн: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
+            "team_spawn": "  <gray>Спавн команды: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
             "team_target": "  <gray>Кровать: <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
-            "min_players": "<gray>Минимальное количество игроков: <reset><minplayers>",
-            "villagers": "<gray>Магазины:",
+            "min_players": "<gray>Минимально игроков: <reset><minplayers>",
+            "villagers": "<gray>Торговцы:",
             "villager_pos": "- XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
             "villager_entity_type": "  Тип: <green><type>",
-            "villager_shop": "  Имеет собственный магазин: <gray><bool>",
-            "villager_shop_dealer_name": "  Пользовательское имя дилера над заголовком: <name><reset>",
+            "villager_shop": "  Имеет другой магазин: <gray><bool>",
+            "villager_shop_dealer_name": "  Отображаемое имя торговца: <name><reset>",
             "lobby_countdown": "<gray>Обратный отсчет до начала игры: <white><time> с",
-            "game_time": "<gray>Продолжительность игры: <white><time> с",
+            "game_time": "<gray>Длительность игры: <white><time> с",
             "constant": "- <gray><constant><reset>: <gray><value>",
             "constant_true": "<green>True",
             "constant_false": "<red>False",
             "lobby": "<gray>Позиция Лобби: <white>World: <gray><world> <white>XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
             "teams": "<gray>Команды:",
-            "team": "- <team><reset> Максимальное количество игроков: <gray><maxplayers><reset>)",
+            "team": "- <team><reset> (Максимум игроков: <gray><maxplayers><reset>)",
             "spawner": "- <resource> <gray>- <team> <gray>- <yellow>Holo: <white><holo> <gray>- XYZ: <gray><x><white>/<gray><y><white>/<gray><z>",
-            "villager_shop_name": "  Имя магазина: <gold><file><reset> (наследуется от основного: <gray><bool><reset>)",
-            "constants": "<gray>Конфигурация констант:",
+            "villager_shop_name": "  Файл магазина: <gold><file><reset> (магазин по умолчанию: <gray><bool><reset>)",
+            "constants": "<gray>Значения констант:",
             "constant_inherit": "<yellow>Унаследован от конфигурации плагина",
             "post_game_waiting": "<gray>Время ожидания после игры: <white><time> c"
         },
@@ -424,8 +424,8 @@
                     "pos2_set": "<green>Вторая позиция арены <gray><arena><green> была изменена на координаты XYZ: <gray><x>/<y>/<z>",
                     "lobby_pos2_set": "<green> Вторая позиция лобби арены <gray><arena><green> была изменена на координаты XYZ: <gray><x>/<y>/<z>",
                     "lobby_countdown_set": "<green>Обратный отчёт в лобби был изменён на <gray><countdown>",
-                    "arena_time_set": "<green>Время для арены было установлено в <gray><time><green>!",
-                    "store_entity_type_set": "<green>Существо для магазина было изменено на <gray><type><green>!",
+                    "arena_time_set": "<green>Время суток арены было изменено на <gray><time><green>!",
+                    "store_entity_type_set": "<green>Сущность торговца была изменена на <gray><type><green>!",
                     "team_maxplayers_set": "<green>Максимальное кол-во игроков в команде <gray><team><green> было успешно изменено на <gray><maxplayers>",
                     "team_color_set": "<green>Цвет команды <gray><team><green> был успешно изменён на <teamcolor>",
                     "spawners_removed": "<green>Все генераторы на арене <gray><arena><green> были удалены!",
@@ -438,10 +438,10 @@
                     "game_time_set": "<green>Длительность игры изменена на <gray><time>",
                     "min_players_set": "<green>Минимальное количество игроков изменено на <gray><min><green>!",
                     "constant_set": "<green>Константа <gray><config><green> была изменена на <gray><value><green>!",
-                    "weather_set": "<green>Погода для мира арены было установлено в <gray><weather><green>!",
-                    "bar_color_set": "<green>Цвет установлен как <gray><color><green> для боссбара <gray><type><green>!",
+                    "weather_set": "<green>Погода на арене была изменена на <gray><weather><green>!",
+                    "bar_color_set": "<green>Цвет изменён на <gray><color><green> для боссбара <gray><type><green>!",
                     "child_state": "<green>Переменная isBaby для торговца была изменена на <gray><value>",
-                    "custom_prefix_enabled": "<green>Пользовательский префикс был изменён на <gray><prefix><green>.",
+                    "custom_prefix_enabled": "<green>Префикс для арены был изменён на <gray><prefix><green>.",
                     "custom_prefix_disabled": "<green>Пользовательский префикс был отключен.",
                     "spawner_hologram_enabled": "<green>Голограмма для генератора <type> была <gray>включена<green>.",
                     "spawner_floating_enabled": "<green>Летающий блок для генератора <type> был <gray>включен<green>.",
@@ -455,11 +455,11 @@
                     "post_game_waiting": "<green>Время ожидания после конца игры было изменено на <gray><number><green>!",
                     "spawner_hologram_disabled": "<green>Голограмма для генератора <type> была <gray>отключена<green>.",
                     "spawner_base_amount_set": "<green>Базовое количество ресурсов для генератора <type> было задано на <gray><amount><green>.",
-                    "spawner_team_unlinked": "<green>Генератор <type> теперь больше не привязан к какой-либо команде.",
+                    "spawner_team_unlinked": "<green>Генератор <type> более не привязан к какой-либо команде.",
                     "spawner_hologram_type_set": "<green>Тип голограммы для генератора <type> был изменён на <gray><type><green>.",
                     "spawner_type_changed": "<green>Тип генератора <type> был изменён на <new_type>.",
                     "fee_set": "<green>Цена для входа была изменена на <gray><fee><green>.",
-                    "spawner_rotation_mode_set": "<green>Режим вращения голограммы этого <type> спавнер был установлен на <gray><rotation><green>."
+                    "spawner_rotation_mode_set": "<green>Режим вращения голограммы генератора <type> изменён на <gray><rotation><green>."
                 }
             },
             "success": {
@@ -470,7 +470,7 @@
             }
         },
         "mainlobby": {
-            "info": "<red>ВЫНИМАНИЕ<white>: Вам нужно написать /bw reload для функционирования основного лобби!"
+            "info": "<red>ВНИМАНИЕ<white>: Вам нужно выполнить /bw reload для полного включения основного лобби!"
         },
         "holo": {
             "not_enabled": "<red>Голограмма отключена.",
@@ -479,28 +479,28 @@
             "removed": "<green>Голограмма удалена!"
         },
         "team_join_entity": {
-            "click_right_on_entity": "<green>Нажмите правой кнопкой мыши на стойку для брони, для того чтобы настроить присоединение к команде: <gray><team>",
-            "entity_not_compatible": "<red>Объект, который вы пытаетесь использовать, несовместим! Можно использовать только живых существ или стойку для брони!",
-            "entity_added": "<green>Добавлено присоединения к команде!"
+            "click_right_on_entity": "<green>Теперь нажмите правой кнопкой мыши на нужную сущность для входа за команду: <gray><team>",
+            "entity_not_compatible": "<red>Вы можете использовать только живых сущностей или стойку для брони!",
+            "entity_added": "<green>Сущность для входа в команду добавлена!"
         },
         "npc": {
             "skin_change_failed": "<red>Скин не может быть изменен!",
-            "added": "<green>Новый npc был добавлен на позицию XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
-            "now_click": "<yellow>Теперь щелкните правой кнопкой мыши на NPC, которого вы хотите отредактировать.",
-            "no_longer_editing": "<green>Вы больше не редактируете NPC. Используйте <gray>/bw npc select<green> чтобы редактировать.",
+            "added": "<green>Новый NPC был добавлен на позиции XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+            "now_click": "<yellow>Теперь щелкните правой кнопкой мыши на NPC, которого хотите отредактировать.",
+            "no_longer_editing": "<green>Вы больше не изменяете какого-либо NPC. Напишите <gray>/bw npc select<green> для выбора нового.",
             "editing": "<green>Теперь вы редактируете NPC на позиции XYZ: <gray><x>/<y>/<z>",
-            "should_not_look": "<green>NPC больше не смотрит на игроков!",
+            "should_not_look": "<green>NPC больше не будет смотреть на игроков!",
             "requires_value": "<green>Для этого действия требуется указать значение!",
             "removed": "<green>NPC был удален!",
             "skin_changed": "<green>Скин был изменен!",
-            "not_editing": "<res>Вы не редактируете NPC! Выберите один из них, используя <gray>/bw npc select",
-            "should_look": "<green>Теперь NPC смотреть только на игроков!",
+            "not_editing": "<res>Вы не редактируете какого-либо NPC! Выберите кого-нибудь, используя <gray>/bw npc select",
+            "should_look": "<green>Теперь NPC будет смотреть на игроков!",
             "action_set": "<green>Действие этого NPC было настроено на <gray><action><green> с аргументом \"<gray><value><green>\""
         },
         "hologram": {
-            "line_removed": "<green>Номер строки <gray><linenumber><green> голограммы был удалён!",
+            "line_removed": "<green>Строка голограммы с номером <gray><linenumber><green> была удалена!",
             "line_added": "<green>В конце голограммы добавлена новая строка: <white><line>",
-            "line_set": "<green>Номер строки <gray><linenumber><green> голограммы был установлен на <white><line>",
+            "line_set": "<green>Строка голограммы с номером <gray><linenumber><green> изменена на <white><line>",
             "theres_no_line_number": "<red>Нет строки с номером <linenumber>",
             "invalid_number": "<red>Номер строки должен быть больше 0!",
             "reset": "<green>Голограмма была сброшена."
