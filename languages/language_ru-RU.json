@@ -27,7 +27,12 @@
                 "bed_certain_popular_server": "<red><bold>КРОВАТЬ РАЗРУШЕНА!",
                 "anchor_certain_popular_server": "<red><bold>МАЯК УНИЧТОЖЕН!",
                 "cake_certain_popular_server": "<red><bold>ТОРТ СЪЕДЕН!",
-                "killable": "Теперь вы можете убить членов команды <team>!"
+                "killable": "Теперь вы можете убить членов команды <team>!",
+                "death_mode": "<dark_purple><bold>Death mode!",
+                "all_beds": "Все кровати были разрушены!",
+                "all_anchors": "Все маяки были разрушены!",
+                "all_target_blocks": "Все главные блоки были разрушены!",
+                "all_cakes": "Все торты были съедены!"
             },
             "hologram": {
                 "protect": {
@@ -59,7 +64,10 @@
             "tier": "<yellow>Уровень <red><tier>",
             "countdown_custom": "<yellow><value> <aqua><unit>",
             "countdown_hypixel": "<yellow>Появление через <red><seconds> <yellow>сек.",
-            "countdown_custom_hypixel": "<yellow>Появление через <red><value> <yellow><unit>"
+            "countdown_custom_hypixel": "<yellow>Появление через <red><value> <yellow><unit>",
+            "reached_maximum_level": "<red>Генератор достиг максимального уровня!",
+            "full_certain_popular_server": "<red><bold>Генератор переполнен!",
+            "countdown_certain_popular_server": "<yellow>Появление через <red><seconds> <yellow>с"
         },
         "respawn_cooldown": {
             "title": "<green>Появление через: <red><time>",
