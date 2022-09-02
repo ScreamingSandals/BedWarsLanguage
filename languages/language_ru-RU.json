@@ -67,7 +67,8 @@
             "countdown_custom_hypixel": "<yellow>Появление через <red><value> <yellow><unit>",
             "reached_maximum_level": "<red>Генератор достиг максимального уровня!",
             "full_certain_popular_server": "<red><bold>Генератор переполнен!",
-            "countdown_certain_popular_server": "<yellow>Появление через <red><seconds> <yellow>с"
+            "countdown_certain_popular_server": "<yellow>Появление через <red><seconds> <yellow>с",
+            "countdown_custom_certain_popular_server": "<yellow>Появление через <red><value> <yellow><unit>"
         },
         "respawn_cooldown": {
             "title": "<green>Появление через: <red><time>",
@@ -100,7 +101,9 @@
             "price": "Цена:",
             "amount": "Количество:",
             "buy_success": "<green>Успешно куплен предмет <gray><item><green> за <gray><material><green>!",
-            "buy_failed": "<red>Недостаточно ресурсов для покупки предмета <gray><item><red>! Необходимо <gray><material><red>!"
+            "buy_failed": "<red>Недостаточно ресурсов для покупки предмета <gray><item><red>! Необходимо <gray><material><red>!",
+            "upgrade_success": "<green><name> улучшил генератор <spawner> до уровня <level>!",
+            "upgrade_translate": "улучшение"
         },
         "lobby_items": {
             "compass_selector_team": "<green>Выбрать команду",
@@ -135,7 +138,8 @@
             "received_give": "<green>Игрок <gray><player><green> получил <gray><amount><green> <gray><resource>",
             "received_kill": "<green>Игрок <gray><player><green> был убит с помощью чита!",
             "special_item_used": "<green>Специальный предмет <gray><item></gray> был использован!",
-            "region_regenerated": "<green>Данный регион <gray><arena></gray> был восстановлен!"
+            "region_regenerated": "<green>Данный регион <gray><arena></gray> был восстановлен!",
+            "game_not_waiting": "<red>Активация данного чита возможна только когда игра в режиме ожидания!"
         },
         "economy_deposited": "<green>Добавлено <gray><coins> <currency><green> на ваш счёт!",
         "economy_missing_coins": "<red>Вам нужно <yellow><coins> <currency><red> для входа в игру!"
