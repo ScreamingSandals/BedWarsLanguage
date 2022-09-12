@@ -21,9 +21,9 @@
         "bw_admin_team_color": "/bw admin <pre><arena></pre> team color <pre><team> <color></pre> - <yellow>修改队伍颜色",
         "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>修改队伍人数上限",
         "bw_removeholo": "/bw removeholo - <yellow>执行该命令后， 玩家可以通过右键一个全息显示来移除它。",
-        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>查看该游戏房间的所有信息",
-        "bw_admin_add": "/bw admin <pre><arena></pre> add [variant] - <yellow>创建一个新的游戏",
-        "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>将当前位置设为游戏房间大厅位置",
+        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow> 查看指定游戏房间的信息",
+        "bw_admin_add": "/bw admin <pre><arena></pre> add [variant] - <yellow> 创建一个新的房间",
+        "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow> 设置某个房间的加入位置",
         "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>将当前位置设为该游戏房间大厅的第一个端点",
         "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>将当前位置设为该游戏房间大厅的第二个端点",
         "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>设置开始游戏前的等待时间",
@@ -44,7 +44,7 @@
         "bw_alljoin": "/bw alljoin [arena] - <green>将服务器上的所有玩家加入起床战争",
         "bw_admin_store_adult": "/bw admin <pre><arena></pre> store adult - <yellow>将商人的生物类型设置为成年",
         "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>如果该游戏在编辑模式下，该命令将开启交互模式",
-        "bw_join": "/bw join <pre><arena></pre> - <green>加入游戏",
+        "bw_join": "/bw join <pre><arena></pre> - <green> 加入一个游戏",
         "bw_list": "/bw list - <green>游戏房间列表",
         "bw_reload": "/bw reload - <red>重新加载该插件",
         "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>在当前玩家的位置添加一个全息显示",
@@ -66,7 +66,26 @@
         "bw_admin_spawner_floating": "/bw admin <pre><arena></pre> spawner floating <pre><true|false></pre> - <yellow>开启/关闭资源生成点全息显示下方的浮空方块",
         "bw_admin_fee": "/bw admin <pre><arena></pre> fee <pre><fee></pre> - <yellow>设置进入该游戏所需要的金币数额。",
         "bw_admin_display_name": "/bw admin <pre><arena></pre> displayName <pre><name|off></pre> - <yellow>设置该游戏的显示名称",
-        "bw_migrate": "/bw migrate <pre><plugin></pre> - <yellow>从不同的Bedwars插件导入配置。"
+        "bw_migrate": "/bw migrate <pre><plugin></pre> - <yellow>从不同的Bedwars插件导入配置。",
+        "bw_admin_config_set": "/bw admin \\<arena> 修改配置文件 \\<data type> \\<constant> \\<value> - <yellow> 设置一个默认值",
+        "bw_admin_config_reset": "/bw admin \\<arena> 重置配置文件 \\<constant> - <yellow> 重置为默认值",
+        "bw_admin_config_list_set": "/bw admin \\<arena> 配置文件列表 \\<data type> \\<constant> set \\<position> \\<value> - <yellow>将该位置的值更改为常量列表",
+        "messages": {
+            "command": "指令",
+            "no_description": "没有介绍",
+            "description": "简介",
+            "arguments": "参数",
+            "optional": "可选",
+            "showing_results_for_query": "显示查询的搜索结果",
+            "no_results_for_query": "没有查询结果",
+            "available_commands": "可用指令",
+            "click_to_show_help": "点击显示关于此指令的帮助",
+            "page_out_of_range": "错误：不存在第 <page> 页，可用页数为[1-<max_pages>]",
+            "click_for_next_page": "点击转到下一页",
+            "click_for_previous_page": "点击返回上一页"
+        },
+        "bw_admin_config_list_add": "/bw admin \\<arena> 配置文件列表 \\<data type> \\<constant> add \\<value> - <yellow> 添加到常量列表",
+        "bw_admin_config_list_clear": "/bw admin \\<arena> 配置文件列表 \\<data type> \\<constant> clear - <yellow>重置常量列表"
     },
     "in_game": {
         "target_block": {
@@ -84,19 +103,29 @@
                     "bed": "<teamcolor><bold>保护好我们的床！"
                 },
                 "destroyed": {
-                    "any": "<gray><bold>目标方块已被摧毁。",
+                    "any": "<gray><bold>目标方块已被破坏。",
                     "anchor": "<gray><bold>重生锚已被摧毁。",
                     "cake": "<gray><bold>蛋糕已经被吃了。",
-                    "bed": "<gray><bold>床已被摧毁。"
+                    "bed": "<gray><bold>床已被破坏。"
                 }
             },
             "destroyed": {
                 "any": "<team><reset> 的目标方块已被摧毁！",
-                "bed": "<team><reset> 的床已被摧毁！",
+                "bed": "<team><reset>的床已被破坏！",
                 "cake": "<team><reset> 的蛋糕已经被吃了！",
                 "subtitle": "你现在可以击杀队友了！",
-                "subtitle_victim": "从现在起，你将无法复活！",
-                "anchor": "<team><reset> 的重生锚已被摧毁！"
+                "subtitle_victim": "你将无法重生！",
+                "anchor": "<team><reset> 的重生锚已被摧毁！",
+                "all_beds": "所有床都被破坏了！",
+                "all_target_blocks": "所有目标方块都被破坏了！",
+                "cake_certain_popular_server": "<red><bold>蛋糕被吃了！",
+                "all_anchors": "所有锚都被破坏了！",
+                "any_certain_popular_server": "<red><bold>目标方块已被破坏！",
+                "bed_certain_popular_server": "<red><bold>床已被破坏！",
+                "anchor_certain_popular_server": "<red><bold>锚已被破坏！",
+                "all_cakes": "所有蛋糕都被神秘人吃了！",
+                "killable": "你现在可以击杀<team>的队伍成员了！",
+                "death_mode": "<dark_purple><bold>死斗模式！"
             }
         },
         "spawner": {
@@ -109,41 +138,46 @@
             "countdown_custom": "<yellow><value> <aqua><unit>",
             "countdown_hypixel": "<yellow>在 <red><seconds>秒 <yellow>重生",
             "countdown_custom_hypixel": "<yellow>生成在 <red><value> <yellow><unit>",
-            "reached_maximum_level": "<red>刷怪笼已达到最大等级！"
+            "reached_maximum_level": "<red>刷怪笼已达到最大等级！",
+            "full_certain_popular_server": "<red><bold>资源点生成的资源已到上限！",
+            "countdown_custom_certain_popular_server": "<yellow>将在 <red><value> <yellow><unit>秒后生成",
+            "countdown_certain_popular_server": "<yellow>资源生成点 将<red><seconds> <yellow>秒后生成"
         },
         "shop": {
-            "buy_success": "<green>已成功使用 <gray><material> 购买 <gray><item> <green>!",
+            "buy_success": "<green>你购买了<gray><item> <green>，花费<gray><material>！",
             "name": "商店",
             "page_forward": "下一页",
             "page_back": "上一页",
             "shop_back": "<red>返回分类页面",
-            "price": "价格:",
-            "amount": "数量:",
-            "buy_failed": "<red>你的资源不足以购买 <gray><item><red>！ 需要 <gray><material><red>！"
+            "price": "价格：",
+            "amount": "数量：",
+            "buy_failed": "<red>你没有足够的资源购买<gray><item><red>，还需要 <gray><material><red>！",
+            "upgrade_translate": "升级",
+            "upgrade_success": "<green><name> 成功将资源点 <spawner> 升级至 <level>！"
         },
         "team_selection": {
-            "selected": "<green>选择队伍: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
-            "full_no_change": "<red><team><red> 队伍已满， 你将留在 <oldteam><red>！",
+            "selected": "<green>选择队伍： <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "full_no_change": "<red><team><red> 队伍已满，你将留在 <oldteam><red>！",
             "inventory_name": "选择队伍 - <arena>",
-            "already_selected": "<green>你已经在队伍中: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
-            "full": "<red><team><red> 队伍已满！",
+            "already_selected": "<green>你已经在队伍中：<team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
+            "full": "<red><team><red> 已满！",
             "select_item": "<team> <gray>(<yellow><inteam> <white>/ <yellow><maxinteam><gray>)",
             "select_item_lore": "<white>---------------------",
-            "select_item_lore_full": "<white>队伍已满！",
-            "select_item_lore_join": "点击以加入队伍！"
+            "select_item_lore_full": "<white>此队伍已满！",
+            "select_item_lore_join": "点击加入此队伍！"
         },
         "errors": {
-            "game_is_full": "<red>游戏 <gray><arena> <red>已满！ 请等待游戏结束！",
-            "game_not_found": "<red>没有找到游戏！",
-            "you_are_not_in_game": "<red>你不在游戏中！",
-            "game_is_rebuilding": "<red>游戏 <gray><arena><red> 正在重置， 请稍后…",
-            "already_in_game": "<red>你已经在游戏中了。",
-            "command_is_not_allowed": "<red>在游戏过程中你不能使用这个命令！",
+            "game_is_full": "<red>房间 <gray><arena> <red> 已满，请在游戏结束后再试！",
+            "game_not_found": "<red>没有找到此房间！",
+            "you_are_not_in_game": "<red>你不在任何游戏房间中！",
+            "game_is_rebuilding": "<red>房间 <gray><arena><red> 正在重置，请稍后…",
+            "already_in_game": "<red>你已经在游戏房间了。",
+            "command_is_not_allowed": "<red>你不能在游戏中执行此指令！",
             "game_is_gone": "<red>你所在的游戏好像已被虚空吞噬。",
-            "game_kicked_by_vip": "<red>你被VIP玩家踢出了游戏！",
-            "there_is_no_empty_game": "<red>没有正在等待的游戏。 所有游戏都在进行中！",
-            "game_already_running": "<red>游戏 <gray><arena> <red>正在游戏中， 你不能中途加入！",
-            "not_in_any_game_yet": "<red>你还没有参加任何游戏。",
+            "game_kicked_by_vip": "<red>你被VIP玩家踢出游戏！",
+            "there_is_no_empty_game": "<red>所有房间都满人了！",
+            "game_already_running": "<red>房间 <gray><arena> <red> 中的游戏已开始，你不能加入一个已开始的游戏！",
+            "not_in_any_game_yet": "<red>你还没有参与过任何游戏。",
             "vip_not_enough_players": "<red>游戏内玩家不足！",
             "vip_game_is_full": "<red>游戏 <gray><arena> <red>内已经坐满了VIP玩家， 请等待游戏结束！"
         },
@@ -153,7 +187,7 @@
         },
         "resources": {
             "netherite": "下界合金",
-            "bronze": "铜锭",
+            "bronze": "铜",
             "iron": "铁锭",
             "gold": "金锭",
             "diamond": "钻石",
@@ -166,17 +200,17 @@
         },
         "bossbar": {
             "waiting": "<red>游戏即将开始！",
-            "running": "<green>游戏开始！ 祝你好运！"
+            "running": "<green>游戏已开始，祝你好运！"
         },
         "end": {
-            "you_won": "<green>胜利！",
-            "you_lost": "<red>败北！",
-            "game_end": "<red>游戏结束！",
-            "team_win": "<green><reset><team><green> 队伍在 <gray><time> 获胜了"
+            "you_won": "<green>你赢了！",
+            "you_lost": "<red>你输了！",
+            "game_end": "<red>游戏结束，感谢游玩！",
+            "team_win": "<green>恭喜！<reset><team><green> 获得胜利，用时<gray><time>"
         },
         "respawn_protection": {
-            "end": "<red>出生无敌时间已结束！",
-            "remaining": "<red>出生无敌时间将于 <white><time> <green>秒后结束！"
+            "end": "<red>无敌时间结束，小心行事！",
+            "remaining": "<red>重生保护将在 <white><time> <green> 秒后结束！"
         },
         "leave": "<name> <red>离开了游戏！",
         "player_self_killed": "<red><victim> <red>已死亡！",
@@ -190,18 +224,56 @@
             "invalid_player": "<red>指定的玩家不在任何一场游戏中或者为旁观者模式!",
             "received_give": "<green>玩家<gray><player><green> 获得了 <gray><amount><green> 个 <gray><resource>",
             "received_kill": "<green>玩家<gray><player><green> 被通过作弊杀死了!",
-            "game_not_running": "<red>你只能在游戏运行中聊天！",
-            "region_regenerated": "<green>游戏场地 <gray><arena></gray> 已重置！",
-            "special_item_used": "<green>特殊道具 <gray><item></gray> 已经用过了！"
+            "game_not_running": "<red>你只能在已开始的游戏房间中作弊！",
+            "region_regenerated": "<green>房间 <gray><arena></gray> 已重置！",
+            "special_item_used": "<green>特殊道具 <gray><item></gray> 已经用过了！",
+            "game_forced": "<green>游戏将要强制开始，但需要两个队伍，这样才能决出胜负（这样说你明白了吗？）",
+            "game_not_waiting": "<red>你不能在等待中的游戏房间中使用作弊！"
         },
         "economy_deposited": "<green>已添加 <gray><coins> <currency><green> 金币至你的钱包！",
-        "economy_missing_coins": "<red>你需要 <yellow><coins> <currency><red> 金币才能加入这个游戏！"
+        "economy_missing_coins": "<red>你需要 <yellow><coins> <currency><red> 金币才能加入这个游戏！",
+        "messages": {
+            "game_start": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "                             <white><bold>起床战争</bold>",
+                "    <yellow><bold>破坏敌方的床，保护你的床</bold>",
+                "     <yellow><bold>你可以通过升级变得更强</bold>",
+                "<yellow>而升级需要<bold><resources></bold>",
+                "            <yellow><bold></bold>"
+            ],
+            "game_over_statistics": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "                             <yellow><bold>起床战争</bold>",
+                "                             <team_color><win_team>",
+                "                             <winners>",
+                "    <yellow><bold>1st<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+                "    <gold><bold>2nd<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
+                "    <red><bold>3rd<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>"
+            ]
+        },
+        "scoreboard": {
+            "you": "<gray>你",
+            "state": {
+                "waiting": "<white>可加入...",
+                "countdown": "<white>将在 <green><countdown> 秒后开始"
+            },
+            "mode": {
+                "solo": "单挑",
+                "doubles": "双人",
+                "triples": "三人",
+                "squads": "四人"
+            }
+        },
+        "record": {
+            "no": "<aqua>这个房间是第一次结束游戏，要设置一个新纪录吗？",
+            "current": "<aqua>目前此房间的记录是 <gray><time><aqua> 队伍成员：<gray><team-members><aqua>！"
+        }
     },
-    "unknown_usage": "<red>无效的参数！请尝试使用 <dark_red>/bw help <red>来获得帮助！",
+    "unknown_usage": "<red>无效的参数！请尝试使用 <dark_red>/bw help <red>指令显示帮助信息！",
     "no_permissions": "<red>你没有权限这么做！",
     "safe_reload_failed_to_stop_game": "<red>部分游戏没有在规定时间内结束， 可能受到损坏！",
-    "list_header": "<green>可用的游戏场地：",
-    "success": "<green>命令执行完成！",
+    "list_header": "<green>可用的游戏房间：",
+    "success": "<green>成功执行指令！",
     "sign": {
         "admin": {
             "created": "<green>告示牌创建成功！",
@@ -216,31 +288,31 @@
             },
             "rebuilding": {
                 "status": "<gold>重置中",
-                "players": "<gold>游戏"
+                "players": "<gold>房间"
             },
             "running": {
-                "status": "<green>进行中",
+                "status": "<green>已开始",
                 "players": "<red><players><dark_gray>/<red><maxplayers>"
             },
             "waiting": {
-                "status": "<gold>等待中",
+                "status": "<gold>可加入",
                 "players": "<green><players><dark_gray>/<green><maxplayers>"
             }
         }
     },
     "statistics": {
-        "disabled": "<red>玩家数据统计并未在该服务器上开启！",
-        "player_does_not_exist": "<red>没有找到玩家！",
-        "kills": "<gray>击杀: <green><kills>",
-        "deaths": "<gray>死亡: <yellow><deaths>",
-        "wins": "<gray>胜场: <green><wins>",
-        "loses": "<gray>败北: <red><loses>",
-        "beds": "<gray>已摧毁的床: <green><beds>",
-        "games": "<gray>游玩次数: <aqua><games>",
-        "score": "<gray>总分: <green><score>",
-        "kd": "<gray>K/D: <green><kd>",
-        "not_found": "<red>没有找到玩家数据！",
-        "header": "<green><red><player><green>的统计数据:"
+        "disabled": "<red>数据统计功能已被管理员禁用！",
+        "player_does_not_exist": "<red>没有找到此玩家！",
+        "kills": "<gray>击杀数：<green><kills>",
+        "deaths": "<gray>死亡数：<yellow><deaths>",
+        "wins": "<gray>胜场：<green><wins>",
+        "loses": "<gray>败场：<red><loses>",
+        "beds": "<gray>挖床数：<green><beds>",
+        "games": "<gray>参与游戏次数：<aqua><games>",
+        "score": "<gray>分数：<green><score>",
+        "kd": "<gray>击杀/死亡比：<green><kd>",
+        "not_found": "<red>没有找到任何关于此玩家的数据！",
+        "header": "<green>关于<red><player><green>的统计数据："
     },
     "update": {
         "new_release": [
@@ -304,7 +376,16 @@
                         "line": "- <type> - <gray><command></gray>",
                         "first_line": "<red>这里有太多的资源生成点在同一个地方，请选择具体的资源生成点："
                     },
-                    "invalid_variant": "<red>游戏变体 <gray><variant><red> 不存在！"
+                    "invalid_variant": "<red>游戏变体 <gray><variant><red> 不存在！",
+                    "cannot_rename_team": "<red>无法将队伍 <gray><team><red> 更名为 <gray><new-team><red>，此名字已被占用！",
+                    "missing_spawners": "<yellow>此房间没有设置任何资源点。",
+                    "weird_store_count": "<yellow>这个房间中的商店(商人)数量是 <gray><count><yelloy>，这不是双数，也许需要检查一下你是不是还没设置完？",
+                    "team_spawn_set_blocked": "<red>队伍 <gray><team><red>设置了多个重生点，所以不能用 set 设置重生点了。",
+                    "missing_stores": "<yellow>此房间没有设置任何商店(商人)。",
+                    "skip_warnings": "<yellow>如果你想保存房间 <gray><game><yellow>，请输入：<gray><command>",
+                    "invalid_constant_enum_value": "<gray><value></gray><red>是无效的值！请用 <gray><values>",
+                    "team_spawn_on_the_same_block": "<red>这个位置已经被设置成某个重生点了，如果要继续，请先移除这个重生点。",
+                    "team_no_spawn_there": "<red>此位置没有设置成任何重生点。"
                 },
                 "success": {
                     "team_spawn_set": "<green>队伍 <gray><team><green> 的出生点已被成功设置为以下坐标 XYZ： <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
@@ -351,7 +432,13 @@
                     "display_name_enabled": "<green>显示名称已被设置为 <gray><display_name><green>。",
                     "constant_set": "<green>常量 <gray><config><green> 已被设置为 <gray><value><green>！",
                     "child_state": "<green>商人的变量 isBaby 已更改为 <gray><value>",
-                    "spawner_custom_name_set": "<green><type> 生成点的自定义名称已被设置为 <gray><name><green>。"
+                    "spawner_custom_name_set": "<green><type> 生成点的自定义名称已被设置为 <gray><name><green>。",
+                    "team_multiple_spawns_ad": "<aqua>你要为一个队伍设置多个重生点吗？请输入 <gray><command>",
+                    "team_spawn_added": "<green>成功设置队伍 <gray><team><green> 的重生点，位置(XYZ): <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "team_spawn_reset": "<green>成功移除队伍 <gray><team><green> 的所有重生点。",
+                    "team_spawn_list_entry": "- <green>XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
+                    "team_spawn_list_no": "<red>队伍 <gray><team><red> 还没有设置任何重生点。",
+                    "team_renamed": "<green>成功将队伍 ><team><green> 更名为 <gray><new-team><green> ！"
                 }
             }
         },
@@ -441,8 +528,8 @@
             "spawners": "<green>资源生成点列表<white> - <gray><command>"
         }
     },
-    "unknown_command": "<red>未知的命令！请尝试使用 <dark_red>/bw help <red>来获取帮助！",
-    "safe_reload": "<green>正在等待所有游戏结束或在60秒后重载插件。",
+    "unknown_command": "<red>未知指令，你可以使用<dark_red>/bw help <red>显示帮助信息！",
+    "safe_reload": "<green>正在等待所有游戏结束或等待60秒，然后重载插件。",
     "language": {
         "usage_bw_lang": "使用: /bw lang <pre><locale></pre> - <yellow>设置 <red>Bed<white>Wars 所使用的语言环境",
         "success": "<green>成功将语言设置为 <white>[<lang>]",
