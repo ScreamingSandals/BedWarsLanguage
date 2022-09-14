@@ -16,10 +16,10 @@
         "bw_leaderboard": "/bw leaderboard - <green>查看本服务器的玩家排行榜",
         "bw_stats": "/bw stats - <green>查看你的数据统计",
         "bw_stats_other": "/bw stats [player] - <green>查看其他玩家的数据统计",
-        "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>设置玩家数量下限",
+        "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>设置最小玩家数量",
         "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>设置游戏时长",
         "bw_admin_team_color": "/bw admin <pre><arena></pre> team color <pre><team> <color></pre> - <yellow>修改队伍颜色",
-        "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>修改队伍人数上限",
+        "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>修改最大队伍人数",
         "bw_removeholo": "/bw removeholo - <yellow>执行该命令后， 玩家可以通过右键一个全息显示来移除它。",
         "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow> 查看指定游戏房间的信息",
         "bw_admin_add": "/bw admin <pre><arena></pre> add [variant] - <yellow> 创建一个新的房间",
@@ -27,9 +27,9 @@
         "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>将当前位置设为该游戏房间大厅的第一个端点",
         "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>将当前位置设为该游戏房间大厅的第二个端点",
         "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>设置开始游戏前的等待时间",
-        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>移除所有的资源生成点",
+        "bw_admin_spawner_reset": "/bw admin <pre><arena></pre> spawner reset - <yellow>移除所有的资源点",
         "bw_admin_store_add": "/bw admin <pre><arena></pre> store add [name above dealer head] [file with shop] [use main shop] - <yellow>在当前位置添加一个交易村民",
-        "bw_admin_store_type": "/bw admin <pre><arena></pre> store type <pre><living entity></pre> - <yellow>设置商人型式 (Villager, Horse, Cow, Pig 等)",
+        "bw_admin_store_type": "/bw admin <pre><arena></pre> store type <pre><living entity></pre> - <yellow>设置商人的实体类型 (Villager, Horse, Cow, Pig 等)",
         "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>设置游戏房间内的时间 (DAY, NIGHT 等)",
         "bw_admin_customprefix": "/bw admin <pre><arena></pre> customprefix <pre><name|off></pre> - <yellow>设置游戏房间的自定义前缀",
         "bw_admin_remove": "/bw admin <pre><arena></pre> remove - <red>移除游戏房间",
@@ -85,7 +85,8 @@
             "click_for_previous_page": "点击返回上一页"
         },
         "bw_admin_config_list_add": "/bw admin \\<arena> 配置文件列表 \\<data type> \\<constant> add \\<value> - <yellow> 添加到常量列表",
-        "bw_admin_config_list_clear": "/bw admin \\<arena> 配置文件列表 \\<data type> \\<constant> clear - <yellow>重置常量列表"
+        "bw_admin_config_list_clear": "/bw admin \\<arena> 配置文件列表 \\<data type> \\<constant> clear - <yellow>重置常量列表",
+        "bw_admin_config_list_remove": "/bw admin\\<arena> 配置文件列表 \\<data type>\\<constant> remove \\<position>-<yellow>从常量列表中的位置移除此值"
     },
     "in_game": {
         "target_block": {
@@ -385,7 +386,8 @@
                     "skip_warnings": "<yellow>如果你想保存房间 <gray><game><yellow>，请输入：<gray><command>",
                     "invalid_constant_enum_value": "<gray><value></gray><red>是无效的值！请用 <gray><values>",
                     "team_spawn_on_the_same_block": "<red>这个位置已经被设置成某个重生点了，如果要继续，请先移除这个重生点。",
-                    "team_no_spawn_there": "<red>此位置没有设置成任何重生点。"
+                    "team_no_spawn_there": "<red>此位置没有设置成任何重生点。",
+                    "invalid_constant_position": "<red>错误的常量列表位置！"
                 },
                 "success": {
                     "team_spawn_set": "<green>队伍 <gray><team><green> 的出生点已被成功设置为以下坐标 XYZ： <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
@@ -397,7 +399,7 @@
                     "team_created": "<green>队伍 <gray><team><green> 已被成功创建！ 队伍颜色: <teamcolor><green> ， 队伍最大玩家数量: <gray><maxplayers>",
                     "spawners_removed": "<green>游戏房间 <gray><arena><green> 的所有资源发生器均已被成功移除！",
                     "spawner_added": "<gray><resource><green>的生成器已成功添加到坐标：<gray><x>/<y>/<z>",
-                    "store_removed": "<green>来自坐标<gray><x>/<y>/<z><green>的村民已成功移除！",
+                    "store_removed": "<green>位于<gray><x>/<y>/<z><green>的商店(商人)已成功移除！",
                     "store_added": "<green>已将商店添加到你的坐标：<gray><x>/<y>/<z> <green>YAW：<gray><yaw> <green>PITCH：<gray><pitch>",
                     "lobby_spawn_set": "<green>大厅出生点被成功设置到XYZ：<gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
                     "lobby_countdown_set": "<green>大厅的倒计时被设置为 <gray><countdown>",
@@ -438,11 +440,17 @@
                     "team_spawn_reset": "<green>成功移除队伍 <gray><team><green> 的所有重生点。",
                     "team_spawn_list_entry": "- <green>XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
                     "team_spawn_list_no": "<red>队伍 <gray><team><red> 还没有设置任何重生点。",
-                    "team_renamed": "<green>成功将队伍 ><team><green> 更名为 <gray><new-team><green> ！"
+                    "team_renamed": "<green>成功将队伍 ><team><green> 更名为 <gray><new-team><green> ！",
+                    "target_none_set": "<green>队伍 <gray><team><green> 现在将没有任何目标， 这意味着他们不能再重生！",
+                    "target_not_properly_balanced": "<yellow>目标已经设置，但每个队伍的目标类型不一样，这可能导致游戏不平衡。",
+                    "team_spawn_removed": "<green>队伍 <gray><team><green> 的资源点(位于<gray><x>/<y>/<z>) 已被移除",
+                    "team_spawn_list": "<green>队伍 <gray><team><green> 有 <gray><count><green> 个重生点，在这些位置：",
+                    "store_name_set": "<green>位于<gray><x>/<y>/<z><green>的商店(商人) 已被更名为 <gray><name><green>！",
+                    "store_name_reset": "<green>T位于: <gray><x>/<y>/<z><green>的商人(商店)已失去自定义名字！"
                 }
             }
         },
-        "usage": "<red>使用方式: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>",
+        "usage": "<red>使用方式: /bw admin <pre><arena> <add|edit|remove|save|...> ...",
         "info": {
             "constant": "- <gray><constant><reset>: <gray><value>",
             "world": "<gray>世界: <reset><world>",
@@ -480,7 +488,10 @@
             "min_players": "<gray>最小人数: <reset><minplayers>",
             "post_game_waiting": "<gray>游戏结束后等待时间: <white><time> s",
             "villager_shop": "  拥有自己的商店: <gray><bool>",
-            "villager_shop_name": "  商店名称: <gold><file><reset> (从主继承: <gray><bool><reset>)"
+            "villager_shop_name": "  商店名称: <gold><file><reset> (从主继承: <gray><bool><reset>)",
+            "value": "值",
+            "config": "关于<gray><configured-component>的配置",
+            "data_type": "数据类型"
         },
         "holo": {
             "click_to_remove": "<yellow>现在请点击你想移除的全息显示！",
@@ -497,9 +508,9 @@
             "now_click": "<yellow>右击你想要编辑的NPC。",
             "added": "<green>新的NPC已被添加至坐标 XYZ: <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
             "no_longer_editing": "<green>你不再编辑任何一个NPC了。 使用 <gray>/bw npc select<green> 来选择一个新的NPC。",
-            "skin_changed": "<green>皮肤已修改！",
+            "skin_changed": "<green>此NPC的皮肤已修改！",
             "editing": "<green>你现在正在编辑的NPC位置 XYZ: <gray><x>/<y>/<z>",
-            "skin_change_failed": "<red>该皮肤无法被改变！",
+            "skin_change_failed": "<red>无法更改此NPC的皮肤！",
             "action_set": "<green>该NPC的动作已被设置为 <gray><action><green> 携带参数 \"<gray><value><green>\""
         },
         "mainlobby": {
@@ -510,8 +521,8 @@
             "invalid_number": "<red>该分割线的数字必须高于0！",
             "theres_no_line_number": "<red>没有找到第 <linenumber> 行的分割线",
             "line_removed": "<green>全息显示的第<gray><linenumber><green> 行分割线已被移除！",
-            "line_added": "<green>新创建的线已被添加至全息显示的最下方： <white><line>",
-            "line_set": "<green>全息显示的第<gray><linenumber><green>行分割线已被设置在 <white><line>"
+            "line_added": "<green>新的全息图已被创建到下一行：<white><line>",
+            "line_set": "<green>全息显示的第 <gray><linenumber><green> 行分割线已被设置在 <white><line>"
         },
         "team_join_entity": {
             "entity_added": "<green>实体加入团队已添加！",
