@@ -398,7 +398,9 @@
                     "invalid_variant": "<red>Game variant <gray><variant><red> does not exist!",
                     "team_spawn_set_blocked": "<red>The team <gray><team><red> has more than one spawnpoint, so using set command is not allowed.",
                     "team_spawn_on_the_same_block": "<red>There is already a spawnpoint at this position. If you want to change the rotation, remove it first.",
-                    "team_no_spawn_there": "<red>There is no spawnpoint at this position."
+                    "team_no_spawn_there": "<red>There is no spawnpoint at this position.",
+                    "nothing_in_hand": "<red>You are not holding any item in your hand!",
+                    "invalid_item": "<red>Value <gray><item><red> is not a valid item!"
                 },
                 "success": {
                     "saved_and_started": "<green>The game has been successfully saved and is running! Now you can join and play in the arena!",
