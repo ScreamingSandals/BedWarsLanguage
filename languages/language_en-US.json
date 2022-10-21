@@ -169,7 +169,7 @@
             "end": "<red>Respawn protection is gone!"
         },
         "cheat": {
-            "please_provide_valid_cheat_type": "<red>Provided cheat type isn't valid or is missing!",
+            "please_provide_valid_cheat_type": "<red>Provided cheat type is not valid or is missing!",
             "invalid_player": "<red>Specified player is not in any game or is a spectator!",
             "received_give": "<green>Player <gray><player><green> got <gray><amount><green> of <gray><resource>",
             "received_kill": "<green>Player <gray><player><green> killed by cheat!",
@@ -177,7 +177,13 @@
             "special_item_used": "<green>Special item <gray><item></gray> has been used!",
             "region_regenerated": "<green>Region of arena <gray><arena></gray> has been regenerated!",
             "game_not_waiting": "<red>You can execute this cheat only when game is in the waiting state!",
-            "game_forced": "<green>Game is now going to start with one empty team, so at least two teams are in the game for plugin to work correctly. Invalidate its target to win! (It is not protected so it should be easy for you, right?)"
+            "game_forced": "<green>Game is now going to start with one empty team, so at least two teams are in the game for plugin to work correctly. Invalidate its target to win! <gray>It is not protected so it should be easy for you, right?",
+            "team_does_not_exist": "<red>Team <gray><team></gray> does not exist!",
+            "team_is_not_in_game": "<red>Team <gray><team></gray> is currently not in the game, and therefore this cheat cannot be executed!",
+            "unknown_target": "<red>The command does not know how to invalidate the target of the team <gray><team></gray>!",
+            "target_is_not_valid": "<red>The target of the team <gray><team></gray> could not be invalidated because it is already invalid!",
+            "received_target_invalidated": "<green>The target of the team <gray><team></gray> has been invalidated! <gray>Players in that team no longer likes you :(",
+            "received_targets_invalidated": "<green>All possible targets of all teams in the game have been invalidated! <gray>That would make the game a bit faster."
         },
         "scoreboard": {
             "you": "<gray>YOU",
