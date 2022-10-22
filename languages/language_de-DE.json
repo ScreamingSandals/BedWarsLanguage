@@ -1,5 +1,5 @@
 {
-    "unknown_command": "<red>Unbekannter Command! <dark_red>/bw help <red>für Hilfe!",
+    "unknown_command": "<red>Unbekannter Command! Versuche <dark_red>/bw help <red>für Hilfe!",
     "sign": {
         "status": {
             "waiting": {
@@ -42,7 +42,7 @@
     },
     "safe_reload_failed_to_stop_game": "<red>Manche Spiele konnten in der Zeit nicht gestoppt werden, die Arena könnte beschädigt sein!",
     "list_header": "<green>Verfügbare Arenen:",
-    "success": "<green>Command war erfolgreich!",
+    "success": "<green>Befehl erfolgreich ausgeführt!",
     "unknown_usage": "<red>Ungültige Argumente! Versuche <dark_red>/bw help <red>für Hilfe!",
     "no_permissions": "<red>Du hast nicht genug Berechtigungen dafür!",
     "safe_reload": "<green>Es wird gewartet bis alle Spiele gestoppt sind oder 60 Sekunden vorbei sind bevor das Plugin neu geladen wird.",
