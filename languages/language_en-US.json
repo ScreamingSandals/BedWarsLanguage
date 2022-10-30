@@ -183,7 +183,10 @@
             "unknown_target": "<red>The command does not know how to invalidate the target of the team <gray><team></gray>!",
             "target_is_not_valid": "<red>The target of the team <gray><team></gray> could not be invalidated because it is already invalid!",
             "received_target_invalidated": "<green>The target of the team <gray><team></gray> has been invalidated! <gray>Players in that team no longer likes you :(",
-            "received_targets_invalidated": "<green>All possible targets of all teams in the game have been invalidated! <gray>That would make the game a bit faster."
+            "received_targets_invalidated": "<green>All possible targets of all teams in the game have been invalidated! <gray>That would make the game a bit faster.",
+            "team_random_failed": "<red>An algorithm failed to choose you a random team. <gray>That's weird.",
+            "received_team_join": "<green>Player <gray><player></gray> joined team <gray><team></gray>!",
+            "cheat_failed": "<red>Cheat failed for unknown reason."
         },
         "scoreboard": {
             "you": "<gray>YOU",
@@ -471,6 +474,10 @@
                     "spawner_hologram_type_set": "<green>Hologram type of this <type> spawner has been set to <gray><type><green>.",
                     "spawner_custom_name_set": "<green>Custom name of this <type> spawner has been set to <gray><name><green>.",
                     "spawner_type_changed": "<green>Type of this <type> spawner has been changed to <new_type>.",
+                    "spawner_initial_interval_set": "<green>Initial interval of this <type> spawner has been set to <gray><interval> <unit><green>.",
+                    "spawner_initial_interval_reset": "<green>Initial interval of this <type> spawner has been reset to the default value defined in the config or in the variant.",
+                    "spawner_spread_set": "<green>Spread of this <type> spawner has been set to <gray><spread><green>.",
+                    "spawner_spread_reset": "<green>Spread of this <type> spawner has been reset to he default value defined in the config or in the variant.",
                     "display_name_enabled": "<green>Display name was successfully set to <gray><display_name><green>.",
                     "display_name_disabled": "<green>Display name was successfully disabled.",
                     "fee_set": "<green>Arena entry fee was successfully set to <gray><fee><green>."
@@ -651,5 +658,15 @@
     "migrate": {
         "success": "<green>Successfully migrated the configuration from <red><plugin><green>!",
         "failure": "<red>Something went wrong while migrating the configuration! See the console for details."
+    },
+    "unit": {
+        "tick": "tick",
+        "ticks": "ticks",
+        "second": "second",
+        "seconds": "seconds",
+        "minute": "minute",
+        "minutes": "minutes",
+        "hour": "hour",
+        "hours": "hours"
     }
 }
