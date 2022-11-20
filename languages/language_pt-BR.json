@@ -17,7 +17,7 @@
             },
             "rebuilding": {
                 "status": "<gold>Reconstruindo",
-                "players": ""
+                "players": "<dourado>arena"
             },
             "running": {
                 "status": "<green>Em Andamento"
