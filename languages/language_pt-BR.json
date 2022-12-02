@@ -20,10 +20,12 @@
                 "players": "<dourado>arena"
             },
             "running": {
-                "status": "<green>Em Andamento"
+                "status": "<green>Em Andamento",
+                "players": "<red><players><dark_gray>/<red><maxplayers>"
             },
             "waiting": {
-                "status": "<gold>Aguardando"
+                "status": "<gold>Aguardando",
+                "players": "<green><players><dark_gray>/<green><maxplayers>"
             }
         }
     },
@@ -38,7 +40,8 @@
         "games": "<gray>Partidas jogadas: <aqua><games>",
         "score": "<gray>Pontuação total: <green><score>",
         "header": "<green>Estatística de <red><player><green>:",
-        "beds": "<gray>Camas destruídas: <green><beds>"
+        "beds": "<gray>Camas destruídas: <green><beds>",
+        "kd": "<gray>K/D: <green><kd>"
     },
     "in_game": {
         "errors": {
@@ -60,10 +63,20 @@
             "destroyed": {
                 "any": "O bloco alvo do <team><reset> foi destruído!",
                 "bed": "A Cama do Time <team><reset> foi destruída!",
-                "subtitle_victim": "Você não poderá respawnar mais agora!",
+                "subtitle_victim": "Você não vai mais reaparecer!",
                 "anchor": "Âncora de Respawn do time <team><reset> foi destruída!",
                 "cake": "O Bolo do time <team><reset> foi comido!",
-                "subtitle": "Você pode matar os membros do time agora!"
+                "subtitle": "Você pode matar os membros do time agora!",
+                "any_certain_popular_server": "<red><bold>BLOCO ALVO DESTRUÍDO!",
+                "bed_certain_popular_server": "<red><bold>CAMA DESTRUÍDA!",
+                "anchor_certain_popular_server": "<red><bold>ÂNCORA DESTRUÍDA!",
+                "cake_certain_popular_server": "<red><bold>BOLO DEVORADO!",
+                "killable": "Agora você pode matar todos os membros da <team>!",
+                "death_mode": "<dark_purple><bold>Modo de morte!",
+                "all_beds": "Todas as camas foram destruídas!",
+                "all_anchors": "Todas as âncoras foram destruídas!",
+                "all_target_blocks": "Todos os blocos alvo foram destruídos!",
+                "all_cakes": "Todos os bolos foram comidos!"
             },
             "hologram": {
                 "protect": {
@@ -91,17 +104,24 @@
             "title_cancel": "<red>O time foi Morto :("
         },
         "spawner": {
-            "countdown": "<yellow><seconds> <bold>segundos",
+            "countdown": "<yellow><seconds> <aqua>segundos",
             "full": "<red><bold>Spawner esgotado",
-            "every_second": "<bold>Cada segundo",
-            "not_enough_level": "<red>O Spawner está desativado! Você precisa upar ele por <levels> levels."
+            "every_second": "<aqua>cada segundo",
+            "not_enough_level": "<red>O Spawner está desativado! Você precisa upar ele por <levels> levels.",
+            "reached_maximum_level": "<red>O Spawner atingiu seu nível máximo!",
+            "countdown_custom": "<yellow><value> <aqua><unit>",
+            "tier": "<yellow>Nivel <red><tier>",
+            "full_certain_popular_server": "<red><bold>O Spawner está cheio!",
+            "countdown_certain_popular_server": "<yellow>Surgindo em <red><seconds> <yellow>segundos",
+            "countdown_custom_certain_popular_server": "<yellow>Surgindo em <red><value> <yellow><unit>"
         },
         "resources": {
             "iron": "Ferro",
             "gold": "Ouro",
             "netherite": "Netherita",
             "diamond": "Diamante",
-            "emerald": "Esmeralda"
+            "emerald": "Esmeralda",
+            "bronze": ""
         },
         "shop": {
             "name": "Loja",
@@ -111,14 +131,16 @@
             "price": "Preço:",
             "amount": "Quantia:",
             "buy_failed": "<red>Você não tem <gray><item><red> o suficiente! Você precisa de <gray><material><red>!",
-            "buy_success": "<gray><item><green>adquirido por <gray><material><green>!"
+            "buy_success": "<gray><item><green>adquirido por <gray><material><green>!",
+            "upgrade_success": "<green><name> atualizou com sucesso <spawner> para o nível <level>!",
+            "upgrade_translate": "melhorar"
         },
         "team_selection": {
             "inventory_name": "Selecionar Time - <arena>",
             "selected": "<green>Time selecionado: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
             "full": "<red> O Time <team><red> está cheio!",
             "full_no_change": "<red>O Time <team><red> está cheio, você continua no time <oldteam><red>!",
-            "select_item": "<teamName> <gray>(<yellow><inTeam> <white>/ <yellow><maxInTeam><gray>)",
+            "select_item": "",
             "select_item_lore_full": "<white>O Time está cheio!",
             "select_item_lore_join": "Clique para entrar no time!",
             "already_selected": "<green>Você já está em um time: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]"
@@ -148,7 +170,20 @@
         "player_killed": "<red><killer> <red>matou <victim><red>!",
         "game_start_title": "<green>Jogo Iniciado!",
         "game_start_subtitle": "<green>O Mapa <gray><arena><green> foi iniciado! Aproveite o Jogo!",
-        "vault_deposite": "<gray><coins> <currency><green> foram adicionados a sua Conta Vault!"
+        "vault_deposite": "<gray><coins> <currency><green> foram adicionados a sua Conta Vault!",
+        "cheat": {
+            "game_not_running": "<red>Você só pode trapacear quando o jogo está rodando!",
+            "received_give": "<green>O jogador <gray><player><green> obteve <gray><amount><green> de <gray><resource>",
+            "please_provide_valid_cheat_type": "<red>O tipo de cheat fornecido não é válido ou está faltando algo!",
+            "invalid_player": "<red>O jogador especificado não está em nenhum jogo ou é um espectador!",
+            "special_item_used": "<green>O item especial <gray><item></gray> foi usado!",
+            "region_regenerated": "<green>A região da arena <gray><arena></gray> foi regenerada!",
+            "received_kill": "<green>Jogador <gray><player><green> morreu para trapaça!",
+            "game_not_waiting": "<red>Você pode executar esta trapaça apenas quando o jogo estiver em estado de espera!",
+            "game_forced": "<green>O jogo agora vai começar com um time vazio, então pelo menos dois times estão no jogo para que o plug-in funcione corretamente. Invalide seu alvo para vencer! <gray>Não é protegido, então deve ser fácil para você, certo?",
+            "team_does_not_exist": "<red>Equipe <gray><team></gray> não existe!",
+            "team_is_not_in_game": "<red>Equipe <gray><team></gray> não está no jogo e, portanto, esta trapaça não pode ser executada!"
+        }
     },
     "unknown_command": "<red>Comando Desconhecido! Tente usar <dark_red>/bw help <red> para ajuda!",
     "unknown_usage": "<red>Argumento Inválido! Tente usar <dark_red>/bw help <red>para ajuda!",
