@@ -167,7 +167,7 @@
             "end": "<red>Захист від відродження зник!"
         },
         "cheat": {
-            "please_provide_valid_cheat_type": "<red>Наданий тип коду недійсний або відсутній!",
+            "please_provide_valid_cheat_type": "<red>Наданий тип чіт-коду недійсний або відсутній!",
             "invalid_player": "<red>Вказаний гравець не бере участі в жодній грі або є глядачем!",
             "game_not_running": "<red>Шахрувати можна лише під час роботи гри!",
             "region_regenerated": "<green>Регіон арени <gray><arena></gray> було відновлено!",
