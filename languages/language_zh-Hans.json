@@ -229,7 +229,9 @@
             "region_regenerated": "<green>房间 <gray><arena></gray> 已重置！",
             "special_item_used": "<green>特殊道具 <gray><item></gray> 已经用过了！",
             "game_forced": "<green>游戏将要强制开始，但需要两个队伍，这样才能决出胜负（这样说你明白了吗？）",
-            "game_not_waiting": "<red>你不能在等待中的游戏房间中使用作弊！"
+            "game_not_waiting": "<red>你不能在等待中的游戏房间中使用作弊！",
+            "team_does_not_exist": "<red>队伍<gray><team></gray> 不存在!",
+            "team_is_not_in_game": "<red>队伍 <gray><team></gray> 目前不在游戏里, 因此该作弊不能执行!"
         },
         "economy_deposited": "<green>已添加 <gray><coins> <currency><green> 金币至你的钱包！",
         "economy_missing_coins": "<red>你需要 <yellow><coins> <currency><red> 金币才能加入这个游戏！",
