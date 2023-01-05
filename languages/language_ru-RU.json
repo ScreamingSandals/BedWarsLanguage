@@ -28,7 +28,7 @@
                 "anchor_certain_popular_server": "<red><bold>МАЯК УНИЧТОЖЕН!",
                 "cake_certain_popular_server": "<red><bold>ТОРТ СЪЕДЕН!",
                 "killable": "Теперь вы можете убить членов команды <team>!",
-                "death_mode": "<dark_purple><bold>Death mode!",
+                "death_mode": "<dark_purple><bold>Режим Смерти!",
                 "all_beds": "Все кровати были разрушены!",
                 "all_anchors": "Все маяки были разрушены!",
                 "all_target_blocks": "Все главные блоки были разрушены!",
@@ -139,7 +139,13 @@
             "received_kill": "<green>Игрок <gray><player><green> был убит с помощью чита!",
             "special_item_used": "<green>Специальный предмет <gray><item></gray> был использован!",
             "region_regenerated": "<green>Данный регион <gray><arena></gray> был восстановлен!",
-            "game_not_waiting": "<red>Активация данного чита возможна только когда игра в режиме ожидания!"
+            "game_not_waiting": "<red>Активация данного чита возможна только когда игра в режиме ожидания!",
+            "game_forced": "<green>Игра теперь будет начинаться с одной пустой командой, поэтому в игре должны быть как минимум две команды для корректной работы плагина. Аннулируйте свою цель, чтобы победить! <gray>Он не защищен, так что вам должно быть легко, верно?",
+            "team_does_not_exist": "<red>Команда <gray><team></gray> Погибла!",
+            "team_is_not_in_game": "<red>Команда <gray><team></gray> сейчас не в игре, поэтому этот чит не может быть выполнен!",
+            "unknown_target": "<red>Команда не знает, как аннулировать цель команды <gray><team></gray>!",
+            "received_target_invalidated": "<green>Цель команды <gray><team></gray> признана побежденной! <grey>Вы больше не нравитесь игрокам этой команды :(",
+            "target_is_not_valid": "<red>Цель команды <gray><team></gray> не может быть признана недействительной, поскольку она уже недействительна!"
         },
         "economy_deposited": "<green>Добавлено <gray><coins> <currency><green> на ваш счёт!",
         "economy_missing_coins": "<red>Вам нужно <yellow><coins> <currency><red> для входа в игру!"
