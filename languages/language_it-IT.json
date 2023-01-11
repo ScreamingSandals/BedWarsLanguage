@@ -65,7 +65,16 @@
                 "cake": "La torta del team <team><reset> è stata mangiata!",
                 "subtitle": "Ora puoi uccidere i membri del team!",
                 "bed": "Il letto del team <team><reset> è distrutto!",
-                "subtitle_victim": "Da ora in poi non rinascerai più!"
+                "subtitle_victim": "Ora non tornerai più in vita!",
+                "any_certain_popular_server": "<red><bold>BLOCCO SELEZIONATO DISTRUTTO!",
+                "bed_certain_popular_server": "<red><bold>LETTO DISSTRUTTO!",
+                "anchor_certain_popular_server": "<red><bold>ANCORA DISTRUTTA!",
+                "cake_certain_popular_server": "<red><bold>TORTA MANGIATA!",
+                "all_target_blocks": "Tutte i target block sono stati distrutti!",
+                "killable": "Ora sei in grado di eliminare tutti i membri del team <team>!",
+                "all_beds": "Tutti i letti sono stati distrutti!",
+                "all_anchors": "Tutte le ancore sono state distrutte!",
+                "all_cakes": "Tutte le torte sono state mangiate!"
             },
             "hologram": {
                 "protect": {
@@ -94,9 +103,15 @@
         },
         "spawner": {
             "countdown": "<yellow><seconds> <bold>secondi",
-            "every_second": "<bold>ogni secondo",
+            "every_second": "<acqa>ogni secondo",
             "full": "<red><bold>Lo spawner è esaurito",
-            "not_enough_level": "<red>Lo spawner non può funzionare! Devi aggiornarlo di <levels> livelli."
+            "not_enough_level": "<red>Lo Spawner non può funzionare! Devi fare un upgrade di <levels> livelli.",
+            "countdown_certain_popular_server": "<yellow>Rientro tra <red><seconds> <yellow>secondi",
+            "countdown_custom": "<yellow><value> <aqua><unit>",
+            "tier": "<yellow>Livello<red><tier>",
+            "full_certain_popular_server": "<red><bold>Lo Spawner è pieno!",
+            "countdown_custom_certain_popular_server": "<yellow>Rientro tra <red><seconds> <yellow><unit>",
+            "reached_maximum_level": "<red>Lo Spawner ha raggiunto il suo livello massimo!"
         },
         "resources": {
             "bronze": "Bronzo",
@@ -114,7 +129,8 @@
             "price": "Prezzo:",
             "amount": "Quantità:",
             "buy_failed": "<red>Mancano dei materiali per comprare <gray><item><red>! Mancano <gray><material><red>!",
-            "buy_success": "<green>Hai comprato <gray><item><green> per <gray><material><green>!"
+            "buy_success": "<green>Hai comprato <gray><item><green> per <gray><material><green>!",
+            "upgrade_success": "<green><name> ha upgradeato <spawner> al livello <level>!"
         },
         "team_selection": {
             "inventory_name": "Seleziona squadra - <arena>",
@@ -152,7 +168,15 @@
         "game_start_title": "<green>Partita iniziata!",
         "game_start_subtitle": "<green>La partita <gray><arena><green> è iniziata! Divertitevi!",
         "player_killed": "<red>Il giocatore <killer> <red>ha ucciso <victim><red>!",
-        "vault_deposite": "<green>Aggiunti <gray><coins> <currency><green> al tuo account Vault!"
+        "vault_deposite": "<green>Aggiunti <gray><coins> <currency><green> al tuo account Vault!",
+        "cheat": {
+            "game_not_running": "<red>Puoi cheattare solo quando il gioco è in esecuzione!",
+            "special_item_used": "<green>L'Item speciale <gray><item></gray> è stato utilizzato!",
+            "please_provide_valid_cheat_type": "<red>Il tipo di cheat fornito non è valido o manca!",
+            "invalid_player": "<red>Il giocatore specificato non partecipa a nessun gioco o è uno spettatore!",
+            "received_give": "<green><gray><player><green> ha ottenuto <gray><amount><green> di <gray><resource>",
+            "received_kill": "<green>Giocatore <gray><player><green> ucciso dal cheat!"
+        }
     },
     "unknown_command": "<red>Comando non riconosciuto! Prova ad usare <dark_red>/bw help <red>per ricevere aiuto!",
     "unknown_usage": "<red>Argomenti non validi! Prova ad usare <dark_red>/bw help <red>per ricevere aiuto!",
