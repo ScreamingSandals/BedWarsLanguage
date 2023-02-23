@@ -221,17 +221,24 @@
         "vault_deposite": "<green>你获得了 <gray><coins> <currency><green> ！",
         "join": "<name> <green>加入了游戏！<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "cheat": {
-            "please_provide_valid_cheat_type": "<red>提供的作弊类型不合法或不存在!",
+            "please_provide_valid_cheat_type": "<red>描述的作弊类型不合语法或不存在！",
             "invalid_player": "<red>指定的玩家不在任何一场游戏中或者为旁观者模式!",
             "received_give": "<green>玩家<gray><player><green> 获得了 <gray><amount><green> 个 <gray><resource>",
             "received_kill": "<green>玩家<gray><player><green> 被通过作弊杀死了!",
             "game_not_running": "<red>你只能在已开始的游戏房间中作弊！",
             "region_regenerated": "<green>房间 <gray><arena></gray> 已重置！",
             "special_item_used": "<green>特殊道具 <gray><item></gray> 已经用过了！",
-            "game_forced": "<green>游戏将要强制开始，但需要两个队伍，这样才能决出胜负（这样说你明白了吗？）",
+            "game_forced": "<green>本局游戏将在有一个空队伍的情况下开始。每局游戏至少要有两支队伍，本插件才能正常运作。消灭你的敌人以获得胜利！<gray>但该要求不是强制的，所以对你来说应该很容易，对吧？",
             "game_not_waiting": "<red>你不能在等待中的游戏房间中使用作弊！",
             "team_does_not_exist": "<red>队伍<gray><team></gray> 不存在!",
-            "team_is_not_in_game": "<red>队伍 <gray><team></gray> 目前不在游戏里, 因此该作弊不能执行!"
+            "team_is_not_in_game": "<red>队伍 <gray><team></gray> 目前不在游戏里, 因此该作弊不能执行!",
+            "team_random_failed": "<red>算法无法随机选择一个队伍并消灭它。<gray>奇怪，不应该这样啊。",
+            "received_team_join": "<green>玩家<gray><player></gray> 成功加入了 <gray><team></gray>！",
+            "cheat_failed": "<red>由于未知原因，作弊失败。还是不要作弊了吧。",
+            "unknown_target": "<red>该指令找不到目标队伍：<gray><team></gray>！",
+            "target_is_not_valid": "<red>目标队伍 ：<gray><team></gray> 不能被作为该指令的对象，因为该队伍已经团灭了！",
+            "received_target_invalidated": "<green>目标队伍： <gray><team></gray> 已被强制消灭！<gray>该队玩家很讨厌你！o(╥﹏╥)o",
+            "received_targets_invalidated": "<green>所有队伍中可作为目标的玩家都已被消灭！ <gray>这会加快亿点点游戏进程。"
         },
         "economy_deposited": "<green>已添加 <gray><coins> <currency><green> 金币至你的钱包！",
         "economy_missing_coins": "<red>你需要 <yellow><coins> <currency><red> 金币才能加入这个游戏！",
@@ -240,18 +247,21 @@
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
                 "                             <white><bold>起床战争</bold>",
                 "    <yellow><bold>破坏敌方的床，保护你的床</bold>",
-                "     <yellow><bold>你可以通过升级变得更强</bold>",
-                "<yellow>而升级需要<bold><resources></bold>",
-                "            <yellow><bold></bold>"
+                "    <yellow><bold>你可以通过升级变得更强</bold>",
+                "     <yellow>而升级需要<bold><resources></bold>",
+                "<yellow><bold><resources></bold>",
+                "            <yellow><bold>来获得强大升级。</bold>"
             ],
             "game_over_statistics": [
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
                 "                             <yellow><bold>起床战争</bold>",
                 "                             <team_color><win_team>",
                 "                             <winners>",
-                "    <yellow><bold>1st<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+                "                             <winners>",
                 "    <gold><bold>2nd<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
-                "    <red><bold>3rd<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>"
+                "    <red><bold>3rd<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
+                "    <gold><bold>第二名<gray>—<white><second_killer_name> <gray>—<white><second_killer_score></bold>",
+                "    <red><bold>第三名<gray>—<white><third_killer_name> <gray>—<white><third_killer_score>/bold>"
             ]
         },
         "scoreboard": {
@@ -272,9 +282,9 @@
             "current": "<aqua>目前此房间的记录是 <gray><time><aqua> 队伍成员：<gray><team-members><aqua>！"
         }
     },
-    "unknown_usage": "<red>无效的参数！请尝试使用 <dark_red>/bw help <red>指令显示帮助信息！",
+    "unknown_usage": "<red>无效的参数！你可以使用<dark_red>/bw help <red>寻求帮助！",
     "no_permissions": "<red>你没有权限这么做！",
-    "safe_reload_failed_to_stop_game": "<red>部分游戏没有在规定时间内结束， 可能受到损坏！",
+    "safe_reload_failed_to_stop_game": "<red>部分游戏没有及时结束，可能被损坏！",
     "list_header": "<green>可用的游戏房间：",
     "success": "<green>成功执行指令！",
     "sign": {
@@ -389,7 +399,9 @@
                     "invalid_constant_enum_value": "<gray><value></gray><red>是无效的值！请用 <gray><values>",
                     "team_spawn_on_the_same_block": "<red>这个位置已经被设置成某个重生点了，如果要继续，请先移除这个重生点。",
                     "team_no_spawn_there": "<red>此位置没有设置成任何重生点。",
-                    "invalid_constant_position": "<red>错误的常量列表位置！"
+                    "invalid_constant_position": "<red>错误的常量列表位置！",
+                    "nothing_in_hand": "<red>你没有手持任何东西！",
+                    "invalid_item": "<red>你输入的 <gray><item><red> 不是可用的物品！"
                 },
                 "success": {
                     "team_spawn_set": "<green>队伍 <gray><team><green> 的出生点已被成功设置为以下坐标 XYZ： <gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
@@ -448,7 +460,19 @@
                     "team_spawn_removed": "<green>队伍 <gray><team><green> 的资源点(位于<gray><x>/<y>/<z>) 已被移除",
                     "team_spawn_list": "<green>队伍 <gray><team><green> 有 <gray><count><green> 个重生点，在这些位置：",
                     "store_name_set": "<green>位于<gray><x>/<y>/<z><green>的商店(商人) 已被更名为 <gray><name><green>！",
-                    "store_name_reset": "<green>T位于: <gray><x>/<y>/<z><green>的商人(商店)已失去自定义名字！"
+                    "store_name_reset": "<green>T位于: <gray><x>/<y>/<z><green>的商人(商店)已失去自定义名字！",
+                    "target_block_countdown_set": "<gray><team><green> <green>的目标方块(<gray><material><green>)成功地被设置为坐标 XYZ：<gray><x>/<y>/<z><green> 并且它的倒计时被设置为 <gray><countdown><green> 秒！",
+                    "store_file_set": "<green>坐标为 XYZ: <gray><x>/<y>/<z><green> 的商店的配置文件现在是 <gray><file><green> 了！",
+                    "constant_list_added": "<green>你输入的 <gray><value><green> 已成功地在位置 <gray><position><green>被加入列表 <gray><config><green> ！",
+                    "spawner_initial_interval_set": "<green><type> 生成器的初始冷却已被设置为 <gray><interval> <unit><green>。",
+                    "spawner_initial_interval_reset": "<green><type> 生成器的初始冷却已被重置为在插件或变量中储存的默认值。",
+                    "target_countdown_set": "<gray><team><green> <green>的目标倒计时成功地被设置为 <gray><countdown><green> 秒!",
+                    "store_file_reset": "<green>坐标为 XYZ: <gray><x>/<y>/<z><green> 的商店不再使用自定义配置文件了！",
+                    "constant_list_removed": "<green>在位置 <gray><position><green> 出的值已被移出列表 <gray><config><green> ！",
+                    "constant_list_cleared": "<green>列表 <gray><config><green> 现在空了，但不会回到被继承的那个！",
+                    "constant_reset": "<green>常量 <gray><config><green> 已成功重置为继承的值！",
+                    "spawner_spread_reset": "<green>此 <type> 生成器的区域已被重置为在插件或变量中储存的默认值。",
+                    "spawner_spread_set": "<green>此 <type> 生成器的区域已被设置为 <gray><spread><green>。"
                 }
             }
         },
@@ -493,7 +517,9 @@
             "villager_shop_name": "  商店名称: <gold><file><reset> (从主继承: <gray><bool><reset>)",
             "value": "值",
             "config": "关于<gray><configured-component>的配置",
-            "data_type": "数据类型"
+            "data_type": "数据类型",
+            "default_value": "<yellow>使用来自配置文件或变量文件的默认值",
+            "key": "键"
         },
         "holo": {
             "click_to_remove": "<yellow>现在请点击你想移除的全息显示！",
@@ -539,9 +565,16 @@
             "config": "<green>配置<white> - <gray><command>",
             "click": "<aqua>点击执行 <gray><command><aqua>!",
             "spawners": "<green>资源生成点列表<white> - <gray><command>"
+        },
+        "group": {
+            "invalid_group_name": "<red>组名<gray><group><red>不合语法！名称必须仅包含字母数字字符、破折号和下划线！",
+            "added": "<green>游戏 <gray><game><green> 已被成功添加至 <gray><group><green> 组！",
+            "removed": "<green>Game <gray><<green>游戏 <gray><game><green> 已被成功从 <gray><group><green> 组移除！",
+            "empty": "<red>组 <gray><group><red> 是空的！",
+            "list": "<green>在该组中的游戏有 <gray><group><green>："
         }
     },
-    "unknown_command": "<red>未知指令，你可以使用<dark_red>/bw help <red>显示帮助信息！",
+    "unknown_command": "<red>未知指令，你可以使用<dark_red>/bw help <red>寻求帮助！",
     "safe_reload": "<green>正在等待所有游戏结束或等待60秒，然后重载插件。",
     "language": {
         "usage_bw_lang": "使用: /bw lang <pre><locale></pre> - <yellow>设置 <red>Bed<white>Wars 所使用的语言环境",
@@ -624,5 +657,15 @@
     "migrate": {
         "success": "<green>成功迁移来自 <red><plugin><green>的配置！",
         "failure": "<red>在导入配置时，发生了某些错误！请前往控制台查看更多细节。"
+    },
+    "unit": {
+        "tick": "游戏刻",
+        "minutes": "分钟",
+        "ticks": "游戏刻",
+        "second": "秒",
+        "seconds": "秒",
+        "minute": "分钟",
+        "hour": "小时",
+        "hours": "小时"
     }
 }
