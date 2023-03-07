@@ -182,7 +182,10 @@
             "team_is_not_in_game": "<red>チーム <gray><team></gray> は現在ゲームに参加していないため、このチートは実行できません！",
             "unknown_target": "<red>コマンドは、チーム <gray><team></gray> のターゲットを無効にする方法を知りません！",
             "target_is_not_valid": "<red>チーム <gray><team></gray> のターゲットは既に無効になっているため、無効にできませんでした！",
-            "received_targets_invalidated": "<green>ゲーム内のすべてのチームのすべての可能なターゲットが無効になりました！<gray>これでゲームが少し速くなります。"
+            "received_targets_invalidated": "<green>ゲーム内のすべてのチームのすべての可能なターゲットが無効になりました！<gray>これでゲームが少し速くなります。",
+            "team_random_failed": "<red>アルゴリズムがランダムなチームを選択できませんでした. <grey>それは奇妙なことです。",
+            "received_team_join": "<green>プレイヤーと<gray><プレイヤー></gray>がチーム <gray><team></gray> に参加しました！",
+            "cheat_failed": "<red>チートは不明な理由で失敗しました。"
         },
         "join": "<name> <green>がゲームに参加しました！<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "leave": "<name> <red>がゲームを退出した！",
@@ -191,25 +194,60 @@
         "economy_missing_coins": "<red>このゲームに参加するには<yellow><coins> <currency><red>が必要です!",
         "game_start_subtitle": "<green>ゲーム<gray><arena><green>が始まりました! ゲームをお楽しみください！",
         "player_killed": "<red>プレイヤー <killer><red>が <victim>を殺した!",
-        "economy_deposited": "<green>残高に<gray><coins> <currency><green>を追加しました!"
+        "economy_deposited": "<green>残高に<gray><coins> <currency><green>を追加しました!",
+        "messages": {
+            "game_start": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "                             <white><bold>ベッドウォーズ</bold>",
+                "     <yellow><bold>を集めて、自分自身とチームをアップグレードしましょう。</bold>",
+                "    <yellow><bold>ベッドを守り、敵のベッドを破壊してください。</bold>",
+                "            <yellow><bold>強力なアップグレードにアクセスできます。</bold>"
+            ],
+            "game_over_statistics": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "                             <yellow><bold>ベッドウォーズ</bold>",
+                "                             <team_color><win_team>",
+                "                             <winners>",
+                "    <yellow><bold>1位<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+                "    <gold><bold>2位<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
+                "    <red><bold>3位<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>"
+            ]
+        },
+        "scoreboard": {
+            "you": "<gray>あなた",
+            "state": {
+                "waiting": "<white>ちょっと待ってね...",
+                "countdown": "<white>と<green>を<countdown>秒後に開始"
+            },
+            "mode": {
+                "solo": "ソロ",
+                "doubles": "ダブルス",
+                "triples": "トリプル",
+                "squads": "スクワッド"
+            }
+        },
+        "record": {
+            "no": "<aqua>このゲームをプレイするのはこれが初めてです。新記録を飾るのはどうですか？",
+            "current": "<aqua>このゲームの現在の記録は、<gray><time><aqua> が <gray><team-members><aqua> によって達成されました！"
+        }
     },
     "help": {
         "title": "Screaming BedWars <version> - ヘルプ",
         "title_console": "Screaming BedWars <version> - コンソール用ヘルプ",
-        "bw_join": "/bw join <pre><arena></pre> - <green>ゲームへの参加",
+        "bw_join": "/bw join\\<arena> - <green>ゲームに参加",
         "bw_stats": "/bw stats - <green>自分の統計情報を表示する",
         "bw_rejoin": "/bw rejoin - <green>前回参加したゲームに再度参加する",
         "bw_autojoin": "/bw autojoin - <green>最初の待ち受けに参加する",
         "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>メインロビーを有効にするか、メインロビーの位置を設定します",
         "bw_admin_add": "/bw admin <pre><arena></pre> add [variant] - <yellow>新しいエリアを作成",
-        "bw_admin_lobby": "/bw admin <pre><arena></pre> lobby - <yellow>ロビーの位置を自分の位置に設定します",
-        "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>アリーナの極点を自分の位置に設定します",
-        "bw_admin_pos2": "/bw admin <pre><arena></pre> pos2 - <yellow>アリーナの第2極点を自分の位置に設定します",
-        "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>ロビーの第2極点を自分の位置に設定する",
-        "bw_admin_pausecountdown": "/bw admin <pre><arena></pre> pausecountdown <pre><seconds></pre> - <yellow>ゲーム開始前の一時停止時間の設定",
-        "bw_admin_minplayers": "/bw admin <pre><arena></pre> minplayers <pre><minimum></pre> - <yellow>ゲーム開始に必要な最低人数の設定",
-        "bw_admin_team_add": "/bw admin <pre><arena></pre>team add <pre><team> <color> <max players></pre> - <yellow>ゲームにチームを追加する",
-        "bw_admin_team_color": "/bw admin <pre><arena></pre> team color <pre><team> <color></pre> - <yellow>チームカラーの変更",
+        "bw_admin_lobby": "/bw admin \\<arena> lobby - <yellow>ロビーの位置を自分の位置に設定します",
+        "bw_admin_pos1": "/bw admin <pre><arena></pre> pos1 - <yellow>アリーナの1個目の端を自分の位置に設定します",
+        "bw_admin_pos2": "/bw admin \\<arena> pos2 - <yellow>アリーナの2個目の端を自分の位置に設定します",
+        "bw_admin_lobby_pos2": "/bw admin \\<arena> lobbypos2 - <yellow>ロビーの2個目の端を自分の位置に設定する",
+        "bw_admin_pausecountdown": "/bw admin \\<arena> pausecountdown \\<seconds> - <yellow>ゲーム開始前の一時停止時間を設定します",
+        "bw_admin_minplayers": "/bw admin \\<arena> minplayers \\<minimum> - <yellow>ゲーム開始に必要な最低人数の設定",
+        "bw_admin_team_add": "/bw admin \\<arena>team add \\<team> \\<color> \\<max players> - <yellow>ゲームにチームを追加する",
+        "bw_admin_team_color": "/bw admin \\<arena> team color \\<team> \\<color> - <yellow>チームカラーの変更",
         "bw_admin_team_spawn": "/bw admin <pre><arena></pre> team spawn <pre><team></pre> - <yellow>チームのスポーンを自分の位置に設定",
         "bw_admin_jointeam": "/bw admin <pre><arena></pre> jointeam <pre><team></pre> - <yellow>エンティティを使ってチームに接続する機能を設定する",
         "bw_admin_spawner_change_type": "/bw admin <pre><arena></pre> spawner changeType <pre><type></pre> - <yellow>自分の位置にあるスポナーのタイプを変更する",
@@ -236,10 +274,10 @@
         "bw_stats_other": "/bw stats [player] - <green>他のプレーヤーの統計情報を表示する",
         "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>実行したプレイヤーのいる場所にホログラムを追加する",
         "bw_removeholo": "/bw removeholo - <yellow>このコマンドを実行した後、プレイヤーはホログラフィック・スタティスティックを右クリックして削除することができます。",
-        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>アリーナのすべての情報を表示します",
-        "bw_admin_spec": "/bw admin <pre><arena></pre> spec - <yellow> スペクテイターのスポーンを自分の位置に設定する",
-        "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>ロビーの極点を自分の位置に設定する",
-        "bw_admin_time": "/bw admin <pre><arena></pre> time <pre><seconds></pre> - <yellow>ゲームの継続時間を設定",
+        "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>アリーナに関するすべての情報を表示します",
+        "bw_admin_spec": "/bw admin \\<arena> spec - <yellow>スペクテイターモードになったときののスポーンを自分の位置に設定します",
+        "bw_admin_lobby_pos1": "/bw admin \\<arena> lobbypos1 - <yellow>ロビーの1個目の端を自分の位置に設定する",
+        "bw_admin_time": "/bw admin \\<arena> time \\<seconds> - <yellow>ゲームの継続時間を設定",
         "bw_admin_team_maxplayers": "/bw admin <pre><arena></pre> team maxplayers <pre><team> <max players></pre> - <yellow>最大のチームプレーヤーの変更",
         "bw_admin_team_bed": "/bw admin <pre><arena></pre> team bed <pre><team></pre> - <yellow>チームのターゲットブロックを自分の目標位置に設定する（ベッドだけでなく、他のブロックでも可）",
         "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [hologram] [first level] [name] [team] [max spawned resources]</pre> - <yellow>自分の位置にアイテムスポナーを追加する",
@@ -260,7 +298,21 @@
         "bw_dump": "/bw dump - <yellow>サーバーをダンプして、そのダンプへのリンクを提供します。このリンクはサポートに役立ちます",
         "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>アリーナが編集モードの場合、このコマンドはインタラクティブモードを有効にします",
         "bw_gamesinv": "/bw gamesinv <pre><inventory></pre> - <green>特定のゲームのインベントリを開きます",
-        "bw_reload": "/bw reload - <red>プラグインをリロードする"
+        "bw_reload": "/bw reload - <red>プラグインをリロードする",
+        "messages": {
+            "arguments": "引数",
+            "optional": "設定",
+            "showing_results_for_query": "クエリの検索結果を表示しています",
+            "no_results_for_query": "クエリの結果がありません",
+            "available_commands": "利用可能なコマンド",
+            "click_to_show_help": "クリックすると、このコマンドのヘルプが表示されます",
+            "page_out_of_range": "エラー:ページ <page> は範囲外です。 [1, <max_pages>] の範囲内である必要があります",
+            "click_for_next_page": "クリックして次のページへ",
+            "click_for_previous_page": "前のページへ",
+            "command": "コマンド",
+            "description": "説明",
+            "no_description": "説明なし"
+        }
     },
     "games_inventory": {
         "could_not_find_game": "<red>ゲームが見つかりませんでした！",
@@ -273,7 +325,7 @@
         ],
         "patch_release": [
             "<yellow>BedWars<version>の新パッチリリースです!",
-            "<url>からダウンロード可能です。"
+            "<url> からダウンロードすることが可能です。"
         ]
     },
     "admin": {
