@@ -1,6 +1,6 @@
 {
-    "unknown_command": "<red>不明なコマンドです!<dark_red>/bw help <red>でヘルプを試してください!",
-    "no_permissions": "<red>あなたにはそれをする十分な権限がありません!",
+    "unknown_command": "<red>不明なコマンドです！<dark_red>/bw help <red> を使ってみてください！",
+    "no_permissions": "<red>あなたにはそれを実行する十分な権限がありません！",
     "sign": {
         "admin": {
             "cannot_destroy": "<red>この看板を壊す権限がありません！",
@@ -28,7 +28,7 @@
         }
     },
     "success": "<green>コマンドは成功しました!",
-    "list_header": "<green>利用可能なアリーナ。",
+    "list_header": "<green>利用可能なアリーナ：",
     "statistics": {
         "player_does_not_exist": "<red>プレイヤーが見つかりません！",
         "header": "<green>:<red><player><green>の統計情報です。",
@@ -56,7 +56,7 @@
             "game_is_full": "<red>ゲーム <gray><arena> <red>がいっぱいです! ゲーム終了までお待ちください!",
             "already_in_game": "<red>あなたはすでに何かのゲームに参加しています。",
             "vip_game_is_full": "<red>ゲーム <gray><arena> <red>はVIPプレイヤーでいっぱいです。ゲーム終了までお待ちください!",
-            "there_is_no_empty_game": "<red>待機中のゲームはありません。すべてのゲームはすでに実行されています",
+            "there_is_no_empty_game": "<red>待機中のゲームはありません。すべてのゲームはすでに実行されています！",
             "command_is_not_allowed": "<red>このコマンドは、ゲームの実行中には使用できません!"
         },
         "target_block": {
@@ -66,7 +66,16 @@
                 "anchor": "<team><reset>の リスポーンアンカー が破壊されました!",
                 "cake": "<team><reset>のケーキが食べられました!",
                 "subtitle": "チームのメンバーを殺すことができるようになりました!",
-                "subtitle_victim": "あなたはリスポーンすることができません!"
+                "subtitle_victim": "あなたはもうリスポーンすることができません！",
+                "any_certain_popular_server": "<red><bold>指定のブロックが壊されました！",
+                "bed_certain_popular_server": "<red><bold>ベッドが破壊されました！",
+                "cake_certain_popular_server": "<red><bold>ケーキを食べました！",
+                "killable": "<team>メンバー全員を倒すことができるようになりました！",
+                "death_mode": "<dark_purple><bold>デスモード！",
+                "all_beds": "全てのベッドが破壊されました！",
+                "all_anchors": "すべてのアンカーが破壊されました！",
+                "all_target_blocks": "すべてのターゲットブロックが破壊されました！",
+                "all_cakes": "ケーキは全部食べました！"
             },
             "hologram": {
                 "protect": {
@@ -94,7 +103,7 @@
             "title_cancel": "<red>チームが全滅 :("
         },
         "spawner": {
-            "countdown": "<yellow><seconds> <bold>秒",
+            "countdown": "<yellow><seconds> <aqua>秒",
             "countdown_custom": "<yellow><value> <aqua><unit>",
             "every_second": "<aqua>毎秒",
             "not_enough_level": "<red>スポナーが動作しません! <levels>レベルごとにアップグレードする必要があります。",
@@ -102,7 +111,11 @@
             "tier": "<yellow>Tier <red><tier>です",
             "full": "<red><bold>スポナーが枯渇してます",
             "full_hypixel": "<red><bold>スポナーがいっぱいです",
-            "countdown_hypixel": "<red><seconds> <yellow>秒ごとにスポーンします"
+            "countdown_hypixel": "<red><seconds> <yellow>秒ごとにスポーンします",
+            "full_certain_popular_server": "<red><bold>スポナーがいっぱいです！",
+            "countdown_custom_certain_popular_server": "<yellow>は<red><value> <yellow><unit> で出現",
+            "countdown_certain_popular_server": "<yellow>は<red><seconds> <yellow>秒で出現",
+            "reached_maximum_level": "<red>スポナーが最大レベルに達しました！"
         },
         "resources": {
             "bronze": "ブロンズ",
@@ -120,7 +133,9 @@
             "buy_success": "<green><gray><item><green>を<gray><material><green>で購入することに成功しました!",
             "name": "店",
             "shop_back": "<red> カテゴリ一覧へ戻る",
-            "buy_failed": "<gray><item><red><red>を買うためのアイテムがありません！ <gray><material><red>が必要です！"
+            "buy_failed": "<gray><item><red><red>を買うためのアイテムがありません！ <gray><material><red>が必要です！",
+            "upgrade_success": "<green><name> は、「<spawner>」をレベル <level> にアップグレードしました！",
+            "upgrade_translate": "アップグレード"
         },
         "team_selection": {
             "inventory_name": "チーム選択 - <arena>",
@@ -157,9 +172,17 @@
             "received_kill": "<green>プレイヤー<gray><player><green>がチートで殺された!",
             "special_item_used": "<green>スペシャルアイテム<gray><item></gray>が使用されました!",
             "game_not_running": "<red>ゲームが起動しているときにしかチートはできません！",
-            "please_provide_valid_cheat_type": "<red>提供されたチートタイプが有効でないか、または不足しています!",
+            "please_provide_valid_cheat_type": "<red>提供されたチート タイプが無効である、または存在しません！",
             "received_give": "<green>プレイヤー<gray><player><green>が<gray><amount><green>の<gray><resource>を手に入れました",
-            "region_regenerated": "<green>アリーナの領域<gray><arena></gray>が再生されました!"
+            "region_regenerated": "<green>アリーナの領域<gray><arena></gray>が再生されました!",
+            "game_forced": "<green>ゲームは１つの空のチームで開始されるため、プラグインが正しく機能するために少なくとも２つのチームがゲームに参加しています。勝つためにそのターゲットを無効にします！ <gray>保護されていないので、あなたにとっては簡単ではありませんよね？",
+            "received_target_invalidated": "<green>チーム <gray><team></gray> のターゲットが無効化されました！<gray>そのチームのプレイヤーはもうあなたを好きではありません:(",
+            "game_not_waiting": "<red>このチートは、ゲームが待機状態のときにのみ実行できます!",
+            "team_does_not_exist": "<red>チーム <gray><team></gray> は存在しません!",
+            "team_is_not_in_game": "<red>チーム <gray><team></gray> は現在ゲームに参加していないため、このチートは実行できません！",
+            "unknown_target": "<red>コマンドは、チーム <gray><team></gray> のターゲットを無効にする方法を知りません！",
+            "target_is_not_valid": "<red>チーム <gray><team></gray> のターゲットは既に無効になっているため、無効にできませんでした！",
+            "received_targets_invalidated": "<green>ゲーム内のすべてのチームのすべての可能なターゲットが無効になりました！<gray>これでゲームが少し速くなります。"
         },
         "join": "<name> <green>がゲームに参加しました！<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "leave": "<name> <red>がゲームを退出した！",
@@ -240,7 +263,7 @@
         "bw_reload": "/bw reload - <red>プラグインをリロードする"
     },
     "games_inventory": {
-        "could_not_find_game": "<red>ゲームが見つかりませんでした",
+        "could_not_find_game": "<red>ゲームが見つかりませんでした！",
         "unknown_inventory": "<red>未知のゲームのインベントリ<gray><type><red>!"
     },
     "update": {
@@ -249,11 +272,12 @@
             "<url>からダウンロードしてください"
         ],
         "patch_release": [
-            "<yellow>BedWars<version>の新パッチリリースです!"
+            "<yellow>BedWars<version>の新パッチリリースです!",
+            "<url>からダウンロード可能です。"
         ]
     },
     "admin": {
-        "usage": "<red>使用例: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>",
+        "usage": "<red>使用法: /bw admin \\<arena> \\<add|edit|remove|save|...> ...",
         "arena": {
             "error": {
                 "already_exists": "<red>アリーナはすでに存在しています!",
@@ -361,7 +385,7 @@
         },
         "holo": {
             "added": "<green>ホログラフィックがあなたのポジションに追加されました!",
-            "not_enabled": "<red>Holographicが無効になっています。Holographic Displayがインストールされていますか？",
+            "not_enabled": "<red>Holographicは無効です。",
             "click_to_remove": "<yellow>削除したいホログラムをクリックしてください!",
             "removed": "<green>ホログラフィックの削除に成功しました！"
         },
@@ -441,9 +465,9 @@
             "click": "<aqua>クリックで<gray><command><aqua>を実行!"
         }
     },
-    "unknown_usage": "<red>無効な引数です。<dark_red>/bw help <red>でヘルプで試してください!",
-    "safe_reload": "<green>すべてのゲームが停止するまで、または60秒待ってから、プラグインを再読み込みしてください。",
-    "safe_reload_failed_to_stop_game": "<red>ゲームの停止が間に合わず、アリーナが破損した可能性があります!",
+    "unknown_usage": "<red>無効な引数です！<dark_red>/bw help <red>でヘルプで試してください！",
+    "safe_reload": "<green>すべてのゲームが停止するまで、または60秒待ってからプラグインを再読み込みしてください。",
+    "safe_reload_failed_to_stop_game": "<red>一部のゲームは時間内に停止されませんでした。アリーナが破損している可能性があります！",
     "specials": {
         "trap": {
             "caught": "<red>チーム<white><team><red>の罠にかかってしまった!",
