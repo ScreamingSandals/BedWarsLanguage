@@ -1,5 +1,5 @@
 {
-    "unknown_command": "<red>Unbekannter Command! Versuche <dark_red>/bw help <red>für Hilfe!",
+    "unknown_command": "<red>Unbekannter Befehl! Nutze <dark_red>/bw help <red>für Hilfe!",
     "sign": {
         "status": {
             "waiting": {
@@ -27,7 +27,7 @@
         }
     },
     "statistics": {
-        "kills": "<gray>Kills: <green><kills>",
+        "kills": "<gray>Getötet: <green><kills>",
         "beds": "<gray>Zerstörte Betten: <green><beds>",
         "disabled": "<red>Spieler Statistiken sind auf diesem Server deaktiviert!",
         "player_does_not_exist": "<red>Spieler nicht gefunden!",
@@ -43,9 +43,9 @@
     "safe_reload_failed_to_stop_game": "<red>Manche Spiele konnten in der Zeit nicht gestoppt werden, die Arena könnte beschädigt sein!",
     "list_header": "<green>Verfügbare Arenen:",
     "success": "<green>Befehl erfolgreich ausgeführt!",
-    "unknown_usage": "<red>Ungültige Argumente! Versuche <dark_red>/bw help <red>für Hilfe!",
-    "no_permissions": "<red>Du hast nicht genug Berechtigungen dafür!",
-    "safe_reload": "<green>Es wird gewartet bis alle Spiele gestoppt sind oder 60 Sekunden vorbei sind bevor das Plugin neu geladen wird.",
+    "unknown_usage": "<red>Ungültige Argumente! Nutze <dark_red>/bw help <red>für Hilfe!",
+    "no_permissions": "<red>Du hast keine Berechtigung, das zu tun!",
+    "safe_reload": "<green>Es wird gewartet bis alle Spiele gestoppt sind oder 60 Sekunden vorbei sind, bevor das Plugin neu geladen wird.",
     "in_game": {
         "errors": {
             "game_is_full": "<red>Spiel <gray><arena> <red>ist voll! Bitte warte auf das Spiel Ende!",
@@ -68,8 +68,18 @@
                 "bed": "Bett von <team><reset> wurde zerstört!",
                 "anchor": "Der Respawnanker des Teams <team><reset> wurde zerstört!",
                 "cake": "Der Kuchen von <team><reset> wurde gegessen!",
-                "subtitle_victim": "Jetzt wirst du nie mehr respawnen!",
-                "subtitle": "Du kannst jetzt die Teammitglieder töten!"
+                "subtitle_victim": "Du wirst nicht mehr respawnen!",
+                "subtitle": "Du kannst jetzt die Teammitglieder töten!",
+                "any_certain_popular_server": "<red><bold>ZIELBLOCK ZERSTÖRT!",
+                "anchor_certain_popular_server": "<red><bold>ANKER ZERSTÖRT!",
+                "bed_certain_popular_server": "<red><bold>BETT ZERSTÖRT!",
+                "cake_certain_popular_server": "<red><bold>KUCHEN GEGESSEN!",
+                "killable": "Du kannst nun alle Mitglieder von <team> töten!",
+                "death_mode": "<dark_purple><boldTodes Modus!",
+                "all_beds": "Alle Betten wurden zerstört!",
+                "all_anchors": "Alle Anker wurden zerstört!",
+                "all_target_blocks": "Alle Zielblöcke wurden zerstört!",
+                "all_cakes": "Alle Kuchen wurden gegessen!"
             },
             "hologram": {
                 "protect": {
@@ -105,7 +115,11 @@
             "countdown_custom": "<yellow><value> <aqua><unit>",
             "full": "<red><bold>Spawner ist aufgebraucht",
             "full_hypixel": "<red><bold>Spawner ist voll!",
-            "countdown_custom_hypixel": "<yellow>Spawnt in <red><value> <yellow><unit>"
+            "countdown_custom_hypixel": "<yellow>Spawnt in <red><value> <yellow><unit>",
+            "full_certain_popular_server": "<red><bold>Spawner ist voll!",
+            "countdown_certain_popular_server": "<yellow>Erscheint in <red><seconds> <yellow>Sekunden",
+            "countdown_custom_certain_popular_server": "<yellow>Erscheint in <red><value> <yellow><unit>",
+            "reached_maximum_level": "<red>Spawner hat sein maximales Level erreicht!"
         },
         "economy_deposited": "<green>Deinem Guthaben wurden <gray><coins> <currency><green> hinzugefügt!",
         "economy_missing_coins": "<red>Du brauchst <yellow><coins> <currency><red>, um an diesem Spiel teilzunehmen!",
@@ -116,7 +130,18 @@
             "received_kill": "<green>Spieler <gray><player><green> durch Cheat getötet!",
             "please_provide_valid_cheat_type": "<red>Angegebener Cheat-Typ ist nicht gültig oder fehlt!",
             "received_give": "<green>Spieler <gray><player><green> hat <gray><amount><green> von <gray><resource>",
-            "special_item_used": "<green>Spezialgegenstand <gray><item></gray> wurde verwendet!"
+            "special_item_used": "<green>Spezialgegenstand <gray><item></gray> wurde verwendet!",
+            "game_not_waiting": "<red>Du kannst diesen Cheat nur nutzen, wenn das Spiel am Warten ist!",
+            "cheat_failed": "<red>Cheat ist aus nicht bekannten Gründen fehlgeschlagen.",
+            "game_forced": "<green>Das Game startet mit einem Team leer, damit mindestens 2 Teams im Spiel sind, damit das Plugin richtig funktioniert. Macht das Ziel des Gewinnens ungültig! <gray> Es wird nicht beschützt, also sollte es einfach für dich sein, oder?",
+            "team_random_failed": "<red>Ein Algorithmus hat fehlgeschlagen, dich zu einem zufälligen Team zuzuweisen. <gray>Das ist komisch.",
+            "received_team_join": "<green>Spielerr <gray><player></gray> ist dem Team <gray><team></gray> beigetreten!",
+            "team_does_not_exist": "<red>Team <gray><team></gray> existiert nicht!",
+            "team_is_not_in_game": "<red>Team <gray><team></gray> ist derzeit nicht im Spiel, und deswegen kann dieser Cheat nicht ausgeführt werden!",
+            "unknown_target": "<red>Der Command weiß nicht, wie er das Ziel für das Team <gray><team></gray>ungültig machen kann!",
+            "target_is_not_valid": "<red>Das Ziel vom Team <gray><team></gray> konnte nicht ungültig gemacht werden, weil es schon ungültig ist!",
+            "received_target_invalidated": "<green>Das Ziel vom Team <gray><team></gray> wurde ungültig gemacht! <gray>Spieler in diesem Team mögen dich nicht mehr :(",
+            "received_targets_invalidated": "<green>Alle möglichen Ziele von allen Teams im Spiel wurden ungültig gemacht! <gray>Das sollte das Spiel etwas schneller machen."
         },
         "leave": "<name> <red>hat das Spiel verlassen!",
         "resources": {
@@ -135,7 +160,9 @@
             "price": "Preis:",
             "amount": "Anzahl:",
             "buy_success": "<green>Erfolgreich <gray><item><green> gekauft für <gray><material><green>!",
-            "buy_failed": "<red>Materialmangel, um <gray><item><red> zu kaufen! Benötigt <gray><material><red>!"
+            "buy_failed": "<red>Materialmangel, um <gray><item><red> zu kaufen! Benötigt <gray><material><red>!",
+            "upgrade_success": "<green><name> hat <spawner> erfolgreich auf Level <level> gelevelt!",
+            "upgrade_translate": "Upgrade"
         },
         "team_selection": {
             "inventory_name": "Team auswählen - <arena>",
@@ -171,7 +198,41 @@
         "player_self_killed": "<red>Spieler <victim> <red>ist gestorben!",
         "game_start_title": "<green>Das Spiel hat begonnen!",
         "game_start_subtitle": "<green>Das Spiel <gray><arena><green> hat begonnen! Viel Spass beim Spiel!",
-        "player_killed": "<red>Spieler <killer> <red>hat <victim><red> getötet!"
+        "player_killed": "<red>Spieler <killer> <red>hat <victim><red> getötet!",
+        "scoreboard": {
+            "you": "<gray>DU",
+            "state": {
+                "waiting": "<white>Warten...",
+                "countdown": "<white>Startet in <green><countdown>s"
+            },
+            "mode": {
+                "solo": "Einzel",
+                "doubles": "Doppelt",
+                "triples": "Dreier",
+                "squads": "Vierer"
+            }
+        },
+        "messages": {
+            "game_over_statistics": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "                             <yellow><bold>Bed Wars</bold>",
+                "    <gold><bold>2nd<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
+                "                             <team_color><win_team>",
+                "                             <winners>",
+                "    <yellow><bold>1st<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>"
+            ],
+            "game_start": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "                             <white><bold>Bed Wars</bold>",
+                "     <yellow><bold>Verbesser dich und dein Team durchs sammeln</bold>",
+                "            <yellow><bold>um kraftvolle Upgrades freizuschalten.</bold>",
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+            ]
+        },
+        "record": {
+            "no": "<aqua>Das ist das erste Mal, dass dieses Spiel gespielt wird. Warum setzt du nicht einen neuen Rekord?",
+            "current": "<aqua>Der derzeitige Rekord dieses Spiels liegt bei <gray><time><aqua> von <gray><team-members><aqua>!"
+        }
     },
     "help": {
         "bw_leave": "/bw leave - <green>Das Spiel verlassen",
@@ -208,6 +269,36 @@
         "bw_admin_spawner_rotation_mode": "/bw admin <pre><arena></pre> spawner rotationMode <pre><mode></pre> - <yellow>Setzt den Rotationsmodus des schwebenden Hologramms des Spawners an deiner Position",
         "bw_admin_spawner_add": "/bw admin <pre><arena></pre> spawner add <pre><bronze|gold|iron> [hologram] [first level] [name] [team] [max spawned resources]</pre> - <yellow>Fügt einen Item Spawner an deiner Position hinzu",
         "bw_admin_spawner_change_type": "/bw admin <pre><arena></pre> spawner changeType <pre><type></pre> - <yellow>Ändert den Typ des Spawners an deiner Position",
-        "bw_admin_spawner_custom_name": "/bw admin <pre><arena></pre> spawner customName <pre><name></pre> - <yellow>Setzt den benutzerdefinierten Namen des Spawners an deiner Position"
+        "bw_admin_spawner_custom_name": "/bw admin <pre><arena></pre> spawner customName <pre><name></pre> - <yellow>Setzt den benutzerdefinierten Namen des Spawners an deiner Position",
+        "messages": {
+            "command": "Befehl",
+            "description": "Beschreibung",
+            "available_commands": "Mögliche Befehle",
+            "optional": "Optional",
+            "showing_results_for_query": "Zeige Suchergebnisse für Abfrage",
+            "no_results_for_query": "Keine Ergebnisse für Abfrage",
+            "click_to_show_help": "Klicken Sie hier, um die Hilfe für diesen Befehl anzuzeigen",
+            "no_description": "Keine Beschreibung",
+            "arguments": "Argumente"
+        }
+    },
+    "language": {
+        "invalid": "<red>Die angegebene Sprachdatei konnte nicht geladen werden!",
+        "success": "<green>Erfolgreich die Sprache auf <white>[<lang>] <green>gesetzt",
+        "already_set": "Die Sprache: [<lang>] wurde bereits als Standardsprache festgelegt!"
+    },
+    "unit": {
+        "hour": "Stunde",
+        "minutes": "Minuten",
+        "minute": "Minute",
+        "seconds": "Sekunden",
+        "second": "Sekunde",
+        "ticks": "Ticks",
+        "tick": "Tick",
+        "hours": "Stunden"
+    },
+    "migrate": {
+        "success": "<green>Erfolgreich die Konfiguration von <red><plugin><green> migriert!",
+        "failure": "<red>Bei der Migration der Konfiguration ist etwas schiefgelaufen! Siehe in die Konsole für Details."
     }
 }
