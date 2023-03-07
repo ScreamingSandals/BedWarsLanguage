@@ -1,5 +1,5 @@
 {
-    "unknown_command": "<red>Unbekannter Command! Versuche <dark_red>/bw help <red>für Hilfe!",
+    "unknown_command": "<red>Unbekannter Command! Nutze <dark_red>/bw help <red>für Hilfe!",
     "sign": {
         "status": {
             "waiting": {
@@ -38,12 +38,12 @@
         "wins": "<gray>Siege: <green><wins>",
         "loses": "<gray>Verloren: <red><loses>",
         "games": "<gray>Gespielte Spiele: <aqua><games>",
-        "score": "<gray>Gesamt Punkte: <green><score>"
+        "score": "<gray>Gesamte Punkte: <green><score>"
     },
     "safe_reload_failed_to_stop_game": "<red>Manche Spiele konnten in der Zeit nicht gestoppt werden, die Arena könnte beschädigt sein!",
     "list_header": "<green>Verfügbare Arenen:",
     "success": "<green>Befehl erfolgreich ausgeführt!",
-    "unknown_usage": "<red>Ungültige Argumente! Versuche <dark_red>/bw help <red>für Hilfe!",
+    "unknown_usage": "<red>Ungültige Argumente! Nutze <dark_red>/bw help <red>für Hilfe!",
     "no_permissions": "<red>Du hast nicht genug Berechtigungen dafür!",
     "safe_reload": "<green>Es wird gewartet bis alle Spiele gestoppt sind oder 60 Sekunden vorbei sind bevor das Plugin neu geladen wird.",
     "in_game": {
@@ -59,16 +59,16 @@
             "game_kicked_by_vip": "<red>Du wurdest von einem VIP Spieler gekicked!",
             "game_already_running": "<red>Spiel <gray><arena> <red>läuft gerade! Du kannst keinen laufenden Spielen beitreten!",
             "command_is_not_allowed": "<red>Der Command wurde geblockt während das Spiel läuft!",
-            "game_is_gone": "<red>Schaut so aus als wäre das Spiel in dem du warst nicht mehr in dieser Welt.",
+            "game_is_gone": "<red>Schaut so aus als wäre das Spiel in dem du warst nicht mehr vorhanden.",
             "there_is_no_empty_game": "<red>Es gibt keine offenen Spiele! Alle Spiele laufen noch!"
         },
         "target_block": {
             "destroyed": {
                 "any": "Block von <team><reset> wurde zerstört!",
                 "bed": "Bett von <team><reset> wurde zerstört!",
-                "anchor": "Der Respawnanker des Teams <team><reset> wurde zerstört!",
+                "anchor": "Der Respawnanker von <team><reset> wurde zerstört!",
                 "cake": "Der Kuchen von <team><reset> wurde gegessen!",
-                "subtitle_victim": "Jetzt wirst du nie mehr respawnen!",
+                "subtitle_victim": "Jetzt wirst du nicht mehr respawnen!",
                 "subtitle": "Du kannst jetzt die Teammitglieder töten!"
             },
             "hologram": {
@@ -87,7 +87,7 @@
                 "destroy": {
                     "any": "<teamcolor><bold>Zerstöre diesen Zielblock!",
                     "bed": "<teamcolor><fett>Zerstöre dieses Bett!",
-                    "anchor": "Zerstöre diesen Anker!",
+                    "anchor": "<teamcolor><fett>Zerstöre diesen Anker!",
                     "cake": "<teamcolor><bold>Iss diesen Kuchen!"
                 }
             }
@@ -100,7 +100,7 @@
             "every_second": "<aqua>jede Sekunde",
             "not_enough_level": "<red>Spawner kann nicht funktionieren! Du musst um <levels> Level aufsteigen.",
             "countdown": "<yellow><seconds> <aqua>Sekunden",
-            "tier": "<yellow>Ebene <red><tier>",
+            "tier": "<yellow>Level <red><tier>",
             "countdown_hypixel": "<yellow>Spawnt in <red><seconds> <yellow>Sekunden",
             "countdown_custom": "<yellow><value> <aqua><unit>",
             "full": "<red><bold>Spawner ist aufgebraucht",
