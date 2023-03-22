@@ -64,7 +64,12 @@
                 "subtitle": "Vous pouvez maintenant tuer les membres de l'équipe !",
                 "bed": "Le lit de <team><reset> a été détruit !",
                 "cake": "Le gâteau de <team><reset> a été mangé !",
-                "subtitle_victim": "Maintenant vous ne pourrez plus réapparaître !"
+                "subtitle_victim": "Maintenant vous ne pourrez plus réapparaître !",
+                "any_certain_popular_server": "<rouge><gras>BLOC CIBLE DÉTRUIT !",
+                "bed_certain_popular_server": "<rouge><gras>LIT DÉTRUIT !",
+                "anchor_certain_popular_server": "<rouge><gras>ANCRE DÉTRUITE !",
+                "cake_certain_popular_server": "<rouge><gras>GATEAU MANGÉ !",
+                "killable": "Vous pouvez maintenant tuer tous les membres de l'équipe <team> !"
             },
             "hologram": {
                 "protect": {
