@@ -69,7 +69,12 @@
                 "bed_certain_popular_server": "<rouge><gras>LIT DÉTRUIT !",
                 "anchor_certain_popular_server": "<rouge><gras>ANCRE DÉTRUITE !",
                 "cake_certain_popular_server": "<rouge><gras>GATEAU MANGÉ !",
-                "killable": "Vous pouvez maintenant tuer tous les membres de l'équipe <team> !"
+                "killable": "Vous pouvez maintenant tuer tous les membres de l'équipe <team> !",
+                "death_mode": "<dark_purple><bold>Mode mortel !",
+                "all_beds": "Tous les lits ont étés détruits !",
+                "all_anchors": "Toutes les ancres ont étés détruites !",
+                "all_target_blocks": "Tous les bocs cibles ont étés détruits !",
+                "all_cakes": "Tous les gateaux ont étés mangés !"
             },
             "hologram": {
                 "protect": {
@@ -105,7 +110,11 @@
             "tier": "<yellow>Tier <red><tier>",
             "countdown_hypixel": "<yellow>Apparaît dans <red><seconds> <yellow>secondes",
             "countdown_custom": "<yellow><value> <aqua><unit>",
-            "countdown_custom_hypixel": "<yellow>Apparaît dans <red><value> <yellow><unit>"
+            "countdown_custom_hypixel": "<yellow>Apparaît dans <red><value> <yellow><unit>",
+            "full_certain_popular_server": "<red><bold>Le spawner est plein !",
+            "countdown_custom_certain_popular_server": "<yellow>Apparait dans <red><value> <yellow><unit>",
+            "countdown_certain_popular_server": "<yellow>Nouveau dans <red><seconds> <yellow>secondes",
+            "reached_maximum_level": "<red>Le Spawner a atteint son niveau maximum !"
         },
         "resources": {
             "bronze": "Bronze",
@@ -123,7 +132,9 @@
             "amount": "Quantité :",
             "page_back": "Page précédente",
             "buy_success": "<green>Vous avez achetez avec succès <gray><item><green> for <gray><material><green> !",
-            "buy_failed": "<red>Il vous manque des ressources pour acheter <gray><item><red> ! Il vous faut <gray><material><red> !"
+            "buy_failed": "<red>Il vous manque des ressources pour acheter <gray><item><red> ! Il vous faut <gray><material><red> !",
+            "upgrade_translate": "améliorer",
+            "upgrade_success": "<green><name> a bien amélioré <spawner> au niveau<level>!"
         },
         "team_selection": {
             "inventory_name": "Choisissez une équipe - <arena>",
@@ -169,10 +180,28 @@
             "received_kill": "<green>Le joueur <gray><player><green> a été tué par la main de dieu !",
             "special_item_used": "<green>L'objet spécial <gray><item></gray> a été utilisé !",
             "region_regenerated": "<green>La région de l'arène <gray><arena></gray> a été régénérée !",
-            "received_give": "<green>Le joueur <gray><player><green> a eu <gray><amount><green> de <gray><resource>"
+            "received_give": "<green>Le joueur <gray><player><green> a eu <gray><amount><green> de <gray><resource>",
+            "game_not_waiting": "<red>Vous ne pouvez exécuter ce cheat seulement quand la partie est en attente !"
         },
         "economy_deposited": "<green>Ajout de <gray><coins> <currency><green> à votre balance !",
-        "economy_missing_coins": "<red>Vous avez besoin de <yellow><coins> <currency><red> pour entrer dans cette partie !"
+        "economy_missing_coins": "<red>Vous avez besoin de <yellow><coins> <currency><red> pour entrer dans cette partie !",
+        "messages": {
+            "game_start": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+            ]
+        },
+        "scoreboard": {
+            "state": {
+                "countdown": "<white>Début dans <green><countdown>s",
+                "waiting": "<white>En attente..."
+            },
+            "mode": {
+                "solo": "Solo",
+                "doubles": "Doubles",
+                "triples": "Triples"
+            },
+            "you": "<gray>VOUS"
+        }
     },
     "safe_reload": "<green>En attente jusqu'à ce que toutes les parties en cours soient arrêtées ou 60 secondes avant rechargement du plugin.",
     "unknown_usage": "<red>Argument invalide ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide !",
