@@ -170,8 +170,8 @@
         "leave": "<name> <red>a quitté la partie !",
         "player_self_killed": "<red>Joueur<victim> <red>est mort !",
         "player_killed": "<red>Le joueur <killer><red> a tué <victim><red> !",
-        "game_start_title": "<green>La Game a démaré !",
-        "game_start_subtitle": "<green> La Game <grey><arena><green> a démarré ! Bon jeu !",
+        "game_start_title": "<green>La partie a démarré !",
+        "game_start_subtitle": "<green> La partie <grey><arena><green> a démarré ! Bonne partie !",
         "vault_deposite": "<green>Ajout de <gray><coins> <currency><green> à votre compte Vault !",
         "cheat": {
             "game_not_running": "<red>vous ne pouvez tricher que quand une partie est en court !",
@@ -181,13 +181,38 @@
             "special_item_used": "<green>L'objet spécial <gray><item></gray> a été utilisé !",
             "region_regenerated": "<green>La région de l'arène <gray><arena></gray> a été régénérée !",
             "received_give": "<green>Le joueur <gray><player><green> a eu <gray><amount><green> de <gray><resource>",
-            "game_not_waiting": "<red>Vous ne pouvez exécuter ce cheat seulement quand la partie est en attente !"
+            "game_not_waiting": "<red>Vous ne pouvez exécuter ce cheat seulement quand la partie est en attente !",
+            "team_does_not_exist": "<red>L'équipe <gray><team></gray> n'existe pa s!",
+            "team_is_not_in_game": "<red>L'équipe<gray><team></gray> n'est actuellement pas dans la partie, et donc ce cheat ne peut être exécuté !",
+            "unknown_target": "<red>La commande ne sait pas comment détruire la cible de l'équipe <gray><team></gray> !",
+            "target_is_not_valid": "<red>La cible de l'équipe <gray><team></gray> ne peut pas être détruite car elle l'est déjà !",
+            "received_targets_invalidated": "<green>Toutes les cibles de chaque équipe ont été détruite ! <gray>La partie va donc être un peu plus rapide.",
+            "team_random_failed": "<red>Un algorithme n'a pas réussi à vous choisir une équipe aléatoire. <gray>C'est bizarre.",
+            "received_team_join": "<green>Le joueur <gray><player></gray> a rejoin l'équipe <gray><team></gray> !",
+            "cheat_failed": "<red>Le cheat n'a pas marché pour à cause d'une raison inconnue.",
+            "game_forced": "<green>La partie est en train de démarrer avec une équipe vide, donc au moins deux équipes sont dans la partie pour que le plugin fonctionne correctement. Détruisez leur cible pour gagner ! <gray>Elles ne sont pas protégées, donc cela va être facile pour vous, non ?",
+            "received_target_invalidated": "<green>La  cible de l'équipe <gray><team></gray> a été détruite ! <gray>Les joueurs de cette équipe ne sont plus comme vous :("
         },
         "economy_deposited": "<green>Ajout de <gray><coins> <currency><green> à votre balance !",
         "economy_missing_coins": "<red>Vous avez besoin de <yellow><coins> <currency><red> pour entrer dans cette partie !",
         "messages": {
             "game_start": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "     <yellow><bold>Améliore toi et ton équipe en collectant</bold>",
+                "    <yellow><bold>Protège ton lit et détruis celui des ennemis.</bold>",
+                "            <yellow><bold>pour accéder à de puissantes améliorations.</bold>",
+                "<yellow><bold><resources></bold>",
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+            ],
+            "game_over_statistics": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "                             <yellow><bold>Bed Wars</bold>",
+                "                             <team_color><win_team>",
+                "                             <winners>",
+                "    <yellow><bold>1er<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+                "    <gold><bold>2ème<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
+                "    <red><bold>3ème<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ]
         },
         "scoreboard": {
@@ -198,9 +223,14 @@
             "mode": {
                 "solo": "Solo",
                 "doubles": "Doubles",
-                "triples": "Triples"
+                "triples": "Triples",
+                "squads": "Équipes"
             },
             "you": "<gray>VOUS"
+        },
+        "record": {
+            "no": "<aqua>C'est la première fois que cette partie est jouée. Qu'avez-vous à dire à propos de régler un nouvel enregistrement ?",
+            "current": "<aqua>L'enregistrement de cette partie dure <gray><time><aqua> réalisé par <gray><team-members><aqua>!"
         }
     },
     "safe_reload": "<green>En attente jusqu'à ce que toutes les parties en cours soient arrêtées ou 60 secondes avant rechargement du plugin.",
@@ -260,7 +290,23 @@
         "bw_dump": "/bw dump - <yellow>Vide le serveur et vous donne le lien vers la décharge. Ce lien peut être utile pour le support",
         "bw_admin_interactive": "/bw admin <pre><arena></pre> interactive - <yellow>Si l'arène est dans le mode édition, cette commande va activer le mode interactif",
         "bw_admin_spawner_max_spawned_resources": "/bw admin <pre><arena></pre> spawner maxSpawnedResources <pre><value></pre> - <yellow>Mettez la limite d'apparition des ressources du spawner à votre position",
-        "bw_admin_spawner_rotation_mode": "/bw admin <pre><arena></pre> spawner rotationMode <pre><mode></pre> - <yellow>Mettez le mode de rotation de l'hologramme flottant du spawner à votre position"
+        "bw_admin_spawner_rotation_mode": "/bw admin <pre><arena></pre> spawner rotationMode <pre><mode></pre> - <yellow>Mettez le mode de rotation de l'hologramme flottant du spawner à votre position",
+        "messages": {
+            "command": "Commande",
+            "description": "Description",
+            "no_description": "Aucune description",
+            "arguments": "Arguments",
+            "optional": "Optionnel",
+            "showing_results_for_query": "Montrer les résultats de la recherche pour la requête",
+            "no_results_for_query": "Pas de résultat pour la requête",
+            "available_commands": "Commandes disponibles",
+            "click_to_show_help": "Cliquez pour voir l'aide de cette commande",
+            "page_out_of_range": "Erreur : La page <page> n'est pas dans la plage d'aide. Le numéro de page est entre [1, <max_pages>]",
+            "click_for_next_page": "Cliquez pour voir la page suivante",
+            "click_for_previous_page": "Cliquez pour voir la page précédente"
+        },
+        "bw_admin_spawner_change_type": "/bw admin \\<arena> spawner changeType \\<type> - <yellow>Change le type de spawner à votre position",
+        "bw_admin_spawner_custom_name": "/bw admin \\<arena> spawner customName \\<name> - <yellow>Change le nom personnalisé du spawner à votre position"
     },
     "admin": {
         "arena": {
