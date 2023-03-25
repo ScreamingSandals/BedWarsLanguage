@@ -64,11 +64,11 @@
                 "subtitle": "Vous pouvez maintenant tuer les membres de l'équipe !",
                 "bed": "Le lit de <team><reset> a été détruit !",
                 "cake": "Le gâteau de <team><reset> a été mangé !",
-                "subtitle_victim": "Maintenant vous ne pourrez plus réapparaître !",
-                "any_certain_popular_server": "<rouge><gras>BLOC CIBLE DÉTRUIT !",
-                "bed_certain_popular_server": "<rouge><gras>LIT DÉTRUIT !",
-                "anchor_certain_popular_server": "<rouge><gras>ANCRE DÉTRUITE !",
-                "cake_certain_popular_server": "<rouge><gras>GATEAU MANGÉ !",
+                "subtitle_victim": "Vous ne pourrez plus réapparaître !",
+                "any_certain_popular_server": "<red><bold>BLOC CIBLE DÉTRUIT !",
+                "bed_certain_popular_server": "<red><bold>LIT DÉTRUIT !",
+                "anchor_certain_popular_server": "<red><bold>ANCRE DÉTRUITE !",
+                "cake_certain_popular_server": "<red><bold>GATEAU MANGÉ !",
                 "killable": "Vous pouvez maintenant tuer tous les membres de l'équipe <team> !",
                 "death_mode": "<dark_purple><bold>Mode mortel !",
                 "all_beds": "Tous les lits ont étés détruits !",
@@ -102,7 +102,7 @@
             "title_cancel": "<red>L'équipe a été tuée :("
         },
         "spawner": {
-            "countdown": "<yellow><seconds> <bold>secondes",
+            "countdown": "<yellow><seconds> <aqua>secondes",
             "every_second": "<aqua>chaque seconde",
             "full": "<red><bold>Le spawner est épuisé",
             "not_enough_level": "<red>LE spawner ne peut pas fonctionner ! Vous devez l'améliorer de <levels> niveaux.",
@@ -198,7 +198,7 @@
         "messages": {
             "game_start": [
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
-                "     <yellow><bold>Améliore toi et ton équipe en collectant</bold>",
+                "                             <white><bold>Bed Wars</bold>",
                 "    <yellow><bold>Protège ton lit et détruis celui des ennemis.</bold>",
                 "            <yellow><bold>pour accéder à de puissantes améliorations.</bold>",
                 "<yellow><bold><resources></bold>",
