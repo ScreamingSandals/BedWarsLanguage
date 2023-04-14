@@ -329,7 +329,7 @@
         "economy_deposited": "<green>Bylo přidáno <gray><coins> <currency><green> k tvému zůstatku!",
         "economy_missing_coins": "<red>Potřebuješ <yellow><coins> <currency><red> pro připojení do této hry!"
     },
-    "no_permissions": "<red>Nemáš dostatečné oprávnění pro tuto akci!",
+    "no_permissions": "<red>Nemáš dostatečné oprávnění!",
     "safe_reload_failed_to_stop_game": "<red>Některé hry neskončily v časovém limitu, takže jejich aréna mohla být poškozena!",
     "list_header": "<green>Dostupné arény:",
     "help": {
