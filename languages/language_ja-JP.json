@@ -1,6 +1,6 @@
 {
-    "unknown_command": "<red>不明なコマンドです！<dark_red>/bw help <red> を使ってみてください！",
-    "no_permissions": "<red>あなたにはそれを実行する十分な権限がありません！",
+    "unknown_command": "<red>不明なコマンドです！<dark_red>/bw help <red>を使ってヘルプ画面をご覧ください！",
+    "no_permissions": "<red>あなたはそれを行うのに十分な権限がありません！",
     "sign": {
         "admin": {
             "cannot_destroy": "<red>この看板を壊す権限がありません！",
@@ -28,7 +28,7 @@
         }
     },
     "success": "<green>コマンドは成功しました!",
-    "list_header": "<green>利用可能なアリーナ：",
+    "list_header": "<green>利用可能なアリーナ:",
     "statistics": {
         "player_does_not_exist": "<red>プレイヤーが見つかりません！",
         "header": "<green>:<red><player><green>の統計情報です。",
@@ -75,7 +75,8 @@
                 "all_beds": "全てのベッドが破壊されました！",
                 "all_anchors": "すべてのアンカーが破壊されました！",
                 "all_target_blocks": "すべてのターゲットブロックが破壊されました！",
-                "all_cakes": "ケーキは全部食べました！"
+                "all_cakes": "ケーキは全部食べました！",
+                "anchor_certain_popular_server": "<red><bold>アンカーが破壊されました！"
             },
             "hologram": {
                 "protect": {
@@ -197,20 +198,28 @@
         "economy_deposited": "<green>残高に<gray><coins> <currency><green>を追加しました!",
         "messages": {
             "game_start": [
-                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
                 "                             <white><bold>ベッドウォーズ</bold>",
                 "     <yellow><bold>を集めて、自分自身とチームをアップグレードしましょう。</bold>",
                 "    <yellow><bold>ベッドを守り、敵のベッドを破壊してください。</bold>",
-                "            <yellow><bold>強力なアップグレードにアクセスできます。</bold>"
+                "     <yellow><bold>強力なアップグレードにアクセスできます。</bold>",
+                "<yellow><bold><resources></bold>",
+                "            <yellow><bold>強力なアップグレードに参加可能です。</bold>",
+                null,
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ],
             "game_over_statistics": [
-                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
                 "                             <yellow><bold>ベッドウォーズ</bold>",
                 "                             <team_color><win_team>",
                 "                             <winners>",
-                "    <yellow><bold>1位<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+                "                             <winners>",
                 "    <gold><bold>2位<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
-                "    <red><bold>3位<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>"
+                "    <red><bold>3位<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
+                "    <gold><bold>2番目<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
+                "    <red><bold>3番目<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
+                null,
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ]
         },
         "scoreboard": {
@@ -312,7 +321,13 @@
             "command": "コマンド",
             "description": "説明",
             "no_description": "説明なし"
-        }
+        },
+        "bw_admin_config_set": "/bw admin \\<arena> config set \\<data type> \\<constant> \\<value> - <yellow>ゲームの定数値を設定します",
+        "bw_admin_config_list_add": "/bw admin \\<arena> config list \\<data type> \\<constant> add \\<value> - <yellow>定数リストに新しい値を追加します",
+        "bw_admin_config_reset": "/bw admin \\<arena> config reset \\<constant> - <yellow>定数が変更された値にリセットします",
+        "bw_admin_config_list_set": "/bw admin \\<arena> config list \\<data type> \\<constant> set \\<position> \\<value> - <yellow>定数リストの位置の値を変更します",
+        "bw_admin_config_list_remove": "/bw admin \\<arena> config list \\<data type> \\<constant> remove \\<position> - <yellow>定数リスト内の位置から値を削除します",
+        "bw_admin_config_list_clear": "/bw admin \\<arena> config list \\<data type> \\<constant> clear - <yellow>継承するように設定せずに、定数のリストをきれイにします"
     },
     "games_inventory": {
         "could_not_find_game": "<red>ゲームが見つかりませんでした！",
@@ -325,7 +340,7 @@
         ],
         "patch_release": [
             "<yellow>BedWars<version>の新パッチリリースです!",
-            "<url> からダウンロードすることが可能です。"
+            "<url> からダウンロードすることが可能です"
         ]
     },
     "admin": {
@@ -381,7 +396,19 @@
                     "invalid_constant_name": "<red>定数の名前が違います!",
                     "invalid_entity_type": "<red>間違ったエンティティタイプ!",
                     "npc_must_have_skin_name": "<red>エンティティタイプが「PLAYER」の場合、スキン名を<gray>PLAYER:[スキンの所有者]の形式で指定する必要があります",
-                    "invalid_variant": "<red>ゲームバリアント<gray><variant><red>が存在しません!"
+                    "invalid_variant": "<red>ゲームバリアント<gray><variant><red>が存在しません!",
+                    "invalid_constant_position": "<red>定数リストに載っている、メンバーの位置が間違っています！",
+                    "invalid_constant_enum_value": "<red>無効な値です。<gray><value></gray>！ 以下のいずれかの文を選んでください：<gray><values>",
+                    "cannot_rename_team": "<red>チーム名を変更できません。( <gray><team><red> から <gray><new-team><red>へ！ ) この名前はすでに使われています！",
+                    "missing_spawners": "<yellow>ゲームにはスポナーはありません。",
+                    "missing_stores": "<yellow>ゲームにはお店がありません。",
+                    "weird_store_count": "<yellow>このゲームのお店数は、「<gray><count><yellow>」です。これはチーム数の倍数ではないです。数は正しいですか？",
+                    "skip_warnings": "<yellow>このゲームを保存したい場合は、(ゲーム名：<gray><game><yellow>) このコマンドを実行してください：<gray><command>",
+                    "team_spawn_set_blocked": "<red>チーム「<gray><team><red>」は、複数のスポーンポイントを持っているため、setコマンドの使用は許可されていません。",
+                    "team_spawn_on_the_same_block": "<red>この位置にはすでにスポーンポイントがあります。回転場所を変更したい場合は、まずはスポーンポイントを外してください。",
+                    "team_no_spawn_there": "<red>この位置にはスポーンポイントはありません。",
+                    "nothing_in_hand": "<red>あなたの手には何もアイテムを持っていません！",
+                    "invalid_item": "<red>値<gray><item><red>は、有効なアイテムではありません！"
                 },
                 "success": {
                     "team_spawn_set": "<green>チーム<gray><team><green>のスポーンを位置XYZに設定することに成功しました。<gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
@@ -428,7 +455,31 @@
                     "spawner_floating_disabled": "<green>この<type>のスポナーのフローティングブロックが<gray>無効<green>になりました。",
                     "spawner_max_spawned_resources_set": "<green>この<type>スポナーの最大スポーンリソース制限が<gray><amount><green>に設定されました。",
                     "spawner_hologram_type_set": "<green>この<type>スポナーのホログラムタイプが<gray><type><green>に設定されました。",
-                    "display_name_disabled": "<green>表示名の無効化に成功しました。"
+                    "display_name_disabled": "<green>表示名の無効化に成功しました。",
+                    "target_none_set": "<green>チーム「<gray><team><green>」は、ターゲットなしでプレイします。つまり、彼らはリスポーンできません！",
+                    "target_not_properly_balanced": "<yellow>ターゲットは設定されましたが、すべてのチームが同じターゲットタイプを持っていないため、ゲームがバランスを欠いている可能性があります。変更を検討してください。",
+                    "target_countdown_set": "<green>チーム「<gray><team><green>」の目標カウントダウンは、「<gray><countdown><green>秒」に正常に設定されました！",
+                    "target_block_countdown_set": "<green>指定ブロック (<gray><material><green>) のチーム「<gray><team><green>」は、位置に正常に設定されました。 座標(XYZ): <gray><x>/<y>/<z><green> カウントダウンは、「<gray><countdown><green>秒」に設定されました！",
+                    "team_multiple_spawns_ad": "<aqua>チームに複数のスポーンポイントを設定しますか？もしそうであるなら、以下のコマンドを実行してください。<gray><command>",
+                    "team_spawn_added": "<green>チーム「<gray><team><green>」のスポーンが座標(XYZ): <gray><x>/<y>/<z> <green>位置: <gray><yaw> <green>目線: <gray><pitch>は正常に追加されました",
+                    "team_spawn_removed": "<green>チーム「<gray><team><green>」のスポーンが位置XYZ: <gray><x>/<y>/<z>から正常に削除されました",
+                    "team_spawn_reset": "<green>チーム「<gray><team><green>」のすべてのスポーンを削除しました。",
+                    "team_spawn_list": "<green>チーム「<gray><team><green>」は、以下の位置に<gray><count><green>個のスポーンポイントを持っています：",
+                    "team_spawn_list_entry": "- <green>XYZ: <gray><x>/<y>/<z> <green>位置: <gray><yaw> <green>視点: <gray><pitch>",
+                    "team_spawn_list_no": "<red>チーム「<gray><team><red>」にはまだスポーンポイントがありません。",
+                    "team_renamed": "<green>チーム「<gray><team><green>」は、「<gray><new-team><green>」に正常に名前が変更されました！",
+                    "store_name_set": "<green>座標(XYZ)：<gray><x>/<y>/<z><green>にある、お店の名前は、「<gray><name><green>」に変更されました！",
+                    "store_name_reset": "<green>お店がある位置座標(XYZ): <gray><x>/<y>/<z><green> これ以上のカスタム名はもうありません！",
+                    "store_file_set": "<green>座標XYZ：<gray><x>/<y>/<z><green>にあるお店のファイルは、「<gray><file><green>」に変更されました！",
+                    "store_file_reset": "<green>お店がある座標(XYZ): <gray><x>/<y>/<z><green> これ以上カスタムファイルはありません！",
+                    "constant_list_added": "<green>値「<gray><value><green>」が、「<gray><config><green>」リストの位置「<gray><position><green>」に正常に追加されました！",
+                    "constant_list_removed": "<green>位置「<gray><position><green>」の値が、「<gray><config><green>」リストから削除されました！",
+                    "constant_list_cleared": "<green>リスト「<gray><config><green>」は空になりましたが、継承されたものには戻りません！",
+                    "constant_reset": "<green>定数「<gray><config><green>」は継承された値に正常にリセットされました！",
+                    "spawner_initial_interval_reset": "<green>この「<type>」スポナーの初期間隔が、設定またはカスタムで定義されたデフォルト値にリセットされました。",
+                    "spawner_spread_set": "<green>この<type>スポナーの広がりは、<gray><spread><green>に設定されました。",
+                    "spawner_spread_reset": "<green>この<type>スポナーの広がりは、設定ファイルまたはカスタムで定義されたデフォルト値にリセットされました。",
+                    "spawner_initial_interval_set": "<green>この「<type>」スポナーの初期間隔が、「<gray><interval> <unit><green>」に設定されました。"
                 }
             }
         },
@@ -505,7 +556,12 @@
             "constant_inherit": "<yellow>プラグインの設定を継承しています",
             "spawner_no_team": "<red>チームがありません",
             "file": "<gray><i>ファイル: <file>",
-            "min_players": "<gray>最小プレイヤー数: <reset><minplayers>"
+            "min_players": "<gray>最小プレイヤー数: <reset><minplayers>",
+            "value": "値",
+            "data_type": "データ種類",
+            "default_value": "<yellow>設定ファイルまたは値ファイルのデフォルト値を使用します",
+            "config": "<gray><configured-component>の構成",
+            "key": "Key(キー)"
         },
         "info_select": {
             "header": "<green> <gray><arena><green>の情報欄を選択してください。",
@@ -515,11 +571,18 @@
             "teams": "<green>チーム一覧<white> - <gray><command>",
             "config": "<green>構成<white> - <gray><command>",
             "click": "<aqua>クリックで<gray><command><aqua>を実行!"
+        },
+        "group": {
+            "invalid_group_name": "<red>無効なグループ名です。「<gray><group><red>」！名前には英数字、-(ハイフン)、_(アンダーバー)のみを入れる必要があります！",
+            "empty": "<red>グループ「<gray><group><red>」は空いてますよ！",
+            "list": "<green>グループ内のゲームのリスト「<gray><group><green>」：",
+            "added": "<green>ゲーム「<gray><game><green>」が、グループ「<gray><group><green>」に追加されました！",
+            "removed": "<green>ゲーム「<gray><game><green>」が、グループ「<gray><group><green>」から削除されました！"
         }
     },
-    "unknown_usage": "<red>無効な引数です！<dark_red>/bw help <red>でヘルプで試してください！",
-    "safe_reload": "<green>すべてのゲームが停止するまで、または60秒待ってからプラグインを再読み込みしてください。",
-    "safe_reload_failed_to_stop_game": "<red>一部のゲームは時間内に停止されませんでした。アリーナが破損している可能性があります！",
+    "unknown_usage": "<red>引数が無効です！<dark_red>/bw help <red>を使ってヘルプ画面をご覧ください！",
+    "safe_reload": "<green>すべてのゲームが停止する、または60秒待ってからプラグインを再読み込みしてください。",
+    "safe_reload_failed_to_stop_game": "<red>一部のゲームは時間内に停止できなかったので、アリーナが破損している可能性があります！",
     "specials": {
         "trap": {
             "caught": "<red>チーム<white><team><red>の罠にかかってしまった!",
@@ -597,5 +660,15 @@
     "migrate": {
         "success": "<green><red><plugin><green>からの設定の移行に成功しました!",
         "failure": "<red>設定の移行中に何か問題が発生しました。詳細は、コンソールをご覧ください。"
+    },
+    "unit": {
+        "hours": "時間",
+        "ticks": "ticks(ティックス)",
+        "tick": "tick(ティック)",
+        "second": "秒",
+        "seconds": "秒",
+        "minute": "分",
+        "minutes": "分",
+        "hour": "時間"
     }
 }
