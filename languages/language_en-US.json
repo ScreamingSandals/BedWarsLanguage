@@ -68,6 +68,8 @@
                 "any_certain_popular_server": "<red><bold>TARGET BLOCK DESTROYED!",
                 "bed": "Bed of <team><reset> is destroyed!",
                 "bed_certain_popular_server": "<red><bold>BED DESTROYED!",
+                "door": "Door of <team><reset> is destroyed!",
+                "door_certain_popular_server": "<red><bold>DOOR DESTROYED!",
                 "anchor": "Respawn Anchor of <team><reset> is destroyed!",
                 "anchor_certain_popular_server": "<red><bold>ANCHOR DESTROYED!",
                 "cake": "Cake of <team><reset> has been eaten!",
@@ -85,18 +87,21 @@
                 "protect": {
                     "any": "<teamcolor><bold>Protect your target block!",
                     "bed": "<teamcolor><bold>Protect your bed!",
+                    "door": "<teamcolor><bold>Protect your door!",
                     "anchor": "<teamcolor><bold>Protect your anchor!",
                     "cake": "<teamcolor><bold>Protect your cake!"
                 },
                 "destroyed": {
                     "any": "<gray><bold>Target block is destroyed.",
                     "bed": "<gray><bold>Bed is destroyed.",
+                    "door": "<gray><bold>Door is destroyed.",
                     "anchor": "<gray><bold>Anchor is destroyed.",
                     "cake": "<gray><bold>Cake has been eaten."
                 },
                 "destroy": {
                     "any": "<teamcolor><bold>Destroy this target block!",
                     "bed": "<teamcolor><bold>Destroy this bed!",
+                    "door": "<teamcolor><bold>Destroy this door!",
                     "anchor": "<teamcolor><bold>Destroy this anchor!",
                     "cake": "<teamcolor><bold>Eat this cake!"
                 }
@@ -240,7 +245,8 @@
         "game_start_title": "<green>Game started!",
         "game_start_subtitle": "<green>Game <gray><arena><green> has started! Enjoy the game!",
         "economy_deposited": "<green>Added <gray><coins> <currency><green> to your balance!",
-        "economy_missing_coins": "<red>You need <yellow><coins> <currency><red> to enter this game!"
+        "economy_missing_coins": "<red>You need <yellow><coins> <currency><red> to enter this game!",
+        "kicking_in": "<red>Leaving the arena in: <gray><time>"
     },
     "help": {
         "title": "Screaming BedWars <version> - Help",
@@ -647,7 +653,8 @@
     },
     "dump": {
         "success": "<green>Successfully dumped server. Link: <dump>",
-        "failed": "<red>Dump failed!"
+        "failed": "<red>Dump failed!",
+        "unknown_service": "<red>Unknown service <gray><unknown_service><red>. Allowed values are: <gray><allowed_values>"
     },
     "language": {
         "usage_bw_lang": "Usage: /bw lang \\<locale> - <yellow>Sets the locale to be used by <red>Bed<white>Wars",
