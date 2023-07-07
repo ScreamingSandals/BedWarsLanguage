@@ -1,5 +1,5 @@
 {
-    "unknown_command": "<red>不明なコマンドです！<dark_red>/bw help <red>を使ってヘルプ画面をご覧ください！",
+    "unknown_command": "<red>不明なコマンドです！<dark_red>/bw help <red>を使ってヘルプをご覧ください！",
     "no_permissions": "<red>あなたはそれを行うのに十分な権限がありません！",
     "sign": {
         "admin": {
@@ -28,7 +28,7 @@
         }
     },
     "success": "<green>コマンドは成功しました!",
-    "list_header": "<green>利用可能なアリーナ:",
+    "list_header": "<green>利用可能なアリーナ：",
     "statistics": {
         "player_does_not_exist": "<red>プレイヤーが見つかりません！",
         "header": "<green>:<red><player><green>の統計情報です。",
@@ -76,26 +76,31 @@
                 "all_anchors": "すべてのアンカーが破壊されました！",
                 "all_target_blocks": "すべてのターゲットブロックが破壊されました！",
                 "all_cakes": "ケーキは全部食べました！",
-                "anchor_certain_popular_server": "<red><bold>アンカーが破壊されました！"
+                "anchor_certain_popular_server": "<red><bold>アンカーが破壊されました！",
+                "door": "<team><reset>のドアが破壊されました！",
+                "door_certain_popular_server": "<red><bold>ドアが破壊されました！"
             },
             "hologram": {
                 "protect": {
                     "any": "<teamcolor><bold>あなたのターゲットブロックを守ってください!",
                     "bed": "<teamcolor><bold>あなたのベッドを守れ!",
                     "cake": "<teamcolor><bold>あなたのケーキを守れ！",
-                    "anchor": "<teamcolor><bold>あなたのリスポーンアンカーを守れ!"
+                    "anchor": "<teamcolor><bold>あなたのリスポーンアンカーを守れ!",
+                    "door": "<teamcolor><bold>ドアを守ろう！"
                 },
                 "destroyed": {
                     "bed": "<gray><bold>ベットが破壊された。",
                     "anchor": "<gray><bold>リスポーンアンカーが破壊された。",
                     "any": "<gray><bold>ターゲットブロックが破壊された。",
-                    "cake": "<gray><bold>ケーキが食べられました。"
+                    "cake": "<gray><bold>ケーキが食べられました。",
+                    "door": "<gray><bold>ドアが破壊されています。"
                 },
                 "destroy": {
                     "any": "<teamcolor><bold>このターゲットブロックを破壊せよ!",
                     "bed": "<teamcolor><bold>このベッドを破壊せよ!",
                     "cake": "<teamcolor><bold>このケーキを食べよう!",
-                    "anchor": "<teamcolor><bold>このリスポーンアンカーを破壊せよ!"
+                    "anchor": "<teamcolor><bold>このリスポーンアンカーを破壊せよ!",
+                    "door": "<teamcolor><bold>この扉を破壊してください！"
                 }
             }
         },
@@ -205,7 +210,7 @@
                 "     <yellow><bold>強力なアップグレードにアクセスできます。</bold>",
                 "<yellow><bold><resources></bold>",
                 "            <yellow><bold>強力なアップグレードに参加可能です。</bold>",
-                null,
+                "None",
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ],
             "game_over_statistics": [
@@ -218,7 +223,7 @@
                 "    <red><bold>3位<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
                 "    <gold><bold>2番目<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
                 "    <red><bold>3番目<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
-                null,
+                "None",
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ]
         },
@@ -238,7 +243,8 @@
         "record": {
             "no": "<aqua>このゲームをプレイするのはこれが初めてです。新記録を飾るのはどうですか？",
             "current": "<aqua>このゲームの現在の記録は、<gray><time><aqua> が <gray><team-members><aqua> によって達成されました！"
-        }
+        },
+        "kicking_in": "<red>アリーナから出る場合：<gray><time>"
     },
     "help": {
         "title": "Screaming BedWars <version> - ヘルプ",
@@ -580,9 +586,9 @@
             "removed": "<green>ゲーム「<gray><game><green>」が、グループ「<gray><group><green>」から削除されました！"
         }
     },
-    "unknown_usage": "<red>引数が無効です！<dark_red>/bw help <red>を使ってヘルプ画面をご覧ください！",
-    "safe_reload": "<green>すべてのゲームが停止する、または60秒待ってからプラグインを再読み込みしてください。",
-    "safe_reload_failed_to_stop_game": "<red>一部のゲームは時間内に停止できなかったので、アリーナが破損している可能性があります！",
+    "unknown_usage": "<red>引数が無効です！<dark_red>/bw help <red>を使ってヘルプをご覧ください！",
+    "safe_reload": "<green>すべてのゲームが停止するか、または60秒待ってからプラグインを再読み込みしてください。",
+    "safe_reload_failed_to_stop_game": "<red>いくつかのゲームは時間内に停止できなかったので、アリーナが破損している可能性があります！",
     "specials": {
         "trap": {
             "caught": "<red>チーム<white><team><red>の罠にかかってしまった!",
@@ -649,7 +655,8 @@
     },
     "dump": {
         "success": "<green>サーバーのダンプに成功しました。リンクです<dump>",
-        "failed": "<red>ダンプに失敗しました!"
+        "failed": "<red>ダンプに失敗しました!",
+        "unknown_service": "<red>不明なサービス<gray><unknown_service><red>。許可される値は次のとおりです：<gray><allowed_values>"
     },
     "language": {
         "invalid": "<red>指定された言語ファイルが読み込めませんでした！",
