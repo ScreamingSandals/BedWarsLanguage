@@ -32,26 +32,31 @@
                 "all_beds": "Все кровати были разрушены!",
                 "all_anchors": "Все маяки были разрушены!",
                 "all_target_blocks": "Все главные блоки были разрушены!",
-                "all_cakes": "Все торты были съедены!"
+                "all_cakes": "Все торты были съедены!",
+                "door": "Дверь <team><reset> разрушена!",
+                "door_certain_popular_server": "<red><bold>Дверь уничтожена!"
             },
             "hologram": {
                 "protect": {
                     "any": "<teamcolor><bold>Защитите ваш блок!",
                     "bed": "<teamcolor><bold>Защитите кровать!",
                     "anchor": "<teamcolor><bold>Защитите якорь!",
-                    "cake": "<teamcolor><bold>Защитите торт!"
+                    "cake": "<teamcolor><bold>Защитите торт!",
+                    "door": "<teamcolor><bold>Защитите свою дверь!"
                 },
                 "destroyed": {
                     "any": "<gray><bold>Блок разрушен.",
                     "bed": "<gray><bold>Кровать разрушена.",
                     "anchor": "<gray><bold>Якорь разрушен.",
-                    "cake": "<gray><bold>Торт съеден."
+                    "cake": "<gray><bold>Торт съеден.",
+                    "door": "<gray><bold>Дверь разрушена."
                 },
                 "destroy": {
                     "bed": "<teamcolor><bold>Сломайте эту кровать!",
                     "any": "<teamcolor><bold>Сломайте этот блок!",
                     "anchor": "<teamcolor><bold>Разрушьте этот якорь!",
-                    "cake": "<teamcolor><bold>Съешьте этот торт!"
+                    "cake": "<teamcolor><bold>Съешьте этот торт!",
+                    "door": "<teamcolor><bold>Уничтожьте эту дверь!"
                 }
             }
         },
@@ -123,7 +128,7 @@
             "running": "<green>Игра началась! Удачи!"
         },
         "respawn_protection": {
-            "remaining": "<red>Защита кончится через <white><time> <green>с",
+            "remaining": "<red>Защита от перерождения исчезнет через <white><time> <green>секунды!",
             "end": "<red>Теперь вы уязвимы!"
         },
         "leave": "<name> <red>покинул игру!",
@@ -145,13 +150,17 @@
             "team_is_not_in_game": "<red>Команда <gray><team></gray> сейчас не в игре, поэтому этот чит не может быть выполнен!",
             "unknown_target": "<red>Команда не знает, как аннулировать цель команды <gray><team></gray>!",
             "received_target_invalidated": "<green>Цель команды <gray><team></gray> признана побежденной! <grey>Вы больше не нравитесь игрокам этой команды :(",
-            "target_is_not_valid": "<red>Цель команды <gray><team></gray> не может быть признана недействительной, поскольку она уже недействительна!"
+            "target_is_not_valid": "<red>Цель команды <gray><team></gray> не может быть признана недействительной, поскольку она уже недействительна!",
+            "cheat_failed": "<red>Чит не сработал по неизвестной причине.",
+            "received_targets_invalidated": "<green>Все возможные цели всех команд в игре были признаны недействительными! <gray>Это позволило бы сделать игру немного быстрее.",
+            "team_random_failed": "<red>Алгоритм не смог выбрать вам случайную команду. <gray>Это странно.",
+            "received_team_join": "<green>Игрок <gray><player></gray> присоединился к команде <gray><team></gray>!"
         },
         "economy_deposited": "<green>Добавлено <gray><coins> <currency><green> на ваш счёт!",
         "economy_missing_coins": "<red>Вам нужно <yellow><coins> <currency><red> для входа в игру!"
     },
     "no_permissions": "<red>У вас на это недостаточно прав!",
-    "safe_reload": "<green>Ожидание конца всех игр или 60 секунд до перезагрузки плагина.",
+    "safe_reload": "<green>Ожидание остановки всех игр или 60 секунд перед перезагрузкой плагина.",
     "list_header": "<green>Доступные арены:",
     "success": "<green>Команда выполнена успешно!",
     "sign": {
@@ -194,9 +203,9 @@
         "score": "<gray>Всего очков: <green><score>",
         "loses": "<gray>Поражений: <red><loses>"
     },
-    "unknown_command": "<red>Неизвестная команда! Напишите <dark_red>/bw help <red>для помощи!",
-    "unknown_usage": "<red>Неверное количество аргументов! Напишите <dark_red>/bw help <red>для помощи!",
-    "safe_reload_failed_to_stop_game": "<red>Некоторые арены не остановились вовремя, их миры могут быть повреждены!",
+    "unknown_command": "<red>Неизвестная команда! Попробуйте использовать <dark_red>/bw help <red>для помощи!",
+    "unknown_usage": "<red>Неправильные аргументы! Попробуйте использовать <dark_red>/bw help <red>для помощи!",
+    "safe_reload_failed_to_stop_game": "<red>Некоторые игры не были вовремя остановлены, арена могла быть повреждена!",
     "help": {
         "bw_rejoin": "/bw rejoin - <green>Переподключиться в игру",
         "title": "Screaming BedWars <version> - Помощь",
@@ -210,7 +219,7 @@
         "bw_stats_other": "/bw stats [игрок] - <green>Показать чужую статистику",
         "bw_reload": "/bw reload - <red>Перезагрузить плагин",
         "bw_addholo": "/bw addholo [leaderboard|stats]- <yellow>Добавить голограмму на ваших координатах",
-        "bw_removeholo": "/bw removeholo - <yellow>Начать удаление голограммы (после выполнения нажать ПКМ по нужной)",
+        "bw_removeholo": "/bw removeholo - <yellow>После выполнения этой команды игрок может щелкнуть правой кнопкой мыши на голографической статистике, чтобы удалить ее.",
         "bw_mainlobby": "/bw mainlobby [enable|set] - <yellow>Включить основное лобби или задать её координаты",
         "bw_admin_info": "/bw admin <pre><arena></pre> info [section] - <yellow>Показать информацию об арене",
         "bw_admin_add": "/bw admin <pre><arena></pre> add [variant] - <yellow>Добавить арену",
@@ -389,7 +398,7 @@
             "constant_inherit": "<yellow>Унаследован от конфигурации плагина",
             "post_game_waiting": "<gray>Время ожидания после игры: <white><time> c"
         },
-        "usage": "<red>Использование: /bw admin <pre><название арены> <add|edit|remove|save|...> ...</pre>",
+        "usage": "<red>Использование: /bw admin \\<arena> \\<add|edit|remove|save|...> ...",
         "arena": {
             "error": {
                 "arena_not_in_edit": "<red>Арены с таким названием не существует или уже запущена! Деактивируй её с помощью <gray>/bw admin <pre><название арены></pre> edit<red> и затем активируй её командой <gray>/bw admin <pre><название арены></pre> save",
@@ -535,12 +544,12 @@
             "Скачать по ссылке: <url>"
         ],
         "patch_release": [
-            "<yellow>New patch release for BedWars <version> is here!",
-            "You can download it from <url>"
+            "<yellow>Вышел новый патч для BedWars <version>!",
+            "Вы можете загрузить его с сайта <url>"
         ]
     },
     "games_inventory": {
-        "unknown_inventory": "<red>Unknown games inventory <gray><type><red>!",
+        "unknown_inventory": "<red>Неизвестные игровые инвентари <gray><type><red>!",
         "could_not_find_game": "<red>Не удалось найти игру!"
     },
     "migrate": {
