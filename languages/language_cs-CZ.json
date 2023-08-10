@@ -108,7 +108,7 @@
             "click_right_on_entity": "<green>Teď klikněte pravým tlačítkem na entitu se kterou se chcete připojovat do týmu: <gray><team>",
             "entity_added": "<green>Entita pro připojení do týmu byla přidána!"
         },
-        "usage": "<red>Použití: /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>",
+        "usage": "<red>Použití: /bw admin \\<arena> \\<add|edit|remove|save|...> ...",
         "mainlobby": {
             "info": "<red>UPOZORNĚNÍ<white>: Musíte spustit /bw reload aby hlavní lobby začalo fungovat!"
         },
@@ -278,7 +278,8 @@
             "price": "Cena:",
             "amount": "Množství:",
             "buy_failed": "<red>Nedostatek materiálu na zakoupení <gray><item><red>! Je potřeba <gray><material><red>!",
-            "buy_success": "<green>Úspěšně koupeno <gray><item><green> za <gray><material><green>!"
+            "buy_success": "<green>Úspěšně koupeno <gray><item><green> za <gray><material><green>!",
+            "upgrade_translate": "vylepšení"
         },
         "team_selection": {
             "inventory_name": "Zvol tým - <arena>",
@@ -380,7 +381,7 @@
         "bw_admin_arena_time": "/bw admin <pre><arena></pre> arenatime <pre><type></pre> - <yellow>Nastaví čas v aréně (DAY, NIGHT, atd.)",
         "bw_admin_post_game_waiting": "/bw admin <pre><arena></pre> postgamewaiting <pre><seconds></pre> - <yellow>Nastaví čekací čas než bude hráč teleportován pryč z arény",
         "bw_admin_spawner_remove": "/bw admin <pre><arena></pre> spawner remove - <yellow>Odstraní všechny spawnery na lokaci",
-        "bw_dump": "/bw dump - <yellow>Vypíše podrobnosti o serveru a dá vám odkaz na výpis. Tento odkaz může být užitečný pro podporu.",
+        "bw_dump": "/bw dump - <yellow>Vypíše podrobnosti o serveru a poskytne vám odkaz na výpis. Tento odkaz může být užitečný pro podporu",
         "bw_admin_lobby_pos1": "/bw admin <pre><arena></pre> lobbypos1 - <yellow>Nastaví krajní bod lobby na tvojí pozici",
         "bw_admin_lobby_pos2": "/bw admin <pre><arena></pre> lobbypos2 - <yellow>Nastaví druhý krajní bod lobby na tvoji pozici",
         "bw_admin_spawner_max_spawned_resources": "/bw admin <pre><arena></pre> spawner maxSpawnedResources <pre><value></pre> - <yellow>Nastaví maximální počet vygenerovaných surovin pro spawner na tvojí pozici",
@@ -393,7 +394,9 @@
         "bw_admin_spawner_hologram": "/bw admin <pre><arena></pre> spawner hologram <pre><true|false></pre> - <yellow>Povolí/Zakáže hologram pro spawner na tvojí pozici",
         "bw_admin_spawner_floating": "/bw admin <pre><arena></pre> spawner floating <pre><true|false></pre> - <yellow>Povolí/Zakáže rotující blok pod hologramem pro spawner na tvojí pozici",
         "bw_cheat_give": "/bw cheat give <pre><resource></pre> [amount] [player] - <red>Dá hráči určité množství zadané suroviny",
-        "bw_cheat_kill": "/bw cheat kill [player] - <red>Zabije zadaného hráče"
+        "bw_cheat_kill": "/bw cheat kill [player] - <red>Zabije zadaného hráče",
+        "bw_admin_display_name": "/bw admin \\<arena> displayName \\<name|off> - <yellow>Nastaví jméno arény, které se bude zobrazovat",
+        "bw_migrate": "/bw migrate \\<plugin> - <yellow>Převezme konfiguraci z jiného BedWars pluginu."
     },
     "update": {
         "new_release": [
@@ -482,5 +485,8 @@
     "unknown_command": "<red>Neznámý příkaz! Zkus zadat <dark_red>/bw help <red>pro nápovědu!",
     "success": "<green>Příkaz byl úspěšně proveden!",
     "safe_reload": "<green>Čekám než budou všechny arény vypnuty nebo 60 sekund před reloadem pluginu.",
-    "unknown_usage": "<red>Nesprávné argumenty! Zkus zadat <dark_red>/bw help <red>pro nápovědu!"
+    "unknown_usage": "<red>Nesprávné argumenty! Zkus zadat <dark_red>/bw help <red>pro nápovědu!",
+    "games_inventory": {
+        "could_not_find_game": "<red> Nemohli jsme najít hru!"
+    }
 }
