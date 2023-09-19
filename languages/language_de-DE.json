@@ -80,7 +80,7 @@
                 "all_anchors": "Alle Anker wurden zerstört!",
                 "all_target_blocks": "Alle Zielblöcke wurden zerstört!",
                 "all_cakes": "Alle Kuchen wurden gegessen!",
-                "door": "Die Tür von <team><reset> wurde zerstört!",
+                "door": "Die Tür von <team><reset> wurde Zerstört",
                 "door_certain_popular_server": "<red><bold>TÜR ZERSTÖRT!"
             },
             "hologram": {
@@ -228,18 +228,18 @@
                 "    <yellow><bold>Erster<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
                 "    <gold><bold>Zweiter<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
                 "    <red><bold>Dritter<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
-                null,
+                "None",
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ],
             "game_start": [
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
                 "                             <white><bold>Bed Wars</bold>",
                 "     <yellow><bold>Verbesser dich und dein Team durchs sammeln</bold>",
-                "            <yellow><bold>um kraftvolle Upgrades freizuschalten.</bold>",
+                "    <yellow><bold>Beschütze dein Bett und zerstöre die gegnerischen Betten.</bold>",
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
-                null,
+                "None",
                 "            <yellow><bold>um auf tolle Upgrades zuzugreifen.</bold>",
-                null,
+                "None",
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ]
         },
@@ -295,7 +295,18 @@
             "click_to_show_help": "Klicken Sie hier, um die Hilfe für diesen Befehl anzuzeigen",
             "no_description": "Keine Beschreibung",
             "arguments": "Argumente"
-        }
+        },
+        "bw_admin_spawner_base_amount": "/bw admin \\<arena> spawner baseAmount \\<anzahl> - <yellow>Legt die Anzahl der Resourcen, die der Spawner pro Durchlauf spawnen soll, fest",
+        "bw_admin_spawner_floating": "/bw admin \\<arena> spawner floating \\<true|false> - <yellow>Aktiviert/Deaktiviert einen fliegenden Block unter dem Hologramm des Spawners.",
+        "bw_admin_store_type": "/bw admin \\<arena> store type \\<living entity> - <yellow>Legt das Lebewesen für den Shop fest (Villager, Pferd, Kuh, Schwein etc.)",
+        "bw_admin_config_set": "/bw admin \\<arena> config set \\<data type> \\<constant> \\<value> - <yellow>Legt den Wert einer Konstante für ein Spiel fest",
+        "bw_admin_config_list_add": "/bw admin \\<Arena> config list \\<Daten Typ> \\<Konstante> add \\<Wert> - <yellow>Fügt einen neuen Wert zu der Liste von Konstanten hinzu",
+        "bw_admin_config_list_remove": "/bw admin \\<Arena> config list \\<Daten Typ> \\<Konstante> remove \\<Position> - <yellow>Entfernt den Wert von der Position in der Liste von Konstanten",
+        "bw_admin_spawner_hologram": "/bw admin \\<arena> spawner hologram \\<true|false> - <yellow>Aktiviert/Deaktiviert das Hologramm über dem Spawner",
+        "bw_admin_spawner_reset": "/bw admin \\<arena> spawner reset - <yellow>Entfernt alle Spawner",
+        "bw_admin_store_add": "/bw admin \\<arena> store add [Name über dem Kopf des Verkäufers] [Datei mit shop] [Benutze den Main-Shop] - <yellow>Fügt einen Villager zum Handeln an deiner Position hinzu",
+        "bw_admin_store_remove": "/bw admin \\<arena> store remove - <yellow>Entfernt den/die Handels-Villager von deiner Position",
+        "bw_admin_config_reset": "/bw admin \\<arena> config reset \\<Konstante> - <yellow>Setzt eine Konstante auf den ursprünglichen Wert zurück"
     },
     "language": {
         "invalid": "<red>Die angegebene Sprachdatei konnte nicht geladen werden!",
