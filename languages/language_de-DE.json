@@ -79,26 +79,31 @@
                 "all_beds": "Alle Betten wurden zerstört!",
                 "all_anchors": "Alle Anker wurden zerstört!",
                 "all_target_blocks": "Alle Zielblöcke wurden zerstört!",
-                "all_cakes": "Alle Kuchen wurden gegessen!"
+                "all_cakes": "Alle Kuchen wurden gegessen!",
+                "door": "Die Tür von <team><reset> wurde zerstört!",
+                "door_certain_popular_server": "<red><bold>TÜR ZERSTÖRT!"
             },
             "hologram": {
                 "protect": {
                     "bed": "<teamcolor><bold>Schütze dein Bett!",
                     "anchor": "<teamcolor><bold>Schütze deinen Anker!",
                     "cake": "<teamcolor><bold>Schütze deinen Kuchen!",
-                    "any": "<teamcolor><bold>Schütze deinen Zielblock!"
+                    "any": "<teamcolor><bold>Schütze deinen Zielblock!",
+                    "door": "<teamcolor><bold>Beschützt eure Tür!"
                 },
                 "destroyed": {
                     "any": "<gray><bold>Der Zielblock wurde zerstört.",
                     "bed": "<gray><bold>Bett ist zerstört.",
                     "cake": "<gray><bold>Der Kuchen wurde gegessen.",
-                    "anchor": "<gray><bold>Anker ist zerstört."
+                    "anchor": "<gray><bold>Anker ist zerstört.",
+                    "door": "<gray><bold>Tür ist zerstört."
                 },
                 "destroy": {
                     "any": "<teamcolor><bold>Zerstöre diesen Zielblock!",
                     "bed": "<teamcolor><fett>Zerstöre dieses Bett!",
                     "anchor": "Zerstöre diesen Anker!",
-                    "cake": "<teamcolor><bold>Iss diesen Kuchen!"
+                    "cake": "<teamcolor><bold>Iss diesen Kuchen!",
+                    "door": "<teamcolor><bold>Zerstört diese Tür!"
                 }
             }
         },
@@ -135,7 +140,7 @@
             "cheat_failed": "<red>Cheat ist aus nicht bekannten Gründen fehlgeschlagen.",
             "game_forced": "<green>Das Game startet mit einem Team leer, damit mindestens 2 Teams im Spiel sind, damit das Plugin richtig funktioniert. Macht das Ziel des Gewinnens ungültig! <gray> Es wird nicht beschützt, also sollte es einfach für dich sein, oder?",
             "team_random_failed": "<red>Ein Algorithmus hat fehlgeschlagen, dich zu einem zufälligen Team zuzuweisen. <gray>Das ist komisch.",
-            "received_team_join": "<green>Spielerr <gray><player></gray> ist dem Team <gray><team></gray> beigetreten!",
+            "received_team_join": "<green>Spieler <gray><player></gray> ist dem Team <gray><team></gray> beigetreten!",
             "team_does_not_exist": "<red>Team <gray><team></gray> existiert nicht!",
             "team_is_not_in_game": "<red>Team <gray><team></gray> ist derzeit nicht im Spiel, und deswegen kann dieser Cheat nicht ausgeführt werden!",
             "unknown_target": "<red>Der Command weiß nicht, wie er das Ziel für das Team <gray><team></gray>ungültig machen kann!",
@@ -219,20 +224,30 @@
                 "    <gold><bold>2nd<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
                 "                             <team_color><win_team>",
                 "                             <winners>",
-                "    <yellow><bold>1st<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>"
+                "    <yellow><bold>1st<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+                "    <yellow><bold>Erster<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+                "    <gold><bold>Zweiter<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
+                "    <red><bold>Dritter<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
+                null,
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ],
             "game_start": [
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
                 "                             <white><bold>Bed Wars</bold>",
                 "     <yellow><bold>Verbesser dich und dein Team durchs sammeln</bold>",
                 "            <yellow><bold>um kraftvolle Upgrades freizuschalten.</bold>",
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                null,
+                "            <yellow><bold>um auf tolle Upgrades zuzugreifen.</bold>",
+                null,
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ]
         },
         "record": {
             "no": "<aqua>Das ist das erste Mal, dass dieses Spiel gespielt wird. Warum setzt du nicht einen neuen Rekord?",
             "current": "<aqua>Der derzeitige Rekord dieses Spiels liegt bei <gray><time><aqua> von <gray><team-members><aqua>!"
-        }
+        },
+        "kicking_in": "<red>Du verlässt die Arena in: <gray><time>"
     },
     "help": {
         "bw_leave": "/bw leave - <green>Das Spiel verlassen",
