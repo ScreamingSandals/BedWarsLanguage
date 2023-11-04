@@ -166,6 +166,7 @@
         "end": {
             "you_won": "<green>Your team won!",
             "you_lost": "<red>Your team lost!",
+            "game_ended_too_early": "<red>The game ends too early. No one wins.",
             "team_win": "<green>Team <reset><team><green> won game in <gray><time>",
             "game_end": "<red>Game ended! Thanks for playing!"
         },
