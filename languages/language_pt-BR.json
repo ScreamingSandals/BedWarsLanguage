@@ -76,26 +76,31 @@
                 "all_beds": "Todas as camas foram destruídas!",
                 "all_anchors": "Todas as âncoras foram destruídas!",
                 "all_target_blocks": "Todos os blocos alvo foram destruídos!",
-                "all_cakes": "Todos os bolos foram comidos!"
+                "all_cakes": "Todos os bolos foram comidos!",
+                "door": "Porta do <team><reset> foi destruida!",
+                "door_certain_popular_server": "<red><bold>PORTA DESTRUIDA!"
             },
             "hologram": {
                 "protect": {
                     "any": "<teamcolor><bold>Proteja seu bloco alvo!",
                     "bed": "<teamcolor><bold>Proteja sua cama!",
                     "anchor": "<teamcolor><bold>Proteja sua âncora!",
-                    "cake": "<teamcolor><bold>Proteja seu bolo!"
+                    "cake": "<teamcolor><bold>Proteja seu bolo!",
+                    "door": "<teamcolor><bold>pProteja a sua porta!"
                 },
                 "destroyed": {
                     "any": "<gray><bold>O bloco alvo foi destruído.",
                     "bed": "<gray><bold>A Cama foi destruída.",
                     "anchor": "<gray><bold>A Âncora foi destruída.",
-                    "cake": "<gray><bold>O Bolo foi comido."
+                    "cake": "<gray><bold>O Bolo foi comido.",
+                    "door": "<gray><bold>Porta Destrúida."
                 },
                 "destroy": {
                     "any": "<teamcolor><bold>Destrua o bloco alvo!",
                     "bed": "<teamcolor><bold>Destrua as camas!",
                     "cake": "<teamcolor><bold>Coma o Bolo!",
-                    "anchor": "<teamcolor><bold>Destrua a Âncora!"
+                    "anchor": "<teamcolor><bold>Destrua a Âncora!",
+                    "door": "<teamcolor><bold>Destrói esta porta!"
                 }
             }
         },
@@ -121,7 +126,7 @@
             "netherite": "Netherita",
             "diamond": "Diamante",
             "emerald": "Esmeralda",
-            "bronze": ""
+            "bronze": "Bronze"
         },
         "shop": {
             "name": "Loja",
