@@ -1,5 +1,5 @@
 {
-    "list_header": "<green>Arènes disponible:",
+    "list_header": "<green>Arènes disponibles:",
     "success": "<green>Commande exécutée avec succès !",
     "sign": {
         "admin": {
@@ -75,8 +75,8 @@
                 "all_anchors": "Toutes les ancres ont étés détruites !",
                 "all_target_blocks": "Tous les bocs cibles ont étés détruits !",
                 "all_cakes": "Tous les gateaux ont étés mangés !",
-                "door": "La porte <team><reset> est détruite!",
-                "door_certain_popular_server": "<red><bold>PORTE DÉTRUITE!"
+                "door": "La porte de l'équipe <team><reset> à été détruite !",
+                "door_certain_popular_server": "<red><bold>PORTE DÉTRUITE !"
             },
             "hologram": {
                 "protect": {
@@ -84,7 +84,7 @@
                     "bed": "<teamcolor><bold>Protégez votre lit !",
                     "anchor": "<teamcolor><bold>Protégez votre ancre !",
                     "cake": "<teamcolor><bold>Protégez votre gâteau !",
-                    "door": "<teamcolor><bold>Protégez votre porte!"
+                    "door": "<teamcolor><bold>Protégez votre porte !"
                 },
                 "destroyed": {
                     "bed": "<gray><bold>Le lit a été détruit.",
@@ -97,7 +97,8 @@
                     "any": "<teamcolor><bold>Détruisez ce bloc cible !",
                     "bed": "<teamcolor><bold>Détruisez ce lit !",
                     "cake": "<teamcolor><bold>Mangez ce gâteau !",
-                    "anchor": "<teamcolor><bold>Détruisez cette ancre !"
+                    "anchor": "<teamcolor><bold>Détruisez cette ancre !",
+                    "door": "<teamcolor><bold>Détruisez cette porte !"
                 }
             }
         },
@@ -160,7 +161,8 @@
             "you_won": "<green>Votre équipe a gagné !",
             "you_lost": "<red>Votre équipe a perdu !",
             "team_win": "<green>L'équipe <reset><team><green> a gagné la partie en <gray><time>",
-            "game_end": "<red>La partie est finie ! Merci d'avoir joué !"
+            "game_end": "<red>La partie est finie ! Merci d'avoir joué !",
+            "game_ended_too_early": "<red>La partie c'est finie trop tôt. Personne ne gagne."
         },
         "bossbar": {
             "waiting": "<red>La partie va bientôt commencer !",
@@ -206,7 +208,10 @@
                 "    <yellow><bold>Protège ton lit et détruis celui des ennemis.</bold>",
                 "    <yellow><bold>Protège ton lit et détruit celui des ennemis</bold>",
                 "     <yellow><bold>Améliorez vous ainsi que votre équipe en collectant</bold>",
-                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "            <yellow><bold>pour accèder à des mises à niveau.</bold>",
+                null,
+                "<green> ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ],
             "game_over_statistics": [
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
@@ -216,6 +221,9 @@
                 "    <yellow><bold>1er<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
                 "    <gold><bold>2ème<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
                 "    <red><bold>3ème<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "    <red><bold>3ème<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
+                null,
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ]
         },
@@ -235,13 +243,14 @@
         "record": {
             "no": "<aqua>Cette partie est jouée pour la première fois. Pourquoi ne pas établir un nouveau record ?",
             "current": "<aqua>Le record actuel de ce jeu est <gray><time><aqua> réalisé par <gray><team-members><aqua> !"
-        }
+        },
+        "kicking_in": "<red>Sortez de l'arène dans : <gray><time>"
     },
-    "safe_reload": "<green>En attente jusqu'à ce que toutes les parties en cours soient arrêtées ou 60 secondes avant rechargement du plugin.",
+    "safe_reload": "<green>En attente que toutes les parties en cours ce soient arrêtées pendant 60 secondes avant rechargement du plugin.",
     "unknown_usage": "<red>Argument invalide ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide !",
     "no_permissions": "<red>Vous n'avez pas assez de permission pour faire cela !",
-    "safe_reload_failed_to_stop_game": "<red>Certaines parties n'ont pas été arrêtées à temps, l'arène à peut-être été endommagée !",
-    "unknown_command": "<red>Commande inconnue ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide!",
+    "safe_reload_failed_to_stop_game": "<red>Certaines parties ne ce sont pas arrêtées à temps, l'arène à peut-être étée endommagée !",
+    "unknown_command": "<red>Commande inconnue  ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide  !",
     "help": {
         "title": "Screaming Bedwars <version> - Aide",
         "title_console": "Screaming BedWars <version> - Aide pour la Console",
@@ -648,7 +657,8 @@
     },
     "dump": {
         "success": "<green>Serveur vidé avec succès. Lien : <dump>",
-        "failed": "<red>Échec du vidage !"
+        "failed": "<red>Échec du vidage !",
+        "unknown_service": "<red>Service inconnu <gray><unknown_service><red>. Les valeurs autorisées sont : <gray><allowed_values>"
     },
     "leaderboard": {
         "no_scores": "<gray>Il n'y a pas encore de scores !",
