@@ -119,7 +119,8 @@
             "you_lost": "<red>Вы проиграли!",
             "game_end": "<red>Игра окончена! Спасибо за участие!",
             "you_won": "<green>Вы победили!",
-            "team_win": "<green>Команда <reset><team><green> победила за <gray><time>"
+            "team_win": "<green>Команда <reset><team><green> победила за <gray><time>",
+            "game_ended_too_early": "<red> Игра окончена. Никто не выиграл."
         },
         "join": "<name> <green>зашёл в игру!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "vault_deposite": "<green>Добавлено <gray><coins> <currency><green> монет на ваш аккаунт Vault!",
@@ -157,7 +158,31 @@
             "received_team_join": "<green>Игрок <gray><player></gray> присоединился к команде <gray><team></gray>!"
         },
         "economy_deposited": "<green>Добавлено <gray><coins> <currency><green> на ваш счёт!",
-        "economy_missing_coins": "<red>Вам нужно <yellow><coins> <currency><red> для входа в игру!"
+        "economy_missing_coins": "<red>Вам нужно <yellow><coins> <currency><red> для входа в игру!",
+        "messages": {
+            "game_start": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "                             <yellow><bold>Защитите свою кровать и уничтожьте вражеские кровати<bold>",
+                null,
+                "    <yellow><bold>Для доступа к новым обновлениям</bold>",
+                "     <yellow><bold>Улучшите себя и вашу команду собирая</bold>",
+                "<yellow><bold><resources></bold>",
+                "            <yellow><bold>чтобы получить мощные улучшения.</bold>"
+            ]
+        },
+        "scoreboard": {
+            "state": {
+                "waiting": "<white>Подождите...",
+                "countdown": "<white>Начало через <green><countdown>с"
+            },
+            "mode": {
+                "solo": "Соло",
+                "doubles": "Двое",
+                "triples": "Трркн",
+                "squads": "Четверо"
+            },
+            "you": "<gray> ТЫ"
+        }
     },
     "no_permissions": "<red>У вас на это недостаточно прав!",
     "safe_reload": "<green>Ожидание остановки всех игр или 60 секунд перед перезагрузкой плагина.",
