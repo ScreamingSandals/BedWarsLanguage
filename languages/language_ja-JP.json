@@ -1,5 +1,5 @@
 {
-    "unknown_command": "<red>不明なコマンドです！<dark_red>/bw help<red>を使ってヘルプをご覧ください!",
+    "unknown_command": "<red>不明なコマンドです！<dark_red>/bw help<red>を使ってヘルプをご覧ください！",
     "no_permissions": "<red>あなたはそれを行うのに十分な権限がありません！",
     "sign": {
         "admin": {
@@ -28,7 +28,7 @@
         }
     },
     "success": "<green>コマンドは成功しました!",
-    "list_header": "<green>利用可能なアリーナ：",
+    "list_header": "<green>利用可能なアリーナ:",
     "statistics": {
         "player_does_not_exist": "<red>プレイヤーが見つかりません！",
         "header": "<green>:<red><player><green>の統計情報です。",
@@ -167,7 +167,8 @@
             "you_won": "<green>あなたのチームが勝ちました!",
             "you_lost": "<red>あなたのチームは負けた!",
             "game_end": "<red>ゲーム終了! お疲れ様でした!",
-            "team_win": "<green>チーム<reset><team><green>が<gray><time>で試合に勝ちました"
+            "team_win": "<green>チーム<reset><team><green>が<gray><time>で試合に勝ちました",
+            "game_ended_too_early": "<red>ゲーム終了が早すぎます。誰も勝てません。"
         },
         "respawn_protection": {
             "end": "<red>リスポーンの保護がなくなりました!",
@@ -586,9 +587,9 @@
             "removed": "<green>ゲーム「<gray><game><green>」が、グループ「<gray><group><green>」から削除されました！"
         }
     },
-    "unknown_usage": "<red>引数が無効です！<dark_red>/bw help<red>を使ってヘルプをご覧ください!",
-    "safe_reload": "<green>すべてのゲームが停止するか、または６０秒待ってからプラグインを再読み込みしてください。",
-    "safe_reload_failed_to_stop_game": "<red>いくつかのゲームは時間内に停止できなかったので、アリーナが破損している可能性があります！",
+    "unknown_usage": "<red>引数が無効です！<dark_red>/bw help<red>を使ってヘルプをご覧ください！",
+    "safe_reload": "<green>すべてのゲームが停止するか６０秒待ってからプラグインを再読み込みしてください。",
+    "safe_reload_failed_to_stop_game": "<red>いくつかのゲームは時間内に停止できなかったので、アリーナが破損されている可能性があります！",
     "specials": {
         "trap": {
             "caught": "<red>チーム<white><team><red>の罠にかかってしまった!",
