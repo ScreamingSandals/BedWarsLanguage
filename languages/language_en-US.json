@@ -491,6 +491,20 @@
                 }
             }
         },
+        "remote": {
+            "name_already_exists": "<red>The name <gray><name><red> is already in use by a remote game or a local game",
+            "does_not_exist": "<red>Remote game <gray><name><red> does not exist!",
+            "added_server": "<green>Successfully added new remote game <gray><name><green> located on a server <gray><server><green> (old bungee mode)",
+            "added_server_game": "<green>Successfully added new remote game <gray><name><green> located on a server <gray><server><green> under the identifier <gray><game>",
+            "set_server": "<green>Successfully set remote game <gray><name><green> to server <gray><server><green> (old bungee mode)",
+            "set_server_game": "<green>Successfully set remote game <gray><name><green> to game <gray><game><green> located on a server <gray><server><green>",
+            "list": "<green>List of remote games:",
+            "empty": "<red>There are no configured remote games!",
+            "list_format": "<gray><name><green>/<gray><uuid><green> - server: <gray><server><green>, game: <gray><game>",
+            "list_format_no_game": "old bungee mode",
+            "deleted": "<green>Successfully deleted the remote game <gray><name><green>!",
+            "hub_did_not_send_packet": "<red>Join packet from the hub server was not received within 10 seconds! Contact the server admin!"
+        },
         "mainlobby": {
             "info": "<red>WARNING<white>: You need to execute /bw reload to make Mainlobby work!"
         },
