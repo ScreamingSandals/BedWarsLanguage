@@ -74,14 +74,16 @@
                 "killable": "Ora sei in grado di eliminare tutti i membri del team <team>!",
                 "all_beds": "Tutti i letti sono stati distrutti!",
                 "all_anchors": "Tutte le ancore sono state distrutte!",
-                "all_cakes": "Tutte le torte sono state mangiate!"
+                "all_cakes": "Tutte le torte sono state mangiate!",
+                "door_certain_popular_server": "<red><bold>PORTA DISTRUTTA!"
             },
             "hologram": {
                 "protect": {
                     "bed": "<teamcolor><bold>Proteggi il tuo letto!",
                     "anchor": "<teamcolor><bold>Proteggi la tua ancora!",
                     "cake": "<teamcolor><bold>Proteggi la tua torta!",
-                    "any": "<teamcolor><bold>Proteggi il tuo blocco!"
+                    "any": "<teamcolor><bold>Proteggi il tuo blocco!",
+                    "door": "<teamcolor><bold>Proteggi la tua porta!"
                 },
                 "destroyed": {
                     "any": "<gray><bold>Blocco target distrutto.",
