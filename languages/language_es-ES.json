@@ -7,26 +7,41 @@
                 "bed": "¡La cama del equipo <team><reset> fue destruída!",
                 "subtitle": "¡Ahora puedes matar a tus compañeros de equipo!",
                 "subtitle_victim": "¡Ahora no podrás reaparecer!",
-                "anchor": "¡El nexo de reaparición del equipo <team><reset> fue destruído!"
+                "anchor": "¡El nexo de reaparición del equipo <team><reset> fue destruído!",
+                "door_certain_popular_server": "<red><bold>¡PUERTA DESTRUIDA!",
+                "door": "Puerta de <tean><reset>¡Está destruida!",
+                "any_certain_popular_server": "<red><bold>¡BLOQUE OBJETIVO DESTRUIDO!",
+                "bed_certain_popular_server": "<red><bold>¡CAMA DESTRUIDA!",
+                "anchor_certain_popular_server": "<red><bold>¡ANCLA DESTRUIDO!",
+                "cake_certain_popular_server": "<red><bold>¡PASTEL COMIDO!",
+                "killable": "¡Ahora puedes matar todos los miembros de <team>!",
+                "death_mode": "<dark_purple><bold>¡Modo muerte!",
+                "all_beds": "¡Todas las camas han sido destruidas!",
+                "all_anchors": "¡Todos los anclas han sido destruidos!",
+                "all_target_blocks": "¡Todos los bloques objetivos han sido destruidos!",
+                "all_cakes": "¡Todos los pasteles han sido comidos!"
             },
             "hologram": {
                 "protect": {
                     "any": "<teamcolor><bold>¡Protege tu bloque objetivo!",
                     "bed": "<teamcolor><bold>¡Protege tu cama!",
                     "anchor": "<teamcolor><bold>¡Protege tu nexo!",
-                    "cake": "<teamcolor><bold>¡Protege tu tarta!"
+                    "cake": "<teamcolor><bold>¡Protege tu tarta!",
+                    "door": "<teamcolor><bold>¡Protege tu puerta!"
                 },
                 "destroyed": {
                     "anchor": "<gray><bold>El nexo ha sido destruído.",
                     "any": "<gray><bold>El bloque objetivo ha sido destruído.",
                     "bed": "<gray><bold>La cama ha sido destruída.",
-                    "cake": "<gray><bold>La tarta ha sido comida."
+                    "cake": "<gray><bold>La tarta ha sido comida.",
+                    "door": "<gray><bold>Puerta fue destruida."
                 },
                 "destroy": {
                     "anchor": "<teamcolor><bold>¡Destruye éste nexo!",
                     "any": "<teamcolor><bold>¡Destruye el bloque objetivo!",
                     "bed": "<teamcolor><bold>¡Destruye esta cama!",
-                    "cake": "<teamcolor><bold>¡Cómete esta tarta!"
+                    "cake": "<teamcolor><bold>¡Cómete esta tarta!",
+                    "door": "<teamcolor><bold>¡Destruye esta puerta!"
                 }
             }
         },
@@ -39,7 +54,11 @@
             "countdown_custom": "<yellow><value> <aqua><unit>",
             "tier": "<yellow>Nivel <red><tier>",
             "countdown_hypixel": "<yellow>Spawn en <red><seconds> <yellow>segundos",
-            "countdown_custom_hypixel": "<yellow>Spawn en <red><value> <yellow><unit>"
+            "countdown_custom_hypixel": "<yellow>Spawn en <red><value> <yellow><unit>",
+            "full_certain_popular_server": "<red><bold>¡El generador está lleno!",
+            "reached_maximum_level": "<red>¡El generador llegó a su nivel máximo!",
+            "countdown_certain_popular_server": "<yellow>Aparece en <red><seconds> <yellow>segundos",
+            "countdown_custom_certain_popular_server": "<yellow>Aparece en <red><value> <yellow><unit>"
         },
         "shop": {
             "buy_success": "<green>Compra exitosa de <gray><item><green> por <gray><material><green>!",
@@ -49,7 +68,9 @@
             "shop_back": "<red>Volver a la lista de categoría",
             "price": "Precio:",
             "amount": "Cantidad:",
-            "buy_failed": "<red>¡No hay suficientes materiales para comprar <gray><item><red>! ¡Se necesitan <gray><material><red>!"
+            "buy_failed": "<red>¡No hay suficientes materiales para comprar <gray><item><red>! ¡Se necesitan <gray><material><red>!",
+            "upgrade_success": "¡<green><name> Mejoró exitosamente <spawner> a el nivel <level>!",
+            "upgrade_translate": "mejorar"
         },
         "team_selection": {
             "selected": "<green>Equipo seleccionado: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
@@ -75,7 +96,8 @@
             "team_win": "<green>El equipo <reset><team><green> ha ganado la partida en <gray><time>",
             "you_won": "<green>¡Tu equipo ha ganado!",
             "you_lost": "<red>¡Tu equipo ha perdido!",
-            "game_end": "<red>¡Partida terminada! ¡Gracias por jugar!"
+            "game_end": "<red>¡Partida terminada! ¡Gracias por jugar!",
+            "game_ended_too_early": "<red>El juego terminó muy temprano. Nadie gana."
         },
         "join": "¡<name> <green>se ha unido a la partida!<reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
         "game_start_subtitle": "<green>¡La partida <gray><arena><green> ha comenzado! ¡Disfruta de la partida!",
@@ -120,7 +142,58 @@
             "invalid_player": "<red>¡El jugador especificado no está en ningún juego o es un espectador!",
             "received_give": "<green>El Jugador <gray><player><green> obtuvo <gray><amount><green> de <gray><resource>",
             "received_kill": "<green>El jugador <gray><player><green> eliminado por trucos!",
-            "game_not_running": "<red>¡Solo puedes hacer trampa cuando el juego está funcionando!"
+            "game_not_running": "<red>¡Solo puedes hacer trampa cuando el juego está funcionando!",
+            "received_targets_invalidated": "<green>¡Todos los objetivos posibles de todos los equipos en el juego han sido invalidados! <gray>Eso haría que el juego fuera un poco más rápido.",
+            "region_regenerated": "¡<green>La región de la arena <gray><arena></gray> fue regenerada!",
+            "game_not_waiting": "<red>¡Tu puedes ejecutar este truco solo cuando el juego está en estado de espera!",
+            "game_forced": "<green>El juego ahora comenzará con un equipo vacío, por lo que al menos dos equipos están en el juego para que el complemento funcione correctamente. ¡Invalida su objetivo para ganar! <gray>No está protegido, por lo que debería ser fácil para ti, ¿verdad?",
+            "team_does_not_exist": "<red>¡Equipo <gray><team></gray> no existe!",
+            "team_is_not_in_game": "¡<red>Equipo <gray><team></gray> actualmente no está en el juego y, por lo tanto, este truco no se puede ejecutar!",
+            "unknown_target": "<red>¡El comando no sabe como invalidar el objetivo de el equipo <gray><team></gray>!",
+            "target_is_not_valid": "<red>¡El objetivo del equipo <gray><team></gray> no se pudo invalidar porque ya no es válido!",
+            "received_target_invalidated": "<green>El objetivo del equipo <gray><team></gray> ha sido invalidado! <gray>A los jugadores de ese equipo ya no les gustas :(",
+            "team_random_failed": "<red>Un algoritmo no pudo elegirte un equipo aleatorio. <gray>Eso es extraño.",
+            "received_team_join": "<green>¡Jugador <gray><player></gray>se unió a equipo <gray><team></gray>!",
+            "cheat_failed": "<red>Truco no funcionó por una razón desconocida.",
+            "special_item_used": "¡<green>Artículo especial <gray><item></gray> fue usado!"
+        },
+        "messages": {
+            "game_start": [
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                null,
+                null,
+                "    <yellow><bold>Protege tu cama and destruye las camas de tus enemigos.</bold>",
+                "     <yellow><bold>Actualízate a ti mismo y a tu equipo recolectando</bold>",
+                null,
+                "            <yellow><bold>para acceder a potentes actualizaciones.</bold>"
+            ],
+            "game_over_statistics": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                "    <yellow><bold>1er<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+                "    <gold><bold>2do<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
+                "    <red><bold>3er<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>"
+            ]
+        },
+        "scoreboard": {
+            "you": "<gray>TU",
+            "state": {
+                "waiting": "<white>Esperando...",
+                "countdown": "<white>Empezando en <green><countdown>s"
+            },
+            "mode": {
+                "solo": "Solitario",
+                "doubles": "Dobles",
+                "triples": "Triples",
+                "squads": "Escuadrones"
+            }
+        },
+        "record": {
+            "no": "<aqua>Esta es la primera vez que se juega a este juego. ¿Y si establecemos un nuevo récord?"
         }
     },
     "help": {
