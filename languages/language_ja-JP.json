@@ -1,5 +1,5 @@
 {
-    "unknown_command": "<red>不明なコマンドです！<dark_red>/bw help<red>を使ってヘルプをご覧ください！",
+    "unknown_command": "<red>不明なコマンドです！<dark_red>/bw help<red>を使ってヘルプをご覧ください !",
     "no_permissions": "<red>あなたはそれを行うのに十分な権限がありません！",
     "sign": {
         "admin": {
@@ -28,7 +28,7 @@
         }
     },
     "success": "<green>コマンドは成功しました!",
-    "list_header": "<green>利用可能なアリーナ:",
+    "list_header": "<green>利用可能なアリーナ：",
     "statistics": {
         "player_does_not_exist": "<red>プレイヤーが見つかりません！",
         "header": "<green>:<red><player><green>の統計情報です。",
@@ -585,11 +585,25 @@
             "list": "<green>グループ内のゲームのリスト「<gray><group><green>」：",
             "added": "<green>ゲーム「<gray><game><green>」が、グループ「<gray><group><green>」に追加されました！",
             "removed": "<green>ゲーム「<gray><game><green>」が、グループ「<gray><group><green>」から削除されました！"
+        },
+        "remote": {
+            "does_not_exist": "<red>リモートゲーム<gray><name><red>は存在しません！",
+            "list": "<green>リモートゲームのリスト:",
+            "empty": "<red>設定されたリモート ゲームがありません！",
+            "list_format": "<gray><name><green>/<gray><uuid><green> - サーバー名: <gray><server><green>, ゲーム名: <gray><game>",
+            "list_format_no_game": "古いBungeeモード",
+            "deleted": "<green>リモートゲーム「<gray><name><green>」が正常に削除されました！",
+            "name_already_exists": "<red>「<gray><name><red>」はリモート ゲームまたはローカルゲームですでに使用されています",
+            "added_server": "<green>サーバー名「<gray><server><green>」に新しいリモートゲーム「<gray><name><green>」が正常に追加されました (古いBungeeモード)",
+            "added_server_game": "<green>サーバー名「<gray><server><green>」に識別子「<gray><game><green>」の下にある新しいリモートゲーム「<gray><name><green>」が正常に追加されました",
+            "set_server": "<green>リモートゲーム「<gray><name><green>」をサーバー名「<gray><server><green>」に正常に設定しました (古いBungeeモード)",
+            "set_server_game": "<green>リモートゲーム「<gray><name><green>」をサーバー名「<gray><server><green>」にあるゲーム「<gray><game><green>」に正常に設定しました",
+            "hub_did_not_send_packet": "<red>ハブサーバーからの参加パケットが10秒以内に受信されませんでした！サーバー管理者に連絡してください！"
         }
     },
-    "unknown_usage": "<red>引数が無効です！<dark_red>/bw help<red>を使ってヘルプをご覧ください！",
-    "safe_reload": "<green>すべてのゲームが停止するか６０秒待ってからプラグインを再読み込みしてください。",
-    "safe_reload_failed_to_stop_game": "<red>いくつかのゲームは時間内に停止できなかったので、アリーナが破損されている可能性があります！",
+    "unknown_usage": "<red>引数が無効です！<dark_red>/bw help<red>を使ってヘルプをご覧ください !",
+    "safe_reload": "<green>すべてのゲームが停止するか60秒待ってからプラグインを再読み込みしてください。",
+    "safe_reload_failed_to_stop_game": "<red>いくつかのゲームは時間内に停止できなかったので、アリーナが破損されている可能性があります !",
     "specials": {
         "trap": {
             "caught": "<red>チーム<white><team><red>の罠にかかってしまった!",
