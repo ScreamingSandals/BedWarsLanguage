@@ -1,141 +1,141 @@
 {
-    "unknown_command": "",
-    "unknown_usage": "",
-    "no_permissions": "",
+    "unknown_command": "<red>Bilinmeyen komut! Yardım için <dark_red>/bw help <red> kullanmayı deneyin!",
+    "unknown_usage": "<red>Geçersiz argümanlar! Yardım için <dark_red>/bw help <red> kullanmayı deneyin!",
+    "no_permissions": "<red>Bunu yapmak için yeterli izniniz yok!",
     "safe_reload": "",
-    "safe_reload_failed_to_stop_game": "",
-    "list_header": "",
-    "success": "",
+    "safe_reload_failed_to_stop_game": "<red>Bazı oyunlar zamanında durdurulmadı, arena hasar görmüş olabilir!",
+    "list_header": "<green>Mevcut arenalar:",
+    "success": "<green>Komut başarılı oldu!",
     "sign": {
         "admin": {
-            "created": "",
-            "cannot_create": "",
-            "cannot_destroy": "",
-            "unknown_game": ""
+            "created": "<green>Tabela başarıyla oluşturuldu!",
+            "cannot_create": "<red>Tabela oluşturulamadı! Lütfen arenanın adını kontrol edin!",
+            "cannot_destroy": "<red>Bu tabelayı yok etmek için izniniz yok!",
+            "unknown_game": "<red>Tabela'da yazan oyun mevcut değil! Lütfen bir yönetici ile iletişime geçin!"
         },
         "status": {
             "disabled": {
-                "status": "",
-                "players": ""
+                "status": "<red>Oyun",
+                "players": "<red>devre dışı"
             },
             "rebuilding": {
-                "status": "",
-                "players": ""
+                "status": "<gold>Yeniden İnşa",
+                "players": "<gold> Arena"
             },
             "running": {
-                "status": "",
-                "players": ""
+                "status": "<green>Çalışıyor",
+                "players": "<red><players><dark_gray>/<red><maxplayers>"
             },
             "waiting": {
-                "status": "",
-                "players": ""
+                "status": "<gold>Bekleniyor",
+                "players": "<green><players><dark_gray>/<green><maxplayers>"
             }
         }
     },
     "statistics": {
-        "disabled": "",
-        "player_does_not_exist": "",
-        "not_found": "",
-        "header": "",
-        "kills": "",
-        "deaths": "",
-        "kd": "",
-        "wins": "",
-        "loses": "",
-        "games": "",
-        "beds": "",
-        "score": ""
+        "disabled": "<red>Oyuncu istatistikleri bu sunucuda devre dışı!",
+        "player_does_not_exist": "<red>Oyuncu bulunamadı!",
+        "not_found": "<red>Bu oyuncu için istatistikler bulunamadı!",
+        "header": "<red><player><green> istatistikleri:",
+        "kills": "<gray>Öldürmeler: <green><kills>",
+        "deaths": "<gray>Ölmeler: <yellow><deaths>",
+        "kd": "<gray>K/D: <green><kd>",
+        "wins": "<gray>Kazanmalar: <green><wins>",
+        "loses": "<gray>Kaybetmeler: <red><loses>",
+        "games": "<gray>Oynanan oyunlar: <aqua><games>",
+        "beds": "<gray>Kırılmış yataklar: <green><beds>",
+        "score": "<gray>Toplam skor: <green><score>"
     },
     "in_game": {
         "errors": {
-            "game_already_running": "",
-            "game_is_full": "",
-            "game_not_found": "",
-            "you_are_not_in_game": "",
-            "game_is_rebuilding": "",
-            "already_in_game": "",
-            "not_in_any_game_yet": "",
-            "command_is_not_allowed": "",
-            "vip_not_enough_players": "",
-            "vip_game_is_full": "",
-            "game_is_gone": "",
-            "game_kicked_by_vip": "",
-            "there_is_no_empty_game": ""
+            "game_already_running": "<red>Oyun <gray><arena> <red>zaten çalışıyor! Devam eden bir oyuna katılamazsın!",
+            "game_is_full": "<red>Oyun <gray><arena> <red>dolu! Lütfen oyunun bitmesini bekleyin!",
+            "game_not_found": "<red>Oyun bulunamadı!",
+            "you_are_not_in_game": "<red>Oyunda değilsin!",
+            "game_is_rebuilding": "<red>Oyun <gray><arena><red> yeniden inşa ediliyor! Lütfen bekleyin...",
+            "already_in_game": "<red>Zaten bir oyunun içindesiniz.",
+            "not_in_any_game_yet": "<red>Henüz hiçbir oyunda bulunmadın.",
+            "command_is_not_allowed": "<red>Bu komut oyun çalışırken engellenir!",
+            "vip_not_enough_players": "<red>Arena'da yeterli oyuncu yok!",
+            "vip_game_is_full": "<red>Oyun <gray><arena> <red> VIP oyuncularla dolu. Lütfen oyun sonunu bekleyin!",
+            "game_is_gone": "<red>Görünüşe göre içinde bulunduğunuz oyun artık bu dünyada değil.",
+            "game_kicked_by_vip": "<red>VIP oyuncu tarafından tekmelendiniz!",
+            "there_is_no_empty_game": "<red>Bekleme durumunda oyun yok. Tüm oyunlar zaten çalışıyor!"
         },
         "target_block": {
             "destroyed": {
                 "any": "",
-                "any_certain_popular_server": "",
+                "any_certain_popular_server": "<red><bold>HEDEF BLOK YOK EDİLDİ!",
                 "bed": "",
-                "bed_certain_popular_server": "",
+                "bed_certain_popular_server": "<red><bold>YATAK YOK EDİLDİ!",
                 "door": "",
-                "door_certain_popular_server": "",
+                "door_certain_popular_server": "<red><bold>KAPI YOK EDİLDİ!",
                 "anchor": "",
                 "anchor_certain_popular_server": "",
                 "cake": "",
-                "cake_certain_popular_server": "",
-                "killable": "",
-                "subtitle": "",
-                "subtitle_victim": "",
-                "death_mode": "",
-                "all_beds": "",
-                "all_anchors": "",
-                "all_target_blocks": "",
-                "all_cakes": ""
+                "cake_certain_popular_server": "<red><bold>KEK YENDİ!",
+                "killable": "Artık <team> takımın tüm üyelerini öldürebilirsiniz!",
+                "subtitle": "Artık ekip üyelerini öldürebilirsiniz!",
+                "subtitle_victim": "Artık yeniden doğmayacaksınız!",
+                "death_mode": "<dark_purple><bold>Ölüm modu!",
+                "all_beds": "Tüm yataklar yok edildi!",
+                "all_anchors": "Tüm çapalar yok edildi!",
+                "all_target_blocks": "Tüm hedef bloklar yok edildi!",
+                "all_cakes": "Bütün pastalar yenildi!"
             },
             "hologram": {
                 "protect": {
                     "any": "",
-                    "bed": "",
-                    "door": "",
+                    "bed": "<teamcolor><bold>Yatağını koru!",
+                    "door": "<teamcolor><bold>Kapınızı koruyun!",
                     "anchor": "",
-                    "cake": ""
+                    "cake": "<teamcolor><bold>Pastanızı koruyun!"
                 },
                 "destroyed": {
-                    "any": "",
-                    "bed": "",
-                    "door": "",
+                    "any": "<gray><bold>Hedef blok yok edildi.",
+                    "bed": "<gray><bold>Yatak yok edildi.",
+                    "door": "<gray><bold>Kapı yok edildi.",
                     "anchor": "",
-                    "cake": ""
+                    "cake": "<gray><bold>Kek yenildi."
                 },
                 "destroy": {
-                    "any": "",
-                    "bed": "",
+                    "any": "<teamcolor><bold>Bu hedef bloğu yok et!",
+                    "bed": "<teamcolor><bold>Bu yatağı yok edin!",
                     "door": "",
                     "anchor": "",
-                    "cake": ""
+                    "cake": "<teamcolor><bold>Bu pastayı ye!"
                 }
             }
         },
         "respawn_cooldown": {
             "title": "",
-            "title_cancel": ""
+            "title_cancel": "<red>Takım öldü :("
         },
         "spawner": {
             "countdown": "",
             "countdown_custom": "",
             "every_second": "",
-            "full": "",
-            "full_certain_popular_server": "",
+            "full": "<red><bold>Spawner tükendi",
+            "full_certain_popular_server": "<red><bold>Spawner dolu!",
             "not_enough_level": "",
-            "reached_maximum_level": "",
+            "reached_maximum_level": "<red>Spawner maksimum seviyesine ulaştı!",
             "tier": "",
             "countdown_certain_popular_server": "",
             "countdown_custom_certain_popular_server": ""
         },
         "resources": {
-            "bronze": "",
-            "iron": "",
-            "gold": "",
-            "netherite": "",
-            "diamond": "",
-            "emerald": ""
+            "bronze": "Bronz",
+            "iron": "Demir",
+            "gold": "Altın",
+            "netherite": "Netherit",
+            "diamond": "Elmas",
+            "emerald": "Zümrüt"
         },
         "shop": {
-            "name": "",
-            "page_back": "",
+            "name": "Mağaza",
+            "page_back": "Geri sayfa",
             "page_forward": "",
-            "shop_back": "",
+            "shop_back": "<red>Kategori listesine geri dön",
             "price": "",
             "amount": "",
             "buy_success": "",
@@ -662,24 +662,24 @@
             "help": "",
             "not_in_party": "",
             "not_party_leader": "",
-            "is_empty": "",
-            "warped": ""
+            "is_empty": "<red>Partiniz boş, kimseyi çarpıtamazsınız!",
+            "warped": "<green>Parti üyeleri çarpıtıldı."
         }
     },
     "dump": {
         "success": "",
-        "failed": "",
+        "failed": "<red>Döküm başarısız!",
         "unknown_service": ""
     },
     "language": {
         "usage_bw_lang": "",
-        "invalid": "",
+        "invalid": "<red>Belirtilen dil dosyası yüklenemedi!",
         "already_set": "",
-        "success": ""
+        "success": "<green>Dil başarıyla <white>[<lang>] <green>olarak ayarlandı"
     },
     "migrate": {
         "success": "",
-        "failure": ""
+        "failure": "<red>Yapılandırmayı taşırken bir şeyler ters gitti! Ayrıntılar için konsola bakın."
     },
     "unit": {
         "tick": "",
