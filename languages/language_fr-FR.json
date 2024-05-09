@@ -6,7 +6,7 @@
             "created": "<green>Panneau créé avec succès !",
             "cannot_create": "<red>Le panneau n'a pas pu être créé ! Veuillez vérifiez le nom de l'arène !",
             "cannot_destroy": "<red>Vous n'avez pas la permission de détruire ce panneau !",
-            "unknown_game": "<red>La partie écrite sur le panneau n'éxiste pas ! Veuillez contacter un administrateur !"
+            "unknown_game": "<red>La partie écrite sur le panneau n’existe pas ! Veuillez contacter un administrateur !"
         },
         "status": {
             "disabled": {
@@ -29,7 +29,7 @@
     },
     "statistics": {
         "player_does_not_exist": "<red>Le joueurs n'a pas été trouvé !",
-        "not_found": "<red>Les statistiques pour ce joueur n'ont pas été trouvé !",
+        "not_found": "<red>Les statistiques pour ce joueur n'ont pas été trouvées !",
         "deaths": "<gray>Morts : <yellow><deaths>",
         "kd": "<gray>K/M : <green><kd>",
         "wins": "<gray>Victoires : <green><wins>",
@@ -209,8 +209,8 @@
                 "    <yellow><bold>Protège ton lit et détruit celui des ennemis</bold>",
                 "     <yellow><bold>Améliorez vous ainsi que votre équipe en collectant</bold>",
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
-                "            <yellow><bold>pour accèder à des mises à niveau.</bold>",
-                null,
+                "            <yellow><bold>pour accéder à des mises à niveau.</bold>",
+                "None",
                 "<green> ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ],
             "game_over_statistics": [
@@ -223,7 +223,7 @@
                 "    <red><bold>3ème<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
                 "    <red><bold>3ème<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
-                null,
+                "None",
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ]
         },
@@ -247,7 +247,7 @@
         "kicking_in": "<red>Sortez de l'arène dans : <gray><time>"
     },
     "safe_reload": "<green>En attente que toutes les parties en cours ce soient arrêtées pendant 60 secondes avant rechargement du plugin.",
-    "unknown_usage": "<red>Argument invalide ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide !",
+    "unknown_usage": "<red>Argument invalide  ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide !",
     "no_permissions": "<red>Vous n'avez pas assez de permission pour faire cela !",
     "safe_reload_failed_to_stop_game": "<red>Certaines parties ne ce sont pas arrêtées à temps, l'arène à peut-être étée endommagée !",
     "unknown_command": "<red>Commande inconnue  ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide  !",
@@ -575,6 +575,12 @@
             "theres_no_line_number": "<red>Il n'y a pas de ligne avec le numéro <linenumber>",
             "invalid_number": "<red>Le numéro de ligne doit être supérieur à 0 !",
             "reset": "<green>L'hologramme a été réinitialisé."
+        },
+        "remote": {
+            "added_server_game": "<green>Jeu distant ajouté avec succès : <gray><name><green> sur le serveur <gray><server><green> sous l'identifiant <gray><game>",
+            "name_already_exists": "<red>Le nom <gray><name><red> est déjà en utilisation par un jeu distant ou local",
+            "does_not_exist": "<red>Le jeu distant<gray><name><red> n’existe pas!",
+            "added_server": "<green>Succès lors de l'ajout du nouveau jeu distant <gray><name><green> sur le serveur <gray><server><green> (ancien mode bungeecord)"
         }
     },
     "update": {
