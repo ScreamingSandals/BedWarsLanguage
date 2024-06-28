@@ -416,7 +416,8 @@
                     "team_spawn_on_the_same_block": "<red>There is already a spawnpoint at this position. If you want to change the rotation, remove it first.",
                     "team_no_spawn_there": "<red>There is no spawnpoint at this position.",
                     "nothing_in_hand": "<red>You are not holding any item in your hand!",
-                    "invalid_item": "<red>Value <gray><item><red> is not a valid item!"
+                    "invalid_item": "<red>Value <gray><item><red> is not a valid item!",
+                    "overlapping_arenas": "<red>The chosen location causes the arena to overlap with another arena, which can lead to errors! Please choose a different location. If you insist on using this location, execute <gray><command>"
                 },
                 "success": {
                     "saved_and_started": "<green>The game has been successfully saved and is running! Now you can join and play in the arena!",
