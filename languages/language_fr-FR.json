@@ -29,7 +29,7 @@
     },
     "statistics": {
         "player_does_not_exist": "<red>Le joueurs n'a pas été trouvé !",
-        "not_found": "<red>Les statistiques pour ce joueur n'ont pas été trouvées !",
+        "not_found": "<red>Les statistiques de ce joueur n'ont pas été trouvé !",
         "deaths": "<gray>Morts : <yellow><deaths>",
         "kd": "<gray>K/M : <green><kd>",
         "wins": "<gray>Victoires : <green><wins>",
@@ -43,7 +43,7 @@
     },
     "in_game": {
         "errors": {
-            "game_is_full": "<red>La partie <gray><arena> <red>est remplie ! Veuillez attendre la fin de la partie !",
+            "game_is_full": "<red>La partie <gray><arena> <red>est pleine! Veuillez attendre la fin de cette partie!",
             "game_not_found": "<red>Partie non trouvée !",
             "you_are_not_in_game": "<red>Vous n'êtes pas dans une partie !",
             "game_is_rebuilding": "<red>La partie <gray><arena><red> se reconstruit ! Veuillez patienter...",
@@ -75,7 +75,7 @@
                 "all_anchors": "Toutes les ancres ont étés détruites !",
                 "all_target_blocks": "Tous les bocs cibles ont étés détruits !",
                 "all_cakes": "Tous les gateaux ont étés mangés !",
-                "door": "La porte de l'équipe <team><reset> à été détruite !",
+                "door": "La porte de l'équipe <team><reset> est détruite!",
                 "door_certain_popular_server": "<red><bold>PORTE DÉTRUITE !"
             },
             "hologram": {
@@ -162,7 +162,7 @@
             "you_lost": "<red>Votre équipe a perdu !",
             "team_win": "<green>L'équipe <reset><team><green> a gagné la partie en <gray><time>",
             "game_end": "<red>La partie est finie ! Merci d'avoir joué !",
-            "game_ended_too_early": "<red>La partie c'est finie trop tôt. Personne ne gagne."
+            "game_ended_too_early": "<red>La partie c'est finie trop tôt. Personne n'a gagné."
         },
         "bossbar": {
             "waiting": "<red>La partie va bientôt commencer !",
@@ -209,19 +209,19 @@
                 "    <yellow><bold>Protège ton lit et détruit celui des ennemis</bold>",
                 "     <yellow><bold>Améliorez vous ainsi que votre équipe en collectant</bold>",
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
-                "            <yellow><bold>pour accéder à des mises à niveau.</bold>",
+                "            <yellow><bold>pour accéder à de puissantes mises à niveau.</bold>",
                 "None",
-                "<green> ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
             ],
             "game_over_statistics": [
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
                 "                             <yellow><bold>Bed Wars</bold>",
                 "                             <team_color><win_team>",
                 "                             <winners>",
-                "    <yellow><bold>1er<gray> - <white><first_killer_name> <gray>- <white><first_killer_score></bold>",
+                "                             <winners>",
                 "    <gold><bold>2ème<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
                 "    <red><bold>3ème<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
-                "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+                "    <gold><bold>2ème<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
                 "    <red><bold>3ème<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
                 "None",
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
@@ -246,11 +246,11 @@
         },
         "kicking_in": "<red>Sortez de l'arène dans : <gray><time>"
     },
-    "safe_reload": "<green>En attente que toutes les parties en cours ce soient arrêtées pendant 60 secondes avant rechargement du plugin.",
-    "unknown_usage": "<red>Argument invalide  ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide !",
+    "safe_reload": "<green>En attente que toutes les parties en cours ce soient arrêtées ou que 60 secondes se soient écoulées avant le rechargement du plugin.",
+    "unknown_usage": "<red>Arguments invalide! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide !",
     "no_permissions": "<red>Vous n'avez pas assez de permission pour faire cela !",
-    "safe_reload_failed_to_stop_game": "<red>Certaines parties ne ce sont pas arrêtées à temps, l'arène à peut-être étée endommagée !",
-    "unknown_command": "<red>Commande inconnue  ! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide  !",
+    "safe_reload_failed_to_stop_game": "<red>Certaines parties ne ce sont pas arrêtées à temps, l'arène à peut-être été endommagée!",
+    "unknown_command": "<red>Commande inconnue! Essayez d'utiliser <dark_red>/bw help <red>pour plus d'aide!",
     "help": {
         "title": "Screaming Bedwars <version> - Aide",
         "title_console": "Screaming BedWars <version> - Aide pour la Console",
@@ -479,7 +479,7 @@
                 "added_with_variant": "<green>Arena <gray><arena><green> ajouté ! Variante de jeu utilisée : <gray><variant><green> !"
             }
         },
-        "usage": "<red>Utilisation : /bw admin <pre><arena> <add|edit|remove|save|...> ...</pre>",
+        "usage": "<red>Utilisation: /bw admin \\<arena> \\<add|edit|remove|save|...> ...",
         "holo": {
             "added": "<green>Un Holographique a été ajouté à votre position !",
             "removed": "<green>Holographique supprimé avec succès !",
@@ -579,8 +579,16 @@
         "remote": {
             "added_server_game": "<green>Jeu distant ajouté avec succès : <gray><name><green> sur le serveur <gray><server><green> sous l'identifiant <gray><game>",
             "name_already_exists": "<red>Le nom <gray><name><red> est déjà en utilisation par un jeu distant ou local",
-            "does_not_exist": "<red>Le jeu distant<gray><name><red> n’existe pas!",
-            "added_server": "<green>Succès lors de l'ajout du nouveau jeu distant <gray><name><green> sur le serveur <gray><server><green> (ancien mode bungeecord)"
+            "does_not_exist": "<red>La partie à distance <gray><name><red> n’existe pas!",
+            "added_server": "<green>Succès lors de l'ajout du nouveau jeu distant <gray><name><green> sur le serveur <gray><server><green> (ancien mode bungeecord)",
+            "set_server": "<green>Le mode de jeu à distance <gray><name><green>vers le serveur <gray><server><green> à été activé avec succès. (ancien mode bungee)",
+            "list": "<green>Liste des parties à distance:",
+            "empty": "<red>Il n'y a pas de parties à distance configurées!",
+            "list_format": "<gray><name><green>/<gray><uuid><green> - serveur: <gray><server><green>, partie: <gray><game>",
+            "list_format_no_game": "ancien mode bungee",
+            "hub_did_not_send_packet": "<red>Le paquet \"Join\" du serveur hub n'a pas été reçu dans les 10 secondes! Contactez l'administrateur du serveur!",
+            "set_server_game": "<green>Le mode de jeu à distance <gray><name><green> vers la partie <gray><game><green> sur le serveur <gray><server><green> à été activé avec succès",
+            "deleted": "<green>La partie à distance <gray><name><green> a été supprimée avec succès!"
         }
     },
     "update": {
