@@ -398,7 +398,8 @@
                     "invalid_item": "<red>Value <gray><item><red> n'est pas un élément valide !",
                     "invalid_constant_enum_value": "<red>valeur invalide <gray><value></gray> ! Doit être l'un de ceux-ci : <gray><values>",
                     "team_spawn_set_blocked": "<red>L'équipe <gray><team><red> a plus d'un point d'apparition, donc l'utilisation de la commande set n'est pas autorisée.",
-                    "weird_store_count": "<yellow>Il ya <gray><count><yellow> magasins dans ce jeu qui n'est pas un multiplicateur du nombre d'équipes. Est-ce correct ?"
+                    "weird_store_count": "<yellow>Il ya <gray><count><yellow> magasins dans ce jeu qui n'est pas un multiplicateur du nombre d'équipes. Est-ce correct ?",
+                    "overlapping_arenas": "<red>Le lieux choisi fait que l'arène est superposée à une autre arène, ce qui peut causer des erreurs! Veuillez choisir un endroit différent. Si vous voulez vraiment utiliser cet endroit, executez <gray><command>"
                 },
                 "success": {
                     "team_spawn_set": "<green>Le point d'apparition de l'équipe <gray><team><green> a été défini avec succès à la position XYZ : <gray><x>/<y>/<z> <green>YAW : <gray><yaw> <green>PITCH : <gray><pitch>",
