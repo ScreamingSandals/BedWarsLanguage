@@ -1,26 +1,26 @@
 {
-    "unknown_command": "",
-    "unknown_usage": "",
-    "no_permissions": "",
-    "safe_reload": "",
-    "safe_reload_failed_to_stop_game": "",
-    "list_header": "",
-    "success": "",
+    "unknown_command": "<red>Perintah tidak diketahui! Ketik <dark_red>/bw help <red>untuk bantuan!",
+    "unknown_usage": "<red>Argumen tidak valid! Ketik <dark_red>/bw help <red>untuk bantuan!",
+    "no_permissions": "<red>Anda tidak memiliki izin untuk melakukan itu!",
+    "safe_reload": "<green>Tunggu hingga seluruh permainan telah berhenti atau 60 detik sebelum plugin direload.",
+    "safe_reload_failed_to_stop_game": "<red>Beberapa games tidak berhenti saat ini, arena mungkin telah rusak!",
+    "list_header": "<green>Arena tersedia:",
+    "success": "<green>Perintah telah berhasil!",
     "sign": {
         "admin": {
-            "created": "",
-            "cannot_create": "",
-            "cannot_destroy": "",
-            "unknown_game": ""
+            "created": "<green>Papan telah berhasil dibuat!",
+            "cannot_create": "<red>Papan tidak dapat dibuat! Periksa kembali nama arena!",
+            "cannot_destroy": "<red>Anda tidak memiliki izin untuk menghancurkan papan itu!",
+            "unknown_game": "<red>Permainan yang ditulis pada papan tidak ada! Silahkan kontak dengan Admin!"
         },
         "status": {
             "disabled": {
-                "status": "",
-                "players": ""
+                "status": "<red>Game",
+                "players": "<red>dimatikan"
             },
             "rebuilding": {
                 "status": "",
-                "players": ""
+                "players": "<gold>Arena"
             },
             "running": {
                 "status": "",
@@ -33,10 +33,10 @@
         }
     },
     "statistics": {
-        "disabled": "",
-        "player_does_not_exist": "",
-        "not_found": "",
-        "header": "",
+        "disabled": "<red>Statistik pemain dimatikan di server ini!",
+        "player_does_not_exist": "<red>Pemain tidak ditemukan!",
+        "not_found": "<red>Statistik untuk pemain ini tidak ditemukan!",
+        "header": "<green>Statistik dari <red><player><green>:",
         "kills": "",
         "deaths": "",
         "kd": "",
@@ -50,16 +50,16 @@
         "errors": {
             "game_already_running": "",
             "game_is_full": "",
-            "game_not_found": "",
-            "you_are_not_in_game": "",
+            "game_not_found": "<red>Game tidak ditemukan!",
+            "you_are_not_in_game": "<red>Anda sedang tidak dalam bermain!",
             "game_is_rebuilding": "",
             "already_in_game": "",
             "not_in_any_game_yet": "",
-            "command_is_not_allowed": "",
-            "vip_not_enough_players": "",
-            "vip_game_is_full": "",
+            "command_is_not_allowed": "<red>Perintah ini diblokir ketika game sedang berjalan!",
+            "vip_not_enough_players": "<red>Tidak cukup pemain di arena!",
+            "vip_game_is_full": "<red>Game <gray><arena> <red>telah penuh untuk Pemain VIP. Silahkan tunggu hingga game selesai!",
             "game_is_gone": "",
-            "game_kicked_by_vip": "",
+            "game_kicked_by_vip": "<red>Anda dikick oleh Pemain VIP!",
             "there_is_no_empty_game": ""
         },
         "target_block": {
@@ -85,43 +85,43 @@
             },
             "hologram": {
                 "protect": {
-                    "any": "",
-                    "bed": "",
-                    "door": "",
-                    "anchor": "",
-                    "cake": ""
+                    "any": "<teamcolor><bold>Amankan target blockmu!",
+                    "bed": "<teamcolor><bold>Amankan kasurmu!",
+                    "door": "<teamcolor><bold>Amankan pintumu!",
+                    "anchor": "<teamcolor><bold>Amankan anchormu!",
+                    "cake": "<teamcolor><bold>Amankan kuemu!"
                 },
                 "destroyed": {
-                    "any": "",
-                    "bed": "",
-                    "door": "",
-                    "anchor": "",
-                    "cake": ""
+                    "any": "<gray><bold>Target block telah hancur.",
+                    "bed": "<gray><bold>Kasur telah hancur.",
+                    "door": "<gray><bold>Pintu telah hancur.",
+                    "anchor": "<gray><bold>Anchor telah hancur.",
+                    "cake": "<gray><bold>Kue telah dimakan."
                 },
                 "destroy": {
-                    "any": "",
-                    "bed": "",
-                    "door": "",
-                    "anchor": "",
-                    "cake": ""
+                    "any": "<teamcolor><bold>Hancurkan target block ini!",
+                    "bed": "<teamcolor><bold>Hancurkan kasur ini!",
+                    "door": "<teamcolor><bold>Hancurkan pintu ini!",
+                    "anchor": "<teamcolor><bold>Hancurkan anchor ini!",
+                    "cake": "<teamcolor><bold>Makan kue ini!"
                 }
             }
         },
         "respawn_cooldown": {
             "title": "",
-            "title_cancel": ""
+            "title_cancel": "<red>Tim telah mati :("
         },
         "spawner": {
-            "countdown": "",
+            "countdown": "<yellow><seconds> <aqua>detik",
             "countdown_custom": "",
-            "every_second": "",
+            "every_second": "<aqua>setiap detik",
             "full": "",
-            "full_certain_popular_server": "",
-            "not_enough_level": "",
-            "reached_maximum_level": "",
-            "tier": "",
-            "countdown_certain_popular_server": "",
-            "countdown_custom_certain_popular_server": ""
+            "full_certain_popular_server": "<red><bold>Spawner telah penuh!",
+            "not_enough_level": "<red>Spawner tidak dapat bekerja! Anda perlu tingkatkan <levels> levels.",
+            "reached_maximum_level": "<red>Spawner mencapai level maksimal!",
+            "tier": "<yellow>Tier <red><tier>",
+            "countdown_certain_popular_server": "<yellow>Spawns in <red><seconds> <yellow>seconds",
+            "countdown_custom_certain_popular_server": "<yellow>Spawns in <red><value> <yellow><unit>"
         },
         "resources": {
             "bronze": "",
@@ -132,7 +132,7 @@
             "emerald": ""
         },
         "shop": {
-            "name": "",
+            "name": "Toko",
             "page_back": "",
             "page_forward": "",
             "shop_back": "",
@@ -676,7 +676,7 @@
         "usage_bw_lang": "",
         "invalid": "",
         "already_set": "",
-        "success": ""
+        "success": "<green>Bahasa berhasil diubah menjadi <white>[<lang>]"
     },
     "migrate": {
         "success": "",
