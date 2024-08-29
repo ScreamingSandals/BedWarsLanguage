@@ -594,11 +594,11 @@
     },
     "update": {
         "new_release": [
-            "<green>Une Nouvelle mise à jour <version> de BedWars est disponible !",
+            "<green>Une nouvelle mise à jour <version> de BedWars est disponible !",
             "Télécharge la depuis <url>"
         ],
         "patch_release": [
-            "<yellow>Nouvelle version de ce patch pour BedWars. <version> est disponible !",
+            "<yellow>Un nouveau patch pour BedWars. <version> est disponible !",
             "Vous pouvez la télécharger depuis <url>"
         ]
     },
@@ -663,11 +663,11 @@
             "invalid_arguments": "<red>Nombre d'arguments invalide ! Tapez /bw party help pour en savoir plus.",
             "not_in_party": "<red>Vous devez être dans un groupe pour exécuter cette commande !",
             "is_empty": "<red>Votre groupe est vide, vous ne pouvez pas exclure qui que ce soit !",
-            "warped": "<green>Les membres du groupe ont été exclue.",
+            "warped": "<green>Les membres du groupe ont été téléportés.",
             "help": "/bw party warp - <yellow>Exclue tous les joueurs de votre groups",
             "not_party_leader": "<red>Vous n'êtes pas le chef de ce groupe !"
         },
-        "warped": "<green>Le chef du groupe vous a exclue",
+        "warped": "<green>Le chef du groupe vous a téléporté ici",
         "inform_game_join": "<green>Rejoindre le jeu du chef de groupe"
     },
     "dump": {
@@ -692,7 +692,7 @@
         "seconds": "secondes",
         "minute": "minute",
         "minutes": "minutes",
-        "hour": "heur",
+        "hour": "heure",
         "hours": "heures"
     }
 }
