@@ -401,7 +401,7 @@
                     "set_spawners_before_save": "<red>ゲームを保存する前に、少なくとも1つのスポナーを追加してください！",
                     "invalid_constant_value": "<red>間違った値! <gray>true<red>、<gray>false<red>、<gray>inherit<red>のいずれかです!",
                     "invalid_constant_name": "<red>定数の名前が違います!",
-                    "invalid_entity_type": "<red>間違ったエンティティタイプ!",
+                    "invalid_entity_type": "<red>エンティティータイプが違います！",
                     "npc_must_have_skin_name": "<red>エンティティタイプが「PLAYER」の場合、スキン名を<gray>PLAYER:[スキンの所有者]の形式で指定する必要があります",
                     "invalid_variant": "<red>ゲームバリアント<gray><variant><red>が存在しません!",
                     "invalid_constant_position": "<red>定数リストに載っている、メンバーの位置が間違っています！",
