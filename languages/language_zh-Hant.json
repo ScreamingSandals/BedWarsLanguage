@@ -207,7 +207,8 @@
                 "anchor": "<team><reset>的重生錨被摧毀！",
                 "cake": "<team><reset>的蛋糕被吃掉了！",
                 "subtitle": "你現在可以殺死團隊成員了！",
-                "subtitle_victim": "現在你將永遠不會在重生！"
+                "subtitle_victim": "現在你將永遠不會在重生！",
+                "any_certain_popular_server": "<red><bold>目标块被摧毁！"
             },
             "hologram": {
                 "protect": {
