@@ -101,7 +101,8 @@
                     "any": "<teamcolor><bold>保护好我们的目标方块！",
                     "anchor": "<teamcolor><bold>保护好我们的重生锚！",
                     "cake": "<teamcolor><bold>保护好我们的蛋糕！",
-                    "bed": "<teamcolor><bold>保护好我们的床！"
+                    "bed": "<teamcolor><bold>保护好我们的床！",
+                    "door": "<teamcolor><bold>保护你的门！"
                 },
                 "destroyed": {
                     "any": "<gray><bold>目标方块已被破坏。",
@@ -126,7 +127,9 @@
                 "anchor_certain_popular_server": "<red><bold>锚已被破坏！",
                 "all_cakes": "所有蛋糕都被神秘人吃了！",
                 "killable": "你现在可以击杀<team>的队伍成员了！",
-                "death_mode": "<dark_purple><bold>死斗模式！"
+                "death_mode": "<dark_purple><bold>死斗模式！",
+                "door": "<team><reset>的门已被摧毁!",
+                "door_certain_popular_server": "<red><bold>门已被摧毁！"
             }
         },
         "spawner": {
