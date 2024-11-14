@@ -69,7 +69,8 @@
             "there_is_no_empty_game": "<red>هیچ بازی در حالت انتظار وجود ندارد. همه بازی ها در حال اجرا هستند!",
             "game_not_found": "<red>بازی پیدا نشد!",
             "you_are_not_in_game": "شما در یک بازی نیستید!",
-            "vip_not_enough_players": "<red>بازیکن کافی در این بازی وجود ندارد!"
+            "vip_not_enough_players": "<red>بازیکن کافی در این بازی وجود ندارد!",
+            "game_kicked_by_vip": "<red>شما توسط یک فرد خاص از بازی اخراج شدید!"
         }
     }
 }
