@@ -35,11 +35,41 @@
         "disabled": "<red>آمار بازیکن در این سرور غیرفعال است!",
         "not_found": "<red>آمار این بازیکن یافت نشد!",
         "header": "<green>آمار از<red><player><green>:",
-        "player_does_not_exist": "<red>بازیکن پیدا نشد!"
+        "player_does_not_exist": "<red>بازیکن پیدا نشد!",
+        "loses": "<gray>باخت ها: <red><loses>",
+        "games": "<grey>بازی های انجام شده: <aqua><games>",
+        "kills": "<gray>کشته ها: <green><kills>",
+        "deaths": "<gray>مرگ ها: <yellow><deaths>",
+        "wins": "<gray>برد ها: <green><wins>",
+        "beds": "<gray>تخت های خراب شده: <green><beds>",
+        "score": "<gray>امتیاز کل: <green><score>"
     },
     "specials": {
         "tntsheep": {
             "no_target_found": "‌<red>هدفی پیدا نشد!"
+        }
+    },
+    "in_game": {
+        "target_block": {
+            "hologram": {
+                "destroyed": {
+                    "cake": "<gray><bold>کیک خورده شده است."
+                }
+            },
+            "destroyed": {
+                "all_beds": "همه تخت ها خراب شدن!",
+                "death_mode": "<dark_purple><bold>حالت مرگ!",
+                "bed_certain_popular_server": "<red><bold>تخت خراب شد!"
+            }
+        },
+        "errors": {
+            "command_is_not_allowed": "<red>این دستور حین بازی کردن غیرفعال است!",
+            "game_is_rebuilding": "<red>بازی <grey><arena><red> در حال بازسازی است! لطفا صبر کنید...",
+            "already_in_game": "<red>شما در حال حاضر در یک بازی هستید.",
+            "there_is_no_empty_game": "<red>هیچ بازی در حالت انتظار وجود ندارد. همه بازی ها در حال اجرا هستند!",
+            "game_not_found": "<red>بازی پیدا نشد!",
+            "you_are_not_in_game": "شما در یک بازی نیستید!",
+            "vip_not_enough_players": "<red>بازیکن کافی در این بازی وجود ندارد!"
         }
     }
 }
