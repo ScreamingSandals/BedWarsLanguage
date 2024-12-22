@@ -1,5 +1,5 @@
 {
-    "unknown_command": "<red>不明なコマンドです！<dark_red>/bw help<red>を使ってヘルプをご覧ください !",
+    "unknown_command": "<red>不明なコマンドです！<dark_red>/bw help<red>を使ってヘルプをご覧ください！",
     "no_permissions": "<red>あなたはそれを行うのに十分な権限がありません！",
     "sign": {
         "admin": {
@@ -28,7 +28,7 @@
         }
     },
     "success": "<green>コマンドは成功しました!",
-    "list_header": "<green>利用可能なアリーナ：",
+    "list_header": "<green>利用可能なアリーナ:",
     "statistics": {
         "player_does_not_exist": "<red>プレイヤーが見つかりません！",
         "header": "<green>:<red><player><green>の統計情報です。",
@@ -415,7 +415,9 @@
                     "team_spawn_on_the_same_block": "<red>この位置にはすでにスポーンポイントがあります。回転場所を変更したい場合は、まずはスポーンポイントを外してください。",
                     "team_no_spawn_there": "<red>この位置にはスポーンポイントはありません。",
                     "nothing_in_hand": "<red>あなたの手には何もアイテムを持っていません！",
-                    "invalid_item": "<red>値<gray><item><red>は、有効なアイテムではありません！"
+                    "invalid_item": "<red>値<gray><item><red>は、有効なアイテムではありません！",
+                    "invalid_prefab": "<red><gray><name><red> というプレハブが変数<gray><variant><red>に設定されていません！",
+                    "overlapping_arenas": "<red>選択した場所によりアリーナが、別のアリーナと重なり、エラーが発生する可能性があります。別の場所を選択してください。この場所を使用したい場合は、<gray><command>を実行してください"
                 },
                 "success": {
                     "team_spawn_set": "<green>チーム<gray><team><green>のスポーンを位置XYZに設定することに成功しました。<gray><x>/<y>/<z> <green>YAW: <gray><yaw> <green>PITCH: <gray><pitch>",
@@ -601,9 +603,9 @@
             "hub_did_not_send_packet": "<red>ハブサーバーからの参加パケットが10秒以内に受信されませんでした！サーバー管理者に連絡してください！"
         }
     },
-    "unknown_usage": "<red>引数が無効です！<dark_red>/bw help<red>を使ってヘルプをご覧ください !",
-    "safe_reload": "<green>すべてのゲームが停止するか60秒待ってからプラグインを再読み込みしてください。",
-    "safe_reload_failed_to_stop_game": "<red>いくつかのゲームは時間内に停止できなかったので、アリーナが破損されている可能性があります !",
+    "unknown_usage": "<red>引数が無効です！<dark_red>/bw help<red>を使ってヘルプをご覧ください！",
+    "safe_reload": "<green>すべてのゲームが停止するか、60秒待ってからプラグインを再読み込みしてください。",
+    "safe_reload_failed_to_stop_game": "<red>いくつかのゲームは時間内に停止できなかったので、アリーナが破損されている可能性があります！",
     "specials": {
         "trap": {
             "caught": "<red>チーム<white><team><red>の罠にかかってしまった!",
