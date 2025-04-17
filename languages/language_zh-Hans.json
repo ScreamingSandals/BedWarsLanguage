@@ -108,7 +108,8 @@
                     "any": "<gray><bold>目标方块已被破坏。",
                     "anchor": "<gray><bold>重生锚已被摧毁。",
                     "cake": "<gray><bold>蛋糕已经被吃了。",
-                    "bed": "<gray><bold>床已被破坏。"
+                    "bed": "<gray><bold>床已被破坏。",
+                    "door": "<gray><bold>门已被摧毁。"
                 }
             },
             "destroyed": {
