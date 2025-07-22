@@ -1,0 +1,9 @@
+[versions]
+
+# plugins
+screaming-plugin-builder = "2.0.0-SNAPSHOT"
+
+[libraries]
+
+[plugins]
+screaming-plugin-builder = { id = "org.screamingsandals.plugin-builder", version.ref = "screaming-plugin-builder" }
