@@ -143,6 +143,23 @@
             "upgrade_success": "<green><name> has successfully upgraded <spawner> to level <level>!",
             "upgrade_translate": "upgrade"
         },
+        "trap": {
+            "blind_trap_triggered": {
+                "message": "<yellow>You have been blinded by %team% team!",
+                "title": "<red>Trap Triggered!",
+                "subtitle": "<yellow>Someone has entered your base!"
+            },
+            "miner_trap_triggered": {
+                "message": "<yellow>You have been slowed by %team% team!",
+                "title": "<red>Trap Triggered!",
+                "subtitle": "<yellow>Someone has entered your base!"
+            },
+            "custom_trap_triggered": {
+                "message": "<yellow>You have affected by <trap> from <team> team!",
+                "title": "<red><trap> Triggered!",
+                "subtitle": "<yellow>Someone has entered your base and fired <trap>!"
+            }
+        },
         "team_selection": {
             "inventory_name": "Select team - <arena>",
             "selected": "<green>Selected team: <team><reset> <gray>[<green><players><gray>/<green><maxplayers><gray>]",
