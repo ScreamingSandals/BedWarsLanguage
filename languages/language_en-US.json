@@ -691,6 +691,7 @@
     },
     "dump": {
         "success": "<green>Successfully dumped server. Link: <dump>",
+        "success_logs": "<green>Successfully dumped the latest log file. Link: <dump>",
         "failed": "<red>Dump failed!",
         "unknown_service": "<red>Unknown service <gray><unknown_service><red>. Allowed values are: <gray><allowed_values>"
     },
