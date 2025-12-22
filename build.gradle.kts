@@ -4,6 +4,7 @@ import org.screamingsandals.bedwars.lang.tasks.GenerateBuildInfoTask
 import org.screamingsandals.bedwars.lang.tasks.GenerateLangKeysTask
 import org.screamingsandals.gradle.builder.configureSourcesJar
 import org.screamingsandals.gradle.builder.setupMavenPublishing
+import org.screamingsandals.gradle.builder.setupMavenRepositoriesFromProperties
 
 plugins {
     java
@@ -81,6 +82,7 @@ setupMavenPublishing(addSourceJar=true) {
         properties.put("build.number", projectBuildNumber)
     }
 }
+setupMavenRepositoriesFromProperties()
 
 tasks.compileJava {
     dependsOn("generateLangKeys")
