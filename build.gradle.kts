@@ -1,7 +1,7 @@
 import org.screamingsandals.gradle.builder.configureJavac
-import org.screamingsandals.bedwars.lang.build.ValidateJsonTask
-import org.screamingsandals.bedwars.lang.build.GenerateBuildInfoTask
-import org.screamingsandals.bedwars.lang.build.GenerateLangKeysTask
+import org.screamingsandals.bedwars.lang.tasks.ValidateJsonTask
+import org.screamingsandals.bedwars.lang.tasks.GenerateBuildInfoTask
+import org.screamingsandals.bedwars.lang.tasks.GenerateLangKeysTask
 import org.screamingsandals.gradle.builder.configureSourcesJar
 import org.screamingsandals.gradle.builder.setupMavenPublishing
 
