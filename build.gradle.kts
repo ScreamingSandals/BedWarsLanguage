@@ -66,8 +66,7 @@ tasks.jar {
 }
 
 configureJavac(JavaVersion.VERSION_11)
-configureSourcesJar()
-setupMavenPublishing(addSourceJar=true) {
+setupMavenPublishing {
     pom {
         name.set("BedWars Language")
         description.set("Translation for BedWars Plugin")
