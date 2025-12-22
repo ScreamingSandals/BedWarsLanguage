@@ -1,5 +1,9 @@
-import groovy.json.JsonSlurper
 import org.screamingsandals.gradle.builder.configureJavac
+import org.screamingsandals.bedwars.lang.build.ValidateJsonTask
+import org.screamingsandals.bedwars.lang.build.GenerateBuildInfoTask
+import org.screamingsandals.bedwars.lang.build.GenerateLangKeysTask
+import org.screamingsandals.gradle.builder.configureSourcesJar
+import org.screamingsandals.gradle.builder.setupMavenPublishing
 
 plugins {
     java
@@ -8,72 +12,80 @@ plugins {
 
 defaultTasks("clean", "build")
 
-val buildDir = project.layout.buildDirectory.dir("generated/buildinfo")
+val buildInfoDir = project.layout.buildDirectory.dir("generated/buildinfo")
+val buildLangKeysDir = project.layout.buildDirectory.dir("generated/sources/langkeys")
+val projectBuildNumber = providers.environmentVariable("BUILD_NUMBER").orElse("custom")
+
+tasks.register<ValidateJsonTask>("validateJson") {
+    group = "build"
+    description = "Validate all JSON resource files."
+
+    jsonFiles.from(fileTree("src/main/resources/languages") { include("*.json") })
+}
+
+tasks.register<GenerateBuildInfoTask>("generateBuildInfoFile") {
+    group = "build"
+
+    languageFiles.from(fileTree("src/main/resources/languages") { include("*.json") })
+    outputDir.set(buildInfoDir)
+
+    version.set(project.version.toString())
+    buildNumber.set(projectBuildNumber)
+}
+
+tasks.register<GenerateLangKeysTask>("generateLangKeys") {
+    group = "build"
+    description = "Generate LangKeys.java from language_en-US.json"
+
+    dependsOn("validateJson")
+
+    packageName.set(providers.gradleProperty("langkeys.package"))
+    className.set(providers.gradleProperty("langkeys.class"))
+
+    inputJson.set(layout.projectDirectory.file("src/main/resources/languages/language_en-US.json"))
+
+    outputJava.set(
+        buildLangKeysDir
+            .map { it.dir(packageName.get().replace(".", "/")) }
+            .map { it.file("${className.get()}.java") }
+    )
+}
 
 sourceSets {
     main {
-        output.dir(mapOf("builtBy" to "generateBuildInfoFile"), buildDir)
-        resources {
-            srcDirs(".")
-            include("/languages/**")
+        java {
+            srcDir(buildLangKeysDir)
         }
     }
+}
+
+tasks.jar {
+    dependsOn("generateBuildInfoFile")
+    from(buildInfoDir)
 }
 
 configureJavac(JavaVersion.VERSION_11)
-
-val jsonValidator = tasks.register("validateJson") {
-    group = "verification"
-    description = "Validate all JSON resource files."
-
-    doLast {
-        fileTree("languages") {
-            include("*.json")
-        }.forEach { jsonFile ->
-            try {
-                JsonSlurper().parse(jsonFile)
-            } catch (e: Exception) {
-                throw GradleException("Invalid JSON: ${jsonFile.relativeTo(projectDir)}\n${e.message}")
+configureSourcesJar()
+setupMavenPublishing(addSourceJar=true) {
+    pom {
+        name.set("BedWars Language")
+        description.set("Translation for BedWars Plugin")
+        url.set("https://github.com/ScreamingSandals/BedWarsLanguage")
+        licenses {
+            license {
+                name.set("GNU Lesser General Public License v3.0")
+                url.set("https://github.com/ScreamingSandals/BedWarsLanguage/blob/0.3.x/LICENSE")
             }
         }
+
+        properties.put("build.number", projectBuildNumber)
     }
 }
 
-tasks.named("check") {
-    dependsOn(jsonValidator)
+tasks.compileJava {
+    dependsOn("generateLangKeys")
 }
 
-tasks.register("generateBuildInfoFile") {
-    group = "build"
-
-    doFirst {
-        mkdir(buildDir)
-
-        buildDir.map { it.file("language_definition.json") }.get().asFile.writeText(buildString {
-            val build = if (System.getenv("BUILD_NUMBER") != null) {
-                System.getenv("BUILD_NUMBER")
-            } else {
-                "custom"
-            }
-            val translationBranch = project.version.toString().split("-", limit=2)[0]
-
-            append("{\"branch\": \"${translationBranch}\", \"version\": \"${build}\", \"languages\":{")
-
-            var first = true
-            project.file("languages").listFiles()?.forEach {
-                if (!first) {
-                    append(",")
-                } else {
-                    first = false
-                }
-                val locale = Regex("[a-z]{2}-[A-Z][A-Za-z]{1,3}").find(it.name)?.value
-                append("\"${locale}\": \"languages/${it.name}\"")
-            }
-            append("}}")
-        })
-    }
-}
-
-tasks.named("build") {
-    dependsOn("generateBuildInfoFile")
+tasks.build {
+    dependsOn("validateJson")
 }

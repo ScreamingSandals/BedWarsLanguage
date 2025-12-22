@@ -9,29 +9,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Validate Gradle Wrapper
-        uses: gradle/actions/wrapper-validation@v4
+        uses: gradle/actions/wrapper-validation@v5
       - name: Set the Build number
         id: calculated_build_number
         env:
           NUM: ${{ github.run_number }}
         run: echo ::set-output name=build_n::$(($NUM+93))
       - name: Set up JDK 17
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v5
         with:
+          distribution: 'temurin'
           java-version: 17
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
+        uses: gradle/actions/setup-gradle@v5
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./gradlew
+        run: ./gradlew clean validateJson build --stacktrace --warning-mode all
+        env:
+          BUILD_NUMBER: ${{ steps.calculated_build_number.outputs.build_n }}
+      - name: Publish with Gradle
+        run: ./gradlew publish --stacktrace --warning-mode all
         env:
           NEXUS_URL_RELEASE: ${{ secrets.NEXUS_URL_RELEASE }}
           NEXUS_URL_SNAPSHOT: ${{ secrets.NEXUS_URL_SNAPSHOT }}
           NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }}
           NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
-          OPTIMIZE_FOR_CI_CD: "1"
           BUILD_NUMBER: ${{ steps.calculated_build_number.outputs.build_n }}
-

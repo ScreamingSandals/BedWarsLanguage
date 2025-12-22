@@ -1,9 +1,11 @@
 [versions]
+gson = "2.13.2"
 
 # plugins
 screaming-plugin-builder = "2.0.0-SNAPSHOT"
 
 [libraries]
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 
 [plugins]
 screaming-plugin-builder = { id = "org.screamingsandals.plugin-builder", version.ref = "screaming-plugin-builder" }
