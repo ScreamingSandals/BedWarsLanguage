@@ -2,7 +2,7 @@
 gson = "2.13.2"
 
 # plugins
-screaming-plugin-builder = "2.0.0-SNAPSHOT"
+screaming-plugin-builder = "2.0.0"
 
 [libraries]
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
