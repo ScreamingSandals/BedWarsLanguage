@@ -474,6 +474,7 @@
                     "lobby_pos1_set": "<green> Lobby position 1 of arena <gray><arena><green> was set to XYZ: <gray><x>/<y>/<z>",
                     "lobby_pos2_set":  "<green> Lobby position 2 of arena <gray><arena><green> was set to XYZ: <gray><x>/<y>/<z>",
                     "lobby_countdown_set": "<green>Lobby countdown was set to <gray><countdown>",
+                    "lobby_countdown_set_dynamic": "<green>Lobby countdown was set to <gray><countdown><green> and dynamic countdown was set to <gray><dynamic>",
                     "game_time_set": "<green>Game time was set to <gray><time>",
                     "min_players_set": "<green>Successfully set minimum players to <gray><min><green>!",
                     "constant_set": "<green>Constant <gray><config><green> was successfully set to <gray><value><green>!",
