@@ -206,7 +206,7 @@
             "game_start": [
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
                 "                             <white><bold>ベッドウォーズ</bold>",
-                "     <yellow><bold>を集めて、自分自身とチームをアップグレードしましょう。</bold>",
+                "<yellow><bold>を集めて、自分自身とチームをアップグレードしましょう。</bold>",
                 "    <yellow><bold>ベッドを守り、敵のベッドを破壊してください。</bold>",
                 "     <yellow><bold>強力なアップグレードにアクセスできます。</bold>",
                 "<yellow><bold><resources></bold>",
@@ -217,10 +217,10 @@
             "game_over_statistics": [
                 "<green>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
                 "                             <yellow><bold>ベッドウォーズ</bold>",
-                "                             <team_color><win_team>",
+                "<team_color><win_team>",
                 "                             <winners>",
                 "                             <winners>",
-                "    <gold><bold>2位<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
+                "<gold><bold>2位<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
                 "    <red><bold>3位<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
                 "    <gold><bold>2番目<gray> - <white><second_killer_name> <gray>- <white><second_killer_score></bold>",
                 "    <red><bold>3番目<gray> - <white><third_killer_name> <gray>- <white><third_killer_score>/bold>",
@@ -245,7 +245,24 @@
             "no": "<aqua>このゲームをプレイするのはこれが初めてです。新記録を飾るのはどうですか？",
             "current": "<aqua>このゲームの現在の記録は、<gray><time><aqua> が <gray><team-members><aqua> によって達成されました！"
         },
-        "kicking_in": "<red>アリーナから出る場合：<gray><time>"
+        "kicking_in": "<red>アリーナから出る場合：<gray><time>",
+        "trap": {
+            "blind_trap_triggered": {
+                "message": "<yellow>%team%チームによって盲目にされています!",
+                "title": "<red>トラップ発動!",
+                "subtitle": "<yellow>誰かがあなたの拠点に入ってきました!"
+            },
+            "miner_trap_triggered": {
+                "message": "<yellow>%team%チームによって速度が低下しました!",
+                "title": "<red>トラップ発動!",
+                "subtitle": "<yellow>誰かがあなたの拠点に入ってきました!"
+            },
+            "custom_trap_triggered": {
+                "message": "<yellow>あなたは<team>チームの置いた<trap>の影響を受けました!",
+                "title": "<red><trap>が発動しました!",
+                "subtitle": "<yellow>誰かがあなたの拠点に侵入し、<trap>を発動しました!"
+            }
+        }
     },
     "help": {
         "title": "Screaming BedWars <version> - ヘルプ",
@@ -383,7 +400,7 @@
                     "invalid_min_players": "<red>最小のプレーヤーは2人以上でなければなりません!",
                     "invalid_arena_time": "<red>アリーナのワールドタイムのタイプが違います！",
                     "invalid_arena_weather": "<red>アリーナの世界の天気のタイプが違います!",
-                    "invalid_bar_color": "<red>BOSS BARの色が違います!",
+                    "invalid_bar_color": "<red>ボスバーの色が違います!",
                     "invalid_time": "<red>時間<gray><number><red>が無効です!",
                     "no_spawner": "<red>この位置にはスポナーがありません!",
                     "multiple_spawners": {
@@ -488,7 +505,10 @@
                     "spawner_initial_interval_reset": "<green>この「<type>」スポナーの初期間隔が、設定またはカスタムで定義されたデフォルト値にリセットされました。",
                     "spawner_spread_set": "<green>この<type>スポナーの広がりは、<gray><spread><green>に設定されました。",
                     "spawner_spread_reset": "<green>この<type>スポナーの広がりは、設定ファイルまたはカスタムで定義されたデフォルト値にリセットされました。",
-                    "spawner_initial_interval_set": "<green>この「<type>」スポナーの初期間隔が、「<gray><interval> <unit><green>」に設定されました。"
+                    "spawner_initial_interval_set": "<green>この「<type>」スポナーの初期間隔が、「<gray><interval> <unit><green>」に設定されました。",
+                    "store_team_set": "<green>座標 <gray><x>/<y>/<z><green> にあるショップのチームが <gray><team><green> に変更されました!",
+                    "store_team_reset": "<green>座標 <gray><x>/<y>/<z><green> にあるショップのチームが解除されました！",
+                    "lobby_countdown_set_dynamic": "<green>ロビーのカウントダウンが<gray><countdown><green>に設定され、動的カウントダウンが<gray><dynamic><green>に設定されました"
                 }
             }
         },
@@ -570,7 +590,9 @@
             "data_type": "データ種類",
             "default_value": "<yellow>設定ファイルまたは値ファイルのデフォルト値を使用します",
             "config": "<gray><configured-component>の構成",
-            "key": "Key(キー)"
+            "key": "Key(キー)",
+            "villager_shop_team": "  チーム: <team><reset>",
+            "villager_shop_no_team": "<red>チームが設定されていません"
         },
         "info_select": {
             "header": "<green> <gray><arena><green>の情報欄を選択してください。",
@@ -673,7 +695,8 @@
     "dump": {
         "success": "<green>サーバーのダンプに成功しました。リンクです<dump>",
         "failed": "<red>ダンプに失敗しました!",
-        "unknown_service": "<red>不明なサービス<gray><unknown_service><red>。許可される値は次のとおりです：<gray><allowed_values>"
+        "unknown_service": "<red>不明なサービス<gray><unknown_service><red>。許可される値は次のとおりです：<gray><allowed_values>",
+        "success_logs": "<green>最新のログファイルの出力に成功しました。リンク: <dump>"
     },
     "language": {
         "invalid": "<red>指定された言語ファイルが読み込めませんでした！",
